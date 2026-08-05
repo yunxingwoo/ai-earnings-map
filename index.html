@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 算力财报全景 · 产业总览</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="demo-banner">视觉预览 DEMO · <b>页面内所有数字均为虚构的演示数据</b>(由数据层实时汇总),仅用于确认版式与交互;正式版每个数字将取自官方披露文件并可点击溯源</div>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="nav-brand" href="index.html"><span class="logo">AI</span> AI 算力财报全景 <span class="en">EARNINGS INTELLIGENCE</span></a>
+    <div class="nav-pills">
+      <a href="index.html" class="on">产业总览</a>
+      <a href="map.html">全景地图</a>
+      <a href="map.html#verify">交叉验证</a>
+      <a href="map.html#gaps">数据缺口</a>
+    </div>
+    <div class="nav-right">
+      <span class="tz">北京时区 · 2026.08.05 复核版</span>
+      <a class="btn-small" href="map.html">进入全景地图</a>
+    </div>
+  </div>
+</nav>
+
+<main class="home">
+
+  <section class="hero-card">
+    <canvas id="fxCanvas"></canvas>
+    <div class="hero-left">
+      <div class="overline">Global AI Compute · Earnings Intelligence</div>
+      <h1>从官方财报,<br><span class="outline">计算产业景气。</span></h1>
+      <p class="sub">官方原文自动采集、结构化指标自动解析、同比环比自动计算,再沿同行与上下游完成交叉验证。缺失指标保持空白,不允许主观填分补齐。</p>
+      <div class="cta-row">
+        <a class="btn-accent" href="map.html">浏览全景地图 →</a>
+        <span class="cta-note">每个数字均回链至公司 IR 或监管文件</span>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="hp-head"><span>本轮覆盖状态</span><span class="tier">Tier 1 · 2026Q2</span></div>
+      <div class="hp-num num" id="hpTotal" data-count>—</div>
+      <div class="hp-sub">家公司节点已建档(龙头 / 核心 / 二线 + 非上市)</div>
+      <div class="hp-bar">
+        <i class="g" id="b1"></i><i class="a" id="b2"></i><i class="x" id="b3"></i>
+      </div>
+      <div class="hp-rows" id="hpRows"></div>
+    </div>
+  </section>
+
+  <section class="chain" id="chain"></section>
+
+  <div class="ticker-wrap"><div class="ticker" id="ticker"></div></div>
+
+  <section class="bigstats">
+    <div class="bstat reveal">
+      <div class="bs-no">01</div>
+      <div class="bs-num num" id="stRev" data-count>—</div>
+      <div class="bs-label">覆盖公司总收入 · 本季</div>
+      <div class="bs-note">含各公司全部业务口径;AI 分部收入将随逐家披露接入</div>
+    </div>
+    <div class="bstat reveal">
+      <div class="bs-no">02</div>
+      <div class="bs-num num" id="stGW" data-count>—</div>
+      <div class="bs-label">北美 AIDC 容量(投运 + 在建)</div>
+      <div class="bs-note">按运营商官方披露容量合计 · 演示值;正式版逐项目溯源</div>
+    </div>
+    <div class="bstat reveal">
+      <div class="bs-no">03</div>
+      <div class="bs-num num" id="stCapex" data-count>—</div>
+      <div class="bs-label">云厂合计 Capex · 本季</div>
+      <div class="bs-note">微软 / 谷歌 / 亚马逊 / Meta / 甲骨文 + 阿里 / 腾讯披露口径</div>
+    </div>
+    <div class="bstat reveal">
+      <div class="bs-no">04</div>
+      <div class="bs-num num" id="stNI" data-count>—</div>
+      <div class="bs-label" id="stNILabel">覆盖公司净利润合计</div>
+      <div class="bs-note">仅汇总已披露公司;未披露不估算、不补齐</div>
+    </div>
+  </section>
+
+  <section class="cards5">
+    <div class="c5 reveal">
+      <div class="k">产业节点</div>
+      <div class="v num" id="cLanes" data-count>—</div>
+      <div class="n">覆盖上游 / 中游 / 下游细分环节</div>
+    </div>
+    <div class="c5 reveal">
+      <div class="k">公司池</div>
+      <div class="v num" id="cPool" data-count>—</div>
+      <div class="n">龙头、核心、二线 + 非上市</div>
+    </div>
+    <div class="c5 reveal">
+      <div class="k">已覆盖上市公司</div>
+      <div class="v num" id="cListed" data-count>—</div>
+      <div class="n" id="cListedNote"></div>
+    </div>
+    <div class="c5 reveal">
+      <div class="k">已归档财报</div>
+      <div class="v num">—</div>
+      <div class="n">v2 采集管线接入后点亮;当前留空不估算</div>
+    </div>
+    <div class="c5 hl reveal">
+      <div class="k">客观景气信号</div>
+      <div class="v num" id="cSignals" data-count>—</div>
+      <div class="n">环节信号按公开公式自动合成,通过覆盖门槛后发布</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div>信号灯规则:🟢 营收 YoY &gt; 20% 且较上季加速 · 🟡 正增长减速或 0–20% · 🔴 负增长 · ⚪ 数据不足</div>
+  <div class="rule">总收入 / Capex / 净利润均由数据层按公开汇率口径实时汇总 · YoY / QoQ 不存储衍生结果 · 视觉系统参照 Claude DESIGN.md 深色侧</div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+/* ═══ 主页统计:全部由数据层实时汇总(演示数据) ═══ */
+const withData = ALL.filter(c=>c.q);
+const gaps     = ALL.filter(c=>!c.q);
+const nonListed= gaps.filter(c=>c.gap && c.gap.includes('非上市'));
+const pending  = gaps.filter(c=>!nonListed.includes(c));
+
+/* 覆盖状态面板 */
+document.getElementById('hpTotal').textContent = ALL.length;
+document.getElementById('b1').style.width = (withData.length/ALL.length*100)+'%';
+document.getElementById('b2').style.width = (pending.length/ALL.length*100)+'%';
+document.getElementById('b3').style.width = (nonListed.length/ALL.length*100)+'%';
+document.getElementById('hpRows').innerHTML = [
+  ['green','已披露(有官方数据)',withData.length],
+  ['yellow','待核(上市状态核查中)',pending.length],
+  ['gray','非上市(指标区整体留空)',nonListed.length],
+].map(r=>`<div class="hp-row"><span class="dot ${r[0]}"></span>${r[1]}<b class="num">${String(r[2]).padStart(2,'0')}</b></div>`).join('');
+
+/* 链条步骤:6 大阶段 → 地图页锚点 */
+const STEPS = [
+  ['01','半导体基础','材料 · EDA · 设备 · 制造 · 封测 · 存储','lane-1'],
+  ['02','算力芯片','GPU · ASIC · 互连芯片','lane-7'],
+  ['03','整机与互联','ODM · 网络 · 光模块 · PCB','lane-8'],
+  ['04','供电与散热','电源 · 液冷 · 温控','lane-11'],
+  ['05','CSP 与能源','云厂 · Neocloud · 电力','lane-12'],
+  ['06','大模型与 AI 应用','模型厂 · 软件','lane-14'],
+];
+document.getElementById('chain').innerHTML = STEPS.map(s=>
+ `<a class="step" href="map.html#${s[3]}"><span class="arr">→</span>
+   <span class="no">${s[0]}</span><span class="sn">${s[1]}</span><span class="sd">${s[2]}</span></a>`).join('');
+
+/* 大数字带 */
+const rev   = withData.reduce((s,c)=>s+usdM(c.q[5],c.cur),0);
+const capex = ALL.filter(c=>c.capex).reduce((s,c)=>s+usdM(c.capex,c.cur),0);
+const niL   = ALL.filter(c=>c.ni);
+const ni    = niL.reduce((s,c)=>s+usdM(c.ni,c.cur),0);
+document.getElementById('stRev').textContent   = fmtBig(rev);
+document.getElementById('stCapex').textContent = fmtBig(capex);
+document.getElementById('stNI').textContent    = fmtBig(ni);
+document.getElementById('stNILabel').textContent = `覆盖公司净利润合计(${niL.length} 家已披露)`;
+document.getElementById('stGW').textContent    = '18.6 GW';   /* 演示值:正式版按运营商披露逐项目合计 */
+
+/* 五卡概览 */
+const laneSigCount = LANES.filter(l=>l.companies.some(c=>c.q)).length;
+document.getElementById('cLanes').textContent   = LANES.length;
+document.getElementById('cPool').textContent    = ALL.length;
+document.getElementById('cListed').textContent  = withData.length;
+document.getElementById('cListedNote').textContent =
+  `非上市 ${nonListed.length} 家 · 待核 ${pending.length} 家,不计入覆盖率`;
+document.getElementById('cSignals').textContent = laneSigCount;
+
+/* 披露动态跑马灯(演示) */
+const TICKS = ['英伟达 FY27Q1 财报已披露','台积电 6 月营收已公布','SK 海力士 2026Q2 已披露',
+  '微软 FY25Q4 已披露','中际旭创 2026 半年度业绩预告','CoreWeave 2026Q2 已披露',
+  'Vertiv backlog 更新至 $8.5B','长鑫存储上市后首季披露','亚马逊 2026Q2 已披露',
+  '澜起科技 2026Q2 业绩预告','爱德万测试 FY26Q1 已披露','盛合晶微 2026Q2 已披露'];
+document.getElementById('ticker').innerHTML = TICKS.concat(TICKS)
+  .map(t=>`<span><i class="t-dot">●</i><b>${t}</b></span>`).join('');
+</script>
+<script src="fx.js"></script>
+</body>
+</html>
