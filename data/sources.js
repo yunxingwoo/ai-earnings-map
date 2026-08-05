@@ -655,6 +655,222 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "毛利率0.3731由wus-2025h1-sr上半年成本5,508,789,969减wus-2025q1-qr一季度成本2,715,105,615=Q2成本2,793,684,354元, 除以年报分季度表Q2营收4,456,244,556元"
+ },
+ {
+  "id": "tsmc-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://pr.tsmc.com/english/news/3326",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TSMC 官方新聞稿 2026-07-16: 2026Q2 合併營收新台幣1,270.38B(US$40.20B, +36%YoY), 毛利率67.7%, 稅後淨利706.56B(+77%YoY), EPS NT$27.25"
+ },
+ {
+  "id": "tsmc-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://pr.tsmc.com/english/news/3297",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TSMC 官方新聞稿 2026-04-16: 2026Q1 合併營收新台幣1,134.10B(US$35.90B, +35.1%YoY), 毛利率66.2%, 稅後淨利572.48B(+58.3%YoY), EPS NT$22.08"
+ },
+ {
+  "id": "tsmc-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://pr.tsmc.com/english/news/3281",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TSMC 官方新聞稿 2026-01-15: 2025Q4 合併營收新台幣1,046.09B(+20.5%YoY), 毛利率62.3%, 稅後淨利505.74B(+35.0%YoY), EPS NT$19.50"
+ },
+ {
+  "id": "tsmc-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://pr.tsmc.com/english/news/3264",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TSMC 官方新聞稿 2025-10-16: 2025Q3 合併營收新台幣989.92B(+30.3%YoY), 毛利率59.5%, 稅後淨利452.30B(+39.1%YoY), EPS NT$17.44"
+ },
+ {
+  "id": "tsmc-monthly-2026m1",
+  "type": "monthly_revenue",
+  "url": "https://investor.tsmc.com/english/monthly-revenue/2026",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TSMC 投資人關係 2026年月營收頁: 2026年1月合併營收401,255百萬台幣(+36.8%YoY)"
+ },
+ {
+  "id": "tsmc-monthly-2026m2",
+  "type": "monthly_revenue",
+  "url": "https://investor.tsmc.com/english/monthly-revenue/2026",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TSMC 投資人關係 2026年月營收頁: 2026年2月合併營收317,657百萬台幣(+22.2%YoY)"
+ },
+ {
+  "id": "tsmc-monthly-2026m3",
+  "type": "monthly_revenue",
+  "url": "https://investor.tsmc.com/english/monthly-revenue/2026",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TSMC 投資人關係 2026年月營收頁: 2026年3月合併營收415,191百萬台幣(+45.2%YoY)"
+ },
+ {
+  "id": "tsmc-monthly-2026m4",
+  "type": "monthly_revenue",
+  "url": "https://investor.tsmc.com/english/monthly-revenue/2026",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TSMC 投資人關係 2026年月營收頁: 2026年4月合併營收410,726百萬台幣(+17.5%YoY)"
+ },
+ {
+  "id": "tsmc-monthly-2026m5",
+  "type": "monthly_revenue",
+  "url": "https://investor.tsmc.com/english/monthly-revenue/2026",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TSMC 投資人關係 2026年月營收頁: 2026年5月合併營收416,975百萬台幣(+30.1%YoY)"
+ },
+ {
+  "id": "tsmc-monthly-2026m6",
+  "type": "monthly_revenue",
+  "url": "https://investor.tsmc.com/english/monthly-revenue/2026",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TSMC 投資人關係 2026年月營收頁: 2026年6月合併營收442,680百萬台幣(+67.9%YoY, 歷史新高; 上半年累計2,404.48B)"
+ },
+ {
+  "id": "samsung-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://news.samsung.com/global/samsung-electronics-announces-second-quarter-2026-results",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Samsung 官方新聞稿 2026-07-30: 2026Q2 合併營收171.5兆韓元(171.4995T, +130%YoY), 營業利潤89.49T(+1813.8%YoY), 淨利71.62T(+1299.9%YoY), 營業利潤率52.2%; 財報未披露合併毛利率"
+ },
+ {
+  "id": "samsung-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://news.samsung.com/global/samsung-electronics-announces-first-quarter-2026-results",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Samsung 官方新聞稿 2026-04-30: 2026Q1 合併營收133.87兆韓元(+69.2%YoY), 營業利潤57.2T(+756%YoY), 淨利47.23T(+474.3%YoY), EPS 7,123韓元"
+ },
+ {
+  "id": "samsung-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Samsung 官方新聞稿 2026-01-29: 2025Q4 合併營收93.8兆韓元(+23.8%YoY), 營業利潤20.07T(+209%YoY), 淨利19.64T(+153.3%YoY; 其中歸母19.29T)"
+ },
+ {
+  "id": "samsung-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2025-results",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Samsung 官方新聞稿 2025-10-30: 2025Q3 合併營收86.06兆韓元(+8.8%YoY), 營業利潤12.17T(+32.5%YoY), 淨利12.22T(+21%YoY)"
+ },
+ {
+  "id": "hynix-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SK hynix 官方新聞稿 2026-07-29: 2026Q2 營收79.32兆韓元(+257%YoY), 營業利潤60.54T(+557%YoY, 營業利潤率76%), 淨利93.92T(含Kioxia持股相關一次性投資收益約63.3T, 淨利率118%)"
+ },
+ {
+  "id": "hynix-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://news.skhynix.com/q1-2026-business-results/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SK hynix 官方新聞稿 2026-04-23: 2026Q1 營收52.5763兆韓元(+198.1%YoY), 營業利潤37.6103T(+405.5%YoY, 營業利潤率72%), 淨利40.3459T(+397.6%YoY)"
+ },
+ {
+  "id": "hynix-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://news.skhynix.com/en/sk-hynix-announces-fy25-financial-results/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SK hynix 官方新聞稿 2026-01-28 (FY25+4Q): 2025Q4 營收32.8267兆韓元(+66%YoY), 營業利潤19.1696T(+137%YoY, 營業利潤率58%), 淨利15.2460T(+90%YoY)"
+ },
+ {
+  "id": "hynix-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://news.skhynix.com/sk-hynix-announces-3q25-financial-results/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SK hynix 官方新聞稿 2025-10-29: 2025Q3 營收24.4489兆韓元(+39%YoY), 營業利潤11.3834T(+62%YoY, 營業利潤率47%), 淨利12.5975T(+119%YoY)"
+ },
+ {
+  "id": "mu-fy26q3-er",
+  "type": "8-K",
+  "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000013/a2026q3ex991-pressrelease.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 8-K EX-99.1 (2026-06-24): FQ3 FY26(截至2026-05-28, 屬自然季2026Q2) 營收$41,456M(+74%QoQ,+346%YoY), GAAP毛利率84.6%, GAAP淨利$28,243M, EPS $24.67"
+ },
+ {
+  "id": "mu-fy26q2-er",
+  "type": "8-K",
+  "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000004/a2026q2ex991-pressrelease.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 8-K EX-99.1 (2026-03-18): FQ2 FY26(截至2026-02-26, 屬自然季2026Q1) 營收$23,860M(+75%QoQ), GAAP毛利率74.4%, GAAP淨利$13,790M, EPS $12.07"
+ },
+ {
+  "id": "mu-fy26q1-er",
+  "type": "8-K",
+  "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000044/a2026q1ex991-pressrelease.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 8-K EX-99.1 (2025-12-17): FQ1 FY26(截至2025-11-27, 屬自然季2025Q4) 營收$13,640M(+57%YoY), GAAP毛利率56.0%, GAAP淨利$5,240M, EPS $4.60"
+ },
+ {
+  "id": "mu-fy25q4-er",
+  "type": "8-K",
+  "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000024/a2025q4ex991-pressrelease.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 8-K EX-99.1 (2025-09-23): FQ4 FY25(截至2025-08-28, 屬自然季2025Q3) 營收$11,320M(+22%QoQ,+46%YoY), GAAP毛利率44.7%, GAAP淨利$3,200M, EPS $2.83"
+ },
+ {
+  "id": "smic-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://www.smics.com/site/news_read/3719",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "中芯国际 官方新聞稿 2026-05-14: 2026Q1 銷售收入$2,505.5M(+11.5%YoY), 毛利率20.1%, 本公司擁有人應占利潤$197.4M(+5%YoY); 2026Q2指引收入+14%~16%, 毛利率20%~22%(8月發布,採集時未出)"
+ },
+ {
+  "id": "smic-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://www.smics.com/en/site/news_read/7949",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SMIC official release 2026-02-10: 2025Q4 revenue $2,488.7M(+4.5%QoQ,+12.8%YoY), gross margin 19.2%, profit attributable to owners $172.9M(+60.7%YoY)"
+ },
+ {
+  "id": "smic-2025q3-er",
+  "type": "financial_statement",
+  "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1113/2025111300757.pdf",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "HKEX 公告PDF (2025-11-13): 中芯國際2025年第三季度, 銷售收入$2,381.8M(+7.8%QoQ,+9.7%YoY), 毛利率22.0%, 本公司擁有人應占利潤$191.8M(+28.9%YoY)"
+ },
+ {
+  "id": "smic-2025q2-er",
+  "type": "earnings_release",
+  "url": "https://www.smics.com/en/site/news_read/7928",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SMIC official release 2025-08-07: 2025Q2 revenue $2,209.1M(+16.2%YoY), gross margin 20.4%, profit attributable to owners $132.5M(-19.5%YoY)"
+ },
+ {
+  "id": "cxmt-2026q1-prospectus",
+  "type": "company_announcement",
+  "url": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688825&orgId=9920000008&announcementId=1225416304&announcementTime=2026-07-09",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮資訊網 長鑫科技(688825, 2026-07-27科創板上市) 招股意向書及附錄: 2026年一季度營業收入508億元(+719.13%YoY), 歸母淨利247.62億元(+1688.30%YoY); 尚未發布常規季報, 此為IPO招股書披露之最新季度數據"
  }
 ];
 

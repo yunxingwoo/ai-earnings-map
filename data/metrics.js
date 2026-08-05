@@ -1180,6 +1180,456 @@ const METRICS = [
     "src": "wus-2025fy-ar"
    }
   }
+ },
+ {
+  "company": "tsmc",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1270380,
+    "unit": "TWD_M",
+    "src": "tsmc-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.677,
+    "src": "tsmc-2026q2-er"
+   },
+   "net_income": {
+    "value": 706560,
+    "unit": "TWD_M",
+    "src": "tsmc-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1134100,
+    "unit": "TWD_M",
+    "src": "tsmc-2026q1-er"
+   },
+   "gross_margin": {
+    "value": 0.662,
+    "src": "tsmc-2026q1-er"
+   },
+   "net_income": {
+    "value": 572480,
+    "unit": "TWD_M",
+    "src": "tsmc-2026q1-er"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 1046090,
+    "unit": "TWD_M",
+    "src": "tsmc-2025q4-er"
+   },
+   "gross_margin": {
+    "value": 0.623,
+    "src": "tsmc-2025q4-er"
+   },
+   "net_income": {
+    "value": 505740,
+    "unit": "TWD_M",
+    "src": "tsmc-2025q4-er"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 989920,
+    "unit": "TWD_M",
+    "src": "tsmc-2025q3-er"
+   },
+   "gross_margin": {
+    "value": 0.595,
+    "src": "tsmc-2025q3-er"
+   },
+   "net_income": {
+    "value": 452300,
+    "unit": "TWD_M",
+    "src": "tsmc-2025q3-er"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2026M6",
+  "metrics": {
+   "monthly_revenue": {
+    "value": 442680,
+    "unit": "TWD_M",
+    "src": "tsmc-monthly-2026m6"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2026M5",
+  "metrics": {
+   "monthly_revenue": {
+    "value": 416975,
+    "unit": "TWD_M",
+    "src": "tsmc-monthly-2026m5"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2026M4",
+  "metrics": {
+   "monthly_revenue": {
+    "value": 410726,
+    "unit": "TWD_M",
+    "src": "tsmc-monthly-2026m4"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2026M3",
+  "metrics": {
+   "monthly_revenue": {
+    "value": 415191,
+    "unit": "TWD_M",
+    "src": "tsmc-monthly-2026m3"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2026M2",
+  "metrics": {
+   "monthly_revenue": {
+    "value": 317657,
+    "unit": "TWD_M",
+    "src": "tsmc-monthly-2026m2"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2026M1",
+  "metrics": {
+   "monthly_revenue": {
+    "value": 401255,
+    "unit": "TWD_M",
+    "src": "tsmc-monthly-2026m1"
+   }
+  }
+ },
+ {
+  "company": "samsung",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 171499.5,
+    "unit": "KRW_B",
+    "src": "samsung-2026q2-er"
+   },
+   "net_income": {
+    "value": 71620,
+    "unit": "KRW_B",
+    "src": "samsung-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "samsung",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 133870,
+    "unit": "KRW_B",
+    "src": "samsung-2026q1-er"
+   },
+   "net_income": {
+    "value": 47230,
+    "unit": "KRW_B",
+    "src": "samsung-2026q1-er"
+   }
+  }
+ },
+ {
+  "company": "samsung",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 93800,
+    "unit": "KRW_B",
+    "src": "samsung-2025q4-er"
+   },
+   "net_income": {
+    "value": 19640,
+    "unit": "KRW_B",
+    "src": "samsung-2025q4-er"
+   }
+  }
+ },
+ {
+  "company": "samsung",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 86060,
+    "unit": "KRW_B",
+    "src": "samsung-2025q3-er"
+   },
+   "net_income": {
+    "value": 12220,
+    "unit": "KRW_B",
+    "src": "samsung-2025q3-er"
+   }
+  }
+ },
+ {
+  "company": "hynix",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 79320,
+    "unit": "KRW_B",
+    "src": "hynix-2026q2-er"
+   },
+   "net_income": {
+    "value": 93920,
+    "unit": "KRW_B",
+    "src": "hynix-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "hynix",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 52576.3,
+    "unit": "KRW_B",
+    "src": "hynix-2026q1-er"
+   },
+   "net_income": {
+    "value": 40345.9,
+    "unit": "KRW_B",
+    "src": "hynix-2026q1-er"
+   }
+  }
+ },
+ {
+  "company": "hynix",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 32826.7,
+    "unit": "KRW_B",
+    "src": "hynix-2025q4-er"
+   },
+   "net_income": {
+    "value": 15246,
+    "unit": "KRW_B",
+    "src": "hynix-2025q4-er"
+   }
+  }
+ },
+ {
+  "company": "hynix",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 24448.9,
+    "unit": "KRW_B",
+    "src": "hynix-2025q3-er"
+   },
+   "net_income": {
+    "value": 12597.5,
+    "unit": "KRW_B",
+    "src": "hynix-2025q3-er"
+   }
+  }
+ },
+ {
+  "company": "mu",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 41456,
+    "unit": "USD_M",
+    "src": "mu-fy26q3-er"
+   },
+   "gross_margin": {
+    "value": 0.846,
+    "src": "mu-fy26q3-er"
+   },
+   "net_income": {
+    "value": 28243,
+    "unit": "USD_M",
+    "src": "mu-fy26q3-er"
+   }
+  }
+ },
+ {
+  "company": "mu",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 23860,
+    "unit": "USD_M",
+    "src": "mu-fy26q2-er"
+   },
+   "gross_margin": {
+    "value": 0.744,
+    "src": "mu-fy26q2-er"
+   },
+   "net_income": {
+    "value": 13790,
+    "unit": "USD_M",
+    "src": "mu-fy26q2-er"
+   }
+  }
+ },
+ {
+  "company": "mu",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 13640,
+    "unit": "USD_M",
+    "src": "mu-fy26q1-er"
+   },
+   "gross_margin": {
+    "value": 0.56,
+    "src": "mu-fy26q1-er"
+   },
+   "net_income": {
+    "value": 5240,
+    "unit": "USD_M",
+    "src": "mu-fy26q1-er"
+   }
+  }
+ },
+ {
+  "company": "mu",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 11320,
+    "unit": "USD_M",
+    "src": "mu-fy25q4-er"
+   },
+   "gross_margin": {
+    "value": 0.447,
+    "src": "mu-fy25q4-er"
+   },
+   "net_income": {
+    "value": 3200,
+    "unit": "USD_M",
+    "src": "mu-fy25q4-er"
+   }
+  }
+ },
+ {
+  "company": "smic",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2505.5,
+    "unit": "USD_M",
+    "src": "smic-2026q1-er"
+   },
+   "gross_margin": {
+    "value": 0.201,
+    "src": "smic-2026q1-er"
+   },
+   "net_income": {
+    "value": 197.4,
+    "unit": "USD_M",
+    "src": "smic-2026q1-er"
+   }
+  }
+ },
+ {
+  "company": "smic",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 2488.7,
+    "unit": "USD_M",
+    "src": "smic-2025q4-er"
+   },
+   "gross_margin": {
+    "value": 0.192,
+    "src": "smic-2025q4-er"
+   },
+   "net_income": {
+    "value": 172.9,
+    "unit": "USD_M",
+    "src": "smic-2025q4-er"
+   }
+  }
+ },
+ {
+  "company": "smic",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 2381.8,
+    "unit": "USD_M",
+    "src": "smic-2025q3-er"
+   },
+   "gross_margin": {
+    "value": 0.22,
+    "src": "smic-2025q3-er"
+   },
+   "net_income": {
+    "value": 191.8,
+    "unit": "USD_M",
+    "src": "smic-2025q3-er"
+   }
+  }
+ },
+ {
+  "company": "smic",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2209.1,
+    "unit": "USD_M",
+    "src": "smic-2025q2-er"
+   },
+   "gross_margin": {
+    "value": 0.204,
+    "src": "smic-2025q2-er"
+   },
+   "net_income": {
+    "value": 132.5,
+    "unit": "USD_M",
+    "src": "smic-2025q2-er"
+   }
+  }
+ },
+ {
+  "company": "cxmt",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 508,
+    "unit": "CNY_YI",
+    "src": "cxmt-2026q1-prospectus"
+   },
+   "net_income": {
+    "value": 247.62,
+    "unit": "CNY_YI",
+    "src": "cxmt-2026q1-prospectus"
+   }
+  }
  }
 ];
 
