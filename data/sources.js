@@ -207,6 +207,86 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "巨潮《2025年半年度报告》: 上半年营收360,759,653/成本336,934,278千元; Q2成本=上半年-Q1 149,611,900=187,322,378千元 → Q2毛利率0.0650"
+ },
+ {
+  "id": "coreweave-q1-26-8k",
+  "type": "sec_filing",
+  "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000220/coreweave1q26earningspress.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "CoreWeave Q1 2026 财报新闻稿(2026-05-07, 8-K 附件99.1): CEO 引述 'We surpassed 1 GW of active power'; 要点栏 'Expanded total contracted power by more than 400 MW to over 3.5 GW'(均为 electrical power,非 IT 负载)"
+ },
+ {
+  "id": "apld-polaris-forge-1",
+  "type": "company_announcement",
+  "url": "https://ir.applieddigital.com/news-events/press-releases/detail/157/applied-digital-delivers-second-building-at-polaris-forge-1",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "2026-07-01 新闻稿: 'At full build out, Polaris Forge 1 is contracted to deliver 400 MW of critical IT load'; 'total live capacity at the campus to 175 MW'(100 MW 一号楼 + 75 MW 二号楼一期,已投运;其余在建)"
+ },
+ {
+  "id": "crusoe-abilene-1p2gw",
+  "type": "company_announcement",
+  "url": "https://www.crusoe.ai/resources/newsroom/crusoe-expands-ai-data-center-campus-in-abilene-to-1-2-gigawatts",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "2025-03-18 新闻稿: 二期开工后园区达 8 栋楼、'a total power capacity of 1.2 gigawatts (GW)',二期预计 2026 年中完工;另 2025-09-30 新闻稿('crusoe-announces-flagship-abilene-data-center-is-live')确认首批两栋楼已通电投运(OCI),即部分投运、整体在建"
+ },
+ {
+  "id": "iren-sweetwater-1",
+  "type": "company_announcement",
+  "url": "https://www.globenewswire.com/news-release/2026/05/01/3286213/0/en/iren-announces-successful-energization-of-sweetwater-1.html",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "2026-05-01 官方新闻稿: 'successful energization of its 1.4GW Sweetwater 1 data center site in Texas'(接入 ERCOT 电网;电力随分期建设/调试逐步交付,属站点总电力);同稿提及 'the broader 2GW Sweetwater campus'"
+ },
+ {
+  "id": "iren-childress-site",
+  "type": "company_announcement",
+  "url": "https://iren.com/locations/childress",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "IREN 官网 Locations 列表(经 iren.com 站点导航核实): 'Childress 750 MW, 576 Acres, Texas, USA';Sweetwater 单独标注 'Under construction'、Oklahoma 标注 'In Development',Childress 无在建标注(站点在运,750 MW 为站点电力口径)"
+ },
+ {
+  "id": "meta-hyperion-richland",
+  "type": "company_announcement",
+  "url": "https://datacenters.atmeta.com/asset/richland-parish-data-center-info-sheet/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Meta 官方 Richland Parish 资料页(PDF,页面发布/更新时间 2026-07-14): 'delivering 5 gigawatts of compute capacity to house Hyperion, our largest multi-gigawatt AI cluster';$50B+ 投资,在建('compute capacity' 未区分 IT/总电力,mw_kind 记 unknown)"
+ },
+ {
+  "id": "meta-el-paso",
+  "type": "company_announcement",
+  "url": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "2026-07 about.fb.com 官方公告: 'The state-of-the-art data center campus, currently under construction in El Paso, Texas, will have 1 gigawatt of compute capacity',预计 2028 年起陆续上线"
+ },
+ {
+  "id": "vantage-frontier",
+  "type": "company_announcement",
+  "url": "https://vantage-dc.com/news/vantage-data-centers-unveils-plans-for-frontier-a-25b-mega-campus-in-texas-to-meet-unprecedented-ai-demand/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "2025-08-19 官方新闻稿: '$25 billion to develop a mega-scale 1.4GW data center campus in Shackelford County, Texas';'1.4GW of GPU compute capacity';10 栋楼;已开工,首栋楼 2026 下半年交付"
+ },
+ {
+  "id": "vantage-lighthouse-wi",
+  "type": "company_announcement",
+  "url": "https://vantage-dc.com/news/openai-oracle-and-vantage-data-centers-announce-stargate-data-center-site-in-wisconsin/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "2025-10-22 OpenAI/Oracle/Vantage 联合公告: Port Washington 园区(四栋楼)'providing close to a gigawatt of AI capacity',计划 2028 年完工;并称 Oracle 合作的 Stargate 园区合计 'over 4.5 gigawatts of IT capacity'(发布时建设即将开始,故记 announced;mw 按 'close to 1 GW' 取 1000)"
+ },
+ {
+  "id": "crusoe-abilene-msft-900",
+  "type": "company_announcement",
+  "url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "2026-03-27 官方新闻稿: 'the 900 MW site includes two new buildings and an onsite power plant',支持 Microsoft;场地清理已进行,首栋楼预计 2027 年中通电;建成后 Abilene 全站合计 2.1 GW"
  }
 ];
 
