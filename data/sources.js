@@ -2207,6 +2207,358 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "经 qveris alphavantage.income_statement(INCOME_STATEMENT) 提取自 SEC 披露季度报告;symbol TOWER 查询返回空,改用 TSEM(高塔半导体 Nasdaq 代码)取数;财季与自然季对齐(fiscal_offset=0);单位USD→USD_M(÷1e6);总营收/净利润:2026Q1=$413.6M/$65.0M;2025Q4=$440.2M/$80.1M;2025Q3=$395.7M/$53.6M;2025Q2=$372.1M/$46.6M"
+ },
+ {
+  "id": "eton-2026Q2-10-q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=EATON%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT quarterlyReports 2026Q2 3mo ended 2026-06-30；revenue $8,531M / net income $821M，USD_M"
+ },
+ {
+  "id": "eton-2026Q1-10-q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=EATON%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT quarterlyReports 2026Q1 3mo ended 2026-03-31；revenue $7,451M / net income $866M，USD_M"
+ },
+ {
+  "id": "eton-2025Q4-10-q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=EATON%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT quarterlyReports 2025Q4 3mo ended 2025-12-31；revenue $7,055M / net income $1,133M，USD_M"
+ },
+ {
+  "id": "eton-2025Q3-10-q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=EATON%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT quarterlyReports 2025Q3 3mo ended 2025-09-30；revenue $6,988M / net income $1,010M，USD_M"
+ },
+ {
+  "id": "unimicron-2026Q1-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP income statement (3037.TW, period=quarter) 2026Q1 3mo ended 2026-03-31；营业收入 NT$37,446.46M / 净利润 NT$5,042.98M，TWD_M"
+ },
+ {
+  "id": "unimicron-2025Q4-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP income statement (3037.TW, period=quarter) 2025Q4 3mo ended 2025-12-31；营业收入 NT$34,690.89M / 净利润 NT$3,534.50M，TWD_M"
+ },
+ {
+  "id": "unimicron-2025Q3-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP income statement (3037.TW, period=quarter) 2025Q3 3mo ended 2025-09-30；营业收入 NT$33,994.42M / 净利润 NT$2,194.49M，TWD_M"
+ },
+ {
+  "id": "unimicron-2025Q2-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP income statement (3037.TW, period=quarter) 2025Q2 3mo ended 2025-06-30；营业收入 NT$32,466.05M / 净利润 NT$29.61M，TWD_M"
+ },
+ {
+  "id": "delta-2026Q2-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP income statement (2308.TW, period=quarter) 2026Q2 3mo ended 2026-06-30；营业收入 NT$183,256.08M / 净利润 NT$25,135.64M，TWD_M"
+ },
+ {
+  "id": "delta-2026Q1-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP income statement (2308.TW, period=quarter) 2026Q1 3mo ended 2026-03-31；营业收入 NT$159,352.65M / 净利润 NT$23,834.55M，TWD_M"
+ },
+ {
+  "id": "delta-2025Q4-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP income statement (2308.TW, period=quarter) 2025Q4 3mo ended 2025-12-31；营业收入 NT$161,613.10M / 净利润 NT$19,637.74M，TWD_M"
+ },
+ {
+  "id": "delta-2025Q3-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP income statement (2308.TW, period=quarter) 2025Q3 3mo ended 2025-09-30；营业收入 NT$150,317.58M / 净利润 NT$18,605.72M，TWD_M"
+ },
+ {
+  "id": "ibiden-2026Q1-qr",
+  "type": "quarterly_report",
+  "url": "https://www.ibiden.com/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP income statement (4062.T, period=quarter) FY财季映射自然季 FY2026 Q4 3mo ended 2026-03-31；营业收入 ¥117,580M / 净利润 ¥32,712M，JPY_M"
+ },
+ {
+  "id": "ibiden-2025Q4-qr",
+  "type": "quarterly_report",
+  "url": "https://www.ibiden.com/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP income statement (4062.T, period=quarter) FY财季映射自然季 FY2026 Q3 3mo ended 2025-12-31；营业收入 ¥103,136M / 净利润 ¥8,932M，JPY_M"
+ },
+ {
+  "id": "ibiden-2025Q3-qr",
+  "type": "quarterly_report",
+  "url": "https://www.ibiden.com/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP income statement (4062.T, period=quarter) FY财季映射自然季 FY2026 Q2 3mo ended 2025-09-30；营业收入 ¥98,021M / 净利润 ¥9,340M，JPY_M"
+ },
+ {
+  "id": "ibiden-2025Q2-qr",
+  "type": "quarterly_report",
+  "url": "https://www.ibiden.com/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP income statement (4062.T, period=quarter) FY财季映射自然季 FY2026 Q1 3mo ended 2025-06-30；营业收入 ¥97,464M / 净利润 ¥12,728M，JPY_M"
+ },
+ {
+  "id": "dsbj-2026Q1-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002384",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2026一季报(period 0331)；直接取一季报：营业总收入 ¥131.38亿 / 净利润 ¥11.24亿，CNY_YI"
+ },
+ {
+  "id": "dsbj-2025Q4-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002384",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2025年报(1231)-2025三季报(0930)；累计口径相减推导：营业总收入 ¥130.54亿 / 净利润 ¥1.69亿，CNY_YI"
+ },
+ {
+  "id": "dsbj-2025Q3-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002384",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2025三季报(0930)-2025半年报(0630)；累计口径相减推导：营业总收入 ¥101.15亿 / 净利润 ¥4.65亿，CNY_YI"
+ },
+ {
+  "id": "dsbj-2025Q2-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002384",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2025半年报(0630)-2025一季报(0331)；累计口径相减推导：营业总收入 ¥83.53亿 / 净利润 ¥3.02亿，CNY_YI"
+ },
+ {
+  "id": "scc-2026Q1-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002916",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2026一季报(period 0331)；直接取一季报：营业总收入 ¥65.96亿 / 净利润 ¥8.51亿，CNY_YI"
+ },
+ {
+  "id": "scc-2025Q4-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002916",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2025年报(1231)-2025三季报(0930)；累计口径相减推导：营业总收入 ¥68.93亿 / 净利润 ¥9.50亿，CNY_YI"
+ },
+ {
+  "id": "scc-2025Q3-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002916",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2025三季报(0930)-2025半年报(0630)；累计口径相减推导：营业总收入 ¥63.01亿 / 净利润 ¥9.67亿，CNY_YI"
+ },
+ {
+  "id": "scc-2025Q2-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002916",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2025半年报(0630)-2025一季报(0331)；累计口径相减推导：营业总收入 ¥56.71亿 / 净利润 ¥8.69亿，CNY_YI"
+ },
+ {
+  "id": "jw-2026Q1-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603228",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2026一季报(period 0331)；直接取一季报：营业总收入 ¥38.92亿 / 净利润 ¥2.43亿，CNY_YI"
+ },
+ {
+  "id": "jw-2025Q4-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603228",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2025年报(1231)-2025三季报(0930)；累计口径相减推导：营业总收入 ¥42.25亿 / 净利润 ¥2.83亿，CNY_YI"
+ },
+ {
+  "id": "jw-2025Q3-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603228",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2025三季报(0930)-2025半年报(0630)；累计口径相减推导：营业总收入 ¥39.87亿 / 净利润 ¥3.07亿，CNY_YI"
+ },
+ {
+  "id": "jw-2025Q2-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603228",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2025半年报(0630)-2025一季报(0331)；累计口径相减推导：营业总收入 ¥37.52亿 / 净利润 ¥3.23亿，CNY_YI"
+ },
+ {
+  "id": "qcom-2026q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=QUALCOMM&type=10-Q",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT API(symbol=QCOM) quarterlyReport fiscalDateEnding=2026-06-30(自然季2026Q2): totalRevenue=9,947,000,000 USD, netIncome=2,002,000,000 USD → USD_M(÷1e6)"
+ },
+ {
+  "id": "qcom-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=QUALCOMM&type=10-Q",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT API(symbol=QCOM) quarterlyReport fiscalDateEnding=2026-03-31(自然季2026Q1): totalRevenue=10,599,000,000 USD, netIncome=7,370,000,000 USD(含一次性税收利益,incomeTaxExpense=-5,138,000,000) → USD_M(÷1e6)"
+ },
+ {
+  "id": "qcom-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=QUALCOMM&type=10-Q",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT API(symbol=QCOM) quarterlyReport fiscalDateEnding=2025-12-31(自然季2025Q4): totalRevenue=12,252,000,000 USD, netIncome=3,004,000,000 USD → USD_M(÷1e6)"
+ },
+ {
+  "id": "qcom-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=QUALCOMM&type=10-Q",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT API(symbol=QCOM) quarterlyReport fiscalDateEnding=2025-09-30(自然季2025Q3): totalRevenue=11,271,000,000 USD, netIncome=-3,117,000,000 USD → USD_M(÷1e6)"
+ },
+ {
+  "id": "intc-2026q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=INTEL&type=10-Q",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT API(symbol=INTC) quarterlyReport fiscalDateEnding=2026-06-30(自然季2026Q2): totalRevenue=16,128,000,000 USD, netIncome=-11,033,000,000 USD → USD_M(÷1e6)"
+ },
+ {
+  "id": "intc-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=INTEL&type=10-Q",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT API(symbol=INTC) quarterlyReport fiscalDateEnding=2026-03-31(自然季2026Q1): totalRevenue=13,577,000,000 USD, netIncome=-3,728,000,000 USD → USD_M(÷1e6)"
+ },
+ {
+  "id": "intc-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=INTEL&type=10-Q",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT API(symbol=INTC) quarterlyReport fiscalDateEnding=2025-12-31(自然季2025Q4): totalRevenue=13,674,000,000 USD, netIncome=-591,000,000 USD → USD_M(÷1e6)"
+ },
+ {
+  "id": "intc-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=INTEL&type=10-Q",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT API(symbol=INTC) quarterlyReport fiscalDateEnding=2025-09-30(自然季2025Q3): totalRevenue=13,653,000,000 USD, netIncome=4,063,000,000 USD → USD_M(÷1e6)"
+ },
+ {
+  "id": "foxconn-2026q1-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "FMP Income Statement API(symbol=2317.TW, period=quarter) date=2026-03-31(自然季2026Q1), reportedCurrency=TWD: revenue=2,119,533,391,000 TWD, netIncome=56,956,277,000 TWD → TWD_M(÷1e6)"
+ },
+ {
+  "id": "foxconn-2025q4-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "FMP Income Statement API(symbol=2317.TW, period=quarter) date=2025-12-31(自然季2025Q4), reportedCurrency=TWD: revenue=2,606,372,027,000 TWD, netIncome=45,212,455,000 TWD(bottom-line,低于continuing ops 53,635,450,000,含一次性减项) → TWD_M(÷1e6)"
+ },
+ {
+  "id": "foxconn-2025q3-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "FMP Income Statement API(symbol=2317.TW, period=quarter) date=2025-09-30(自然季2025Q3), reportedCurrency=TWD: revenue=2,058,949,127,000 TWD, netIncome=57,672,785,000 TWD → TWD_M(÷1e6)"
+ },
+ {
+  "id": "foxconn-2025q2-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "FMP Income Statement API(symbol=2317.TW, period=quarter) date=2025-06-30(自然季2025Q2), reportedCurrency=TWD: revenue=1,793,468,046,000 TWD, netIncome=44,360,558,000 TWD → TWD_M(÷1e6)"
+ },
+ {
+  "id": "huaqin-2026q1-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603296",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(603296.SH, 2026年0331期, type=1 合并): 营业收入=40,745,694,661.84 CNY, 归母净利=1,060,584,628.61 CNY(2026Q1单季) → CNY_YI(÷1e8)"
+ },
+ {
+  "id": "huaqin-2025q4-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603296",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(603296.SH, type=1 合并) 单季推导: 2025Q4营收=2025-12-31全年累计171,436,926,673.40 − 2025-09-30前三季累计128,881,887,357.29 = 42,555,039,316.11 CNY; 归母净利=4,054,292,460.55 − 3,098,562,794.67 = 955,729,665.88 CNY → CNY_YI(÷1e8)"
+ },
+ {
+  "id": "huaqin-2025q3-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603296",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(603296.SH, type=1 合并) 单季推导: 2025Q3营收=2025-09-30前三季累计128,881,887,357.29 − 2025-06-30上半年累计83,939,258,404.31 = 44,942,628,952.98 CNY; 归母净利=3,098,562,794.67 − 1,888,969,589.70 = 1,209,593,204.97 CNY → CNY_YI(÷1e8)"
+ },
+ {
+  "id": "huaqin-2025q2-qr",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603296",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement(603296.SH, type=1 合并) 单季推导: 2025Q2营收=2025-06-30上半年累计83,939,258,404.31 − 2025-03-31一季度累计34,997,696,296.08 = 48,941,562,108.23 CNY; 归母净利=1,888,969,589.70 − 841,991,186.77 = 1,046,978,402.93 CNY → CNY_YI(÷1e8)"
  }
 ];
 

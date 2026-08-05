@@ -55,10 +55,10 @@ const COMPANIES = [
  Co('smic','中芯国际','0981.HK','港股',4,'leader',true,'USD_M','md',0,{ir_url:'https://www.smics.com/en/site/company_financialSummary'}),
  Co('huahong','华虹半导体','1347.HK','港股',4,'core',true,'USD_M','sm',0),
  /* 05 封装测试 */
- Co('ase','日月光','ASX','美股',5,'leader',true,'USD_M','md',0),
+ Co('ase','日月光','ASX','美股',5,'leader',true,'TWD_M','md',0),
  Co('jcet','长电科技','600584.SH','A股',5,'leader',true,'CNY_YI','md',0),
  Co('tfme','通富微电','002156.SZ','A股',5,'core',true,'CNY_YI','md',0,{note:'AMD 深度绑定'}),
- Co('sjsmi','盛合晶微','科创板','A股',5,'core',true,'CNY_YI','sm',0,{note:'2.5D/3D 先进封装'}),
+ Co('sjsmi','盛合晶微','688820.SH','A股',5,'core',true,'CNY_YI','sm',0,{note:'2.5D/3D 先进封装'}),
  /* 06 存储 */
  Co('hynix','SK 海力士','000660.KS / SKHY','韩股/OTC',6,'leader',true,'KRW_B','lg',0,{ir_url:'https://www.skhynix.com/ir/UI-FR-IR01'}),
  Co('mu','美光','MU','美股',6,'leader',true,'USD_M','lg',1,{ir_url:'https://investors.micron.com/'}),
