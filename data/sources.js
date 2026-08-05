@@ -431,6 +431,230 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "巨潮《北方华创2025年年度报告》分季度主要财务指标: Q2营收7,935,516,975.91/归母净利1,627,271,237.20, Q3营收11,159,833,472.07/归母净利1,922,364,079.12, Q4营收12,051,732,762.97/归母净利391,650,402.16元; 全年营收393.53亿元"
+ },
+ {
+  "id": "vrt-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026050323/q22026exhibit991vrt07292026.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-07-29), Q2 2026 three months ended 2026-06-30: Net sales $3,274.3M, gross profit $1,234.9M (毛利率0.3771), net income $497.8M; 当季新闻稿未再披露 orders/backlog 数字"
+ },
+ {
+  "id": "vrt-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026026379/q12026exhibit991vrt04222026.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-04-22), Q1 2026 three months ended 2026-03-31: Net sales $2,649.5M, gross profit $999.7M (毛利率0.3773), net income $390.1M; 当季新闻稿未披露 backlog"
+ },
+ {
+  "id": "vrt-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1674101/000167410126000006/exhibit991vrt02112026.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-02-11), Q4 2025 three months ended 2025-12-31: Net sales $2,880.0M, gross profit $1,121.4M (毛利率0.3894), net income $445.6M; backlog $15.0B (up 109% YoY)"
+ },
+ {
+  "id": "vrt-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1674101/000167410125000020/q32025exhibit991vrt10222025.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2025-10-22), Q3 2025 three months ended 2025-09-30: Net sales $2,675.8M, gross profit $1,010.7M (毛利率0.3777), net income $398.5M; backlog $9.5B (book-to-bill ~1.4x)"
+ },
+ {
+  "id": "ev-2026q1-qr",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-21/1225131821.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《英维克2026年第一季度报告》(2026-04-21): 营业收入1,175,329,313.61元, 归母净利8,657,602.27元, 营业成本889,801,134.41元 → 毛利率0.2429"
+ },
+ {
+  "id": "ev-2025fy-ar",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-21/1225131813.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《英维克2025年年度报告》(2026-04-21) 分季度主要财务指标: Q2营收1,640,553,679.64/净利167,629,951.15, Q3营收1,452,891,317.45/净利183,429,234.55, Q4营收2,041,728,313.20/净利122,845,111.89; 合并利润表全年营业成本4,377,125,780.98元"
+ },
+ {
+  "id": "ev-2025q3-qr",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-10-14/1224708054.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《英维克2025年第三季度报告》(2025-10-14): 7-9月营业收入1,452,891,317.45元, 年初至报告期末(前三季)营业成本2,926,123,532.82元"
+ },
+ {
+  "id": "ev-2025h1-sr",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-08-19/1224505163.pdf",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《英维克2025年半年度报告》(2025-08-19): 上半年营业收入2,573,139,460.90元, 营业成本1,900,373,241.80元"
+ },
+ {
+  "id": "ev-2025q1-qr",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-04-22/1223190833.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《英维克2025年第一季度报告》(2025-04-22): 一季度营业收入932,585,781.26元, 营业成本685,885,751.25元"
+ },
+ {
+  "id": "ev-2025q4-gm",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-21/1225131813.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "毛利率0.2893由ev-2025fy-ar全年成本4,377,125,780.98减ev-2025q3-qr前三季成本2,926,123,532.82=Q4成本1,451,002,248.16元, 除以年报分季度表Q4营收2,041,728,313.20元"
+ },
+ {
+  "id": "ev-2025q3-gm",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-10-14/1224708054.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "毛利率0.2940由ev-2025q3-qr前三季成本2,926,123,532.82减ev-2025h1-sr上半年成本1,900,373,241.80=Q3成本1,025,750,291.02元, 除以Q3营收1,452,891,317.45元"
+ },
+ {
+  "id": "ev-2025q2-gm",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-08-19/1224505163.pdf",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "毛利率0.2597由ev-2025h1-sr上半年成本1,900,373,241.80减ev-2025q1-qr一季度成本685,885,751.25=Q2成本1,214,487,490.55元, 除以年报分季度表Q2营收1,640,553,679.64元"
+ },
+ {
+  "id": "sh-2026q1-qr",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225238227.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《胜宏科技2026年第一季度报告》(2026-04-29): 营业收入5,519,485,066.85元, 归母净利1,288,427,592.46元, 营业成本3,617,553,672.77元 → 毛利率0.3446"
+ },
+ {
+  "id": "sh-2025fy-ar",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-03-13/1225007455.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《胜宏科技2025年年度报告》(2026-03-13) 分季度主要财务指标: Q2营收4,718,525,501.89/净利1,222,472,423.78, Q3营收5,086,426,434.81/净利1,101,706,640.17, Q4营收5,175,020,658.47/净利1,067,161,824.98; 合并利润表全年营业成本12,496,889,291.87元"
+ },
+ {
+  "id": "sh-2025q3-qr",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-10-28/1224747048.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《胜宏科技2025年第三季度报告》(2025-10-28): 7-9月营业收入5,086,426,434.81元, 年初至报告期末(前三季)营业成本9,055,970,460.73元"
+ },
+ {
+  "id": "sh-2025h1-sr",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-08-27/1224583516.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《胜宏科技2025年半年度报告》(2025-08-27): 上半年营业收入9,030,866,364.08元, 营业成本5,759,665,083.00元"
+ },
+ {
+  "id": "sh-2025q1-qr",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-04-22/1223193364.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《胜宏科技2025年第一季度报告》(2025-04-22): 一季度营业收入4,312,340,862.19元, 营业成本2,873,109,795.11元"
+ },
+ {
+  "id": "sh-2025q4-gm",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-03-13/1225007455.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "毛利率0.3351由sh-2025fy-ar全年成本12,496,889,291.87减sh-2025q3-qr前三季成本9,055,970,460.73=Q4成本3,440,918,831.14元, 除以年报分季度表Q4营收5,175,020,658.47元"
+ },
+ {
+  "id": "sh-2025q3-gm",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-10-28/1224747048.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "毛利率0.3519由sh-2025q3-qr前三季成本9,055,970,460.73减sh-2025h1-sr上半年成本5,759,665,083.00=Q3成本3,296,305,377.73元, 除以Q3营收5,086,426,434.81元"
+ },
+ {
+  "id": "sh-2025q2-gm",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-08-27/1224583516.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "毛利率0.3883由sh-2025h1-sr上半年成本5,759,665,083.00减sh-2025q1-qr一季度成本2,873,109,795.11=Q2成本2,886,555,287.89元, 除以年报分季度表Q2营收4,718,525,501.89元"
+ },
+ {
+  "id": "wus-2026q1-qr",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-23/1225147393.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《沪电股份2026年第一季度报告》(2026-04-23): 营业收入6,214,156,406元, 归母净利1,242,081,367元, 营业成本3,999,902,225元 → 毛利率0.3563"
+ },
+ {
+  "id": "wus-2025fy-ar",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-03-25/1225027832.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《沪电股份2025年年度报告》(2026-03-25) 分季度主要财务指标: Q2营收4,456,244,556/净利920,315,547, Q3营收5,018,518,348/净利1,034,837,048, Q4营收5,432,830,354/净利1,104,688,277; 合并利润表全年营业成本12,224,297,224元"
+ },
+ {
+  "id": "wus-2025q3-qr",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-10-29/1224755010.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《沪电股份2025年第三季度报告》(2025-10-29): 7-9月营业收入5,018,518,348元, 年初至报告期末(前三季)营业成本8,728,624,634元"
+ },
+ {
+  "id": "wus-2025h1-sr",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-08-22/1224535064.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《沪电股份2025年半年度报告》(2025-08-22): 上半年营业收入8,493,871,883元, 营业成本5,508,789,969元"
+ },
+ {
+  "id": "wus-2025q1-qr",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-04-25/1223267176.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《沪电股份2025年第一季度报告》(2025-04-25): 一季度营业收入4,037,627,327元, 营业成本2,715,105,615元"
+ },
+ {
+  "id": "wus-2025q4-gm",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-03-25/1225027832.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "毛利率0.3566由wus-2025fy-ar全年成本12,224,297,224减wus-2025q3-qr前三季成本8,728,624,634=Q4成本3,495,672,590元, 除以年报分季度表Q4营收5,432,830,354元"
+ },
+ {
+  "id": "wus-2025q3-gm",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-10-29/1224755010.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "毛利率0.3584由wus-2025q3-qr前三季成本8,728,624,634减wus-2025h1-sr上半年成本5,508,789,969=Q3成本3,219,834,665元, 除以Q3营收5,018,518,348元"
+ },
+ {
+  "id": "wus-2025q2-gm",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-08-22/1224535064.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "毛利率0.3731由wus-2025h1-sr上半年成本5,508,789,969减wus-2025q1-qr一季度成本2,715,105,615=Q2成本2,793,684,354元, 除以年报分季度表Q2营收4,456,244,556元"
  }
 ];
 

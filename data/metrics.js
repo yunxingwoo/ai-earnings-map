@@ -850,6 +850,336 @@ const METRICS = [
     "src": "naura-2025fy"
    }
   }
+ },
+ {
+  "company": "vrt",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 3274.3,
+    "unit": "USD_M",
+    "src": "vrt-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.3771,
+    "src": "vrt-2026q2-er"
+   },
+   "net_income": {
+    "value": 497.8,
+    "unit": "USD_M",
+    "src": "vrt-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "vrt",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2649.5,
+    "unit": "USD_M",
+    "src": "vrt-2026q1-er"
+   },
+   "gross_margin": {
+    "value": 0.3773,
+    "src": "vrt-2026q1-er"
+   },
+   "net_income": {
+    "value": 390.1,
+    "unit": "USD_M",
+    "src": "vrt-2026q1-er"
+   }
+  }
+ },
+ {
+  "company": "vrt",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 2880,
+    "unit": "USD_M",
+    "src": "vrt-2025q4-er"
+   },
+   "gross_margin": {
+    "value": 0.3894,
+    "src": "vrt-2025q4-er"
+   },
+   "net_income": {
+    "value": 445.6,
+    "unit": "USD_M",
+    "src": "vrt-2025q4-er"
+   },
+   "backlog": {
+    "value": 15000,
+    "unit": "USD_M",
+    "src": "vrt-2025q4-er"
+   }
+  }
+ },
+ {
+  "company": "vrt",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 2675.8,
+    "unit": "USD_M",
+    "src": "vrt-2025q3-er"
+   },
+   "gross_margin": {
+    "value": 0.3777,
+    "src": "vrt-2025q3-er"
+   },
+   "net_income": {
+    "value": 398.5,
+    "unit": "USD_M",
+    "src": "vrt-2025q3-er"
+   },
+   "backlog": {
+    "value": 9500,
+    "unit": "USD_M",
+    "src": "vrt-2025q3-er"
+   }
+  }
+ },
+ {
+  "company": "envicool",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 11.75,
+    "unit": "CNY_YI",
+    "src": "ev-2026q1-qr"
+   },
+   "gross_margin": {
+    "value": 0.2429,
+    "src": "ev-2026q1-qr"
+   },
+   "net_income": {
+    "value": 0.0866,
+    "unit": "CNY_YI",
+    "src": "ev-2026q1-qr"
+   }
+  }
+ },
+ {
+  "company": "envicool",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 20.42,
+    "unit": "CNY_YI",
+    "src": "ev-2025fy-ar"
+   },
+   "gross_margin": {
+    "value": 0.2893,
+    "src": "ev-2025q4-gm"
+   },
+   "net_income": {
+    "value": 1.23,
+    "unit": "CNY_YI",
+    "src": "ev-2025fy-ar"
+   }
+  }
+ },
+ {
+  "company": "envicool",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 14.53,
+    "unit": "CNY_YI",
+    "src": "ev-2025fy-ar"
+   },
+   "gross_margin": {
+    "value": 0.294,
+    "src": "ev-2025q3-gm"
+   },
+   "net_income": {
+    "value": 1.83,
+    "unit": "CNY_YI",
+    "src": "ev-2025fy-ar"
+   }
+  }
+ },
+ {
+  "company": "envicool",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 16.41,
+    "unit": "CNY_YI",
+    "src": "ev-2025fy-ar"
+   },
+   "gross_margin": {
+    "value": 0.2597,
+    "src": "ev-2025q2-gm"
+   },
+   "net_income": {
+    "value": 1.68,
+    "unit": "CNY_YI",
+    "src": "ev-2025fy-ar"
+   }
+  }
+ },
+ {
+  "company": "shenghong",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 55.19,
+    "unit": "CNY_YI",
+    "src": "sh-2026q1-qr"
+   },
+   "gross_margin": {
+    "value": 0.3446,
+    "src": "sh-2026q1-qr"
+   },
+   "net_income": {
+    "value": 12.88,
+    "unit": "CNY_YI",
+    "src": "sh-2026q1-qr"
+   }
+  }
+ },
+ {
+  "company": "shenghong",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 51.75,
+    "unit": "CNY_YI",
+    "src": "sh-2025fy-ar"
+   },
+   "gross_margin": {
+    "value": 0.3351,
+    "src": "sh-2025q4-gm"
+   },
+   "net_income": {
+    "value": 10.67,
+    "unit": "CNY_YI",
+    "src": "sh-2025fy-ar"
+   }
+  }
+ },
+ {
+  "company": "shenghong",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 50.86,
+    "unit": "CNY_YI",
+    "src": "sh-2025fy-ar"
+   },
+   "gross_margin": {
+    "value": 0.3519,
+    "src": "sh-2025q3-gm"
+   },
+   "net_income": {
+    "value": 11.02,
+    "unit": "CNY_YI",
+    "src": "sh-2025fy-ar"
+   }
+  }
+ },
+ {
+  "company": "shenghong",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 47.19,
+    "unit": "CNY_YI",
+    "src": "sh-2025fy-ar"
+   },
+   "gross_margin": {
+    "value": 0.3883,
+    "src": "sh-2025q2-gm"
+   },
+   "net_income": {
+    "value": 12.22,
+    "unit": "CNY_YI",
+    "src": "sh-2025fy-ar"
+   }
+  }
+ },
+ {
+  "company": "wus",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 62.14,
+    "unit": "CNY_YI",
+    "src": "wus-2026q1-qr"
+   },
+   "gross_margin": {
+    "value": 0.3563,
+    "src": "wus-2026q1-qr"
+   },
+   "net_income": {
+    "value": 12.42,
+    "unit": "CNY_YI",
+    "src": "wus-2026q1-qr"
+   }
+  }
+ },
+ {
+  "company": "wus",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 54.33,
+    "unit": "CNY_YI",
+    "src": "wus-2025fy-ar"
+   },
+   "gross_margin": {
+    "value": 0.3566,
+    "src": "wus-2025q4-gm"
+   },
+   "net_income": {
+    "value": 11.05,
+    "unit": "CNY_YI",
+    "src": "wus-2025fy-ar"
+   }
+  }
+ },
+ {
+  "company": "wus",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 50.19,
+    "unit": "CNY_YI",
+    "src": "wus-2025fy-ar"
+   },
+   "gross_margin": {
+    "value": 0.3584,
+    "src": "wus-2025q3-gm"
+   },
+   "net_income": {
+    "value": 10.35,
+    "unit": "CNY_YI",
+    "src": "wus-2025fy-ar"
+   }
+  }
+ },
+ {
+  "company": "wus",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 44.56,
+    "unit": "CNY_YI",
+    "src": "wus-2025fy-ar"
+   },
+   "gross_margin": {
+    "value": 0.3731,
+    "src": "wus-2025q2-gm"
+   },
+   "net_income": {
+    "value": 9.2,
+    "unit": "CNY_YI",
+    "src": "wus-2025fy-ar"
+   }
+  }
  }
 ];
 
