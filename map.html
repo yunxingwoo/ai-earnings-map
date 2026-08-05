@@ -8,8 +8,6 @@
 </head>
 <body>
 
-<div class="demo-banner">视觉预览 DEMO · <b>页面内所有数字均为虚构的演示数据</b>(程序生成),仅用于确认版式与交互;正式版每个数字将取自官方披露文件并可点击溯源</div>
-
 <nav class="nav">
   <div class="nav-in">
     <a class="nav-brand" href="index.html"><span class="logo">AI</span> AI 算力财报全景 <span class="en">EARNINGS INTELLIGENCE</span></a>
@@ -79,92 +77,11 @@
 <div class="overlay" id="overlay"></div>
 <aside class="drawer" id="drawer" aria-hidden="true"></aside>
 
-<script src="data.js"></script>
-<script>
-/* ═══ 渲染地图 ═══ */
-const map = document.getElementById('map');
-LANES.forEach((lane,i)=>{
-  const sigs = lane.companies.map(c=>signal(c.q)).filter(s=>s!=='gray');
-  const laneSig = sigs.length? (sigs.filter(s=>s==='green').length>=sigs.length/2?'green':(sigs.filter(s=>s==='red').length>sigs.length/2?'red':'yellow')) : 'gray';
-  const el = document.createElement('div'); el.className='lane reveal'; el.id='lane-'+(i+1);
-  el.innerHTML = `<div class="lane-label">
-      <div class="lane-idx">${String(i+1).padStart(2,'0')} · ${lane.en}</div>
-      <div class="lane-name">${lane.cn}</div>
-      <div class="lane-signal"><span class="dot ${laneSig}${laneSig==='green'?' live':''}"></span>${sigs.length} 家已披露 · 共 ${lane.companies.length} 家</div>
-    </div><div class="cards"></div>`;
-  const box = el.querySelector('.cards');
-  lane.companies.forEach(c=>{
-    const b = document.createElement('button');
-    if(!c.q){ b.className='card '+c.size+' nodata';
-      b.innerHTML = `<div class="nm">${c.name}${c.cloud?'<span class="cloudtag">☁</span>':''}</div>
-        <div class="tk">${c.tk} · ${c.mkt} · ${TIER[c.tier]}${c.note?' · '+c.note:''}</div>
-        <div class="rev num">—</div><div class="why">${c.gap}</div>`;
-    } else {
-      const y=yoy(c.q), a=y>20&&y>yoyPrev(c.q), s=signal(c.q);
-      b.className='card '+c.size; b.dataset.id=c.id;
-      b.innerHTML = `<span class="dot ${s}"></span>
-        <div class="nm">${c.name}</div>
-        <div class="tk">${c.tk} · ${c.mkt} · ${TIER[c.tier]}${c.note?' · '+c.note:''}</div>
-        <div class="rev num">${fmt(c.q[c.q.length-1],c.cur)}</div>
-        <div class="yoy num ${y<0?'down':a?'up':'flat'}">YoY ${pct(y)} <span class="acc">${y<0?'':a?'↑加速':'→减速'}</span></div>`;
-      b.onclick=()=>openDrawer(c,b);
-    }
-    box.appendChild(b);
-  });
-  map.appendChild(el);
-});
-
-/* ═══ 顶栏统计 + 缺口墙(自动汇总) ═══ */
-const nData = ALL.filter(c=>c.q).length;
-document.getElementById('stat').innerHTML = `已披露 <b class="num">${nData}</b> / ${ALL.length}`;
-document.getElementById('vchain').innerHTML = VCHAINS.map(v=>
- `<div class="vrow"><div class="mark" style="color:${v.mark==='✓'?'var(--green)':'var(--amber)'}">${v.mark}</div>
-   <div class="vn">${v.name}</div>
-   <div><div class="pair num">${v.pair}</div><div class="note">${v.note}</div></div></div>`).join('');
-document.getElementById('gaplist').innerHTML = ALL.filter(c=>!c.q).map(c=>
- `<div class="gaprow"><span class="gn">${c.name}</span><span class="gr">${c.gap}</span></div>`).join('');
-
-/* ═══ 抽屉 ═══ */
-const drawer=document.getElementById('drawer'), overlay=document.getElementById('overlay');
-let sel=null;
-function openDrawer(c,btn){
-  if(sel) sel.classList.remove('selected'); sel=btn; btn.classList.add('selected');
-  const qs=['25Q1','25Q2','25Q3','25Q4','26Q1','26Q2'];
-  const max=Math.max(...c.q);
-  const bars=c.q.slice(2).map((v,i)=>{const cur=i===3;
-    return `<div class="bar ${cur?'cur':''}"><i data-h="${Math.max(3,v/max*100)}" style="height:3px"></i><span>${qs[i+2]}</span></div>`}).join('');
-  const row=(k,v)=>`<tr><td>${k}</td><td class="num">${v}</td></tr>`;
-  drawer.innerHTML = `
-    <button class="close" onclick="closeDrawer()">✕</button>
-    <div class="d-tier">${TIER[c.tier]} · ${c.mkt}${c.note?' · '+c.note:''}</div>
-    <div class="d-name">${c.name}</div>
-    <div class="d-tk mono">${c.tk} · 财年口径:自然季对齐 · 单位:${c.cur==='CNY'?'人民币亿':c.cur==='EUR'?'EUR M':'USD M'}</div>
-    <div class="d-sec"><h3>营收 · 近 4 季</h3><div class="bars">${bars}</div></div>
-    <div class="d-sec"><h3>指标(2026Q2)</h3><table class="ktable">
-      ${row('营收',fmt(c.q[5],c.cur))}
-      ${row('同比 YoY',pct(yoy(c.q)))}
-      ${row('环比 QoQ',pct(qoq(c.q)))}
-      ${row('上季同比(加速度)',pct(yoyPrev(c.q)))}
-      ${row('毛利率',c.gm!=null?c.gm.toFixed(1)+'%':'— 未披露')}
-      ${row('净利润',c.ni?fmt(c.ni,c.cur):'— 未披露')}
-      ${row('数据中心分部',c.dc?fmt(c.dc,c.cur):'— 未单列')}
-      ${row('在手订单 backlog',c.backlog?fmt(c.backlog,c.cur):'— 未披露')}
-      ${row('资本开支 capex',c.capex?fmt(c.capex,c.cur):'— 未披露')}
-    </table></div>
-    <div class="d-sec"><h3>溯源(正式版样式)</h3><div class="src">
-      <a href="#">[示例] ${c.name} 2026Q2 earnings release · investor relations 官网 / SEC EDGAR</a>
-      <div class="meta">披露位置:press release p.3 合并损益表 · 采集于 2026-08-05 · 归档:archive/${c.id}-2026q2-er.pdf</div>
-    </div></div>
-    <div class="d-demo">DEMO 提示:本抽屉内数字全部为程序生成的虚构演示数据。正式版中,"— 未披露"即最终呈现,不会有任何估算值填入。</div>`;
-  drawer.classList.add('on'); overlay.classList.add('on'); drawer.setAttribute('aria-hidden','false');
-  drawer.querySelectorAll('.bar i').forEach((el,k)=>
-    setTimeout(()=>el.style.height=el.dataset.h+'%', 80+k*70));
-}
-function closeDrawer(){ drawer.classList.remove('on'); overlay.classList.remove('on');
-  drawer.setAttribute('aria-hidden','true'); if(sel) sel.classList.remove('selected'); sel=null; }
-overlay.onclick=closeDrawer;
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer()});
-</script>
+<script src="data/companies.js"></script>
+<script src="data/metrics.js"></script>
+<script src="data/sources.js"></script>
+<script src="js/calc.js"></script>
+<script src="js/render-map.js"></script>
 <script src="fx.js"></script>
 </body>
 </html>
