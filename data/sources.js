@@ -2719,6 +2719,158 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "cn_financial_pro 合并 2025半年(累计4,150,308,633元)-2025Q1(累计1,909,062,291元)=单季Q2: 营收2,241,246,342元→22.41亿元, 归母净利340,845,518元→3.41亿元; 单位CNY_YI(÷1e8)"
+ },
+ {
+  "id": "ase-2026q2",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=ASX&type=6-K&dateb=&owner=include&count=40",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT symbol=ASX quarterly fiscalDateEnding=2026-06-30, reportedCurrency=TWD: totalRevenue 191,064M TWD, netIncome 21,068M TWD (日月光 2026Q2 单季)"
+ },
+ {
+  "id": "ase-2026q1",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=ASX&type=6-K&dateb=&owner=include&count=40",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT symbol=ASX quarterly fiscalDateEnding=2026-03-31, reportedCurrency=TWD: totalRevenue 175,456,763千 TWD, netIncome 14,294,217千 TWD (2026Q1 单季)"
+ },
+ {
+  "id": "ase-2025q4",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=ASX&type=6-K&dateb=&owner=include&count=40",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT symbol=ASX quarterly fiscalDateEnding=2025-12-31, reportedCurrency=TWD: totalRevenue 179,596,474千 TWD, netIncome 14,852,052千 TWD (2025Q4 单季)"
+ },
+ {
+  "id": "ase-2025q3",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=ASX&type=6-K&dateb=&owner=include&count=40",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "Alpha Vantage INCOME_STATEMENT symbol=ASX quarterly fiscalDateEnding=2025-09-30, reportedCurrency=TWD: totalRevenue 168,569,000千 TWD, netIncome 10,870,000千 TWD (2025Q3 单季)"
+ },
+ {
+  "id": "huahong-2026q1",
+  "type": "earnings_release",
+  "url": "https://www.hua-hong.com/",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "FMP income statement symbol=1347.HK period=quarter, reportedCurrency=USD, 2026-03-31 (Q1 2026): revenue $665,994,981, netIncome $20,095,243 (华虹半导体 2026Q1 单季)"
+ },
+ {
+  "id": "huahong-2025q4",
+  "type": "earnings_release",
+  "url": "https://www.hua-hong.com/",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "FMP income statement symbol=1347.HK period=quarter, reportedCurrency=USD, 2025-12-31 (Q4 2025): revenue $663,413,749, netIncome $17,662,137"
+ },
+ {
+  "id": "huahong-2025q3",
+  "type": "earnings_release",
+  "url": "https://www.hua-hong.com/",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "FMP income statement symbol=1347.HK period=quarter, reportedCurrency=USD, 2025-09-30 (Q3 2025): revenue $641,210,000, netIncome $24,851,000"
+ },
+ {
+  "id": "huahong-2025q2",
+  "type": "earnings_release",
+  "url": "https://www.hua-hong.com/",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "FMP income statement symbol=1347.HK period=quarter, reportedCurrency=USD, 2025-06-30 (Q2 2025): revenue $578,245,428, netIncome $6,623,642"
+ },
+ {
+  "id": "jcet-2026q1",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=600584",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement 600584.SH 2026Q1(0331): 营业总收入 9,171,039,551.16元, 归母净利 290,272,770.67元 (单季)"
+ },
+ {
+  "id": "jcet-2025q4",
+  "type": "annual_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=600584",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro 600584.SH 2025年报(1231)减三季报(0930)推导: Q4营收 38,871,348,331.23-28,668,972,678.71=10,202,375,652.52元, 归母净利 1,565,238,036.45-953,748,492.90=611,489,543.55元"
+ },
+ {
+  "id": "jcet-2025q3",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=600584",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro 600584.SH 2025三季报(0930)减半年报(0630)推导: Q3营收 28,668,972,678.71-18,605,224,056.33=10,063,748,622.38元, 归母净利 953,748,492.90-470,785,267.86=482,963,225.04元"
+ },
+ {
+  "id": "jcet-2025q2",
+  "type": "semiannual_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=600584",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro 600584.SH 2025半年报(0630)减一季报(0331)推导: Q2营收 18,605,224,056.33-9,335,146,486.99=9,270,077,569.34元, 归母净利 470,785,267.86-203,363,562.72=267,421,705.14元"
+ },
+ {
+  "id": "tfme-2026q1",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002156",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement 002156.SZ 2026Q1(0331): 营业总收入 7,481,674,677.05元, 归母净利 329,057,400.55元 (单季)"
+ },
+ {
+  "id": "tfme-2025q4",
+  "type": "annual_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002156",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro 002156.SZ 2025年报(1231)减三季报(0930)推导: Q4营收 27,921,424,656.15-20,116,258,889.41=7,805,165,766.74元, 归母净利 1,218,708,143.38-860,491,079.82=358,217,063.56元"
+ },
+ {
+  "id": "tfme-2025q3",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002156",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro 002156.SZ 2025三季报(0930)减半年报(0630)推导: Q3营收 20,116,258,889.41-13,038,246,156.27=7,078,012,733.14元, 归母净利 860,491,079.82-412,092,154.12=448,398,925.70元"
+ },
+ {
+  "id": "tfme-2025q2",
+  "type": "semiannual_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002156",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro 002156.SZ 2025半年报(0630)减一季报(0331)推导: Q2营收 13,038,246,156.27-6,092,434,550.56=6,945,811,605.71元, 归母净利 412,092,154.12-101,389,231.19=310,702,922.93元"
+ },
+ {
+  "id": "sjsmi-2026q1",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688820",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro income_statement 688820.SH 2026Q1(0331): 营业总收入 1,698,374,915.96元, 归母净利 191,328,450.33元 (单季; 盛合晶微正确代码为 688820.SH, 任务给的 688532.SH 无数据)"
+ },
+ {
+  "id": "sjsmi-2025q2",
+  "type": "semiannual_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688820",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro 688820.SH 2025半年报(0630)减一季报(0331)推导: Q2营收 3,177,996,180.51-1,501,193,200=1,676,802,980.51元, 归母净利 434,894,465.01-126,251,500=308,642,965.01元"
+ },
+ {
+  "id": "sjsmi-2025q1",
+  "type": "company_announcement",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688820",
+  "fetched_at": "2026-08-06",
+  "archive": null,
+  "locator": "cn_financial_pro 688820.SH 2025Q1(0331): 营收 1,501,193,200元, 归母净利 126,251,500元 (盛合晶微新上市, 2025三季报/2026半年报未披露, 仅存3个自然季)"
  }
 ];
 

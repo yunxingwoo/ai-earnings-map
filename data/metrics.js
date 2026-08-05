@@ -6722,6 +6722,310 @@ const METRICS = [
     "src": "giga-2025q2-er"
    }
   }
+ },
+ {
+  "company": "ase",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 191064,
+    "unit": "TWD_M",
+    "src": "ase-2026q2"
+   },
+   "net_income": {
+    "value": 21068,
+    "unit": "TWD_M",
+    "src": "ase-2026q2"
+   }
+  }
+ },
+ {
+  "company": "ase",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 175456.76,
+    "unit": "TWD_M",
+    "src": "ase-2026q1"
+   },
+   "net_income": {
+    "value": 14294.22,
+    "unit": "TWD_M",
+    "src": "ase-2026q1"
+   }
+  }
+ },
+ {
+  "company": "ase",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 179596.47,
+    "unit": "TWD_M",
+    "src": "ase-2025q4"
+   },
+   "net_income": {
+    "value": 14852.05,
+    "unit": "TWD_M",
+    "src": "ase-2025q4"
+   }
+  }
+ },
+ {
+  "company": "ase",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 168569,
+    "unit": "TWD_M",
+    "src": "ase-2025q3"
+   },
+   "net_income": {
+    "value": 10870,
+    "unit": "TWD_M",
+    "src": "ase-2025q3"
+   }
+  }
+ },
+ {
+  "company": "huahong",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 665.99,
+    "unit": "USD_M",
+    "src": "huahong-2026q1"
+   },
+   "net_income": {
+    "value": 20.1,
+    "unit": "USD_M",
+    "src": "huahong-2026q1"
+   }
+  }
+ },
+ {
+  "company": "huahong",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 663.41,
+    "unit": "USD_M",
+    "src": "huahong-2025q4"
+   },
+   "net_income": {
+    "value": 17.66,
+    "unit": "USD_M",
+    "src": "huahong-2025q4"
+   }
+  }
+ },
+ {
+  "company": "huahong",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 641.21,
+    "unit": "USD_M",
+    "src": "huahong-2025q3"
+   },
+   "net_income": {
+    "value": 24.85,
+    "unit": "USD_M",
+    "src": "huahong-2025q3"
+   }
+  }
+ },
+ {
+  "company": "huahong",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 578.25,
+    "unit": "USD_M",
+    "src": "huahong-2025q2"
+   },
+   "net_income": {
+    "value": 6.62,
+    "unit": "USD_M",
+    "src": "huahong-2025q2"
+   }
+  }
+ },
+ {
+  "company": "jcet",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 91.71,
+    "unit": "CNY_YI",
+    "src": "jcet-2026q1"
+   },
+   "net_income": {
+    "value": 2.9,
+    "unit": "CNY_YI",
+    "src": "jcet-2026q1"
+   }
+  }
+ },
+ {
+  "company": "jcet",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 102.02,
+    "unit": "CNY_YI",
+    "src": "jcet-2025q4"
+   },
+   "net_income": {
+    "value": 6.11,
+    "unit": "CNY_YI",
+    "src": "jcet-2025q4"
+   }
+  }
+ },
+ {
+  "company": "jcet",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 100.64,
+    "unit": "CNY_YI",
+    "src": "jcet-2025q3"
+   },
+   "net_income": {
+    "value": 4.83,
+    "unit": "CNY_YI",
+    "src": "jcet-2025q3"
+   }
+  }
+ },
+ {
+  "company": "jcet",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 92.7,
+    "unit": "CNY_YI",
+    "src": "jcet-2025q2"
+   },
+   "net_income": {
+    "value": 2.67,
+    "unit": "CNY_YI",
+    "src": "jcet-2025q2"
+   }
+  }
+ },
+ {
+  "company": "tfme",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 74.82,
+    "unit": "CNY_YI",
+    "src": "tfme-2026q1"
+   },
+   "net_income": {
+    "value": 3.29,
+    "unit": "CNY_YI",
+    "src": "tfme-2026q1"
+   }
+  }
+ },
+ {
+  "company": "tfme",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 78.05,
+    "unit": "CNY_YI",
+    "src": "tfme-2025q4"
+   },
+   "net_income": {
+    "value": 3.58,
+    "unit": "CNY_YI",
+    "src": "tfme-2025q4"
+   }
+  }
+ },
+ {
+  "company": "tfme",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 70.78,
+    "unit": "CNY_YI",
+    "src": "tfme-2025q3"
+   },
+   "net_income": {
+    "value": 4.48,
+    "unit": "CNY_YI",
+    "src": "tfme-2025q3"
+   }
+  }
+ },
+ {
+  "company": "tfme",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 69.46,
+    "unit": "CNY_YI",
+    "src": "tfme-2025q2"
+   },
+   "net_income": {
+    "value": 3.11,
+    "unit": "CNY_YI",
+    "src": "tfme-2025q2"
+   }
+  }
+ },
+ {
+  "company": "sjsmi",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 16.98,
+    "unit": "CNY_YI",
+    "src": "sjsmi-2026q1"
+   },
+   "net_income": {
+    "value": 1.91,
+    "unit": "CNY_YI",
+    "src": "sjsmi-2026q1"
+   }
+  }
+ },
+ {
+  "company": "sjsmi",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 16.77,
+    "unit": "CNY_YI",
+    "src": "sjsmi-2025q2"
+   },
+   "net_income": {
+    "value": 3.09,
+    "unit": "CNY_YI",
+    "src": "sjsmi-2025q2"
+   }
+  }
+ },
+ {
+  "company": "sjsmi",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 15.01,
+    "unit": "CNY_YI",
+    "src": "sjsmi-2025q1"
+   },
+   "net_income": {
+    "value": 1.26,
+    "unit": "CNY_YI",
+    "src": "sjsmi-2025q1"
+   }
+  }
  }
 ];
 
