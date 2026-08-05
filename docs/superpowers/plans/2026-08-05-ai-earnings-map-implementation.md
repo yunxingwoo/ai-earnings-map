@@ -43,16 +43,16 @@ ai-earnings-map/
 - [ ] **T2 validate.js**:schema 校验 + src 引用完整性 + YoY/QoQ 复算 + 空白检查;`node validate.js` 绿
 - [ ] **T3 地图页迁移**:render-map.js 按 COMPANIES+METRICS 渲染(有数据→实卡,无→虚线卡);抽屉读 metrics+sources;删除对 data.js 依赖;浏览器目视
 - [ ] **T4 主页迁移**:render-home.js 汇总(总收入/capex/净利润/信号数/覆盖数);capacity.js 结构 + GW 卡(无数据显示 "—");ticker 改为读 SOURCES 最近采集
-- [ ] **T5 批次A·云厂9家**:MSFT GOOG AMZN META ORCL CRWV NBIS BABA 腾讯 → 最新4季 revenue/capex(+gm/ni 可及)
-- [ ] **T6 批次B·AI芯片6家**:NVDA AMD AVGO MRVL 寒武纪 澜起 → +dc_revenue(NVDA/AMD)
-- [ ] **T7 批次C·制造存储6家**:TSM(含月营收) 三星 SK海力士 MU 中芯 长鑫
-- [ ] **T8 批次D·设备EDA5家**:ASML AMAT LRCX SNPS 北方华创
-- [ ] **T9 批次E·整机4家**:DELL(backlog) 广达(月营收) 纬颖(月营收) 工业富联
-- [ ] **T10 批次F·网络光互联4家**:Arista COHR 中际旭创 新易盛
-- [ ] **T11 批次G·供电PCB4家**:Vertiv(backlog) 英维克 胜宏 沪电
-- [ ] **T12 capacity.js**:北美 AIDC 项目容量(CoreWeave/IREN/Stargate-Abilene/xAI Colossus/Vantage 等,仅官方披露口径)
-- [ ] **T13 交叉验证真实化**:VCHAINS 从 METRICS 取数生成对照行;缺侧显示 "—"
-- [ ] **T14 终验**:validate 全绿;抽查 3 家对照官方原文;1440/768 截图;commit
+- [x] **T5 批次A·云厂9家**:MSFT GOOG AMZN META ORCL CRWV NBIS BABA 腾讯 → 最新4季 revenue/capex(+gm/ni 可及)
+- [x] **T6 批次B·AI芯片6家**:NVDA AMD AVGO MRVL 寒武纪 澜起 → +dc_revenue(NVDA/AMD)
+- [x] **T7 批次C·制造存储6家**:TSM(含月营收) 三星 SK海力士 MU 中芯 长鑫
+- [x] **T8 批次D·设备EDA5家**:ASML AMAT LRCX SNPS 北方华创
+- [x] **T9 批次E·整机4家**:DELL(backlog) 广达(月营收) 纬颖(月营收) 工业富联
+- [x] **T10 批次F·网络光互联4家**:Arista COHR 中际旭创 新易盛
+- [x] **T11 批次G·供电PCB4家**:Vertiv(backlog) 英维克 胜宏 沪电
+- [x] **T12 capacity.js**:北美 AIDC 项目容量(CoreWeave/IREN/Stargate-Abilene/xAI Colossus/Vantage 等,仅官方披露口径)
+- [x] **T13 交叉验证真实化**:VCHAINS 从 METRICS 取数生成对照行;缺侧显示 "—"
+- [x] **T14 终验**:validate 全绿;抽查 3 家对照官方原文;1440/768 截图;commit
 
 ## 数据批次通用步骤(T5–T11)
 
