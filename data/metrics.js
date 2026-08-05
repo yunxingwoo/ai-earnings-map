@@ -2386,6 +2386,566 @@ const METRICS = [
     "src": "tencent-2025q2-er"
    }
   }
+ },
+ {
+  "company": "nvda",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 81615,
+    "unit": "USD_M",
+    "src": "nvda-fy27q1-er"
+   },
+   "dc_revenue": {
+    "value": 75200,
+    "unit": "USD_M",
+    "src": "nvda-fy27q1-er"
+   },
+   "gross_margin": {
+    "value": 0.749,
+    "src": "nvda-fy27q1-er"
+   },
+   "net_income": {
+    "value": 58321,
+    "unit": "USD_M",
+    "src": "nvda-fy27q1-er"
+   }
+  }
+ },
+ {
+  "company": "nvda",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 68127,
+    "unit": "USD_M",
+    "src": "nvda-fy26q4-er"
+   },
+   "dc_revenue": {
+    "value": 62300,
+    "unit": "USD_M",
+    "src": "nvda-fy26q4-er"
+   },
+   "gross_margin": {
+    "value": 0.75,
+    "src": "nvda-fy26q4-er"
+   },
+   "net_income": {
+    "value": 42960,
+    "unit": "USD_M",
+    "src": "nvda-fy26q4-er"
+   }
+  }
+ },
+ {
+  "company": "nvda",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 57006,
+    "unit": "USD_M",
+    "src": "nvda-fy26q3-er"
+   },
+   "dc_revenue": {
+    "value": 51200,
+    "unit": "USD_M",
+    "src": "nvda-fy26q3-er"
+   },
+   "gross_margin": {
+    "value": 0.734,
+    "src": "nvda-fy26q3-er"
+   },
+   "net_income": {
+    "value": 31910,
+    "unit": "USD_M",
+    "src": "nvda-fy26q3-er"
+   }
+  }
+ },
+ {
+  "company": "nvda",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 46743,
+    "unit": "USD_M",
+    "src": "nvda-fy26q2-er"
+   },
+   "dc_revenue": {
+    "value": 41100,
+    "unit": "USD_M",
+    "src": "nvda-fy26q2-er"
+   },
+   "gross_margin": {
+    "value": 0.724,
+    "src": "nvda-fy26q2-er"
+   },
+   "net_income": {
+    "value": 26422,
+    "unit": "USD_M",
+    "src": "nvda-fy26q2-er"
+   }
+  }
+ },
+ {
+  "company": "amd",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 11536,
+    "unit": "USD_M",
+    "src": "amd-2026q2-er"
+   },
+   "dc_revenue": {
+    "value": 6718,
+    "unit": "USD_M",
+    "src": "amd-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.54,
+    "src": "amd-2026q2-er"
+   },
+   "net_income": {
+    "value": 2297,
+    "unit": "USD_M",
+    "src": "amd-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "amd",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 10253,
+    "unit": "USD_M",
+    "src": "amd-2026q1-er"
+   },
+   "dc_revenue": {
+    "value": 5775,
+    "unit": "USD_M",
+    "src": "amd-2026q1-er"
+   },
+   "gross_margin": {
+    "value": 0.53,
+    "src": "amd-2026q1-er"
+   },
+   "net_income": {
+    "value": 1383,
+    "unit": "USD_M",
+    "src": "amd-2026q1-er"
+   }
+  }
+ },
+ {
+  "company": "amd",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 10270,
+    "unit": "USD_M",
+    "src": "amd-2025q4-er"
+   },
+   "dc_revenue": {
+    "value": 5380,
+    "unit": "USD_M",
+    "src": "amd-2025q4-er"
+   },
+   "gross_margin": {
+    "value": 0.54,
+    "src": "amd-2025q4-er"
+   },
+   "net_income": {
+    "value": 1511,
+    "unit": "USD_M",
+    "src": "amd-2025q4-er"
+   }
+  }
+ },
+ {
+  "company": "amd",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 9246,
+    "unit": "USD_M",
+    "src": "amd-2025q3-er"
+   },
+   "dc_revenue": {
+    "value": 4341,
+    "unit": "USD_M",
+    "src": "amd-2025q3-er"
+   },
+   "gross_margin": {
+    "value": 0.52,
+    "src": "amd-2025q3-er"
+   },
+   "net_income": {
+    "value": 1243,
+    "unit": "USD_M",
+    "src": "amd-2025q3-er"
+   }
+  }
+ },
+ {
+  "company": "avgo",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 22187,
+    "unit": "USD_M",
+    "src": "avgo-fy26q2-er"
+   },
+   "ai_revenue": {
+    "value": 10800,
+    "unit": "USD_M",
+    "src": "avgo-fy26q2-er"
+   },
+   "gross_margin": {
+    "value": 0.695,
+    "src": "avgo-fy26q2-er"
+   },
+   "net_income": {
+    "value": 9310,
+    "unit": "USD_M",
+    "src": "avgo-fy26q2-er"
+   }
+  }
+ },
+ {
+  "company": "avgo",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 19311,
+    "unit": "USD_M",
+    "src": "avgo-fy26q1-er"
+   },
+   "ai_revenue": {
+    "value": 8400,
+    "unit": "USD_M",
+    "src": "avgo-fy26q1-er"
+   },
+   "gross_margin": {
+    "value": 0.681,
+    "src": "avgo-fy26q1-er"
+   },
+   "net_income": {
+    "value": 7349,
+    "unit": "USD_M",
+    "src": "avgo-fy26q1-er"
+   }
+  }
+ },
+ {
+  "company": "avgo",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 18015,
+    "unit": "USD_M",
+    "src": "avgo-fy25q4-er"
+   },
+   "ai_revenue": {
+    "value": 6500,
+    "unit": "USD_M",
+    "src": "avgo-fy25q4-er"
+   },
+   "gross_margin": {
+    "value": 0.68,
+    "src": "avgo-fy25q4-er"
+   },
+   "net_income": {
+    "value": 8518,
+    "unit": "USD_M",
+    "src": "avgo-fy25q4-er"
+   }
+  }
+ },
+ {
+  "company": "avgo",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 15952,
+    "unit": "USD_M",
+    "src": "avgo-fy25q3-er"
+   },
+   "ai_revenue": {
+    "value": 5200,
+    "unit": "USD_M",
+    "src": "avgo-fy25q3-er"
+   },
+   "gross_margin": {
+    "value": 0.671,
+    "src": "avgo-fy25q3-er"
+   },
+   "net_income": {
+    "value": 4140,
+    "unit": "USD_M",
+    "src": "avgo-fy25q3-er"
+   }
+  }
+ },
+ {
+  "company": "mrvl",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2417.8,
+    "unit": "USD_M",
+    "src": "mrvl-fy27q1-er"
+   },
+   "dc_revenue": {
+    "value": 1832.7,
+    "unit": "USD_M",
+    "src": "mrvl-fy27q1-er"
+   },
+   "gross_margin": {
+    "value": 0.521,
+    "src": "mrvl-fy27q1-er"
+   },
+   "net_income": {
+    "value": 34.5,
+    "unit": "USD_M",
+    "src": "mrvl-fy27q1-er"
+   }
+  }
+ },
+ {
+  "company": "mrvl",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 2218.7,
+    "unit": "USD_M",
+    "src": "mrvl-fy26q4-er"
+   },
+   "dc_revenue": {
+    "value": 1651.3,
+    "unit": "USD_M",
+    "src": "mrvl-fy26q4-er"
+   },
+   "gross_margin": {
+    "value": 0.517,
+    "src": "mrvl-fy26q4-er"
+   },
+   "net_income": {
+    "value": 396.1,
+    "unit": "USD_M",
+    "src": "mrvl-fy26q4-er"
+   }
+  }
+ },
+ {
+  "company": "mrvl",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 2074.5,
+    "unit": "USD_M",
+    "src": "mrvl-fy26q3-er"
+   },
+   "dc_revenue": {
+    "value": 1517.9,
+    "unit": "USD_M",
+    "src": "mrvl-fy26q3-er"
+   },
+   "gross_margin": {
+    "value": 0.516,
+    "src": "mrvl-fy26q3-er"
+   },
+   "net_income": {
+    "value": 1901,
+    "unit": "USD_M",
+    "src": "mrvl-fy26q3-er"
+   }
+  }
+ },
+ {
+  "company": "mrvl",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2006.1,
+    "unit": "USD_M",
+    "src": "mrvl-fy26q2-er"
+   },
+   "dc_revenue": {
+    "value": 1490.5,
+    "unit": "USD_M",
+    "src": "mrvl-fy26q2-er"
+   },
+   "gross_margin": {
+    "value": 0.504,
+    "src": "mrvl-fy26q2-er"
+   },
+   "net_income": {
+    "value": 194.8,
+    "unit": "USD_M",
+    "src": "mrvl-fy26q2-er"
+   }
+  }
+ },
+ {
+  "company": "cambricon",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 28.85,
+    "unit": "CNY_YI",
+    "src": "cambricon-2026q1"
+   },
+   "gross_margin": {
+    "value": 0.5433,
+    "src": "cambricon-2026q1"
+   },
+   "net_income": {
+    "value": 10.13,
+    "unit": "CNY_YI",
+    "src": "cambricon-2026q1"
+   }
+  }
+ },
+ {
+  "company": "cambricon",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 18.9,
+    "unit": "CNY_YI",
+    "src": "cambricon-2025fy"
+   },
+   "gross_margin": {
+    "value": 0.5481,
+    "src": "cambricon-2025fy-gmderived"
+   },
+   "net_income": {
+    "value": 4.55,
+    "unit": "CNY_YI",
+    "src": "cambricon-2025fy"
+   }
+  }
+ },
+ {
+  "company": "cambricon",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 17.27,
+    "unit": "CNY_YI",
+    "src": "cambricon-2025fy"
+   },
+   "gross_margin": {
+    "value": 0.5424,
+    "src": "cambricon-2025q3-gmderived"
+   },
+   "net_income": {
+    "value": 5.67,
+    "unit": "CNY_YI",
+    "src": "cambricon-2025fy"
+   }
+  }
+ },
+ {
+  "company": "cambricon",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 17.69,
+    "unit": "CNY_YI",
+    "src": "cambricon-2025fy"
+   },
+   "gross_margin": {
+    "value": 0.5588,
+    "src": "cambricon-2025h1-gmderived"
+   },
+   "net_income": {
+    "value": 6.83,
+    "unit": "CNY_YI",
+    "src": "cambricon-2025fy"
+   }
+  }
+ },
+ {
+  "company": "montage",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 14.61,
+    "unit": "CNY_YI",
+    "src": "montage-2026q1"
+   },
+   "gross_margin": {
+    "value": 0.698,
+    "src": "montage-2026q1"
+   },
+   "net_income": {
+    "value": 8.47,
+    "unit": "CNY_YI",
+    "src": "montage-2026q1"
+   }
+  }
+ },
+ {
+  "company": "montage",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 13.99,
+    "unit": "CNY_YI",
+    "src": "montage-2025fy"
+   },
+   "gross_margin": {
+    "value": 0.6446,
+    "src": "montage-2025fy-gmderived"
+   },
+   "net_income": {
+    "value": 6.03,
+    "unit": "CNY_YI",
+    "src": "montage-2025fy"
+   }
+  }
+ },
+ {
+  "company": "montage",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 14.24,
+    "unit": "CNY_YI",
+    "src": "montage-2025fy"
+   },
+   "gross_margin": {
+    "value": 0.6334,
+    "src": "montage-2025q3-gmderived"
+   },
+   "net_income": {
+    "value": 4.73,
+    "unit": "CNY_YI",
+    "src": "montage-2025fy"
+   }
+  }
+ },
+ {
+  "company": "montage",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 14.11,
+    "unit": "CNY_YI",
+    "src": "montage-2025fy"
+   },
+   "gross_margin": {
+    "value": 0.6043,
+    "src": "montage-2025h1-gmderived"
+   },
+   "net_income": {
+    "value": 6.34,
+    "unit": "CNY_YI",
+    "src": "montage-2025fy"
+   }
+  }
  }
 ];
 

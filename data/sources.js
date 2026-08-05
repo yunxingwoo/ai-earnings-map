@@ -1159,6 +1159,214 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "腾讯2025年第二季度业绩公告(2025-08-13): 营收RMB184,504M(1845.04亿,+15%), 应占盈利556.28亿(+17%), 资本开支191.1亿(+119%)"
+ },
+ {
+  "id": "nvda-fy27q1-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-05-20), Q1 FY27 quarter ended 2026-04-26: revenue $81,615M, Data Center revenue $75.2 billion (92% YoY), GAAP gross margin 74.9%, GAAP net income $58,321M"
+ },
+ {
+  "id": "nvda-fy26q4-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-02-25), Q4 FY26 quarter ended 2026-01-25: revenue $68,127M, Data Center revenue $62.3 billion (75% YoY), GAAP gross margin 75.0%, GAAP net income $42,960M"
+ },
+ {
+  "id": "nvda-fy26q3-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000228/q3fy26pr.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2025-11-19), Q3 FY26 quarter ended 2025-10-26: revenue $57,006M, Data Center revenue $51.2 billion (66% YoY), GAAP gross margin 73.4%, GAAP net income $31,910M"
+ },
+ {
+  "id": "nvda-fy26q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000207/q2fy26pr.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2025-08-27), Q2 FY26 quarter ended 2025-07-27: revenue $46,743M, Data Center revenue $41.1 billion (56% YoY), GAAP gross margin 72.4%, GAAP net income $26,422M"
+ },
+ {
+  "id": "amd-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000121/q22026991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-08-04), Q2 2026 quarter ended 2026-06-27: net revenue $11,536M, Data Center segment revenue $6,718M, GAAP gross margin 54%, GAAP net income $2,297M"
+ },
+ {
+  "id": "amd-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000072/q12026991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-05-05), Q1 2026 quarter ended 2026-03-28: net revenue $10,253M, Data Center segment revenue $5,775M, GAAP gross margin 53%, GAAP net income $1,383M"
+ },
+ {
+  "id": "amd-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000014/q42025991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-02-03), Q4 2025 quarter ended 2025-12-27: net revenue $10,270M, Data Center segment revenue $5,380M, GAAP gross margin 54%, GAAP net income $1,511M"
+ },
+ {
+  "id": "amd-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248825000163/q32025991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2025-11-04), Q3 2025 quarter ended 2025-09-27: net revenue $9,246M, Data Center segment revenue $4,341M, GAAP gross margin 52%, GAAP net income $1,243M"
+ },
+ {
+  "id": "avgo-fy26q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000051/avgo-05032026x8kxex99.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-06-03), Q2 FY26 quarter ended 2026-05-03: net revenue $22,187M, AI semiconductor revenue $10.8 billion (+143% YoY), GAAP net income $9,310M; GAAP gross margin 15,415/22,187=69.5% (P&L毛利润/营收)"
+ },
+ {
+  "id": "avgo-fy26q1-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-02012026x8kxex99.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-03-04), Q1 FY26 quarter ended 2026-02-01: net revenue $19,311M, AI semiconductor revenue $8.4 billion (+106% YoY), GAAP net income $7,349M; GAAP gross margin 13,157/19,311=68.1%"
+ },
+ {
+  "id": "avgo-fy25q4-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000116/avgo-11022025x8kxex99.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2025-12-11), Q4 FY25 quarter ended 2025-11-02: net revenue $18,015M, AI semiconductor revenue $6.5 billion (+74% YoY), GAAP net income $8,518M; GAAP gross margin 12,249/18,015=68.0%"
+ },
+ {
+  "id": "avgo-fy25q3-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2025-09-04), Q3 FY25 quarter ended 2025-08-03: net revenue $15,952M, AI semiconductor revenue $5.2 billion (+63% YoY), GAAP net income $4,140M; GAAP gross margin 10,703/15,952=67.1%"
+ },
+ {
+  "id": "mrvl-fy27q1-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000014/q127_8kx522026ex-991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-05-27), Q1 FY27 quarter ended 2026-05-02: net revenue $2,417.8M, Data Center revenue $1,832.7M (76% of total), GAAP gross margin 1,260.8/2,417.8=52.1%, GAAP net income $34.5M"
+ },
+ {
+  "id": "mrvl-fy26q4-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000006/q426_8kx1312026ex-991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-03-05), Q4 FY26 quarter ended 2026-01-31: net revenue $2,218.7M, Data Center revenue $1,651.3M (74.4%), GAAP gross margin 1,147.9/2,218.7=51.7%, GAAP net income $396.1M"
+ },
+ {
+  "id": "mrvl-fy26q3-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000193/q326_8kx1112025ex-991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2025-12-02), Q3 FY26 quarter ended 2025-11-01: net revenue $2,074.5M, Data Center revenue $1,517.9M (73.2%), GAAP gross margin 1,069.8/2,074.5=51.6%, GAAP net income $1,901M(含出售汽车以太网业务约18亿美元税前收益)"
+ },
+ {
+  "id": "mrvl-fy26q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000187/q226_8kx822025ex-991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2025-08-28), Q2 FY26 quarter ended 2025-08-02: net revenue $2,006.1M, Data Center revenue $1,490.5M (74%), GAAP gross margin 1,010.6/2,006.1=50.4%, GAAP net income $194.8M"
+ },
+ {
+  "id": "cambricon-2026q1",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225264337.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《寒武纪2026年第一季度报告》(2026-04-30): 营业收入2,884,696,746.86元(28.85亿, +159.56%), 归母净利润1,013,213,581.94元(10.13亿, +185.04%), 营业成本1,317,430,150.72元→毛利率54.33%"
+ },
+ {
+  "id": "cambricon-2025fy",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-03-13/1225007336.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《寒武纪2025年年度报告》(2026-03-13) 分季度主要财务数据: Q2营收1,769,244,544.29/净利682,617,327.53, Q3营收1,726,780,892.57/净利566,563,175.54, Q4营收1,889,771,835.02/净利454,582,794.56(元); 全年营收6,497,196,198.68/净利2,059,228,538.67"
+ },
+ {
+  "id": "cambricon-2025q3-gmderived",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-10-18/1224719401.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "三季报9M营业成本2,059,846,551.99−半年报H1成本1,269,633,413.86→Q3成本790,213,138.13; Q3营收1,726,780,892.57→毛利率54.24%"
+ },
+ {
+  "id": "cambricon-2025h1-gmderived",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-08-27/1224586025.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "半年报H1营业成本1,269,633,413.86−2026Q1报上年同期Q1'25成本489,129,860.81→Q2成本780,503,553.05; Q2营收1,769,244,544.29→毛利率55.88%"
+ },
+ {
+  "id": "montage-2026q1",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225206629.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《澜起科技2026年第一季度报告》(2026-04-28): 营业收入1,460,718,316.43元(14.61亿, +19.51%), 归母净利润847,375,292.29元(8.47亿, +61.30%), 报告文本披露毛利率69.8%"
+ },
+ {
+  "id": "montage-2025fy",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225057736.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《澜起科技2025年年度报告》(2026-03-31) 分季度主要财务数据: Q2营收1,411,247,007.15/净利633,744,331.75, Q3营收1,424,232,009.73/净利473,213,606.21, Q4营收1,398,628,292.82/净利603,285,984.25(元); 全年营收5,456,316,783.63/净利2,235,569,970.18"
+ },
+ {
+  "id": "montage-2025q3-gmderived",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-10-31/1224775589.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "三季报9M营业成本1,563,885,615.40−半年报H1成本1,041,822,849.88→Q3成本522,062,765.52; Q3营收1,424,232,009.73→毛利率63.34%"
+ },
+ {
+  "id": "montage-2025h1-gmderived",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-08-30/1224627769.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "半年报H1营业成本1,041,822,849.88−2026Q1报上年同期Q1'25成本483,386,521.97→Q2成本558,436,327.91; Q2营收1,411,247,007.15→毛利率60.43%"
+ },
+ {
+  "id": "cambricon-2025fy-gmderived",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-03-13/1225007336.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "年报全年营业成本2,913,883,194.49−三季报9M成本2,059,846,551.99→Q4成本854,036,642.50; Q4营收1,889,771,835.02→毛利率54.81%"
+ },
+ {
+  "id": "montage-2025fy-gmderived",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225057736.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "年报全年营业成本2,060,961,088.35−三季报9M成本1,563,885,615.40→Q4成本497,075,472.95; Q4营收1,398,628,292.82→毛利率64.46%"
  }
 ];
 
