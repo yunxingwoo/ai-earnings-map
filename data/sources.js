@@ -1879,6 +1879,198 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "PALANTIR TECHNOLOGIES 2025Q3 (10-Q, 三个月ended 2025-09-30): 营收$1,181M, 净利$476M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=1181092000, netIncome=475599000)"
+ },
+ {
+  "id": "csco-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=CISCO%20SYSTEMS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2026-04-30(自然季2026Q1): 营收 15841M, 净利润 3373M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "csco-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=CISCO%20SYSTEMS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2026-01-31(自然季2025Q4): 营收 15349M, 净利润 3175M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "csco-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=CISCO%20SYSTEMS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-10-31(自然季2025Q3): 营收 14883M, 净利润 2860M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "csco-2025q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=CISCO%20SYSTEMS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-07-31(自然季2025Q2): 营收 14673M, 净利润 2550M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "nok-2026q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NOKIA%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2026-06-30(自然季2026Q2): 营收 4815M, 净利润 2M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=EUR)"
+ },
+ {
+  "id": "nok-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NOKIA%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2026-03-31(自然季2026Q1): 营收 4497M, 净利润 86M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=EUR)"
+ },
+ {
+  "id": "nok-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NOKIA%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-12-31(自然季2025Q4): 营收 6125M, 净利润 542M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=EUR)"
+ },
+ {
+  "id": "nok-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NOKIA%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-09-30(自然季2025Q3): 营收 4828M, 净利润 78M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=EUR)"
+ },
+ {
+  "id": "lite-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=LUMENTUM%20HOLDINGS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2026-03-31(自然季2026Q1): 营收 808.4M, 净利润 144.2M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "lite-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=LUMENTUM%20HOLDINGS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-12-31(自然季2025Q4): 营收 665.5M, 净利润 78.2M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "lite-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=LUMENTUM%20HOLDINGS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-09-30(自然季2025Q3): 营收 533.8M, 净利润 4.2M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "lite-2025q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=LUMENTUM%20HOLDINGS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-06-30(自然季2025Q2): 营收 480.7M, 净利润 213.3M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "fn-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=FABRINET&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2026-03-31(自然季2026Q1): 营收 1214.293M, 净利润 125.213M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "fn-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=FABRINET&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-12-31(自然季2025Q4): 营收 1132.888M, 净利润 112.628M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "fn-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=FABRINET&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-09-30(自然季2025Q3): 营收 978.128M, 净利润 92.964M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "fn-2025q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=FABRINET&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-06-30(自然季2025Q2): 营收 909.692M, 净利润 87.207M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "aaoi-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=APPLIED%20OPTOELECTRONICS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2026-03-31(自然季2026Q1): 营收 151.144M, 净利润 -14.281M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "aaoi-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=APPLIED%20OPTOELECTRONICS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-12-31(自然季2025Q4): 营收 134.274M, 净利润 -2.022M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "aaoi-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=APPLIED%20OPTOELECTRONICS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-09-30(自然季2025Q3): 营收 118.63M, 净利润 -17.936M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "aaoi-2025q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=APPLIED%20OPTOELECTRONICS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-06-30(自然季2025Q2): 营收 102.952M, 净利润 -9.098M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "poet-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=POET%20TECHNOLOGIES&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2026-03-31(自然季2026Q1): 营收 0.503M, 净利润 -12.344M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "poet-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=POET%20TECHNOLOGIES&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-12-31(自然季2025Q4): 营收 0.341M, 净利润 -42.672M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "poet-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=POET%20TECHNOLOGIES&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-09-30(自然季2025Q3): 营收 0.298M, 净利润 -9.37M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "poet-2025q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=POET%20TECHNOLOGIES&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SEC 10-Q 检索页, 财季止2025-06-30(自然季2025Q2): 营收 0.268M, 净利润 -17.263M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
  }
 ];
 

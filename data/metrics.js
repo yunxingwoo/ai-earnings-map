@@ -4226,6 +4226,390 @@ const METRICS = [
     "src": "pltr-2025q3-10q"
    }
   }
+ },
+ {
+  "company": "csco",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 15841,
+    "unit": "USD_M",
+    "src": "csco-2026q1-10q"
+   },
+   "net_income": {
+    "value": 3373,
+    "unit": "USD_M",
+    "src": "csco-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "csco",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 15349,
+    "unit": "USD_M",
+    "src": "csco-2025q4-10q"
+   },
+   "net_income": {
+    "value": 3175,
+    "unit": "USD_M",
+    "src": "csco-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "csco",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 14883,
+    "unit": "USD_M",
+    "src": "csco-2025q3-10q"
+   },
+   "net_income": {
+    "value": 2860,
+    "unit": "USD_M",
+    "src": "csco-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "csco",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 14673,
+    "unit": "USD_M",
+    "src": "csco-2025q2-10q"
+   },
+   "net_income": {
+    "value": 2550,
+    "unit": "USD_M",
+    "src": "csco-2025q2-10q"
+   }
+  }
+ },
+ {
+  "company": "nok",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 4815,
+    "unit": "EUR_M",
+    "src": "nok-2026q2-10q"
+   },
+   "net_income": {
+    "value": 2,
+    "unit": "EUR_M",
+    "src": "nok-2026q2-10q"
+   }
+  }
+ },
+ {
+  "company": "nok",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 4497,
+    "unit": "EUR_M",
+    "src": "nok-2026q1-10q"
+   },
+   "net_income": {
+    "value": 86,
+    "unit": "EUR_M",
+    "src": "nok-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "nok",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 6125,
+    "unit": "EUR_M",
+    "src": "nok-2025q4-10q"
+   },
+   "net_income": {
+    "value": 542,
+    "unit": "EUR_M",
+    "src": "nok-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "nok",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 4828,
+    "unit": "EUR_M",
+    "src": "nok-2025q3-10q"
+   },
+   "net_income": {
+    "value": 78,
+    "unit": "EUR_M",
+    "src": "nok-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "lite",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 808.4,
+    "unit": "USD_M",
+    "src": "lite-2026q1-10q"
+   },
+   "net_income": {
+    "value": 144.2,
+    "unit": "USD_M",
+    "src": "lite-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "lite",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 665.5,
+    "unit": "USD_M",
+    "src": "lite-2025q4-10q"
+   },
+   "net_income": {
+    "value": 78.2,
+    "unit": "USD_M",
+    "src": "lite-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "lite",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 533.8,
+    "unit": "USD_M",
+    "src": "lite-2025q3-10q"
+   },
+   "net_income": {
+    "value": 4.2,
+    "unit": "USD_M",
+    "src": "lite-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "lite",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 480.7,
+    "unit": "USD_M",
+    "src": "lite-2025q2-10q"
+   },
+   "net_income": {
+    "value": 213.3,
+    "unit": "USD_M",
+    "src": "lite-2025q2-10q"
+   }
+  }
+ },
+ {
+  "company": "fn",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1214.293,
+    "unit": "USD_M",
+    "src": "fn-2026q1-10q"
+   },
+   "net_income": {
+    "value": 125.213,
+    "unit": "USD_M",
+    "src": "fn-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "fn",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 1132.888,
+    "unit": "USD_M",
+    "src": "fn-2025q4-10q"
+   },
+   "net_income": {
+    "value": 112.628,
+    "unit": "USD_M",
+    "src": "fn-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "fn",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 978.128,
+    "unit": "USD_M",
+    "src": "fn-2025q3-10q"
+   },
+   "net_income": {
+    "value": 92.964,
+    "unit": "USD_M",
+    "src": "fn-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "fn",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 909.692,
+    "unit": "USD_M",
+    "src": "fn-2025q2-10q"
+   },
+   "net_income": {
+    "value": 87.207,
+    "unit": "USD_M",
+    "src": "fn-2025q2-10q"
+   }
+  }
+ },
+ {
+  "company": "aaoi",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 151.144,
+    "unit": "USD_M",
+    "src": "aaoi-2026q1-10q"
+   },
+   "net_income": {
+    "value": -14.281,
+    "unit": "USD_M",
+    "src": "aaoi-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "aaoi",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 134.274,
+    "unit": "USD_M",
+    "src": "aaoi-2025q4-10q"
+   },
+   "net_income": {
+    "value": -2.022,
+    "unit": "USD_M",
+    "src": "aaoi-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "aaoi",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 118.63,
+    "unit": "USD_M",
+    "src": "aaoi-2025q3-10q"
+   },
+   "net_income": {
+    "value": -17.936,
+    "unit": "USD_M",
+    "src": "aaoi-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "aaoi",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 102.952,
+    "unit": "USD_M",
+    "src": "aaoi-2025q2-10q"
+   },
+   "net_income": {
+    "value": -9.098,
+    "unit": "USD_M",
+    "src": "aaoi-2025q2-10q"
+   }
+  }
+ },
+ {
+  "company": "poet",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 0.503,
+    "unit": "USD_M",
+    "src": "poet-2026q1-10q"
+   },
+   "net_income": {
+    "value": -12.344,
+    "unit": "USD_M",
+    "src": "poet-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "poet",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 0.341,
+    "unit": "USD_M",
+    "src": "poet-2025q4-10q"
+   },
+   "net_income": {
+    "value": -42.672,
+    "unit": "USD_M",
+    "src": "poet-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "poet",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 0.298,
+    "unit": "USD_M",
+    "src": "poet-2025q3-10q"
+   },
+   "net_income": {
+    "value": -9.37,
+    "unit": "USD_M",
+    "src": "poet-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "poet",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 0.268,
+    "unit": "USD_M",
+    "src": "poet-2025q2-10q"
+   },
+   "net_income": {
+    "value": -17.263,
+    "unit": "USD_M",
+    "src": "poet-2025q2-10q"
+   }
+  }
  }
 ];
 
