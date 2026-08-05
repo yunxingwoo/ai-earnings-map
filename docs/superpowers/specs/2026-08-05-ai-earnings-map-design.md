@@ -17,7 +17,7 @@
 
 **成功标准:**
 - 双击 `index.html` 即可打开完整地图,无构建、无后端
-- 全量约 113 个公司节点出现在地图上;v1 核心约 30 家 × 近 4 季有真实数据
+- 全量 109 个公司节点出现在地图上;v1 核心约 30 家 × 近 4 季有真实数据
 - 四条交叉验证链可运行;数据缺口墙集中公示所有空白
 - `node validate.js` 通过:JSON 符合 schema、src 引用完整、YoY/QoQ 复算一致
 
@@ -29,7 +29,7 @@ ai-earnings-map/
 ├── demo.html                           # 视觉 DEMO(虚构数据,仅预览)
 ├── validate.js                         # schema/溯源/复算校验(Node)
 ├── data/
-│   ├── companies.json                  # 公司注册表(~113 节点全量)
+│   ├── companies.json                  # 公司注册表(109 节点全量)
 │   ├── metrics.json                    # 结构化指标(v1 核心公司 × 4 季)
 │   ├── sources.json                    # 溯源索引
 │   └── schema.md                       # 数据口径文档(管线的实现依据)
