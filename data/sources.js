@@ -1367,6 +1367,182 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "年报全年营业成本2,060,961,088.35−三季报9M成本1,563,885,615.40→Q4成本497,075,472.95; Q4营收1,398,628,292.82→毛利率64.46%"
+ },
+ {
+  "id": "anet-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000174/ex991q226-earningsrelease.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-08-04), Q2 2026 three months ended 2026-06-30; Total revenue $3,035.7M, GAAP gross margin 62.9%, GAAP net income $1,212.9M"
+ },
+ {
+  "id": "anet-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000074/ex991q126-earningsrelease.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-05-05), Q1 2026 three months ended 2026-03-31; Total revenue $2,709.0M, GAAP gross margin 61.9%, GAAP net income $1,022.9M"
+ },
+ {
+  "id": "anet-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000010/ex991q425-earningsrelease.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-02-12), Q4 2025 three months ended 2025-12-31; Total revenue $2,487.8M, GAAP gross margin 62.9%, GAAP net income $955.8M"
+ },
+ {
+  "id": "anet-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653225000284/ex991q325-earningsrelease.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2025-11-04), Q3 2025 three months ended 2025-09-30; Total revenue $2,308.3M, GAAP gross margin 64.6%, GAAP net income $853.0M"
+ },
+ {
+  "id": "cohr-fy26q3-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526208972/d57080dex991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-05-06), FY26Q3 three months ended 2026-03-31; Revenues $1,805.6M, GAAP gross margin 37.7%, Net Earnings Attributable to Coherent Corp. $191.4M"
+ },
+ {
+  "id": "cohr-fy26q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526037556/d101115dex991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-02-04), FY26Q2 three months ended 2025-12-31; Revenues $1,685.6M, GAAP gross margin 36.9%, Net Earnings Attributable to Coherent Corp. $146.7M"
+ },
+ {
+  "id": "cohr-fy26q1-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312525266951/d27982dex991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2025-11-05), FY26Q1 three months ended 2025-09-30; Revenues $1,581.4M, GAAP gross margin 36.6%, Net Earnings Attributable to Coherent Corp. $226.3M"
+ },
+ {
+  "id": "cohr-fy25q4-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312525179833/d22249dex991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2025-08-13), FY25Q4 three months ended 2025-06-30; Revenues $1,529.4M, GAAP gross margin 35.7%, Net Earnings (Loss) Attributable to Coherent Corp. $(95.6)M"
+ },
+ {
+  "id": "innolight-2026q1",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-17/1225111941.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《中际旭创2026年第一季度报告》: 1-3月营业收入19,496,398,083.95元, 归母净利5,734,501,526.83元, 营业成本10,516,721,119.21元 → 毛利率0.4606"
+ },
+ {
+  "id": "innolight-2025fy",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225056459.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《中际旭创2025年年度报告》分季度主要财务指标: Q4营收13,235,134,789.35元/归母净利3,665,321,863.75元, Q2营收8,114,898,350.57元/归母净利2,412,239,256.03元; 全年营业成本22,165,537,126.77元"
+ },
+ {
+  "id": "innolight-2025q4-gmderived",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225056459.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Q4营业成本=年报全年22,165,537,126.77−三季报1-9月14,817,557,730.96=7,347,979,395.81元 → Q4毛利率0.4448"
+ },
+ {
+  "id": "innolight-2025q3",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-10-31/1224773075.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《中际旭创2025年第三季度报告》: 7-9月营业收入10,215,726,013.52元, 归母净利3,136,817,052.00元; 1-9月营业成本14,817,557,730.96元"
+ },
+ {
+  "id": "innolight-2025q3-gmderived",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-10-31/1224773075.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Q3营业成本=三季报1-9月14,817,557,730.96−半年报上半年8,972,966,839.76=5,844,590,891.20元 → Q3毛利率0.4279"
+ },
+ {
+  "id": "innolight-2025h1",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-08-27/1224585964.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《中际旭创2025年半年度报告》: 上半年营业收入14,789,074,837.80元, 营业成本8,972,966,839.76元"
+ },
+ {
+  "id": "innolight-2025q2-gmderived",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-08-27/1224585964.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Q2营业成本=半年报上半年8,972,966,839.76−2025Q1营业成本4,224,687,051.60(见2026Q1报告上年同期列)=4,748,279,788.16元 → Q2毛利率0.4149"
+ },
+ {
+  "id": "eoptolink-2026q1",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-24/1225172606.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《新易盛2026年第一季度报告》: 1-3月营业收入8,337,902,040.74元, 归母净利2,780,222,960.23元, 营业成本4,238,909,758.12元 → 毛利率0.4916"
+ },
+ {
+  "id": "eoptolink-2025fy",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-24/1225172598.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《新易盛2025年年度报告》分季度主要财务指标: Q4营收8,337,063,628.86元/归母净利3,204,830,222.33元, Q2营收6,384,913,727.13元/归母净利2,369,768,479.15元; 全年营业成本12,966,049,979.21元"
+ },
+ {
+  "id": "eoptolink-2025q4-gmderived",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-24/1225172598.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Q4营业成本=年报全年12,966,049,979.21−三季报1-9月8,706,776,625.39=4,259,273,353.82元 → Q4毛利率0.4891"
+ },
+ {
+  "id": "eoptolink-2025q3",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-10-30/1224761867.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《新易盛2025年第三季度报告》: 7-9月营业收入6,067,620,945.86元, 归母净利2,384,798,239.47元; 1-9月营业成本8,706,776,625.39元"
+ },
+ {
+  "id": "eoptolink-2025q3-gmderived",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-10-30/1224761867.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Q3营业成本=三季报1-9月8,706,776,625.39−半年报上半年5,487,204,465.82=3,219,572,159.57元 → Q3毛利率0.4694"
+ },
+ {
+  "id": "eoptolink-2025h1",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-08-26/1224571129.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《新易盛2025年半年度报告》: 上半年营业收入10,437,170,265.50元, 营业成本5,487,204,465.82元"
+ },
+ {
+  "id": "eoptolink-2025q2-gmderived",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2025-08-26/1224571129.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Q2营业成本=半年报上半年5,487,204,465.82−2025Q1营业成本2,080,439,291.73(见2026Q1报告上年同期列)=3,406,765,174.09元 → Q2毛利率0.4664"
  }
 ];
 

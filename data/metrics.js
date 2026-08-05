@@ -2946,6 +2946,326 @@ const METRICS = [
     "src": "montage-2025fy"
    }
   }
+ },
+ {
+  "company": "anet",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 3035.7,
+    "unit": "USD_M",
+    "src": "anet-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.629,
+    "src": "anet-2026q2-er"
+   },
+   "net_income": {
+    "value": 1212.9,
+    "unit": "USD_M",
+    "src": "anet-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "anet",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2709,
+    "unit": "USD_M",
+    "src": "anet-2026q1-er"
+   },
+   "gross_margin": {
+    "value": 0.619,
+    "src": "anet-2026q1-er"
+   },
+   "net_income": {
+    "value": 1022.9,
+    "unit": "USD_M",
+    "src": "anet-2026q1-er"
+   }
+  }
+ },
+ {
+  "company": "anet",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 2487.8,
+    "unit": "USD_M",
+    "src": "anet-2025q4-er"
+   },
+   "gross_margin": {
+    "value": 0.629,
+    "src": "anet-2025q4-er"
+   },
+   "net_income": {
+    "value": 955.8,
+    "unit": "USD_M",
+    "src": "anet-2025q4-er"
+   }
+  }
+ },
+ {
+  "company": "anet",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 2308.3,
+    "unit": "USD_M",
+    "src": "anet-2025q3-er"
+   },
+   "gross_margin": {
+    "value": 0.646,
+    "src": "anet-2025q3-er"
+   },
+   "net_income": {
+    "value": 853,
+    "unit": "USD_M",
+    "src": "anet-2025q3-er"
+   }
+  }
+ },
+ {
+  "company": "cohr",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1805.6,
+    "unit": "USD_M",
+    "src": "cohr-fy26q3-er"
+   },
+   "gross_margin": {
+    "value": 0.377,
+    "src": "cohr-fy26q3-er"
+   },
+   "net_income": {
+    "value": 191.4,
+    "unit": "USD_M",
+    "src": "cohr-fy26q3-er"
+   }
+  }
+ },
+ {
+  "company": "cohr",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 1685.6,
+    "unit": "USD_M",
+    "src": "cohr-fy26q2-er"
+   },
+   "gross_margin": {
+    "value": 0.369,
+    "src": "cohr-fy26q2-er"
+   },
+   "net_income": {
+    "value": 146.7,
+    "unit": "USD_M",
+    "src": "cohr-fy26q2-er"
+   }
+  }
+ },
+ {
+  "company": "cohr",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 1581.4,
+    "unit": "USD_M",
+    "src": "cohr-fy26q1-er"
+   },
+   "gross_margin": {
+    "value": 0.366,
+    "src": "cohr-fy26q1-er"
+   },
+   "net_income": {
+    "value": 226.3,
+    "unit": "USD_M",
+    "src": "cohr-fy26q1-er"
+   }
+  }
+ },
+ {
+  "company": "cohr",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1529.4,
+    "unit": "USD_M",
+    "src": "cohr-fy25q4-er"
+   },
+   "gross_margin": {
+    "value": 0.357,
+    "src": "cohr-fy25q4-er"
+   },
+   "net_income": {
+    "value": -95.6,
+    "unit": "USD_M",
+    "src": "cohr-fy25q4-er"
+   }
+  }
+ },
+ {
+  "company": "innolight",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 194.96,
+    "unit": "CNY_YI",
+    "src": "innolight-2026q1"
+   },
+   "gross_margin": {
+    "value": 0.4606,
+    "src": "innolight-2026q1"
+   },
+   "net_income": {
+    "value": 57.35,
+    "unit": "CNY_YI",
+    "src": "innolight-2026q1"
+   }
+  }
+ },
+ {
+  "company": "innolight",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 132.35,
+    "unit": "CNY_YI",
+    "src": "innolight-2025fy"
+   },
+   "gross_margin": {
+    "value": 0.4448,
+    "src": "innolight-2025q4-gmderived"
+   },
+   "net_income": {
+    "value": 36.65,
+    "unit": "CNY_YI",
+    "src": "innolight-2025fy"
+   }
+  }
+ },
+ {
+  "company": "innolight",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 102.16,
+    "unit": "CNY_YI",
+    "src": "innolight-2025q3"
+   },
+   "gross_margin": {
+    "value": 0.4279,
+    "src": "innolight-2025q3-gmderived"
+   },
+   "net_income": {
+    "value": 31.37,
+    "unit": "CNY_YI",
+    "src": "innolight-2025q3"
+   }
+  }
+ },
+ {
+  "company": "innolight",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 81.15,
+    "unit": "CNY_YI",
+    "src": "innolight-2025fy"
+   },
+   "gross_margin": {
+    "value": 0.4149,
+    "src": "innolight-2025q2-gmderived"
+   },
+   "net_income": {
+    "value": 24.12,
+    "unit": "CNY_YI",
+    "src": "innolight-2025fy"
+   }
+  }
+ },
+ {
+  "company": "eoptolink",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 83.38,
+    "unit": "CNY_YI",
+    "src": "eoptolink-2026q1"
+   },
+   "gross_margin": {
+    "value": 0.4916,
+    "src": "eoptolink-2026q1"
+   },
+   "net_income": {
+    "value": 27.8,
+    "unit": "CNY_YI",
+    "src": "eoptolink-2026q1"
+   }
+  }
+ },
+ {
+  "company": "eoptolink",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 83.37,
+    "unit": "CNY_YI",
+    "src": "eoptolink-2025fy"
+   },
+   "gross_margin": {
+    "value": 0.4891,
+    "src": "eoptolink-2025q4-gmderived"
+   },
+   "net_income": {
+    "value": 32.05,
+    "unit": "CNY_YI",
+    "src": "eoptolink-2025fy"
+   }
+  }
+ },
+ {
+  "company": "eoptolink",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 60.68,
+    "unit": "CNY_YI",
+    "src": "eoptolink-2025q3"
+   },
+   "gross_margin": {
+    "value": 0.4694,
+    "src": "eoptolink-2025q3-gmderived"
+   },
+   "net_income": {
+    "value": 23.85,
+    "unit": "CNY_YI",
+    "src": "eoptolink-2025q3"
+   }
+  }
+ },
+ {
+  "company": "eoptolink",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 63.85,
+    "unit": "CNY_YI",
+    "src": "eoptolink-2025fy"
+   },
+   "gross_margin": {
+    "value": 0.4664,
+    "src": "eoptolink-2025q2-gmderived"
+   },
+   "net_income": {
+    "value": 23.7,
+    "unit": "CNY_YI",
+    "src": "eoptolink-2025fy"
+   }
+  }
  }
 ];
 
