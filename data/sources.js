@@ -1543,6 +1543,54 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "Q2营业成本=半年报上半年5,487,204,465.82−2025Q1营业成本2,080,439,291.73(见2026Q1报告上年同期列)=3,406,765,174.09元 → Q2毛利率0.4664"
+ },
+ {
+  "id": "qveris-cn-tfc",
+  "type": "exchange_filing_derived",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300394",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris cn_financial_pro 提取自交易所披露: 2026Q1营收13.3亿元,净利4.92亿元; 2025Q4营收12.45亿元,净利5.52亿元; 2025Q3营收14.63亿元,净利5.66亿元; 2025Q2营收15.11亿元,净利5.62亿元"
+ },
+ {
+  "id": "qveris-cn-dwmicro",
+  "type": "exchange_filing_derived",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=301183",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris cn_financial_pro 提取自交易所披露: 2026Q1营收2.06亿元,净利0.28亿元; 2025Q4营收2.4亿元,净利0.21亿元; 2025Q3营收2.6亿元,净利0.29亿元; 2025Q2营收2.2亿元,净利0.31亿元"
+ },
+ {
+  "id": "qveris-cn-sifo",
+  "type": "exchange_filing_derived",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688313",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris cn_financial_pro 提取自交易所披露: 2026Q2营收9.19亿元,净利1.99亿元; 2026Q1营收5.77亿元,净利1.16亿元; 2025Q4营收5.69亿元,净利0.73亿元; 2025Q3营收5.68亿元,净利0.83亿元"
+ },
+ {
+  "id": "qveris-cn-ebphoton",
+  "type": "exchange_filing_derived",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688048",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris cn_financial_pro 提取自交易所披露: 2026Q1营收1.3亿元,净利0.04亿元; 2025Q4营收1.38亿元,净利0.01亿元; 2025Q3营收1.25亿元,净利0.12亿元; 2025Q2营收1.2亿元,净利0.16亿元"
+ },
+ {
+  "id": "qveris-cn-yjsemi",
+  "type": "exchange_filing_derived",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688498",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris cn_financial_pro 提取自交易所披露: 2026Q1营收3.55亿元,净利1.79亿元; 2025Q4营收2.18亿元,净利0.85亿元; 2025Q3营收1.78亿元,净利0.6亿元; 2025Q2营收1.21亿元,净利0.32亿元"
+ },
+ {
+  "id": "qveris-cn-tengjing",
+  "type": "exchange_filing_derived",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688195",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris cn_financial_pro 提取自交易所披露: 2026Q1营收1.71亿元,净利0.14亿元; 2025Q4营收1.6亿元,净利0.07亿元; 2025Q3营收1.62亿元,净利0.27亿元; 2025Q2营收1.5亿元,净利0.24亿元"
  }
 ];
 

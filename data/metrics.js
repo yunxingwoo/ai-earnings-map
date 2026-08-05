@@ -3266,6 +3266,390 @@ const METRICS = [
     "src": "eoptolink-2025fy"
    }
   }
+ },
+ {
+  "company": "tfc",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 13.3,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tfc"
+   },
+   "net_income": {
+    "value": 4.92,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tfc"
+   }
+  }
+ },
+ {
+  "company": "tfc",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 12.45,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tfc"
+   },
+   "net_income": {
+    "value": 5.52,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tfc"
+   }
+  }
+ },
+ {
+  "company": "tfc",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 14.63,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tfc"
+   },
+   "net_income": {
+    "value": 5.66,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tfc"
+   }
+  }
+ },
+ {
+  "company": "tfc",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 15.11,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tfc"
+   },
+   "net_income": {
+    "value": 5.62,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tfc"
+   }
+  }
+ },
+ {
+  "company": "dwmicro",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2.06,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-dwmicro"
+   },
+   "net_income": {
+    "value": 0.28,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-dwmicro"
+   }
+  }
+ },
+ {
+  "company": "dwmicro",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 2.4,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-dwmicro"
+   },
+   "net_income": {
+    "value": 0.21,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-dwmicro"
+   }
+  }
+ },
+ {
+  "company": "dwmicro",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 2.6,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-dwmicro"
+   },
+   "net_income": {
+    "value": 0.29,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-dwmicro"
+   }
+  }
+ },
+ {
+  "company": "dwmicro",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2.2,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-dwmicro"
+   },
+   "net_income": {
+    "value": 0.31,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-dwmicro"
+   }
+  }
+ },
+ {
+  "company": "sifo",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 9.19,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sifo"
+   },
+   "net_income": {
+    "value": 1.99,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sifo"
+   }
+  }
+ },
+ {
+  "company": "sifo",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 5.77,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sifo"
+   },
+   "net_income": {
+    "value": 1.16,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sifo"
+   }
+  }
+ },
+ {
+  "company": "sifo",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 5.69,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sifo"
+   },
+   "net_income": {
+    "value": 0.73,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sifo"
+   }
+  }
+ },
+ {
+  "company": "sifo",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 5.68,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sifo"
+   },
+   "net_income": {
+    "value": 0.83,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sifo"
+   }
+  }
+ },
+ {
+  "company": "ebphoton",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1.3,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ebphoton"
+   },
+   "net_income": {
+    "value": 0.04,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ebphoton"
+   }
+  }
+ },
+ {
+  "company": "ebphoton",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 1.38,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ebphoton"
+   },
+   "net_income": {
+    "value": 0.01,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ebphoton"
+   }
+  }
+ },
+ {
+  "company": "ebphoton",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 1.25,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ebphoton"
+   },
+   "net_income": {
+    "value": 0.12,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ebphoton"
+   }
+  }
+ },
+ {
+  "company": "ebphoton",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1.2,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ebphoton"
+   },
+   "net_income": {
+    "value": 0.16,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ebphoton"
+   }
+  }
+ },
+ {
+  "company": "yjsemi",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 3.55,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-yjsemi"
+   },
+   "net_income": {
+    "value": 1.79,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-yjsemi"
+   }
+  }
+ },
+ {
+  "company": "yjsemi",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 2.18,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-yjsemi"
+   },
+   "net_income": {
+    "value": 0.85,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-yjsemi"
+   }
+  }
+ },
+ {
+  "company": "yjsemi",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 1.78,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-yjsemi"
+   },
+   "net_income": {
+    "value": 0.6,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-yjsemi"
+   }
+  }
+ },
+ {
+  "company": "yjsemi",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1.21,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-yjsemi"
+   },
+   "net_income": {
+    "value": 0.32,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-yjsemi"
+   }
+  }
+ },
+ {
+  "company": "tengjing",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1.71,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tengjing"
+   },
+   "net_income": {
+    "value": 0.14,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tengjing"
+   }
+  }
+ },
+ {
+  "company": "tengjing",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 1.6,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tengjing"
+   },
+   "net_income": {
+    "value": 0.07,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tengjing"
+   }
+  }
+ },
+ {
+  "company": "tengjing",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 1.62,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tengjing"
+   },
+   "net_income": {
+    "value": 0.27,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tengjing"
+   }
+  }
+ },
+ {
+  "company": "tengjing",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1.5,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tengjing"
+   },
+   "net_income": {
+    "value": 0.24,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tengjing"
+   }
+  }
  }
 ];
 
