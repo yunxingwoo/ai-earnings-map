@@ -3650,6 +3650,582 @@ const METRICS = [
     "src": "qveris-cn-tengjing"
    }
   }
+ },
+ {
+  "company": "aapl",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 109417,
+    "unit": "USD_M",
+    "src": "aapl-2026q2-10q"
+   },
+   "net_income": {
+    "value": 29789,
+    "unit": "USD_M",
+    "src": "aapl-2026q2-10q"
+   }
+  }
+ },
+ {
+  "company": "aapl",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 111184,
+    "unit": "USD_M",
+    "src": "aapl-2026q1-10q"
+   },
+   "net_income": {
+    "value": 29578,
+    "unit": "USD_M",
+    "src": "aapl-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "aapl",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 143756,
+    "unit": "USD_M",
+    "src": "aapl-2025q4-10q"
+   },
+   "net_income": {
+    "value": 42097,
+    "unit": "USD_M",
+    "src": "aapl-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "aapl",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 102466,
+    "unit": "USD_M",
+    "src": "aapl-2025q3-10q"
+   },
+   "net_income": {
+    "value": 27466,
+    "unit": "USD_M",
+    "src": "aapl-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "iren",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 144.795,
+    "unit": "USD_M",
+    "src": "iren-2026q1-10q"
+   },
+   "net_income": {
+    "value": -247.827,
+    "unit": "USD_M",
+    "src": "iren-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "iren",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 184.692,
+    "unit": "USD_M",
+    "src": "iren-2025q4-10q"
+   },
+   "net_income": {
+    "value": -155.407,
+    "unit": "USD_M",
+    "src": "iren-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "iren",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 240.295,
+    "unit": "USD_M",
+    "src": "iren-2025q3-10q"
+   },
+   "net_income": {
+    "value": 384.611,
+    "unit": "USD_M",
+    "src": "iren-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "iren",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 187.292,
+    "unit": "USD_M",
+    "src": "iren-2025q2-10q"
+   },
+   "net_income": {
+    "value": 95.546,
+    "unit": "USD_M",
+    "src": "iren-2025q2-10q"
+   }
+  }
+ },
+ {
+  "company": "gev",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 11104,
+    "unit": "USD_M",
+    "src": "gev-2026q2-10q"
+   },
+   "net_income": {
+    "value": 668,
+    "unit": "USD_M",
+    "src": "gev-2026q2-10q"
+   }
+  }
+ },
+ {
+  "company": "gev",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 9339,
+    "unit": "USD_M",
+    "src": "gev-2026q1-10q"
+   },
+   "net_income": {
+    "value": 4745,
+    "unit": "USD_M",
+    "src": "gev-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "gev",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 10956,
+    "unit": "USD_M",
+    "src": "gev-2025q4-10q"
+   },
+   "net_income": {
+    "value": 3664,
+    "unit": "USD_M",
+    "src": "gev-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "gev",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 9969,
+    "unit": "USD_M",
+    "src": "gev-2025q3-10q"
+   },
+   "net_income": {
+    "value": 452,
+    "unit": "USD_M",
+    "src": "gev-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "vst",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 4654,
+    "unit": "USD_M",
+    "src": "vst-2026q1-10q"
+   },
+   "net_income": {
+    "value": 1029,
+    "unit": "USD_M",
+    "src": "vst-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "vst",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 2338,
+    "unit": "USD_M",
+    "src": "vst-2025q4-10q"
+   },
+   "net_income": {
+    "value": 233,
+    "unit": "USD_M",
+    "src": "vst-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "vst",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 4971,
+    "unit": "USD_M",
+    "src": "vst-2025q3-10q"
+   },
+   "net_income": {
+    "value": 652,
+    "unit": "USD_M",
+    "src": "vst-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "vst",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 4250,
+    "unit": "USD_M",
+    "src": "vst-2025q2-10q"
+   },
+   "net_income": {
+    "value": 327,
+    "unit": "USD_M",
+    "src": "vst-2025q2-10q"
+   }
+  }
+ },
+ {
+  "company": "be",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1065.365,
+    "unit": "USD_M",
+    "src": "be-2026q2-10q"
+   },
+   "net_income": {
+    "value": 196.29,
+    "unit": "USD_M",
+    "src": "be-2026q2-10q"
+   }
+  }
+ },
+ {
+  "company": "be",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 751.054,
+    "unit": "USD_M",
+    "src": "be-2026q1-10q"
+   },
+   "net_income": {
+    "value": 70.653,
+    "unit": "USD_M",
+    "src": "be-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "be",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 777.683,
+    "unit": "USD_M",
+    "src": "be-2025q4-10q"
+   },
+   "net_income": {
+    "value": 1.091,
+    "unit": "USD_M",
+    "src": "be-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "be",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 519.048,
+    "unit": "USD_M",
+    "src": "be-2025q3-10q"
+   },
+   "net_income": {
+    "value": -23.093,
+    "unit": "USD_M",
+    "src": "be-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "flnc",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 464.891,
+    "unit": "USD_M",
+    "src": "flnc-2026q1-10q"
+   },
+   "net_income": {
+    "value": -20.927,
+    "unit": "USD_M",
+    "src": "flnc-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "flnc",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 475.234,
+    "unit": "USD_M",
+    "src": "flnc-2025q4-10q"
+   },
+   "net_income": {
+    "value": -45.07,
+    "unit": "USD_M",
+    "src": "flnc-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "flnc",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 1041.891,
+    "unit": "USD_M",
+    "src": "flnc-2025q3-10q"
+   },
+   "net_income": {
+    "value": 17.946,
+    "unit": "USD_M",
+    "src": "flnc-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "flnc",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 602.533,
+    "unit": "USD_M",
+    "src": "flnc-2025q2-10q"
+   },
+   "net_income": {
+    "value": 6.252,
+    "unit": "USD_M",
+    "src": "flnc-2025q2-10q"
+   }
+  }
+ },
+ {
+  "company": "tsla",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 28236,
+    "unit": "USD_M",
+    "src": "tsla-2026q2-10q"
+   },
+   "net_income": {
+    "value": 1114,
+    "unit": "USD_M",
+    "src": "tsla-2026q2-10q"
+   }
+  }
+ },
+ {
+  "company": "tsla",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 22387,
+    "unit": "USD_M",
+    "src": "tsla-2026q1-10q"
+   },
+   "net_income": {
+    "value": 491,
+    "unit": "USD_M",
+    "src": "tsla-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "tsla",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 24901,
+    "unit": "USD_M",
+    "src": "tsla-2025q4-10q"
+   },
+   "net_income": {
+    "value": 840,
+    "unit": "USD_M",
+    "src": "tsla-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "tsla",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 28095,
+    "unit": "USD_M",
+    "src": "tsla-2025q3-10q"
+   },
+   "net_income": {
+    "value": 1373,
+    "unit": "USD_M",
+    "src": "tsla-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "now",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 3987,
+    "unit": "USD_M",
+    "src": "now-2026q2-10q"
+   },
+   "net_income": {
+    "value": 298,
+    "unit": "USD_M",
+    "src": "now-2026q2-10q"
+   }
+  }
+ },
+ {
+  "company": "now",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 3770,
+    "unit": "USD_M",
+    "src": "now-2026q1-10q"
+   },
+   "net_income": {
+    "value": 469,
+    "unit": "USD_M",
+    "src": "now-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "now",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 3568,
+    "unit": "USD_M",
+    "src": "now-2025q4-10q"
+   },
+   "net_income": {
+    "value": 401,
+    "unit": "USD_M",
+    "src": "now-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "now",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 3407,
+    "unit": "USD_M",
+    "src": "now-2025q3-10q"
+   },
+   "net_income": {
+    "value": 502,
+    "unit": "USD_M",
+    "src": "now-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "pltr",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1935.464,
+    "unit": "USD_M",
+    "src": "pltr-2026q2-10q"
+   },
+   "net_income": {
+    "value": 1061.89,
+    "unit": "USD_M",
+    "src": "pltr-2026q2-10q"
+   }
+  }
+ },
+ {
+  "company": "pltr",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1632.583,
+    "unit": "USD_M",
+    "src": "pltr-2026q1-10q"
+   },
+   "net_income": {
+    "value": 870.527,
+    "unit": "USD_M",
+    "src": "pltr-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "pltr",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 1406.802,
+    "unit": "USD_M",
+    "src": "pltr-2025q4-10q"
+   },
+   "net_income": {
+    "value": 608.676,
+    "unit": "USD_M",
+    "src": "pltr-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "pltr",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 1181.092,
+    "unit": "USD_M",
+    "src": "pltr-2025q3-10q"
+   },
+   "net_income": {
+    "value": 475.599,
+    "unit": "USD_M",
+    "src": "pltr-2025q3-10q"
+   }
+  }
  }
 ];
 

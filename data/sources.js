@@ -1591,6 +1591,294 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "经 qveris cn_financial_pro 提取自交易所披露: 2026Q1营收1.71亿元,净利0.14亿元; 2025Q4营收1.6亿元,净利0.07亿元; 2025Q3营收1.62亿元,净利0.27亿元; 2025Q2营收1.5亿元,净利0.24亿元"
+ },
+ {
+  "id": "aapl-2026q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=APPLE%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "APPLE INC 2026Q2 (10-Q, 三个月ended 2026-06-30): 营收$109,417M, 净利$29,789M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=109417000000, netIncome=29789000000)"
+ },
+ {
+  "id": "aapl-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=APPLE%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "APPLE INC 2026Q1 (10-Q, 三个月ended 2026-03-31): 营收$111,184M, 净利$29,578M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=111184000000, netIncome=29578000000)"
+ },
+ {
+  "id": "aapl-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=APPLE%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "APPLE INC 2025Q4 (10-Q, 三个月ended 2025-12-31): 营收$143,756M, 净利$42,097M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=143756000000, netIncome=42097000000)"
+ },
+ {
+  "id": "aapl-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=APPLE%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "APPLE INC 2025Q3 (10-Q, 三个月ended 2025-09-30): 营收$102,466M, 净利$27,466M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=102466000000, netIncome=27466000000)"
+ },
+ {
+  "id": "iren-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IREN%20LTD&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "IREN LTD 2026Q1 (10-Q, 三个月ended 2026-03-31): 营收$145M, 净利$-248M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=144795000, netIncome=-247827000)"
+ },
+ {
+  "id": "iren-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IREN%20LTD&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "IREN LTD 2025Q4 (10-Q, 三个月ended 2025-12-31): 营收$185M, 净利$-155M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=184692000, netIncome=-155407000)"
+ },
+ {
+  "id": "iren-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IREN%20LTD&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "IREN LTD 2025Q3 (10-Q, 三个月ended 2025-09-30): 营收$240M, 净利$385M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=240295000, netIncome=384611000)"
+ },
+ {
+  "id": "iren-2025q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IREN%20LTD&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "IREN LTD 2025Q2 (10-Q, 三个月ended 2025-06-30): 营收$187M, 净利$96M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=187292000, netIncome=95546000)"
+ },
+ {
+  "id": "gev-2026q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=GE%20VERNOVA&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "GE VERNOVA 2026Q2 (10-Q, 三个月ended 2026-06-30): 营收$11,104M, 净利$668M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=11104000000, netIncome=668000000)"
+ },
+ {
+  "id": "gev-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=GE%20VERNOVA&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "GE VERNOVA 2026Q1 (10-Q, 三个月ended 2026-03-31): 营收$9,339M, 净利$4,745M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=9339000000, netIncome=4745000000)"
+ },
+ {
+  "id": "gev-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=GE%20VERNOVA&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "GE VERNOVA 2025Q4 (10-Q, 三个月ended 2025-12-31): 营收$10,956M, 净利$3,664M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=10956000000, netIncome=3664000000)"
+ },
+ {
+  "id": "gev-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=GE%20VERNOVA&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "GE VERNOVA 2025Q3 (10-Q, 三个月ended 2025-09-30): 营收$9,969M, 净利$452M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=9969000000, netIncome=452000000)"
+ },
+ {
+  "id": "vst-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=VISTRA%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "VISTRA CORP 2026Q1 (10-Q, 三个月ended 2026-03-31): 营收$4,654M, 净利$1,029M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=4654000000, netIncome=1029000000)"
+ },
+ {
+  "id": "vst-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=VISTRA%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "VISTRA CORP 2025Q4 (10-Q, 三个月ended 2025-12-31): 营收$2,338M, 净利$233M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=2338000000, netIncome=233000000)"
+ },
+ {
+  "id": "vst-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=VISTRA%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "VISTRA CORP 2025Q3 (10-Q, 三个月ended 2025-09-30): 营收$4,971M, 净利$652M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=4971000000, netIncome=652000000)"
+ },
+ {
+  "id": "vst-2025q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=VISTRA%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "VISTRA CORP 2025Q2 (10-Q, 三个月ended 2025-06-30): 营收$4,250M, 净利$327M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=4250000000, netIncome=327000000)"
+ },
+ {
+  "id": "be-2026q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=BLOOM%20ENERGY%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "BLOOM ENERGY CORP 2026Q2 (10-Q, 三个月ended 2026-06-30): 营收$1,065M, 净利$196M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=1065365000, netIncome=196290000)"
+ },
+ {
+  "id": "be-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=BLOOM%20ENERGY%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "BLOOM ENERGY CORP 2026Q1 (10-Q, 三个月ended 2026-03-31): 营收$751M, 净利$71M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=751054000, netIncome=70653000)"
+ },
+ {
+  "id": "be-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=BLOOM%20ENERGY%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "BLOOM ENERGY CORP 2025Q4 (10-Q, 三个月ended 2025-12-31): 营收$778M, 净利$1M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=777683000, netIncome=1091000)"
+ },
+ {
+  "id": "be-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=BLOOM%20ENERGY%20CORP&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "BLOOM ENERGY CORP 2025Q3 (10-Q, 三个月ended 2025-09-30): 营收$519M, 净利$-23M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=519048000, netIncome=-23093000)"
+ },
+ {
+  "id": "flnc-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=FLUENCE%20ENERGY&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FLUENCE ENERGY 2026Q1 (10-Q, 三个月ended 2026-03-31): 营收$465M, 净利$-21M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=464891000, netIncome=-20927000)"
+ },
+ {
+  "id": "flnc-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=FLUENCE%20ENERGY&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FLUENCE ENERGY 2025Q4 (10-Q, 三个月ended 2025-12-31): 营收$475M, 净利$-45M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=475234000, netIncome=-45070000)"
+ },
+ {
+  "id": "flnc-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=FLUENCE%20ENERGY&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FLUENCE ENERGY 2025Q3 (10-Q, 三个月ended 2025-09-30): 营收$1,042M, 净利$18M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=1041891000, netIncome=17946000)"
+ },
+ {
+  "id": "flnc-2025q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=FLUENCE%20ENERGY&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FLUENCE ENERGY 2025Q2 (10-Q, 三个月ended 2025-06-30): 营收$603M, 净利$6M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=602533000, netIncome=6252000)"
+ },
+ {
+  "id": "tsla-2026q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=TESLA%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TESLA INC 2026Q2 (10-Q, 三个月ended 2026-06-30): 营收$28,236M, 净利$1,114M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=28236000000, netIncome=1114000000)"
+ },
+ {
+  "id": "tsla-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=TESLA%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TESLA INC 2026Q1 (10-Q, 三个月ended 2026-03-31): 营收$22,387M, 净利$491M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=22387000000, netIncome=491000000)"
+ },
+ {
+  "id": "tsla-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=TESLA%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TESLA INC 2025Q4 (10-Q, 三个月ended 2025-12-31): 营收$24,901M, 净利$840M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=24901000000, netIncome=840000000)"
+ },
+ {
+  "id": "tsla-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=TESLA%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "TESLA INC 2025Q3 (10-Q, 三个月ended 2025-09-30): 营收$28,095M, 净利$1,373M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=28095000000, netIncome=1373000000)"
+ },
+ {
+  "id": "now-2026q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SERVICENOW%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SERVICENOW INC 2026Q2 (10-Q, 三个月ended 2026-06-30): 营收$3,987M, 净利$298M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=3987000000, netIncome=298000000)"
+ },
+ {
+  "id": "now-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SERVICENOW%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SERVICENOW INC 2026Q1 (10-Q, 三个月ended 2026-03-31): 营收$3,770M, 净利$469M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=3770000000, netIncome=469000000)"
+ },
+ {
+  "id": "now-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SERVICENOW%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SERVICENOW INC 2025Q4 (10-Q, 三个月ended 2025-12-31): 营收$3,568M, 净利$401M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=3568000000, netIncome=401000000)"
+ },
+ {
+  "id": "now-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SERVICENOW%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SERVICENOW INC 2025Q3 (10-Q, 三个月ended 2025-09-30): 营收$3,407M, 净利$502M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=3407000000, netIncome=502000000)"
+ },
+ {
+  "id": "pltr-2026q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=PALANTIR%20TECHNOLOGIES&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "PALANTIR TECHNOLOGIES 2026Q2 (10-Q, 三个月ended 2026-06-30): 营收$1,935M, 净利$1,062M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=1935464000, netIncome=1061890000)"
+ },
+ {
+  "id": "pltr-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=PALANTIR%20TECHNOLOGIES&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "PALANTIR TECHNOLOGIES 2026Q1 (10-Q, 三个月ended 2026-03-31): 营收$1,633M, 净利$871M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=1632583000, netIncome=870527000)"
+ },
+ {
+  "id": "pltr-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=PALANTIR%20TECHNOLOGIES&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "PALANTIR TECHNOLOGIES 2025Q4 (10-Q, 三个月ended 2025-12-31): 营收$1,407M, 净利$609M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=1406802000, netIncome=608676000)"
+ },
+ {
+  "id": "pltr-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=PALANTIR%20TECHNOLOGIES&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "PALANTIR TECHNOLOGIES 2025Q3 (10-Q, 三个月ended 2025-09-30): 营收$1,181M, 净利$476M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=1181092000, netIncome=475599000)"
  }
 ];
 
