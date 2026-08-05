@@ -472,6 +472,384 @@ const METRICS = [
     "src": "fii-2025fy"
    }
   }
+ },
+ {
+  "company": "asml",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 9326,
+    "unit": "EUR_M",
+    "src": "asml-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.54,
+    "src": "asml-2026q2-er"
+   },
+   "net_income": {
+    "value": 2918,
+    "unit": "EUR_M",
+    "src": "asml-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "asml",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 8767,
+    "unit": "EUR_M",
+    "src": "asml-2026q1-er"
+   },
+   "gross_margin": {
+    "value": 0.53,
+    "src": "asml-2026q1-er"
+   },
+   "net_income": {
+    "value": 2757,
+    "unit": "EUR_M",
+    "src": "asml-2026q1-er"
+   }
+  }
+ },
+ {
+  "company": "asml",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 9718,
+    "unit": "EUR_M",
+    "src": "asml-2025q4-er"
+   },
+   "gross_margin": {
+    "value": 0.522,
+    "src": "asml-2025q4-er"
+   },
+   "net_income": {
+    "value": 2840,
+    "unit": "EUR_M",
+    "src": "asml-2025q4-er"
+   },
+   "backlog": {
+    "value": 38800,
+    "unit": "EUR_M",
+    "src": "asml-2025q4-er"
+   }
+  }
+ },
+ {
+  "company": "asml",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 7516,
+    "unit": "EUR_M",
+    "src": "asml-2025q3-er"
+   },
+   "gross_margin": {
+    "value": 0.516,
+    "src": "asml-2025q3-er"
+   },
+   "net_income": {
+    "value": 2125,
+    "unit": "EUR_M",
+    "src": "asml-2025q3-er"
+   },
+   "backlog": {
+    "value": 35900,
+    "unit": "EUR_M",
+    "src": "asml-2025q4-er"
+   }
+  }
+ },
+ {
+  "company": "amat",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 7910,
+    "unit": "USD_M",
+    "src": "amat-fy26q2-er"
+   },
+   "gross_margin": {
+    "value": 0.499,
+    "src": "amat-fy26q2-er"
+   },
+   "net_income": {
+    "value": 2806,
+    "unit": "USD_M",
+    "src": "amat-fy26q2-er"
+   }
+  }
+ },
+ {
+  "company": "amat",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 7010,
+    "unit": "USD_M",
+    "src": "amat-fy26q1-er"
+   },
+   "gross_margin": {
+    "value": 0.49,
+    "src": "amat-fy26q1-er"
+   },
+   "net_income": {
+    "value": 2026,
+    "unit": "USD_M",
+    "src": "amat-fy26q1-er"
+   }
+  }
+ },
+ {
+  "company": "amat",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 6800,
+    "unit": "USD_M",
+    "src": "amat-fy25q4-er"
+   },
+   "gross_margin": {
+    "value": 0.48,
+    "src": "amat-fy25q4-er"
+   },
+   "net_income": {
+    "value": 1897,
+    "unit": "USD_M",
+    "src": "amat-fy25q4-er"
+   }
+  }
+ },
+ {
+  "company": "amat",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 7300,
+    "unit": "USD_M",
+    "src": "amat-fy25q3-er"
+   },
+   "gross_margin": {
+    "value": 0.488,
+    "src": "amat-fy25q3-er"
+   },
+   "net_income": {
+    "value": 1779,
+    "unit": "USD_M",
+    "src": "amat-fy25q3-er"
+   }
+  }
+ },
+ {
+  "company": "lrcx",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 6720,
+    "unit": "USD_M",
+    "src": "lrcx-fy26q4-er"
+   },
+   "gross_margin": {
+    "value": 0.517,
+    "src": "lrcx-fy26q4-er"
+   },
+   "net_income": {
+    "value": 2280,
+    "unit": "USD_M",
+    "src": "lrcx-fy26q4-er"
+   }
+  }
+ },
+ {
+  "company": "lrcx",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 5841.49,
+    "unit": "USD_M",
+    "src": "lrcx-fy26q3-er"
+   },
+   "gross_margin": {
+    "value": 0.498,
+    "src": "lrcx-fy26q3-er"
+   },
+   "net_income": {
+    "value": 1825,
+    "unit": "USD_M",
+    "src": "lrcx-fy26q3-er"
+   }
+  }
+ },
+ {
+  "company": "lrcx",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 5344.79,
+    "unit": "USD_M",
+    "src": "lrcx-fy26q2-er"
+   },
+   "gross_margin": {
+    "value": 0.496,
+    "src": "lrcx-fy26q2-er"
+   },
+   "net_income": {
+    "value": 1594,
+    "unit": "USD_M",
+    "src": "lrcx-fy26q2-er"
+   }
+  }
+ },
+ {
+  "company": "lrcx",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 5324.17,
+    "unit": "USD_M",
+    "src": "lrcx-fy26q1-er"
+   },
+   "gross_margin": {
+    "value": 0.504,
+    "src": "lrcx-fy26q1-er"
+   },
+   "net_income": {
+    "value": 1569,
+    "unit": "USD_M",
+    "src": "lrcx-fy26q1-er"
+   }
+  }
+ },
+ {
+  "company": "snps",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2276,
+    "unit": "USD_M",
+    "src": "snps-fy26q2-er"
+   },
+   "net_income": {
+    "value": 17.1,
+    "unit": "USD_M",
+    "src": "snps-fy26q2-er"
+   }
+  }
+ },
+ {
+  "company": "snps",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 2409,
+    "unit": "USD_M",
+    "src": "snps-fy26q1-er"
+   },
+   "net_income": {
+    "value": 65,
+    "unit": "USD_M",
+    "src": "snps-fy26q1-er"
+   }
+  }
+ },
+ {
+  "company": "snps",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 2255,
+    "unit": "USD_M",
+    "src": "snps-fy25q4-er"
+   },
+   "net_income": {
+    "value": 448.7,
+    "unit": "USD_M",
+    "src": "snps-fy25q4-er"
+   }
+  }
+ },
+ {
+  "company": "snps",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1740,
+    "unit": "USD_M",
+    "src": "snps-fy25q3-er"
+   },
+   "net_income": {
+    "value": 242.5,
+    "unit": "USD_M",
+    "src": "snps-fy25q3-er"
+   }
+  }
+ },
+ {
+  "company": "naura",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 103.23,
+    "unit": "CNY_YI",
+    "src": "naura-2026q1"
+   },
+   "net_income": {
+    "value": 16.35,
+    "unit": "CNY_YI",
+    "src": "naura-2026q1"
+   }
+  }
+ },
+ {
+  "company": "naura",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 120.52,
+    "unit": "CNY_YI",
+    "src": "naura-2025fy"
+   },
+   "net_income": {
+    "value": 3.92,
+    "unit": "CNY_YI",
+    "src": "naura-2025fy"
+   }
+  }
+ },
+ {
+  "company": "naura",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 111.6,
+    "unit": "CNY_YI",
+    "src": "naura-2025fy"
+   },
+   "net_income": {
+    "value": 19.22,
+    "unit": "CNY_YI",
+    "src": "naura-2025fy"
+   }
+  }
+ },
+ {
+  "company": "naura",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 79.36,
+    "unit": "CNY_YI",
+    "src": "naura-2025fy"
+   },
+   "net_income": {
+    "value": 16.27,
+    "unit": "CNY_YI",
+    "src": "naura-2025fy"
+   }
+  }
  }
 ];
 

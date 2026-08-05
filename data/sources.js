@@ -287,6 +287,150 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "2026-03-27 官方新闻稿: 'the 900 MW site includes two new buildings and an onsite power plant',支持 Microsoft;场地清理已进行,首栋楼预计 2027 年中通电;建成后 Abilene 全站合计 2.1 GW"
+ },
+ {
+  "id": "asml-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "ASML Q2 2026 财报新闻稿(2026-07-15): 总净销售€9,326M, 毛利率54.0%(毛利€5,035M), 净利润€2,918M(EPS€7.59); 指引Q3净销售€11.0-12.0B"
+ },
+ {
+  "id": "asml-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://www.asml.com/en/news/press-releases/2026/q1-2026-financial-results",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "ASML Q1 2026 财报新闻稿(2026-04-15): 总净销售€8,767M, 毛利率53.0%(毛利€4,645M), 净利润€2,757M(EPS€7.15)"
+ },
+ {
+  "id": "asml-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://www.asml.com/en/news/press-releases/2026/q4-2025-financial-results",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "ASML Q4及全年2025新闻稿(2026-01-28): Q4总净销售€9,718M(创纪录), 毛利率52.2%, 净利润€2,840M; 年末backlog €38.8B(较Q3末€35.9B上升); 全年净销售€32,667M/净利€9,609M"
+ },
+ {
+  "id": "asml-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://www.asml.com/en/news/press-releases/2025/q3-2025-financial-results",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "ASML Q3 2025 财报新闻稿(2025-10-15): 总净销售€7,516M, 毛利率51.6%, 净利润€2,125M(EPS€5.49); 净预订€5,399M"
+ },
+ {
+  "id": "amat-fy26q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026035071/exhibit991q22026earningsre.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "AMAT 8-K EX-99.1(2026-05-14), FY26Q2财季止2026-04-26: 营收$7,910M(创纪录), GAAP毛利率49.9%, GAAP净利$2,806M/EPS$3.51"
+ },
+ {
+  "id": "amat-fy26q1-er",
+  "type": "earnings_release",
+  "url": "https://investor.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-first-quarter-2026-results",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "AMAT FY26Q1 IR新闻稿(2026-02-12), 财季止2026-01-25: 营收$7,010M, GAAP毛利率49.0%, GAAP净利$2,026M/EPS$2.54"
+ },
+ {
+  "id": "amat-fy25q4-er",
+  "type": "earnings_release",
+  "url": "https://investor.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2025",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "AMAT FY25Q4及全年IR新闻稿(2025-11-13), 财季止2025-10-26: 营收$6,800M, GAAP毛利率48.0%, GAAP净利$1,897M/EPS$2.38"
+ },
+ {
+  "id": "amat-fy25q3-er",
+  "type": "earnings_release",
+  "url": "https://appliedmaterials.gcs-web.com/news-releases/news-release-details/applied-materials-announces-third-quarter-2025-results",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "AMAT FY25Q3 IR新闻稿(2025-08-14), 财季止2025-07-27: 营收$7,300M(创纪录), GAAP毛利率48.8%, GAAP净利$1,779M/EPS$2.22"
+ },
+ {
+  "id": "lrcx-fy26q4-er",
+  "type": "earnings_release",
+  "url": "https://newsroom.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28,-2026",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "LRCX FY26Q4新闻稿(2026-07-29), 财季止2026-06-28: 营收$6,720M(创纪录), GAAP毛利率51.7%, GAAP净利$2,280M/EPS$1.81"
+ },
+ {
+  "id": "lrcx-fy26q3-er",
+  "type": "earnings_release",
+  "url": "https://newsroom.lamresearch.com/2026-04-22-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-March-29,-2026",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "LRCX FY26Q3新闻稿(2026-04-22), 财季止2026-03-29: 营收$5,841,488千美元, GAAP毛利率49.8%, GAAP净利$1,825M/EPS$1.45"
+ },
+ {
+  "id": "lrcx-fy26q2-er",
+  "type": "earnings_release",
+  "url": "https://newsroom.lamresearch.com/2026-01-28-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-December-28,-2025",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "LRCX FY26Q2新闻稿(2026-01-28), 财季止2025-12-28: 营收$5,344,791千美元, GAAP毛利率49.6%(毛利$2,651M), GAAP净利$1,594M/EPS$1.26"
+ },
+ {
+  "id": "lrcx-fy26q1-er",
+  "type": "earnings_release",
+  "url": "https://newsroom.lamresearch.com/2025-10-22-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-September-28,-2025",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "LRCX FY26Q1新闻稿(2025-10-22), 财季止2025-09-28: 营收$5,324,173千美元, GAAP毛利率50.4%(毛利$2,685M), GAAP净利$1,569M/EPS$1.24"
+ },
+ {
+  "id": "snps-fy26q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/883241/000119312526241911/d126227dex991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SNPS 8-K EX-99.1(2026-05-27), FY26Q2止2026-04-30: 营收$2,276M, GAAP净利$17.1M/EPS$0.09(含收购摊销等影响); 上调全年指引至$9.665B"
+ },
+ {
+  "id": "snps-fy26q1-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/883241/000119312526071601/d921168dex991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SNPS 8-K EX-99.1(2026-02-25), FY26Q1止2026-01-31: 营收$2,409M, GAAP净利$65.0M/EPS$0.34"
+ },
+ {
+  "id": "snps-fy25q4-er",
+  "type": "earnings_release",
+  "url": "https://news.synopsys.com/2025-12-10-Synopsys-Posts-Financial-Results-for-Fourth-Quarter-and-Fiscal-Year-2025",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SNPS FY25Q4及全年新闻稿(2025-12-10), 止2025-10-31: 营收$2,255M, GAAP净利$448.7M/EPS$2.39; 全年营收$7,054M"
+ },
+ {
+  "id": "snps-fy25q3-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/883241/000119312525199178/d56931dex991.htm",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "SNPS 8-K EX-99.1(2025-09-09), FY25Q3止2025-07-31: 营收$1,740M, GAAP净利$242.5M/EPS$1.50"
+ },
+ {
+  "id": "naura-2026q1",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225259650.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《北方华创2026年第一季度报告》(2026-04-30): 营业收入10,322,863,908.82元, 归母净利润1,634,739,048.68元(研发费用14.02亿元)"
+ },
+ {
+  "id": "naura-2025fy",
+  "type": "annual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225122918.PDF",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "巨潮《北方华创2025年年度报告》分季度主要财务指标: Q2营收7,935,516,975.91/归母净利1,627,271,237.20, Q3营收11,159,833,472.07/归母净利1,922,364,079.12, Q4营收12,051,732,762.97/归母净利391,650,402.16元; 全年营收393.53亿元"
  }
 ];
 
