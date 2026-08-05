@@ -9,7 +9,7 @@ function coQuarterly(id){ return quarterly(BYCO[id]||[]); }
 function gapReason(c){
   if(c.listed===false) return '非上市 · 无定期财报';
   if(c.listed==='pending') return '上市状态待核';
-  return '待采集(v2 管线)';
+  return '待采集（v2 管线）';
 }
 const shortPeriod = p => p.replace(/^\d{2}(\d{2})Q([1-4])$/,'$1Q$2');
 
@@ -56,7 +56,7 @@ LANE_DEFS.forEach((L,i)=>{
 
 /* ── 交叉验证(从真实指标计算;缺侧显示 —) ── */
 const CHAINS = [
- { name:'GPU 需求链', note:'同季方向对照;背离只标记不解读', sides:[
+ { name:'GPU 需求链', note:'同季方向对照；背离只标记不解读', sides:[
    ['nvda','dc_revenue','英伟达 DC 营收'],['tsmc','revenue','台积电营收'],
    ['hynix','revenue','海力士营收'],['quanta','revenue','广达营收'],['dell','backlog','戴尔 AI backlog']]},
  { name:'光模块链', note:'模块增速 vs 下游 capex', sides:[
@@ -96,7 +96,7 @@ document.getElementById('vchain').innerHTML = CHAINS.map(ch=>{
   return `<div class="vrow"><div class="mark" style="color:var(--${cls==='green'?'green':cls==='amber'?'amber':'gray'})">${mark}</div>
     <div class="vn">${ch.name}</div>
     <div><div class="pair num">${cells.map(c=>c.html).join(' ↔ ')}</div>
-    <div class="note">${ch.note}${mark==='—'?' · 数据不足,本季不判定':''}</div></div></div>`;
+    <div class="note">${ch.note}${mark==='—'?' · 数据不足，本季不判定':''}</div></div></div>`;
 }).join('');
 
 /* ── 缺口墙(自动汇总) ── */
@@ -139,13 +139,13 @@ function openDrawer(c,btn){
     <button class="close" onclick="closeDrawer()">✕</button>
     <div class="d-tier">${TIER[c.tier]} · ${c.market}${c.note?' · '+c.note:''}</div>
     <div class="d-name">${c.name}</div>
-    <div class="d-tk mono">${c.ticker} · 自然季对齐(fiscal_offset=${c.fiscal_offset}) · 单位:${c.currency}</div>
+    <div class="d-tk mono">${c.ticker} · 自然季对齐(fiscal_offset=${c.fiscal_offset}) · 单位：${c.currency}</div>
     <div class="d-sec"><h3>营收 · 最近 ${shown.length} 季</h3><div class="bars">${bars}</div></div>
     <div class="d-sec"><h3>指标(${latest.period})</h3><table class="ktable">${rows}</table></div>
     <div class="d-sec"><h3>溯源(${srcs.length} 份官方文件)</h3>
       ${srcs.map(s=>`<div class="src" style="margin-bottom:10px">
         <a href="${s.url}" target="_blank" rel="noopener">${s.id} · ${s.type}</a>
-        <div class="meta">${s.locator||''} · 采集于 ${s.fetched_at}${s.archive?' · 归档:'+s.archive:''}</div></div>`).join('') || '<div class="src">— 暂无溯源记录</div>'}
+        <div class="meta">${s.locator||''} · 采集于 ${s.fetched_at}${s.archive?' · 归档：'+s.archive:''}</div></div>`).join('') || '<div class="src">— 暂无溯源记录</div>'}
     </div>`;
   drawer.classList.add('on'); overlay.classList.add('on'); drawer.setAttribute('aria-hidden','false');
   drawer.querySelectorAll('.bar i').forEach((el,k)=>setTimeout(()=>el.style.height=el.dataset.h+'%', 80+k*70));

@@ -44,12 +44,12 @@ document.getElementById('stRev').textContent   = fmtBig(withData.length? sumLate
 document.getElementById('stCapex').textContent = fmtBig(sumLatest('capex') || null);
 const niSet = withData.filter(c=>latestOf(c,'net_income'));
 document.getElementById('stNI').textContent    = niSet.length? fmtBig(sumLatest('net_income')) : '—';
-document.getElementById('stNILabel').textContent = `覆盖公司净利润合计(${niSet.length} 家已披露)`;
+document.getElementById('stNILabel').textContent = `覆盖公司净利润合计（${niSet.length} 家已披露）`;
 const cap = CAPACITY.projects.filter(p=>p.status!=='announced');
 const totalMW = cap.reduce((s,p)=>s+(p.mw||0),0);
 document.getElementById('stGW').textContent = totalMW? (totalMW/1000).toFixed(1)+' GW' : '—';
 document.querySelectorAll('.bstat .bs-note')[1].textContent =
-  totalMW? `${cap.length} 个项目 · 按运营商官方披露容量合计` : '暂无官方容量数据,留空不估算';
+  totalMW? `${cap.length} 个项目 · 按运营商官方披露容量合计` : '暂无官方容量数据，留空不估算';
 
 /* ── 五卡概览 ── */
 const laneSigCount = LANE_DEFS.filter(L=>
@@ -62,7 +62,7 @@ document.getElementById('cListedNote').textContent =
 document.getElementById('cSignals').textContent = laneSigCount;
 document.getElementById('cArchived').textContent = SOURCES.length || '—';
 document.getElementById('cArchivedNote').textContent =
-  SOURCES.length? '全部保留官方原文链接,逐条可溯' : '采集进行中,留空不估算';
+  SOURCES.length? '全部保留官方原文链接，逐条可溯' : '采集进行中，留空不估算';
 
 /* ── 披露动态跑马灯(由 SOURCES 生成) ── */
 const latestPeriodByCo = {};
