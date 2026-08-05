@@ -2071,6 +2071,78 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "SEC 10-Q 检索页, 财季止2025-06-30(自然季2025Q2): 营收 0.268M, 净利润 -17.263M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=USD)"
+ },
+ {
+  "id": "qveris-av-linde",
+  "type": "sec_xbrl_derived",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=LINDE%20PLC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris Alpha Vantage INCOME_STATEMENT 标准化提取自 SEC 10-Q XBRL: 2026Q2(截至2026-06-30)营收9289M/净利1928M; 2026Q1(截至2026-03-31)营收8781M/净利1857M; 2025Q4(截至2025-12-31)营收8764M/净利1573M; 2025Q3(截至2025-09-30)营收8615M/净利1929M"
+ },
+ {
+  "id": "qveris-av-glw",
+  "type": "sec_xbrl_derived",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=CORNING%20INCORPORATED&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris Alpha Vantage INCOME_STATEMENT 标准化提取自 SEC 10-Q XBRL: 2026Q2(截至2026-06-30)营收4505M/净利559M; 2026Q1(截至2026-03-31)营收4144M/净利371M; 2025Q4(截至2025-12-31)营收4215M/净利540M; 2025Q3(截至2025-09-30)营收4100M/净利430M"
+ },
+ {
+  "id": "qveris-av-axti",
+  "type": "sec_xbrl_derived",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=AXT%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris Alpha Vantage INCOME_STATEMENT 标准化提取自 SEC 10-Q XBRL: 2026Q2(截至2026-06-30)营收47.589M/净利11.128M; 2026Q1(截至2026-03-31)营收26.924M/净利-1.62M; 2025Q4(截至2025-12-31)营收23.041M/净利-3.548M; 2025Q3(截至2025-09-30)营收27.955M/净利-1.906M"
+ },
+ {
+  "id": "qveris-av-arm",
+  "type": "sec_xbrl_derived",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=ARM%20HOLDINGS%20PLC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris Alpha Vantage INCOME_STATEMENT 标准化提取自 SEC 10-Q XBRL(财年3月截止,按自然季映射): 2026Q2(截至2026-06-30)营收1289M/净利270M; 2026Q1(截至2026-03-31)营收1490M/净利313M; 2025Q4(截至2025-12-31)营收1242M/净利223M; 2025Q3(截至2025-09-30)营收1135M/净利238M"
+ },
+ {
+  "id": "qveris-av-klac",
+  "type": "sec_xbrl_derived",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=KLA%20CORPORATION&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris Alpha Vantage INCOME_STATEMENT 标准化提取自 SEC 10-Q XBRL: 2026Q2(截至2026-06-30)营收3657.556M/净利1363.059M; 2026Q1(截至2026-03-31)营收3415.078M/净利1200.99M; 2025Q4(截至2025-12-31)营收3297.146M/净利1145.682M; 2025Q3(截至2025-09-30)营收3209.696M/净利1121.04M"
+ },
+ {
+  "id": "qveris-av-form",
+  "type": "sec_xbrl_derived",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=FORMFACTOR%20INC&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris Alpha Vantage INCOME_STATEMENT 标准化提取自 SEC 10-Q XBRL: 2026Q2(截至2026-06-30)营收258.242M/净利56.207M; 2026Q1(截至2026-03-31)营收226.144M/净利20.384M; 2025Q4(截至2025-12-31)营收215.163M/净利23.218M; 2025Q3(截至2025-09-30)营收202.676M/净利15.656M"
+ },
+ {
+  "id": "qveris-av-aehr",
+  "type": "sec_xbrl_derived",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=AEHR%20TEST%20SYSTEMS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris Alpha Vantage INCOME_STATEMENT 标准化提取自 SEC 10-Q XBRL(财年5月截止,按自然季映射): 2026Q2(截至2026-05-31)营收19.751M/净利1.391M; 2026Q1(截至2026-02-28)营收10.313M/净利-3.203M; 2025Q4(截至2025-11-30)营收9.884M/净利-3.23M; 2025Q3(截至2025-08-31)营收10.969M/净利-2.084M"
+ },
+ {
+  "id": "qveris-fmp-shestu",
+  "type": "quarterly_report",
+  "url": "https://www.sdkworld.com/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris FMP As Reported 损益表提取自信越化学官方季报(reportedCurrency=JPY): 2026Q2(截至2026-06-30)营收662424M日元/净利130829M; 2026Q1(截至2026-03-31)营收639969M/净利90138M; 2025Q4(截至2025-12-31)营收649478M/净利126477M; 2025Q3(截至2025-09-30)营收655973M/净利131415M; 原始日元÷1e6换算JPY_M"
+ },
+ {
+  "id": "qveris-fmp-adt",
+  "type": "quarterly_report",
+  "url": "https://www.advantest.com/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris FMP As Reported 损益表提取自爱德万官方季报(reportedCurrency=JPY): 2026Q2(截至2026-06-30)营收367473M日元/净利174780M; 2026Q1(截至2026-03-31)营收328073M/净利126827M; 2025Q4(截至2025-12-31)营收273804M/净利78713M; 2025Q3(截至2025-09-30)营收262957M/净利79633M; 原始日元÷1e6换算JPY_M"
  }
 ];
 

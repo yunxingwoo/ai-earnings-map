@@ -4610,6 +4610,582 @@ const METRICS = [
     "src": "poet-2025q2-10q"
    }
   }
+ },
+ {
+  "company": "linde",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 9289,
+    "unit": "USD_M",
+    "src": "qveris-av-linde"
+   },
+   "net_income": {
+    "value": 1928,
+    "unit": "USD_M",
+    "src": "qveris-av-linde"
+   }
+  }
+ },
+ {
+  "company": "linde",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 8781,
+    "unit": "USD_M",
+    "src": "qveris-av-linde"
+   },
+   "net_income": {
+    "value": 1857,
+    "unit": "USD_M",
+    "src": "qveris-av-linde"
+   }
+  }
+ },
+ {
+  "company": "linde",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 8764,
+    "unit": "USD_M",
+    "src": "qveris-av-linde"
+   },
+   "net_income": {
+    "value": 1573,
+    "unit": "USD_M",
+    "src": "qveris-av-linde"
+   }
+  }
+ },
+ {
+  "company": "linde",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 8615,
+    "unit": "USD_M",
+    "src": "qveris-av-linde"
+   },
+   "net_income": {
+    "value": 1929,
+    "unit": "USD_M",
+    "src": "qveris-av-linde"
+   }
+  }
+ },
+ {
+  "company": "glw",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 4505,
+    "unit": "USD_M",
+    "src": "qveris-av-glw"
+   },
+   "net_income": {
+    "value": 559,
+    "unit": "USD_M",
+    "src": "qveris-av-glw"
+   }
+  }
+ },
+ {
+  "company": "glw",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 4144,
+    "unit": "USD_M",
+    "src": "qveris-av-glw"
+   },
+   "net_income": {
+    "value": 371,
+    "unit": "USD_M",
+    "src": "qveris-av-glw"
+   }
+  }
+ },
+ {
+  "company": "glw",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 4215,
+    "unit": "USD_M",
+    "src": "qveris-av-glw"
+   },
+   "net_income": {
+    "value": 540,
+    "unit": "USD_M",
+    "src": "qveris-av-glw"
+   }
+  }
+ },
+ {
+  "company": "glw",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 4100,
+    "unit": "USD_M",
+    "src": "qveris-av-glw"
+   },
+   "net_income": {
+    "value": 430,
+    "unit": "USD_M",
+    "src": "qveris-av-glw"
+   }
+  }
+ },
+ {
+  "company": "axti",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 47.589,
+    "unit": "USD_M",
+    "src": "qveris-av-axti"
+   },
+   "net_income": {
+    "value": 11.128,
+    "unit": "USD_M",
+    "src": "qveris-av-axti"
+   }
+  }
+ },
+ {
+  "company": "axti",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 26.924,
+    "unit": "USD_M",
+    "src": "qveris-av-axti"
+   },
+   "net_income": {
+    "value": -1.62,
+    "unit": "USD_M",
+    "src": "qveris-av-axti"
+   }
+  }
+ },
+ {
+  "company": "axti",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 23.041,
+    "unit": "USD_M",
+    "src": "qveris-av-axti"
+   },
+   "net_income": {
+    "value": -3.548,
+    "unit": "USD_M",
+    "src": "qveris-av-axti"
+   }
+  }
+ },
+ {
+  "company": "axti",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 27.955,
+    "unit": "USD_M",
+    "src": "qveris-av-axti"
+   },
+   "net_income": {
+    "value": -1.906,
+    "unit": "USD_M",
+    "src": "qveris-av-axti"
+   }
+  }
+ },
+ {
+  "company": "arm",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1289,
+    "unit": "USD_M",
+    "src": "qveris-av-arm"
+   },
+   "net_income": {
+    "value": 270,
+    "unit": "USD_M",
+    "src": "qveris-av-arm"
+   }
+  }
+ },
+ {
+  "company": "arm",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1490,
+    "unit": "USD_M",
+    "src": "qveris-av-arm"
+   },
+   "net_income": {
+    "value": 313,
+    "unit": "USD_M",
+    "src": "qveris-av-arm"
+   }
+  }
+ },
+ {
+  "company": "arm",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 1242,
+    "unit": "USD_M",
+    "src": "qveris-av-arm"
+   },
+   "net_income": {
+    "value": 223,
+    "unit": "USD_M",
+    "src": "qveris-av-arm"
+   }
+  }
+ },
+ {
+  "company": "arm",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 1135,
+    "unit": "USD_M",
+    "src": "qveris-av-arm"
+   },
+   "net_income": {
+    "value": 238,
+    "unit": "USD_M",
+    "src": "qveris-av-arm"
+   }
+  }
+ },
+ {
+  "company": "klac",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 3657.556,
+    "unit": "USD_M",
+    "src": "qveris-av-klac"
+   },
+   "net_income": {
+    "value": 1363.059,
+    "unit": "USD_M",
+    "src": "qveris-av-klac"
+   }
+  }
+ },
+ {
+  "company": "klac",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 3415.078,
+    "unit": "USD_M",
+    "src": "qveris-av-klac"
+   },
+   "net_income": {
+    "value": 1200.99,
+    "unit": "USD_M",
+    "src": "qveris-av-klac"
+   }
+  }
+ },
+ {
+  "company": "klac",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 3297.146,
+    "unit": "USD_M",
+    "src": "qveris-av-klac"
+   },
+   "net_income": {
+    "value": 1145.682,
+    "unit": "USD_M",
+    "src": "qveris-av-klac"
+   }
+  }
+ },
+ {
+  "company": "klac",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 3209.696,
+    "unit": "USD_M",
+    "src": "qveris-av-klac"
+   },
+   "net_income": {
+    "value": 1121.04,
+    "unit": "USD_M",
+    "src": "qveris-av-klac"
+   }
+  }
+ },
+ {
+  "company": "form",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 258.242,
+    "unit": "USD_M",
+    "src": "qveris-av-form"
+   },
+   "net_income": {
+    "value": 56.207,
+    "unit": "USD_M",
+    "src": "qveris-av-form"
+   }
+  }
+ },
+ {
+  "company": "form",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 226.144,
+    "unit": "USD_M",
+    "src": "qveris-av-form"
+   },
+   "net_income": {
+    "value": 20.384,
+    "unit": "USD_M",
+    "src": "qveris-av-form"
+   }
+  }
+ },
+ {
+  "company": "form",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 215.163,
+    "unit": "USD_M",
+    "src": "qveris-av-form"
+   },
+   "net_income": {
+    "value": 23.218,
+    "unit": "USD_M",
+    "src": "qveris-av-form"
+   }
+  }
+ },
+ {
+  "company": "form",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 202.676,
+    "unit": "USD_M",
+    "src": "qveris-av-form"
+   },
+   "net_income": {
+    "value": 15.656,
+    "unit": "USD_M",
+    "src": "qveris-av-form"
+   }
+  }
+ },
+ {
+  "company": "aehr",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 19.751,
+    "unit": "USD_M",
+    "src": "qveris-av-aehr"
+   },
+   "net_income": {
+    "value": 1.391,
+    "unit": "USD_M",
+    "src": "qveris-av-aehr"
+   }
+  }
+ },
+ {
+  "company": "aehr",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 10.313,
+    "unit": "USD_M",
+    "src": "qveris-av-aehr"
+   },
+   "net_income": {
+    "value": -3.203,
+    "unit": "USD_M",
+    "src": "qveris-av-aehr"
+   }
+  }
+ },
+ {
+  "company": "aehr",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 9.884,
+    "unit": "USD_M",
+    "src": "qveris-av-aehr"
+   },
+   "net_income": {
+    "value": -3.23,
+    "unit": "USD_M",
+    "src": "qveris-av-aehr"
+   }
+  }
+ },
+ {
+  "company": "aehr",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 10.969,
+    "unit": "USD_M",
+    "src": "qveris-av-aehr"
+   },
+   "net_income": {
+    "value": -2.084,
+    "unit": "USD_M",
+    "src": "qveris-av-aehr"
+   }
+  }
+ },
+ {
+  "company": "shestu",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 662424,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-shestu"
+   },
+   "net_income": {
+    "value": 130829,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-shestu"
+   }
+  }
+ },
+ {
+  "company": "shestu",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 639969,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-shestu"
+   },
+   "net_income": {
+    "value": 90138,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-shestu"
+   }
+  }
+ },
+ {
+  "company": "shestu",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 649478,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-shestu"
+   },
+   "net_income": {
+    "value": 126477,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-shestu"
+   }
+  }
+ },
+ {
+  "company": "shestu",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 655973,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-shestu"
+   },
+   "net_income": {
+    "value": 131415,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-shestu"
+   }
+  }
+ },
+ {
+  "company": "adt",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 367473,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-adt"
+   },
+   "net_income": {
+    "value": 174780,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-adt"
+   }
+  }
+ },
+ {
+  "company": "adt",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 328073,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-adt"
+   },
+   "net_income": {
+    "value": 126827,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-adt"
+   }
+  }
+ },
+ {
+  "company": "adt",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 273804,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-adt"
+   },
+   "net_income": {
+    "value": 78713,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-adt"
+   }
+  }
+ },
+ {
+  "company": "adt",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 262957,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-adt"
+   },
+   "net_income": {
+    "value": 79633,
+    "unit": "JPY_M",
+    "src": "qveris-fmp-adt"
+   }
+  }
  }
 ];
 

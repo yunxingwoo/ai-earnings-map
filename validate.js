@@ -12,7 +12,7 @@ const errors = [], warns = [];
 const err  = m => errors.push(m);
 const warn = m => warns.push(m);
 
-const OFFICIAL_HOST = /(sec\.gov|\.gov|investor|ir\.|\.ir\.|cninfo\.com\.cn|twse\.com\.tw|sse\.com\.cn|hkex|samsung\.com|skhynix\.com|tsmc\.com|micron\.com|broadcom\.com|nvidia\.com|amd\.com|marvell\.com|asml\.com|appliedmaterials\.com|lamresearch\.com|synopsys\.com|vertiv\.com|arista\.com|coherent\.com|delltechnologies\.com|coreweave\.com|nebius\.com|alibabagroup\.com|tencent\.com|microsoft\.com|abc\.xyz|aboutamazon\.com|atmeta\.com|oracle\.com|openai\.com|x\.ai|spacex\.com|crusoe\.ai|vantage-dc\.com|iren\.com|applieddigital\.com|globenewswire\.com|about\.fb\.com|businesswire\.com|prnewswire\.com|gcs-web\.com|smics\.com)/i;
+const OFFICIAL_HOST = /(sec\.gov|\.gov|investor|ir\.|\.ir\.|cninfo\.com\.cn|twse\.com\.tw|sse\.com\.cn|hkex|samsung\.com|skhynix\.com|tsmc\.com|micron\.com|broadcom\.com|nvidia\.com|amd\.com|marvell\.com|asml\.com|appliedmaterials\.com|lamresearch\.com|synopsys\.com|vertiv\.com|arista\.com|coherent\.com|delltechnologies\.com|coreweave\.com|nebius\.com|alibabagroup\.com|tencent\.com|microsoft\.com|abc\.xyz|aboutamazon\.com|atmeta\.com|oracle\.com|openai\.com|x\.ai|spacex\.com|crusoe\.ai|vantage-dc\.com|iren\.com|applieddigital\.com|globenewswire\.com|about\.fb\.com|businesswire\.com|prnewswire\.com|gcs-web\.com|smics\.com|sdkworld\.com|advantest\.com)/i;
 
 const VALUE_METRICS = new Set(['revenue','dc_revenue','ai_revenue','ds_revenue','datacom_revenue',
   'net_income','capex','backlog','bookings','monthly_revenue','guidance_next_q']);
