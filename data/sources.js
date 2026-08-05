@@ -871,6 +871,294 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "巨潮資訊網 長鑫科技(688825, 2026-07-27科創板上市) 招股意向書及附錄: 2026年一季度營業收入508億元(+719.13%YoY), 歸母淨利247.62億元(+1688.30%YoY); 尚未發布常規季報, 此為IPO招股書披露之最新季度數據"
+ },
+ {
+  "id": "msft-fy26q4-er",
+  "type": "earnings_release",
+  "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "微软IR FY26Q4新闻稿(2026-07-29), 三个月ended 2026-06-30: 营收$90.0B, GAAP净利$35.76B, 资本开支(含融资租赁)$41.0B"
+ },
+ {
+  "id": "msft-fy26q3-er",
+  "type": "earnings_release",
+  "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "微软IR FY26Q3新闻稿(2026-04-29), 三个月ended 2026-03-31: 营收$82.9B, GAAP净利$31.78B, 资本开支$31.9B"
+ },
+ {
+  "id": "msft-fy26q2-er",
+  "type": "earnings_release",
+  "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q2/press-release-webcast",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "微软IR FY26Q2新闻稿(2026-01-28), 三个月ended 2025-12-31: 营收$81.27B, GAAP净利$38.5B(含OpenAI会计变更一次性收益约$7.6B), 资本开支$37.5B"
+ },
+ {
+  "id": "msft-fy26q1-er",
+  "type": "earnings_release",
+  "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "微软IR FY26Q1新闻稿(2025-10-29), 三个月ended 2025-09-30: 营收$77.67B, GAAP净利$27.75B, 资本开支$34.9B"
+ },
+ {
+  "id": "goog-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://abc.xyz/investor/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alphabet Q2 2026业绩公告(2026-07-22), 季度ended 2026-06-30: 营收$119.796B, GAAP净利$112.1B(含约$99B未实现投资公允价值收益), 资本开支$44.9B"
+ },
+ {
+  "id": "goog-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://abc.xyz/investor/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alphabet Q1 2026业绩公告(2026-04-29): 营收$109.9B, GAAP净利$62.6B(含$37.7B非上市股权收益), 资本开支$35.7B"
+ },
+ {
+  "id": "goog-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://abc.xyz/investor/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alphabet Q4 2025业绩公告(2026-02-04): 营收$113.8B, 净利$34.5B, 资本开支$27.85B"
+ },
+ {
+  "id": "goog-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://abc.xyz/investor/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alphabet Q3 2025业绩公告(2025-10-29): 营收$102.346B, 净利$34.979B, 资本开支约$24B"
+ },
+ {
+  "id": "amzn-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Amazon Q2 2026新闻稿(2026-07-30), 季度ended 2026-06-30: 净销售额$200.6B, 净利$62.6B(含Anthropic投资税前收益$53.4B), 资本开支$54.2B"
+ },
+ {
+  "id": "amzn-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-First-Quarter-Results/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Amazon Q1 2026新闻稿(2026-04-29): 净销售额$181.5B, 净利$30.3B(含Anthropic投资税前收益$16.8B), 资本开支$44.2B"
+ },
+ {
+  "id": "amzn-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Fourth-Quarter-Results/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Amazon Q4 2025新闻稿(2026-02-05): 净销售额$213.4B, 净利$21.2B, 购置物业设备$39.5B"
+ },
+ {
+  "id": "amzn-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Third-Quarter-Results/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Amazon Q3 2025新闻稿(2025-10-30): 净销售额$180.2B, 净利$21.2B(含Anthropic投资税前收益$9.5B), 资本开支$35.1B"
+ },
+ {
+  "id": "meta-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Meta Q2 2026新闻稿(2026-07-29), 季度ended 2026-06-30: 营收$60.80B, 净利$15.85B, 资本开支$31.08B"
+ },
+ {
+  "id": "meta-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Meta Q1 2026新闻稿(2026-04-29): 营收$56.31B, 净利$26.77B(含$8.03B一次性所得税收益), 资本开支$19.84B"
+ },
+ {
+  "id": "meta-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Meta Q4 2025新闻稿(2026-01-28): 营收$59.89B, 净利$22.77B, 资本开支$22.14B"
+ },
+ {
+  "id": "meta-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-Third-Quarter-2025-Results/default.aspx",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Meta Q3 2025新闻稿(2025-10-29): 营收$51.24B, GAAP净利$2.71B(含$15.93B一次性税费), 资本开支$19.37B"
+ },
+ {
+  "id": "orcl-fy26q4-er",
+  "type": "earnings_release",
+  "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Oracle FY26Q4新闻稿(2026-06-10), 三个月ended 2026-05-31: 营收$19.2B, GAAP净利$4.2B, FY26资本开支$55.7B(Q4约$15.9B), RPO$638B"
+ },
+ {
+  "id": "orcl-fy26q3-er",
+  "type": "earnings_release",
+  "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Fiscal-Year-2026-Third-Quarter-Financial-Results/default.aspx",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Oracle FY26Q3新闻稿(2026-03-10), 三个月ended 2026-02-28: 营收$17.19B, GAAP净利$3.72B, RPO$553B; Q1-Q3累计资本开支$39.2B"
+ },
+ {
+  "id": "orcl-fy26q2-er",
+  "type": "earnings_release",
+  "url": "https://investor.oracle.com/investor-news/news-details/2025/Oracle-Announces-Fiscal-Year-2026-Second-Quarter-Financial-Results/default.aspx",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Oracle FY26Q2新闻稿(2025-12-10), 三个月ended 2025-11-30: 营收$16,058M, GAAP净利$6,135M(含Ampere出售税前收益$2.7B), RPO$523.3B"
+ },
+ {
+  "id": "orcl-fy26q1-er",
+  "type": "earnings_release",
+  "url": "https://investor.oracle.com/investor-news/news-details/2025/Oracle-Announces-Fiscal-Year-2026-First-Quarter-Financial-Results/default.aspx",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Oracle FY26Q1新闻稿(2025-09-09), 三个月ended 2025-08-31: 营收$14.9B, GAAP净利$2.9B, 资本开支$9.57B, RPO$455B"
+ },
+ {
+  "id": "crwv-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://www.businesswire.com/news/home/20260507558197/en/CoreWeave-Reports-Strong-First-Quarter-2026-Results",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "CoreWeave Q1 2026新闻稿(businesswire, 2026-05-07): 营收$2,078M(+112% YoY), 净亏损$740M, 资本开支$6.8B(业绩演示), 在手订单$99.4B, Q2资本开支指引$7-9B"
+ },
+ {
+  "id": "crwv-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://investors.coreweave.com/financials/quarterly-results/default.aspx",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "CoreWeave Q4/FY2025新闻稿(2026-02-26): 营收$1.57B(+110%), 净亏损$452M, 在手订单$66.8B"
+ },
+ {
+  "id": "crwv-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://investors.coreweave.com/financials/quarterly-results/default.aspx",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "CoreWeave Q3 2025新闻稿(2025-11-10): 营收$1.36B(+134%), 净亏损$110M, 在手订单$55.6B"
+ },
+ {
+  "id": "crwv-2025q2-er",
+  "type": "earnings_release",
+  "url": "https://investors.coreweave.com/financials/quarterly-results/default.aspx",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "CoreWeave Q2 2025新闻稿(2025-08-12): 营收$1.21B(+207%), 净亏损$290.5M, 在手订单$30.1B"
+ },
+ {
+  "id": "nbis-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://secure.businesswire.com/news/home/20260513568820/en/Nebius-reports-first-quarter-2026-financial-results",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Nebius Q1 2026新闻稿(businesswire, 2026-05-13): 营收$399.0M(+684% YoY), 持续经营净收入$621.2M(含一次性项目), 调整后净亏损$100.3M"
+ },
+ {
+  "id": "nbis-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://nebius.com/newsroom/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Nebius Q4/FY2025新闻稿(2026-02-12): 营收$227.7M(+547%), 持续经营净亏损$249.6M; 2026年资本开支指引$16-20B"
+ },
+ {
+  "id": "nbis-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://nebius.com/newsroom/",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Nebius Q3 2025新闻稿(2025-11-11): 营收$146.1M, 净亏损$119.6M"
+ },
+ {
+  "id": "nbis-2025q2-er",
+  "type": "earnings_release",
+  "url": "https://nebius.com/newsroom/nebius-reports-second-quarter-financial-results-and-raises-arr-guidance-for-2025",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Nebius Q2 2025新闻稿(2025-08-07): 营收$105.1M(+625%), 持续经营净收入$502.5M, 资本开支(购置物业设备)$510.6M"
+ },
+ {
+  "id": "baba-fy26q4-er",
+  "type": "earnings_release",
+  "url": "https://www.alibabagroup.com/zh-HK/document-1991237455038119936",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "阿里巴巴2026年3月季度及2026财年业绩公告(2026-05-13): 营收RMB243,380M(2433.8亿,+3%), 归母净利254.76亿(+106%), 资本性支出268.87亿"
+ },
+ {
+  "id": "baba-fy26q3-er",
+  "type": "earnings_release",
+  "url": "https://www.alibabagroup.com/en/ir/home",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "阿里巴巴2025年12月季度业绩公告(2026-03-19): 营收RMB284,343M(2843.43亿), 归母净利163.2亿(-67%), 资本性支出289.99亿"
+ },
+ {
+  "id": "baba-fy26q2-er",
+  "type": "earnings_release",
+  "url": "https://www.alibabagroup.com/en/ir/home",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "阿里巴巴2025年9月季度业绩公告(2025-11-25): 营收RMB247,795M(2477.95亿), 归母净利209.9亿(-52%), 资本性支出315.01亿"
+ },
+ {
+  "id": "baba-fy26q1-er",
+  "type": "earnings_release",
+  "url": "https://www.alibabagroup.com/en/ir/home",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "阿里巴巴2025年6月季度业绩公告(2025-08-13): 营收RMB247,652M(2476.5亿), 归母净利431.12亿(+78%), 资本性支出386亿"
+ },
+ {
+  "id": "tencent-2026q1-er",
+  "type": "earnings_release",
+  "url": "https://www.tencent.com/zh-hk/investors.html?id=86372&l=0&s=0",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "腾讯2026年第一季度业绩公告(2026-05-13): 营收RMB196,458M(1964.58亿,+9%), 权益持有人应占盈利580.93亿(+21%), 资本开支RMB31.9B(319亿)"
+ },
+ {
+  "id": "tencent-2025q4-er",
+  "type": "earnings_release",
+  "url": "https://www.tencent.com/zh-cn/investors.html",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "腾讯2025年第四季度及全年业绩公告(2026-03-18): 营收RMB194,370M(1943.7亿,+13%), 应占盈利583亿(+14%), 资本开支196亿"
+ },
+ {
+  "id": "tencent-2025q3-er",
+  "type": "earnings_release",
+  "url": "https://www.tencent.com/zh-cn/investors.html",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "腾讯2025年第三季度业绩公告(2025-11-13): 营收RMB192,869M(1928.69亿,+15%), 应占盈利631亿(+19%), 资本开支129.8亿"
+ },
+ {
+  "id": "tencent-2025q2-er",
+  "type": "earnings_release",
+  "url": "https://www.tencent.com/zh-cn/investors.html",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "腾讯2025年第二季度业绩公告(2025-08-13): 营收RMB184,504M(1845.04亿,+15%), 应占盈利556.28亿(+17%), 资本开支191.1亿(+119%)"
  }
 ];
 
