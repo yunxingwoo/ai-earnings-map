@@ -2143,6 +2143,70 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "经 qveris FMP As Reported 损益表提取自爱德万官方季报(reportedCurrency=JPY): 2026Q2(截至2026-06-30)营收367473M日元/净利174780M; 2026Q1(截至2026-03-31)营收328073M/净利126827M; 2025Q4(截至2025-12-31)营收273804M/净利78713M; 2025Q3(截至2025-09-30)营收262957M/净利79633M; 原始日元÷1e6换算JPY_M"
+ },
+ {
+  "id": "qveris-cn-sytech",
+  "type": "exchange_filing_derived",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=600183",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris cn_financial_pro.income_statement.v1(type=1合并报表) 提取自交易所定期披露;自然季由累计报告差值还原:2026Q1=2026一季报;2025Q4=2025年报−2025三季报;2025Q3=2025三季报−2025半年报;2025Q2=2025半年报−2025一季报;单位人民币元→CNY_YI(÷1e8);营收/归母净利润:2026Q1=81.41亿/11.58亿;2025Q4=78.18亿/8.91亿;2025Q3=79.34亿/10.17亿;2025Q2=70.69亿/8.63亿"
+ },
+ {
+  "id": "qveris-cn-ynge",
+  "type": "exchange_filing_derived",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002428",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris cn_financial_pro.income_statement.v1(type=1合并报表) 提取自交易所定期披露;自然季由累计报告差值还原:2026Q1=2026一季报;2025Q4=2025年报−2025三季报;2025Q3=2025三季报−2025半年报;2025Q2=2025半年报−2025一季报;单位人民币元→CNY_YI(÷1e8);营收/归母净利润:2026Q1=2.89亿/0.09亿;2025Q4=2.67亿/0.02亿;2025Q3=2.69亿/-0.04亿;2025Q2=2.89亿/0.12亿"
+ },
+ {
+  "id": "qveris-cn-veri",
+  "type": "exchange_filing_derived",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688521",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris cn_financial_pro.income_statement.v1(type=1合并报表) 提取自交易所定期披露;自然季由累计报告差值还原:2026Q1=2026一季报;2025Q4=2025年报−2025三季报;2025Q3=2025三季报−2025半年报;2025Q2=2025半年报−2025一季报;单位人民币元→CNY_YI(÷1e8);营收/归母净利润:2026Q1=8.36亿/-3.41亿;2025Q4=8.98亿/-1.81亿;2025Q3=12.81亿/-0.27亿;2025Q2=5.84亿/-1.00亿"
+ },
+ {
+  "id": "qveris-cn-amec",
+  "type": "exchange_filing_derived",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688012",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris cn_financial_pro.income_statement.v1(type=1合并报表) 提取自交易所定期披露;自然季由累计报告差值还原:2026Q1=2026一季报;2025Q4=2025年报−2025三季报;2025Q3=2025三季报−2025半年报;2025Q2=2025半年报−2025一季报;单位人民币元→CNY_YI(÷1e8);营收/归母净利润:2026Q1=29.15亿/9.30亿;2025Q4=43.22亿/9.00亿;2025Q3=31.02亿/5.05亿;2025Q2=27.87亿/3.93亿"
+ },
+ {
+  "id": "qveris-cn-tuojing",
+  "type": "exchange_filing_derived",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688072",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris cn_financial_pro.income_statement.v1(type=1合并报表) 提取自交易所定期披露;自然季由累计报告差值还原:2026Q1=2026一季报;2025Q4=2025年报−2025三季报;2025Q3=2025三季报−2025半年报;2025Q2=2025半年报−2025一季报;单位人民币元→CNY_YI(÷1e8);营收/归母净利润:2026Q1=11.12亿/5.71亿;2025Q4=22.99亿/3.70亿;2025Q3=22.66亿/4.62亿;2025Q2=12.45亿/2.41亿"
+ },
+ {
+  "id": "qveris-cn-fujing",
+  "type": "exchange_filing_derived",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688409",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris cn_financial_pro.income_statement.v1(type=1合并报表) 提取自交易所定期披露;自然季由累计报告差值还原:2026Q1=2026一季报;2025Q4=2025年报−2025三季报;2025Q3=2025三季报−2025半年报;2025Q2=2025半年报−2025一季报;单位人民币元→CNY_YI(÷1e8);营收/归母净利润:2026Q1=10.43亿/0.58亿;2025Q4=8.13亿/-0.46亿;2025Q3=10.06亿/0.25亿;2025Q2=9.62亿/0.34亿"
+ },
+ {
+  "id": "qveris-av-gfs",
+  "type": "exchange_filing_derived",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=GLOBALFOUNDRIES&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris alphavantage.income_statement(INCOME_STATEMENT) 提取自 SEC 披露季度报告;财季与自然季对齐(fiscal_offset=0);单位USD→USD_M(÷1e6);总营收/净利润:2026Q1=$1634.0M/$103.0M;2025Q4=$1830.0M/$199.0M;2025Q3=$1688.0M/$248.0M;2025Q2=$1688.0M/$228.0M"
+ },
+ {
+  "id": "qveris-av-tower",
+  "type": "exchange_filing_derived",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=TOWER+SEMICONDUCTOR&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "经 qveris alphavantage.income_statement(INCOME_STATEMENT) 提取自 SEC 披露季度报告;symbol TOWER 查询返回空,改用 TSEM(高塔半导体 Nasdaq 代码)取数;财季与自然季对齐(fiscal_offset=0);单位USD→USD_M(÷1e6);总营收/净利润:2026Q1=$413.6M/$65.0M;2025Q4=$440.2M/$80.1M;2025Q3=$395.7M/$53.6M;2025Q2=$372.1M/$46.6M"
  }
 ];
 

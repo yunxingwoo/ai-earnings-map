@@ -5186,6 +5186,518 @@ const METRICS = [
     "src": "qveris-fmp-adt"
    }
   }
+ },
+ {
+  "company": "sytech",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 81.41,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sytech"
+   },
+   "net_income": {
+    "value": 11.58,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sytech"
+   }
+  }
+ },
+ {
+  "company": "sytech",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 78.18,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sytech"
+   },
+   "net_income": {
+    "value": 8.91,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sytech"
+   }
+  }
+ },
+ {
+  "company": "sytech",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 79.34,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sytech"
+   },
+   "net_income": {
+    "value": 10.17,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sytech"
+   }
+  }
+ },
+ {
+  "company": "sytech",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 70.69,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sytech"
+   },
+   "net_income": {
+    "value": 8.63,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-sytech"
+   }
+  }
+ },
+ {
+  "company": "ynge",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2.89,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ynge"
+   },
+   "net_income": {
+    "value": 0.09,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ynge"
+   }
+  }
+ },
+ {
+  "company": "ynge",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 2.67,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ynge"
+   },
+   "net_income": {
+    "value": 0.02,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ynge"
+   }
+  }
+ },
+ {
+  "company": "ynge",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 2.69,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ynge"
+   },
+   "net_income": {
+    "value": -0.04,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ynge"
+   }
+  }
+ },
+ {
+  "company": "ynge",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2.89,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ynge"
+   },
+   "net_income": {
+    "value": 0.12,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-ynge"
+   }
+  }
+ },
+ {
+  "company": "veri",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 8.36,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-veri"
+   },
+   "net_income": {
+    "value": -3.41,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-veri"
+   }
+  }
+ },
+ {
+  "company": "veri",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 8.98,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-veri"
+   },
+   "net_income": {
+    "value": -1.81,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-veri"
+   }
+  }
+ },
+ {
+  "company": "veri",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 12.81,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-veri"
+   },
+   "net_income": {
+    "value": -0.27,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-veri"
+   }
+  }
+ },
+ {
+  "company": "veri",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 5.84,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-veri"
+   },
+   "net_income": {
+    "value": -1,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-veri"
+   }
+  }
+ },
+ {
+  "company": "amec",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 29.15,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-amec"
+   },
+   "net_income": {
+    "value": 9.3,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-amec"
+   }
+  }
+ },
+ {
+  "company": "amec",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 43.22,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-amec"
+   },
+   "net_income": {
+    "value": 9,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-amec"
+   }
+  }
+ },
+ {
+  "company": "amec",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 31.02,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-amec"
+   },
+   "net_income": {
+    "value": 5.05,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-amec"
+   }
+  }
+ },
+ {
+  "company": "amec",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 27.87,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-amec"
+   },
+   "net_income": {
+    "value": 3.93,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-amec"
+   }
+  }
+ },
+ {
+  "company": "tuojing",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 11.12,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tuojing"
+   },
+   "net_income": {
+    "value": 5.71,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tuojing"
+   }
+  }
+ },
+ {
+  "company": "tuojing",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 22.99,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tuojing"
+   },
+   "net_income": {
+    "value": 3.7,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tuojing"
+   }
+  }
+ },
+ {
+  "company": "tuojing",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 22.66,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tuojing"
+   },
+   "net_income": {
+    "value": 4.62,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tuojing"
+   }
+  }
+ },
+ {
+  "company": "tuojing",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 12.45,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tuojing"
+   },
+   "net_income": {
+    "value": 2.41,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-tuojing"
+   }
+  }
+ },
+ {
+  "company": "fujing",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 10.43,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-fujing"
+   },
+   "net_income": {
+    "value": 0.58,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-fujing"
+   }
+  }
+ },
+ {
+  "company": "fujing",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 8.13,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-fujing"
+   },
+   "net_income": {
+    "value": -0.46,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-fujing"
+   }
+  }
+ },
+ {
+  "company": "fujing",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 10.06,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-fujing"
+   },
+   "net_income": {
+    "value": 0.25,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-fujing"
+   }
+  }
+ },
+ {
+  "company": "fujing",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 9.62,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-fujing"
+   },
+   "net_income": {
+    "value": 0.34,
+    "unit": "CNY_YI",
+    "src": "qveris-cn-fujing"
+   }
+  }
+ },
+ {
+  "company": "gfs",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1634,
+    "unit": "USD_M",
+    "src": "qveris-av-gfs"
+   },
+   "net_income": {
+    "value": 103,
+    "unit": "USD_M",
+    "src": "qveris-av-gfs"
+   }
+  }
+ },
+ {
+  "company": "gfs",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 1830,
+    "unit": "USD_M",
+    "src": "qveris-av-gfs"
+   },
+   "net_income": {
+    "value": 199,
+    "unit": "USD_M",
+    "src": "qveris-av-gfs"
+   }
+  }
+ },
+ {
+  "company": "gfs",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 1688,
+    "unit": "USD_M",
+    "src": "qveris-av-gfs"
+   },
+   "net_income": {
+    "value": 248,
+    "unit": "USD_M",
+    "src": "qveris-av-gfs"
+   }
+  }
+ },
+ {
+  "company": "gfs",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1688,
+    "unit": "USD_M",
+    "src": "qveris-av-gfs"
+   },
+   "net_income": {
+    "value": 228,
+    "unit": "USD_M",
+    "src": "qveris-av-gfs"
+   }
+  }
+ },
+ {
+  "company": "tower",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 413.6,
+    "unit": "USD_M",
+    "src": "qveris-av-tower"
+   },
+   "net_income": {
+    "value": 65,
+    "unit": "USD_M",
+    "src": "qveris-av-tower"
+   }
+  }
+ },
+ {
+  "company": "tower",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 440.2,
+    "unit": "USD_M",
+    "src": "qveris-av-tower"
+   },
+   "net_income": {
+    "value": 80.1,
+    "unit": "USD_M",
+    "src": "qveris-av-tower"
+   }
+  }
+ },
+ {
+  "company": "tower",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 395.7,
+    "unit": "USD_M",
+    "src": "qveris-av-tower"
+   },
+   "net_income": {
+    "value": 53.6,
+    "unit": "USD_M",
+    "src": "qveris-av-tower"
+   }
+  }
+ },
+ {
+  "company": "tower",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 372.1,
+    "unit": "USD_M",
+    "src": "qveris-av-tower"
+   },
+   "net_income": {
+    "value": 46.6,
+    "unit": "USD_M",
+    "src": "qveris-av-tower"
+   }
+  }
  }
 ];
 
