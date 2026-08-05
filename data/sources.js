@@ -2559,6 +2559,166 @@ const SOURCES = [
   "fetched_at": "2026-08-06",
   "archive": null,
   "locator": "cn_financial_pro income_statement(603296.SH, type=1 合并) 单季推导: 2025Q2营收=2025-06-30上半年累计83,939,258,404.31 − 2025-03-31一季度累计34,997,696,296.08 = 48,941,562,108.23 CNY; 归母净利=1,888,969,589.70 − 841,991,186.77 = 1,046,978,402.93 CNY → CNY_YI(÷1e8)"
+ },
+ {
+  "id": "kioxia-2026q2-er",
+  "type": "quarterly_report",
+  "url": "https://www.kioxia-holdings.com/en-jp/ir.html",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP 285A.T(东京所) 铠侠FY2026Q1 三个月ended 2026-06-30: 营收1,767,117百万日元, 净利842,165百万日元; 单位JPY_M(reportedCurrency=JPY)"
+ },
+ {
+  "id": "kioxia-2026q1-er",
+  "type": "quarterly_report",
+  "url": "https://www.kioxia-holdings.com/en-jp/ir.html",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP 285A.T 铠侠FY2025Q4 三个月ended 2026-03-31: 营收1,002,852百万日元, 净利407,734百万日元; 单位JPY_M"
+ },
+ {
+  "id": "kioxia-2025q4-er",
+  "type": "quarterly_report",
+  "url": "https://www.kioxia-holdings.com/en-jp/ir.html",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP 285A.T 铠侠FY2025Q3 三个月ended 2025-12-31: 营收543,631百万日元, 净利87,810百万日元; 单位JPY_M"
+ },
+ {
+  "id": "kioxia-2025q3-er",
+  "type": "quarterly_report",
+  "url": "https://www.kioxia-holdings.com/en-jp/ir.html",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "FMP 285A.T 铠侠FY2025Q2 三个月ended 2025-09-30: 营收448,346百万日元, 净利40,662百万日元; 单位JPY_M"
+ },
+ {
+  "id": "wdc-2026q1-er",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=WESTERN%20DIGITAL&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage(SEC 10-Q映射) 西数FY2026Q3 三个月ended 2026-04-03: 营收$3,337M, 净利$3,205M(含税项估值准备等非经常项目); 单位USD_M"
+ },
+ {
+  "id": "wdc-2025q4-er",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=WESTERN%20DIGITAL&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage(SEC 10-Q映射) 西数FY2026Q2 三个月ended 2026-01-02: 营收$3,017M, 净利$1,842M; 单位USD_M"
+ },
+ {
+  "id": "wdc-2025q3-er",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=WESTERN%20DIGITAL&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage(SEC 10-Q映射) 西数FY2026Q1 三个月ended 2025-10-03: 营收$2,818M, 净利$1,182M; 单位USD_M"
+ },
+ {
+  "id": "wdc-2025q2-er",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=WESTERN%20DIGITAL&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage(SEC 10-Q映射) 西数FY2025Q4 三个月ended 2025-06-27: 营收$2,605M, 净利$257M; 单位USD_M"
+ },
+ {
+  "id": "stx-2026q2-er",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SEAGATE&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage(SEC 10-Q映射) 希捷FY2026Q4 三个月ended 2026-06-30: 营收$3,629M, 净利$1,294M; 单位USD_M(reportedCurrency缺省按美元)"
+ },
+ {
+  "id": "stx-2026q1-er",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SEAGATE&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage(SEC 10-Q映射) 希捷FY2026Q3 三个月ended 2026-03-31: 营收$3,112M, 净利$748M; 单位USD_M"
+ },
+ {
+  "id": "stx-2025q4-er",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SEAGATE&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage(SEC 10-Q映射) 希捷FY2026Q2 三个月ended 2025-12-31: 营收$2,825M, 净利$593M; 单位USD_M"
+ },
+ {
+  "id": "stx-2025q3-er",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SEAGATE&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage(SEC 10-Q映射) 希捷FY2026Q1 三个月ended 2025-09-30: 营收$2,629M, 净利$549M; 单位USD_M"
+ },
+ {
+  "id": "sndk-2026q1-er",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SANDISK&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage+FMP交叉验证(SEC 10-Q) 闪迪FY2026Q3 三个月ended 2026-04-03: 营收$5,950M, 净利$3,615M; 单位USD_M"
+ },
+ {
+  "id": "sndk-2025q4-er",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SANDISK&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage+FMP交叉验证(SEC 10-Q) 闪迪FY2026Q2 三个月ended 2026-01-02: 营收$3,025M, 净利$803M; 单位USD_M"
+ },
+ {
+  "id": "sndk-2025q3-er",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SANDISK&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage+FMP交叉验证(SEC 10-Q) 闪迪FY2026Q1 三个月ended 2025-10-03: 营收$2,308M, 净利$112M; 单位USD_M"
+ },
+ {
+  "id": "sndk-2025q2-er",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SANDISK&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Alpha Vantage+FMP交叉验证(SEC 10-Q) 闪迪FY2025Q4 三个月ended 2025-06-27: 营收$1,901M, 净利-$23M; 单位USD_M"
+ },
+ {
+  "id": "giga-2026q1-er",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603986",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro 合并利润表 2026Q1(期末2026-03-31,单季直接披露): 营收4,188,075,574元→41.88亿元, 归母净利1,461,248,353元→14.61亿元; 单位CNY_YI(÷1e8)"
+ },
+ {
+  "id": "giga-2025q4-er",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603986",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro 合并 2025年报(累计9,203,463,125元)-前三季(累计6,831,634,444元)=单季Q4: 营收2,371,828,681元→23.72亿元, 归母净利564,794,772元→5.65亿元; 单位CNY_YI(÷1e8)"
+ },
+ {
+  "id": "giga-2025q3-er",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603986",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro 合并 2025前三季(累计6,831,634,444元)-半年(累计4,150,308,633元)=单季Q3: 营收2,681,325,811元→26.81亿元, 归母净利507,752,274元→5.08亿元; 单位CNY_YI(÷1e8)"
+ },
+ {
+  "id": "giga-2025q2-er",
+  "type": "quarterly_report",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603986",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "cn_financial_pro 合并 2025半年(累计4,150,308,633元)-2025Q1(累计1,909,062,291元)=单季Q2: 营收2,241,246,342元→22.41亿元, 归母净利340,845,518元→3.41亿元; 单位CNY_YI(÷1e8)"
  }
 ];
 
