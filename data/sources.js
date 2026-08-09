@@ -2871,6 +2871,54 @@ const SOURCES = [
   "fetched_at": "2026-08-06",
   "archive": null,
   "locator": "cn_financial_pro 688820.SH 2025Q1(0331): 营收 1,501,193,200元, 归母净利 126,251,500元 (盛合晶微新上市, 2025三季报/2026半年报未披露, 仅存3个自然季)"
+ },
+ {
+  "id": "cerebras-2026q1-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=CEREBRAS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Cerebras 2026Q1 (10-Q, 三个月ended 2026-03-31): 营收$193.406M, 净利-$14.006M; 经 qveris Alpha Vantage INCOME_STATEMENT 提取自 SEC 披露 (raw totalRevenue=193406000, netIncome=-14006000)"
+ },
+ {
+  "id": "cerebras-2025q4-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=CEREBRAS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Cerebras 2025Q4 (10-Q, 三个月ended 2025-12-31): 营收$171.443M, 净利-$25.617M; 经 qveris Alpha Vantage INCOME_STATEMENT 提取自 SEC 披露 (raw totalRevenue=171443000, netIncome=-25617000)"
+ },
+ {
+  "id": "cerebras-2025q3-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=CEREBRAS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Cerebras 2025Q3 (10-Q, 三个月ended 2025-09-30): 营收$135.714M, 净利-$22.201M; 经 qveris Alpha Vantage INCOME_STATEMENT 提取自 SEC 披露 (raw totalRevenue=135714000, netIncome=-22201000)"
+ },
+ {
+  "id": "cerebras-2025q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=CEREBRAS&type=10-Q",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "Cerebras 2025Q2 (10-Q, 三个月ended 2025-06-30): 营收$103.322M, 净利$309.512M(含大额非经常损益, 疑优先股/认股权公允价值变动); 经 qveris Alpha Vantage INCOME_STATEMENT 提取自 SEC 披露 (raw totalRevenue=103322000, netIncome=309512000)"
+ },
+ {
+  "id": "lxyq-2026q1",
+  "type": "quarterly_report",
+  "url": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=688808",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "苏州联讯仪器 2026Q1 (一季报, 2026-03-31): 营收4.877亿元, 归母净利1.189亿元; 经 qveris cn_financial_pro INCOME_STATEMENT 提取 (raw 营收487,720,104.79元, 归母净利118,903,186.14元)"
+ },
+ {
+  "id": "lxyq-2025q4-derived",
+  "type": "annual_report",
+  "url": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=688808",
+  "fetched_at": "2026-08-05",
+  "archive": null,
+  "locator": "苏州联讯仪器 2025Q4 单季 = 2025年报全年 − 三季报9M累计 (均经 qveris cn_financial_pro 提取): 营收 1,194,068,403.51 − 805,621,511.07 = 388,446,892.44元(3.884亿), 归母净利 173,651,557.89 − 96,643,013.92 = 77,008,543.97元(0.770亿)"
  }
 ];
 

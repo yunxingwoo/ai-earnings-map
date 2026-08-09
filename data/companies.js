@@ -46,7 +46,7 @@ const COMPANIES = [
  Co('amec','中微公司','688012.SH','A股',3,'core',true,'CNY_YI','sm',0),
  Co('tuojing','拓荆科技','688072.SH','A股',3,'core',true,'CNY_YI','sm',0),
  Co('fujing','富创精密','688409.SH','A股',3,'second',true,'CNY_YI','sm',0,{note:'设备零部件'}),
- Co('lxyq','联讯仪器','—','A股',3,'second',true,'CNY_YI','sm',0,{note:'光通信测试仪器,代码待补'}),
+ Co('lxyq','联讯仪器','688808.SH','A股',3,'second',true,'CNY_YI','sm',0,{note:'光通信测试仪器,2026-04-24科创板上市'}),
  /* 04 晶圆制造 */
  Co('tsmc','台积电','TSM','台/美',4,'leader',true,'TWD_M','lg',0,{ir_url:'https://investor.tsmc.com/english'}),
  Co('samsung','三星电子','005930.KS','韩股',4,'leader',true,'KRW_B','lg',0,{note:'代工+存储'}),
@@ -140,8 +140,8 @@ const COMPANIES = [
  Co('openai','OpenAI','—','非上市',14,'leader',false,'USD_M','md',0,{cloud:true}),
  Co('anthr','Anthropic','—','非上市',14,'leader',false,'USD_M','sm',0,{cloud:true}),
  Co('deepseek','DeepSeek','—','非上市',14,'core',false,'CNY_YI','sm',0,{cloud:true}),
- Co('zhipu','智谱','—','港股',14,'core',true,'CNY_YI','sm',0,{note:'代码待补'}),
- Co('minimax','MiniMax','—','港股',14,'second',true,'CNY_YI','sm',0,{note:'代码待补'}),
+ Co('zhipu','智谱','2513.HK','港股',14,'core',true,'CNY_YI','sm',0,{note:'2026年港股上市,季度数据待人工核实'}),
+ Co('minimax','MiniMax','0100.HK','港股',14,'second',true,'CNY_YI','sm',0,{note:'2026年港股上市,季度数据待人工核实'}),
  Co('kimi','月之暗面(Kimi)','—','非上市',14,'core',false,'CNY_YI','sm',0,{cloud:true}),
  /* 15 AI 应用/软件 */
  Co('now','ServiceNow','NOW','美股',15,'core',true,'USD_M','md',1),

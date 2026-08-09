@@ -7026,6 +7026,102 @@ const METRICS = [
     "src": "sjsmi-2025q1"
    }
   }
+ },
+ {
+  "company": "cerebras",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 193.406,
+    "unit": "USD_M",
+    "src": "cerebras-2026q1-10q"
+   },
+   "net_income": {
+    "value": -14.006,
+    "unit": "USD_M",
+    "src": "cerebras-2026q1-10q"
+   }
+  }
+ },
+ {
+  "company": "cerebras",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 171.443,
+    "unit": "USD_M",
+    "src": "cerebras-2025q4-10q"
+   },
+   "net_income": {
+    "value": -25.617,
+    "unit": "USD_M",
+    "src": "cerebras-2025q4-10q"
+   }
+  }
+ },
+ {
+  "company": "cerebras",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": {
+    "value": 135.714,
+    "unit": "USD_M",
+    "src": "cerebras-2025q3-10q"
+   },
+   "net_income": {
+    "value": -22.201,
+    "unit": "USD_M",
+    "src": "cerebras-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "cerebras",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 103.322,
+    "unit": "USD_M",
+    "src": "cerebras-2025q2-10q"
+   },
+   "net_income": {
+    "value": 309.512,
+    "unit": "USD_M",
+    "src": "cerebras-2025q2-10q"
+   }
+  }
+ },
+ {
+  "company": "lxyq",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": {
+    "value": 4.877,
+    "unit": "CNY_YI",
+    "src": "lxyq-2026q1"
+   },
+   "net_income": {
+    "value": 1.189,
+    "unit": "CNY_YI",
+    "src": "lxyq-2026q1"
+   }
+  }
+ },
+ {
+  "company": "lxyq",
+  "period": "2025Q4",
+  "metrics": {
+   "revenue": {
+    "value": 3.884,
+    "unit": "CNY_YI",
+    "src": "lxyq-2025q4-derived"
+   },
+   "net_income": {
+    "value": 0.77,
+    "unit": "CNY_YI",
+    "src": "lxyq-2025q4-derived"
+   }
+  }
  }
 ];
 
