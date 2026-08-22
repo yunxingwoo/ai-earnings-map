@@ -3,6 +3,28 @@
 const METRICS = [
  {
   "company": "dell",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 23378,
+    "unit": "USD_M",
+    "src": "sec-xbrl-dell"
+   }
+  }
+ },
+ {
+  "company": "dell",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 23931,
+    "unit": "USD_M",
+    "src": "sec-xbrl-dell"
+   }
+  }
+ },
+ {
+  "company": "dell",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -103,6 +125,72 @@ const METRICS = [
  },
  {
   "company": "quanta",
+  "period": "2024Q1",
+  "metrics": {
+   "revenue": {
+    "value": 258939,
+    "unit": "TWD_M",
+    "src": "mops-synth-quanta-2024"
+   }
+  }
+ },
+ {
+  "company": "quanta",
+  "period": "2024Q2",
+  "metrics": {
+   "revenue": {
+    "value": 309954,
+    "unit": "TWD_M",
+    "src": "mops-synth-quanta-2024"
+   }
+  }
+ },
+ {
+  "company": "quanta",
+  "period": "2024Q3",
+  "metrics": {
+   "revenue": {
+    "value": 424549,
+    "unit": "TWD_M",
+    "src": "mops-synth-quanta-2024"
+   }
+  }
+ },
+ {
+  "company": "quanta",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 415662,
+    "unit": "TWD_M",
+    "src": "mops-synth-quanta-2024"
+   }
+  }
+ },
+ {
+  "company": "quanta",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 504122,
+    "unit": "TWD_M",
+    "src": "mops-synth-quanta-2025"
+   }
+  }
+ },
+ {
+  "company": "quanta",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 485672,
+    "unit": "TWD_M",
+    "src": "mops-synth-quanta-2025"
+   }
+  }
+ },
+ {
+  "company": "quanta",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -163,26 +251,6 @@ const METRICS = [
  },
  {
   "company": "quanta",
-  "period": "2025Q2",
-  "metrics": {
-   "revenue": {
-    "value": 504121.65,
-    "unit": "TWD_M",
-    "src": "mops-2382-114h1"
-   },
-   "gross_margin": {
-    "value": 0.0705,
-    "src": "mops-2382-114h1"
-   },
-   "net_income": {
-    "value": 16860.64,
-    "unit": "TWD_M",
-    "src": "mops-2382-114h1"
-   }
-  }
- },
- {
-  "company": "quanta",
   "period": "2026M1",
   "metrics": {
    "monthly_revenue": {
@@ -238,12 +306,89 @@ const METRICS = [
  },
  {
   "company": "quanta",
+  "period": "2026M7",
+  "metrics": {
+   "monthly_revenue": {
+    "value": 366274,
+    "unit": "TWD_M",
+    "src": "mops-t21-115m7"
+   }
+  }
+ },
+ {
+  "company": "quanta",
   "period": "2026M6",
   "metrics": {
    "monthly_revenue": {
     "value": 385190.82,
     "unit": "TWD_M",
     "src": "mops-t21-115m6"
+   }
+  }
+ },
+ {
+  "company": "wiwynn",
+  "period": "2024Q1",
+  "metrics": {
+   "revenue": {
+    "value": 69628,
+    "unit": "TWD_M",
+    "src": "mops-synth-wiwynn-2024"
+   }
+  }
+ },
+ {
+  "company": "wiwynn",
+  "period": "2024Q2",
+  "metrics": {
+   "revenue": {
+    "value": 77481,
+    "unit": "TWD_M",
+    "src": "mops-synth-wiwynn-2024"
+   }
+  }
+ },
+ {
+  "company": "wiwynn",
+  "period": "2024Q3",
+  "metrics": {
+   "revenue": {
+    "value": 97818,
+    "unit": "TWD_M",
+    "src": "mops-synth-wiwynn-2024"
+   }
+  }
+ },
+ {
+  "company": "wiwynn",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 115614,
+    "unit": "TWD_M",
+    "src": "mops-synth-wiwynn-2024"
+   }
+  }
+ },
+ {
+  "company": "wiwynn",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 220744,
+    "unit": "TWD_M",
+    "src": "mops-synth-wiwynn-2025"
+   }
+  }
+ },
+ {
+  "company": "wiwynn",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 170655,
+    "unit": "TWD_M",
+    "src": "mops-synth-wiwynn-2025"
    }
   }
  },
@@ -309,26 +454,6 @@ const METRICS = [
  },
  {
   "company": "wiwynn",
-  "period": "2025Q2",
-  "metrics": {
-   "revenue": {
-    "value": 220743.5,
-    "unit": "TWD_M",
-    "src": "mops-6669-114h1"
-   },
-   "gross_margin": {
-    "value": 0.0858,
-    "src": "mops-6669-114h1"
-   },
-   "net_income": {
-    "value": 12122.37,
-    "unit": "TWD_M",
-    "src": "mops-6669-114h1"
-   }
-  }
- },
- {
-  "company": "wiwynn",
   "period": "2026M1",
   "metrics": {
    "monthly_revenue": {
@@ -384,12 +509,55 @@ const METRICS = [
  },
  {
   "company": "wiwynn",
+  "period": "2026M7",
+  "metrics": {
+   "monthly_revenue": {
+    "value": 117685.53,
+    "unit": "TWD_M",
+    "src": "mops-t21-115m7"
+   }
+  }
+ },
+ {
+  "company": "wiwynn",
   "period": "2026M6",
   "metrics": {
    "monthly_revenue": {
     "value": 111371.12,
     "unit": "TWD_M",
     "src": "mops-t21-115m6"
+   }
+  }
+ },
+ {
+  "company": "fii",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2003.45,
+    "unit": "CNY_YI",
+    "src": "westock-sh601138"
+   },
+   "net_income": {
+    "value": 68.83,
+    "unit": "CNY_YI",
+    "src": "westock-sh601138"
+   }
+  }
+ },
+ {
+  "company": "fii",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1604.15,
+    "unit": "CNY_YI",
+    "src": "westock-sh601138"
+   },
+   "net_income": {
+    "value": 52.31,
+    "unit": "CNY_YI",
+    "src": "westock-sh601138"
    }
   }
  },
@@ -454,22 +622,24 @@ const METRICS = [
   }
  },
  {
-  "company": "fii",
+  "company": "asml",
   "period": "2025Q2",
   "metrics": {
    "revenue": {
-    "value": 2003.45,
-    "unit": "CNY_YI",
-    "src": "fii-2025fy"
-   },
-   "gross_margin": {
-    "value": 0.065,
-    "src": "fii-2025h1-gmderived"
-   },
-   "net_income": {
-    "value": 68.83,
-    "unit": "CNY_YI",
-    "src": "fii-2025fy"
+    "value": 7524.9,
+    "unit": "EUR_M",
+    "src": "westock-usASML"
+   }
+  }
+ },
+ {
+  "company": "asml",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 7032.4,
+    "unit": "EUR_M",
+    "src": "westock-usASML"
    }
   }
  },
@@ -565,6 +735,28 @@ const METRICS = [
  },
  {
   "company": "amat",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 7302,
+    "unit": "USD_M",
+    "src": "sec-xbrl-amat"
+   }
+  }
+ },
+ {
+  "company": "amat",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 7100,
+    "unit": "USD_M",
+    "src": "sec-xbrl-amat"
+   }
+  }
+ },
+ {
+  "company": "amat",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -624,22 +816,29 @@ const METRICS = [
   }
  },
  {
-  "company": "amat",
+  "company": "lrcx",
   "period": "2025Q2",
   "metrics": {
    "revenue": {
-    "value": 7300,
+    "value": 4376,
     "unit": "USD_M",
-    "src": "amat-fy25q3-er"
-   },
-   "gross_margin": {
-    "value": 0.488,
-    "src": "amat-fy25q3-er"
+    "src": "westock-usLRCX"
    },
    "net_income": {
-    "value": 1779,
+    "value": 1191,
     "unit": "USD_M",
-    "src": "amat-fy25q3-er"
+    "src": "westock-usLRCX"
+   }
+  }
+ },
+ {
+  "company": "lrcx",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 4720.2,
+    "unit": "USD_M",
+    "src": "sec-xbrl-lrcx"
    }
   }
  },
@@ -725,6 +924,28 @@ const METRICS = [
  },
  {
   "company": "snps",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1604.3,
+    "unit": "USD_M",
+    "src": "sec-xbrl-snps"
+   }
+  }
+ },
+ {
+  "company": "snps",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 1455.3,
+    "unit": "USD_M",
+    "src": "sec-xbrl-snps"
+   }
+  }
+ },
+ {
+  "company": "snps",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -789,6 +1010,38 @@ const METRICS = [
  },
  {
   "company": "naura",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 82.06,
+    "unit": "CNY_YI",
+    "src": "westock-sz002371"
+   },
+   "net_income": {
+    "value": 15.81,
+    "unit": "CNY_YI",
+    "src": "westock-sz002371"
+   }
+  }
+ },
+ {
+  "company": "naura",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 95.43,
+    "unit": "CNY_YI",
+    "src": "westock-sz002371"
+   },
+   "net_income": {
+    "value": 11.54,
+    "unit": "CNY_YI",
+    "src": "westock-sz002371"
+   }
+  }
+ },
+ {
+  "company": "naura",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -848,6 +1101,28 @@ const METRICS = [
     "value": 16.27,
     "unit": "CNY_YI",
     "src": "naura-2025fy"
+   }
+  }
+ },
+ {
+  "company": "vrt",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2638.1,
+    "unit": "USD_M",
+    "src": "sec-xbrl-vrt"
+   }
+  }
+ },
+ {
+  "company": "vrt",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2036,
+    "unit": "USD_M",
+    "src": "sec-xbrl-vrt"
    }
   }
  },
@@ -943,6 +1218,38 @@ const METRICS = [
  },
  {
   "company": "envicool",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 9.33,
+    "unit": "CNY_YI",
+    "src": "westock-sz002837"
+   },
+   "net_income": {
+    "value": 0.48,
+    "unit": "CNY_YI",
+    "src": "westock-sz002837"
+   }
+  }
+ },
+ {
+  "company": "envicool",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 17.17,
+    "unit": "CNY_YI",
+    "src": "westock-sz002837"
+   },
+   "net_income": {
+    "value": 1,
+    "unit": "CNY_YI",
+    "src": "westock-sz002837"
+   }
+  }
+ },
+ {
+  "company": "envicool",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -1018,6 +1325,38 @@ const METRICS = [
     "value": 1.68,
     "unit": "CNY_YI",
     "src": "ev-2025fy-ar"
+   }
+  }
+ },
+ {
+  "company": "shenghong",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 43.12,
+    "unit": "CNY_YI",
+    "src": "westock-sz300476"
+   },
+   "net_income": {
+    "value": 9.21,
+    "unit": "CNY_YI",
+    "src": "westock-sz300476"
+   }
+  }
+ },
+ {
+  "company": "shenghong",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 30.34,
+    "unit": "CNY_YI",
+    "src": "westock-sz300476"
+   },
+   "net_income": {
+    "value": 3.9,
+    "unit": "CNY_YI",
+    "src": "westock-sz300476"
    }
   }
  },
@@ -1103,6 +1442,38 @@ const METRICS = [
  },
  {
   "company": "wus",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 40.38,
+    "unit": "CNY_YI",
+    "src": "westock-sz002463"
+   },
+   "net_income": {
+    "value": 7.62,
+    "unit": "CNY_YI",
+    "src": "westock-sz002463"
+   }
+  }
+ },
+ {
+  "company": "wus",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 43.31,
+    "unit": "CNY_YI",
+    "src": "westock-sz002463"
+   },
+   "net_income": {
+    "value": 7.39,
+    "unit": "CNY_YI",
+    "src": "westock-sz002463"
+   }
+  }
+ },
+ {
+  "company": "wus",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -1178,6 +1549,82 @@ const METRICS = [
     "value": 9.2,
     "unit": "CNY_YI",
     "src": "wus-2025fy-ar"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2024Q1",
+  "metrics": {
+   "revenue": {
+    "value": 592644,
+    "unit": "TWD_M",
+    "src": "mops-synth-tsmc-2024"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2024Q2",
+  "metrics": {
+   "revenue": {
+    "value": 673510,
+    "unit": "TWD_M",
+    "src": "mops-synth-tsmc-2024"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2024Q3",
+  "metrics": {
+   "revenue": {
+    "value": 759692,
+    "unit": "TWD_M",
+    "src": "mops-synth-tsmc-2024"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 868461,
+    "unit": "TWD_M",
+    "src": "mops-synth-tsmc-2024"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 933790,
+    "unit": "TWD_M",
+    "src": "tsmc-2025q2-er"
+   },
+   "net_income": {
+    "value": 398270,
+    "unit": "TWD_M",
+    "src": "tsmc-2025q2-er"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 839250,
+    "unit": "TWD_M",
+    "src": "tsmc-2025q1-er"
+   },
+   "net_income": {
+    "value": 361560,
+    "unit": "TWD_M",
+    "src": "tsmc-2025q1-er"
    }
   }
  },
@@ -1263,6 +1710,17 @@ const METRICS = [
  },
  {
   "company": "tsmc",
+  "period": "2026M7",
+  "metrics": {
+   "monthly_revenue": {
+    "value": 467580,
+    "unit": "TWD_M",
+    "src": "tsmc-monthly-2026m7"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
   "period": "2026M6",
   "metrics": {
    "monthly_revenue": {
@@ -1324,6 +1782,77 @@ const METRICS = [
     "value": 401255,
     "unit": "TWD_M",
     "src": "tsmc-monthly-2026m1"
+   }
+  }
+ },
+ {
+  "company": "samsung",
+  "period": "2024Q1",
+  "metrics": {
+   "revenue": {
+    "value": 71920,
+    "unit": "KRW_B",
+    "src": "samsung-2024q-er"
+   }
+  }
+ },
+ {
+  "company": "samsung",
+  "period": "2024Q2",
+  "metrics": {
+   "revenue": {
+    "value": 74070,
+    "unit": "KRW_B",
+    "src": "samsung-2024q-er"
+   }
+  }
+ },
+ {
+  "company": "samsung",
+  "period": "2024Q3",
+  "metrics": {
+   "revenue": {
+    "value": 79100,
+    "unit": "KRW_B",
+    "src": "samsung-2024q-er"
+   }
+  }
+ },
+ {
+  "company": "samsung",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 75788,
+    "unit": "KRW_B",
+    "src": "samsung-2024q-er"
+   }
+  }
+ },
+ {
+  "company": "samsung",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 74570,
+    "unit": "KRW_B",
+    "src": "samsung-2025q2-er"
+   },
+   "net_income": {
+    "value": 49300,
+    "unit": "KRW_B",
+    "src": "samsung-2025q2-er"
+   }
+  }
+ },
+ {
+  "company": "samsung",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 79140,
+    "unit": "KRW_B",
+    "src": "samsung-2025q1-er"
    }
   }
  },
@@ -1393,6 +1922,82 @@ const METRICS = [
  },
  {
   "company": "hynix",
+  "period": "2024Q1",
+  "metrics": {
+   "revenue": {
+    "value": 12430,
+    "unit": "KRW_B",
+    "src": "hynix-2024q-er"
+   }
+  }
+ },
+ {
+  "company": "hynix",
+  "period": "2024Q2",
+  "metrics": {
+   "revenue": {
+    "value": 16423,
+    "unit": "KRW_B",
+    "src": "hynix-2024q-er"
+   }
+  }
+ },
+ {
+  "company": "hynix",
+  "period": "2024Q3",
+  "metrics": {
+   "revenue": {
+    "value": 17573,
+    "unit": "KRW_B",
+    "src": "hynix-2024q-er"
+   }
+  }
+ },
+ {
+  "company": "hynix",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 19767,
+    "unit": "KRW_B",
+    "src": "hynix-2024q-er"
+   }
+  }
+ },
+ {
+  "company": "hynix",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 22232,
+    "unit": "KRW_B",
+    "src": "hynix-2025q2-er"
+   },
+   "net_income": {
+    "value": 6996.2,
+    "unit": "KRW_B",
+    "src": "hynix-2025q2-er"
+   }
+  }
+ },
+ {
+  "company": "hynix",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 17639.1,
+    "unit": "KRW_B",
+    "src": "hynix-2025q1-er"
+   },
+   "net_income": {
+    "value": 8108.2,
+    "unit": "KRW_B",
+    "src": "hynix-2025q1-er"
+   }
+  }
+ },
+ {
+  "company": "hynix",
   "period": "2026Q2",
   "metrics": {
    "revenue": {
@@ -1452,6 +2057,28 @@ const METRICS = [
     "value": 12597.5,
     "unit": "KRW_B",
     "src": "hynix-2025q3-er"
+   }
+  }
+ },
+ {
+  "company": "mu",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 9301,
+    "unit": "USD_M",
+    "src": "sec-xbrl-mu"
+   }
+  }
+ },
+ {
+  "company": "mu",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 8053,
+    "unit": "USD_M",
+    "src": "sec-xbrl-mu"
    }
   }
  },
@@ -1537,6 +2164,28 @@ const METRICS = [
  },
  {
   "company": "smic",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2243.7,
+    "unit": "USD_M",
+    "src": "westock-hk00981"
+   }
+  }
+ },
+ {
+  "company": "smic",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2241,
+    "unit": "USD_M",
+    "src": "westock-hk00981"
+   }
+  }
+ },
+ {
+  "company": "smic",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -1596,26 +2245,6 @@ const METRICS = [
   }
  },
  {
-  "company": "smic",
-  "period": "2025Q2",
-  "metrics": {
-   "revenue": {
-    "value": 2209.1,
-    "unit": "USD_M",
-    "src": "smic-2025q2-er"
-   },
-   "gross_margin": {
-    "value": 0.204,
-    "src": "smic-2025q2-er"
-   },
-   "net_income": {
-    "value": 132.5,
-    "unit": "USD_M",
-    "src": "smic-2025q2-er"
-   }
-  }
- },
- {
   "company": "cxmt",
   "period": "2026Q1",
   "metrics": {
@@ -1628,6 +2257,32 @@ const METRICS = [
     "value": 247.62,
     "unit": "CNY_YI",
     "src": "cxmt-2026q1-prospectus"
+   }
+  }
+ },
+ {
+  "company": "msft",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 70066,
+    "unit": "USD_M",
+    "src": "sec-xbrl-msft"
+   },
+   "capex": {
+    "value": 24200,
+    "unit": "USD_M",
+    "src": "msft-fy25q4-er"
+   }
+  }
+ }, {
+  "company": "msft",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 70066,
+    "unit": "USD_M",
+    "src": "sec-xbrl-msft"
    }
   }
  },
@@ -1717,6 +2372,33 @@ const METRICS = [
  },
  {
   "company": "goog",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 96428,
+    "unit": "USD_M",
+    "src": "sec-xbrl-goog"
+   },
+   "capex": {
+    "value": 22446,
+    "unit": "USD_M",
+    "src": "goog-2025q2-capex"
+   }
+  }
+ },
+ {
+  "company": "goog",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 90234,
+    "unit": "USD_M",
+    "src": "sec-xbrl-goog"
+   }
+  }
+ },
+ {
+  "company": "goog",
   "period": "2026Q2",
   "metrics": {
    "revenue": {
@@ -1796,6 +2478,33 @@ const METRICS = [
     "value": 34979,
     "unit": "USD_M",
     "src": "goog-2025q3-er"
+   }
+  }
+ },
+ {
+  "company": "amzn",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 167702,
+    "unit": "USD_M",
+    "src": "sec-xbrl-amzn"
+   },
+   "capex": {
+    "value": 31368,
+    "unit": "USD_M",
+    "src": "amzn-2025q2-capex"
+   }
+  }
+ },
+ {
+  "company": "amzn",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 155667,
+    "unit": "USD_M",
+    "src": "sec-xbrl-amzn"
    }
   }
  },
@@ -1885,6 +2594,33 @@ const METRICS = [
  },
  {
   "company": "meta",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 47516,
+    "unit": "USD_M",
+    "src": "sec-xbrl-meta"
+   },
+   "capex": {
+    "value": 17010,
+    "unit": "USD_M",
+    "src": "meta-2025q2-capex"
+   }
+  }
+ },
+ {
+  "company": "meta",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 42314,
+    "unit": "USD_M",
+    "src": "sec-xbrl-meta"
+   }
+  }
+ },
+ {
+  "company": "meta",
   "period": "2026Q2",
   "metrics": {
    "revenue": {
@@ -1964,6 +2700,33 @@ const METRICS = [
     "value": 2710,
     "unit": "USD_M",
     "src": "meta-2025q3-er"
+   }
+  }
+ },
+ {
+  "company": "orcl",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 14059,
+    "unit": "USD_M",
+    "src": "westock-usORCL"
+   },
+   "net_income": {
+    "value": 3151,
+    "unit": "USD_M",
+    "src": "westock-usORCL"
+   }
+  }
+ },
+ {
+  "company": "orcl",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 14130,
+    "unit": "USD_M",
+    "src": "sec-xbrl-orcl"
    }
   }
  },
@@ -2063,6 +2826,28 @@ const METRICS = [
  },
  {
   "company": "crwv",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1212,
+    "unit": "USD_M",
+    "src": "sec-xbrl-crwv"
+   }
+  }
+ },
+ {
+  "company": "crwv",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 982,
+    "unit": "USD_M",
+    "src": "sec-xbrl-crwv"
+   }
+  }
+ },
+ {
+  "company": "crwv",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -2130,23 +2915,34 @@ const METRICS = [
   }
  },
  {
-  "company": "crwv",
+  "company": "nbis",
   "period": "2025Q2",
   "metrics": {
    "revenue": {
-    "value": 1210,
+    "value": 105.1,
     "unit": "USD_M",
-    "src": "crwv-2025q2-er"
+    "src": "westock-usNBIS"
    },
    "net_income": {
-    "value": -290.5,
+    "value": 502.5,
     "unit": "USD_M",
-    "src": "crwv-2025q2-er"
+    "src": "westock-usNBIS"
+   }
+  }
+ },
+ {
+  "company": "nbis",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 55.3,
+    "unit": "USD_M",
+    "src": "westock-usNBIS"
    },
-   "backlog": {
-    "value": 30100,
+   "net_income": {
+    "value": -113.6,
     "unit": "USD_M",
-    "src": "crwv-2025q2-er"
+    "src": "westock-usNBIS"
    }
   }
  },
@@ -2199,23 +2995,39 @@ const METRICS = [
   }
  },
  {
-  "company": "nbis",
-  "period": "2025Q2",
+  "company": "baba",
+  "period": "2026Q2",
   "metrics": {
    "revenue": {
-    "value": 105.1,
-    "unit": "USD_M",
-    "src": "nbis-2025q2-er"
-   },
-   "capex": {
-    "value": 510.6,
-    "unit": "USD_M",
-    "src": "nbis-2025q2-er"
+    "value": 2689.53,
+    "unit": "CNY_YI",
+    "src": "baba-fy27q1-er"
    },
    "net_income": {
-    "value": 502.5,
-    "unit": "USD_M",
-    "src": "nbis-2025q2-er"
+    "value": 104.44,
+    "unit": "CNY_YI",
+    "src": "baba-fy27q1-er"
+   },
+   "capex": {
+    "value": 676.78,
+    "unit": "CNY_YI",
+    "src": "baba-fy27q1-er"
+   },
+   "ai_revenue": {
+    "value": 123.76,
+    "unit": "CNY_YI",
+    "src": "baba-fy27q1-er"
+   }
+  }
+ },
+ {
+  "company": "baba",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2364.5,
+    "unit": "CNY_YI",
+    "src": "baba-fy25q4-er"
    }
   }
  },
@@ -2305,6 +3117,38 @@ const METRICS = [
  },
  {
   "company": "tencent",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1845.04,
+    "unit": "CNY_YI",
+    "src": "tencent-2025q2-er"
+   },
+   "net_income": {
+    "value": 556.28,
+    "unit": "CNY_YI",
+    "src": "tencent-2025q2-er"
+   }
+  }
+ },
+ {
+  "company": "tencent",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1800.22,
+    "unit": "CNY_YI",
+    "src": "tencent-2025q1-er"
+   },
+   "net_income": {
+    "value": 478.21,
+    "unit": "CNY_YI",
+    "src": "tencent-2025q1-er"
+   }
+  }
+ },
+ {
+  "company": "tencent",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -2367,23 +3211,46 @@ const METRICS = [
   }
  },
  {
-  "company": "tencent",
-  "period": "2025Q2",
+  "company": "nvda",
+  "period": "2024Q1",
   "metrics": {
    "revenue": {
-    "value": 1845.04,
-    "unit": "CNY_YI",
-    "src": "tencent-2025q2-er"
-   },
-   "capex": {
-    "value": 191.1,
-    "unit": "CNY_YI",
-    "src": "tencent-2025q2-er"
-   },
-   "net_income": {
-    "value": 556.28,
-    "unit": "CNY_YI",
-    "src": "tencent-2025q2-er"
+    "value": 26044,
+    "unit": "USD_M",
+    "src": "westock-nvda-fy25"
+   }
+  }
+ },
+ {
+  "company": "nvda",
+  "period": "2024Q2",
+  "metrics": {
+   "revenue": {
+    "value": 30040,
+    "unit": "USD_M",
+    "src": "westock-nvda-fy25"
+   }
+  }
+ },
+ {
+  "company": "nvda",
+  "period": "2024Q3",
+  "metrics": {
+   "revenue": {
+    "value": 35082,
+    "unit": "USD_M",
+    "src": "westock-nvda-fy25"
+   }
+  }
+ },
+ {
+  "company": "nvda",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 44062,
+    "unit": "USD_M",
+    "src": "sec-xbrl-nvda"
    }
   }
  },
@@ -2464,6 +3331,17 @@ const METRICS = [
  },
  {
   "company": "nvda",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 39331,
+    "unit": "USD_M",
+    "src": "nvda-fy25q4-er"
+   }
+  }
+ },
+ {
+  "company": "nvda",
   "period": "2025Q2",
   "metrics": {
    "revenue": {
@@ -2484,6 +3362,28 @@ const METRICS = [
     "value": 26422,
     "unit": "USD_M",
     "src": "nvda-fy26q2-er"
+   }
+  }
+ },
+ {
+  "company": "amd",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 7685,
+    "unit": "USD_M",
+    "src": "sec-xbrl-amd"
+   }
+  }
+ },
+ {
+  "company": "amd",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 7438,
+    "unit": "USD_M",
+    "src": "sec-xbrl-amd"
    }
   }
  },
@@ -2589,6 +3489,28 @@ const METRICS = [
  },
  {
   "company": "avgo",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 15004,
+    "unit": "USD_M",
+    "src": "sec-xbrl-avgo"
+   }
+  }
+ },
+ {
+  "company": "avgo",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 14916,
+    "unit": "USD_M",
+    "src": "sec-xbrl-avgo"
+   }
+  }
+ },
+ {
+  "company": "avgo",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -2684,6 +3606,33 @@ const METRICS = [
     "value": 4140,
     "unit": "USD_M",
     "src": "avgo-fy25q3-er"
+   }
+  }
+ },
+ {
+  "company": "mrvl",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 1426.5,
+    "unit": "USD_M",
+    "src": "westock-usMRVL"
+   },
+   "net_income": {
+    "value": -392.7,
+    "unit": "USD_M",
+    "src": "westock-usMRVL"
+   }
+  }
+ },
+ {
+  "company": "mrvl",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1895.3,
+    "unit": "USD_M",
+    "src": "sec-xbrl-mrvl"
    }
   }
  },
@@ -2789,6 +3738,38 @@ const METRICS = [
  },
  {
   "company": "cambricon",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 17.69,
+    "unit": "CNY_YI",
+    "src": "westock-sh688256"
+   },
+   "net_income": {
+    "value": 6.83,
+    "unit": "CNY_YI",
+    "src": "westock-sh688256"
+   }
+  }
+ },
+ {
+  "company": "cambricon",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 11.11,
+    "unit": "CNY_YI",
+    "src": "westock-sh688256"
+   },
+   "net_income": {
+    "value": 3.55,
+    "unit": "CNY_YI",
+    "src": "westock-sh688256"
+   }
+  }
+ },
+ {
+  "company": "cambricon",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -2848,22 +3829,34 @@ const METRICS = [
   }
  },
  {
-  "company": "cambricon",
-  "period": "2025Q2",
+  "company": "montage",
+  "period": "2025Q1",
   "metrics": {
    "revenue": {
-    "value": 17.69,
+    "value": 12.22,
     "unit": "CNY_YI",
-    "src": "cambricon-2025fy"
-   },
-   "gross_margin": {
-    "value": 0.5588,
-    "src": "cambricon-2025h1-gmderived"
+    "src": "westock-sh688008"
    },
    "net_income": {
-    "value": 6.83,
+    "value": 5.25,
     "unit": "CNY_YI",
-    "src": "cambricon-2025fy"
+    "src": "westock-sh688008"
+   }
+  }
+ },
+ {
+  "company": "montage",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 10.68,
+    "unit": "CNY_YI",
+    "src": "westock-sh688008"
+   },
+   "net_income": {
+    "value": 4.34,
+    "unit": "CNY_YI",
+    "src": "westock-sh688008"
    }
   }
  },
@@ -2949,6 +3942,28 @@ const METRICS = [
  },
  {
   "company": "anet",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2204.8,
+    "unit": "USD_M",
+    "src": "sec-xbrl-anet"
+   }
+  }
+ },
+ {
+  "company": "anet",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2004.8,
+    "unit": "USD_M",
+    "src": "sec-xbrl-anet"
+   }
+  }
+ },
+ {
+  "company": "anet",
   "period": "2026Q2",
   "metrics": {
    "revenue": {
@@ -3024,6 +4039,28 @@ const METRICS = [
     "value": 853,
     "unit": "USD_M",
     "src": "anet-2025q3-er"
+   }
+  }
+ },
+ {
+  "company": "cohr",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1497.9,
+    "unit": "USD_M",
+    "src": "sec-xbrl-cohr"
+   }
+  }
+ },
+ {
+  "company": "cohr",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 1434.7,
+    "unit": "USD_M",
+    "src": "sec-xbrl-cohr"
    }
   }
  },
@@ -3109,6 +4146,38 @@ const METRICS = [
  },
  {
   "company": "innolight",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 66.74,
+    "unit": "CNY_YI",
+    "src": "westock-sz300308"
+   },
+   "net_income": {
+    "value": 15.83,
+    "unit": "CNY_YI",
+    "src": "westock-sz300308"
+   }
+  }
+ },
+ {
+  "company": "innolight",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 65.5,
+    "unit": "CNY_YI",
+    "src": "westock-sz300308"
+   },
+   "net_income": {
+    "value": 14.19,
+    "unit": "CNY_YI",
+    "src": "westock-sz300308"
+   }
+  }
+ },
+ {
+  "company": "innolight",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -3184,6 +4253,38 @@ const METRICS = [
     "value": 24.12,
     "unit": "CNY_YI",
     "src": "innolight-2025fy"
+   }
+  }
+ },
+ {
+  "company": "eoptolink",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 40.52,
+    "unit": "CNY_YI",
+    "src": "westock-sz300502"
+   },
+   "net_income": {
+    "value": 15.73,
+    "unit": "CNY_YI",
+    "src": "westock-sz300502"
+   }
+  }
+ },
+ {
+  "company": "eoptolink",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 35.16,
+    "unit": "CNY_YI",
+    "src": "westock-sz300502"
+   },
+   "net_income": {
+    "value": 11.92,
+    "unit": "CNY_YI",
+    "src": "westock-sz300502"
    }
   }
  },
@@ -3269,6 +4370,38 @@ const METRICS = [
  },
  {
   "company": "tfc",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 9.45,
+    "unit": "CNY_YI",
+    "src": "westock-sz300394"
+   },
+   "net_income": {
+    "value": 3.38,
+    "unit": "CNY_YI",
+    "src": "westock-sz300394"
+   }
+  }
+ },
+ {
+  "company": "tfc",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 8.57,
+    "unit": "CNY_YI",
+    "src": "westock-sz300394"
+   },
+   "net_income": {
+    "value": 3.67,
+    "unit": "CNY_YI",
+    "src": "westock-sz300394"
+   }
+  }
+ },
+ {
+  "company": "tfc",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -3333,6 +4466,38 @@ const METRICS = [
  },
  {
   "company": "dwmicro",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2.2,
+    "unit": "CNY_YI",
+    "src": "westock-sz301183"
+   },
+   "net_income": {
+    "value": 0.31,
+    "unit": "CNY_YI",
+    "src": "westock-sz301183"
+   }
+  }
+ },
+ {
+  "company": "dwmicro",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1.56,
+    "unit": "CNY_YI",
+    "src": "westock-sz301183"
+   },
+   "net_income": {
+    "value": 0.2,
+    "unit": "CNY_YI",
+    "src": "westock-sz301183"
+   }
+  }
+ },
+ {
+  "company": "dwmicro",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -3380,18 +4545,34 @@ const METRICS = [
   }
  },
  {
-  "company": "dwmicro",
+  "company": "sifo",
   "period": "2025Q2",
   "metrics": {
    "revenue": {
-    "value": 2.2,
+    "value": 5.56,
     "unit": "CNY_YI",
-    "src": "qveris-cn-dwmicro"
+    "src": "westock-sh688313"
    },
    "net_income": {
-    "value": 0.31,
+    "value": 1.23,
     "unit": "CNY_YI",
-    "src": "qveris-cn-dwmicro"
+    "src": "westock-sh688313"
+   }
+  }
+ },
+ {
+  "company": "sifo",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 4.36,
+    "unit": "CNY_YI",
+    "src": "westock-sh688313"
+   },
+   "net_income": {
+    "value": 0.93,
+    "unit": "CNY_YI",
+    "src": "westock-sh688313"
    }
   }
  },
@@ -3461,6 +4642,38 @@ const METRICS = [
  },
  {
   "company": "ebphoton",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 0.94,
+    "unit": "CNY_YI",
+    "src": "westock-sh688048"
+   },
+   "net_income": {
+    "value": -0.07,
+    "unit": "CNY_YI",
+    "src": "westock-sh688048"
+   }
+  }
+ },
+ {
+  "company": "ebphoton",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 0.7,
+    "unit": "CNY_YI",
+    "src": "westock-sh688048"
+   },
+   "net_income": {
+    "value": -0.36,
+    "unit": "CNY_YI",
+    "src": "westock-sh688048"
+   }
+  }
+ },
+ {
+  "company": "ebphoton",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -3520,6 +4733,38 @@ const METRICS = [
     "value": 0.16,
     "unit": "CNY_YI",
     "src": "qveris-cn-ebphoton"
+   }
+  }
+ },
+ {
+  "company": "yjsemi",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 0.84,
+    "unit": "CNY_YI",
+    "src": "westock-sh688498"
+   },
+   "net_income": {
+    "value": 0.14,
+    "unit": "CNY_YI",
+    "src": "westock-sh688498"
+   }
+  }
+ },
+ {
+  "company": "yjsemi",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 0.74,
+    "unit": "CNY_YI",
+    "src": "westock-sh688498"
+   },
+   "net_income": {
+    "value": -0.06,
+    "unit": "CNY_YI",
+    "src": "westock-sh688498"
    }
   }
  },
@@ -3589,6 +4834,38 @@ const METRICS = [
  },
  {
   "company": "tengjing",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1.13,
+    "unit": "CNY_YI",
+    "src": "westock-sh688195"
+   },
+   "net_income": {
+    "value": 0.13,
+    "unit": "CNY_YI",
+    "src": "westock-sh688195"
+   }
+  }
+ },
+ {
+  "company": "tengjing",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 1.13,
+    "unit": "CNY_YI",
+    "src": "westock-sh688195"
+   },
+   "net_income": {
+    "value": 0.14,
+    "unit": "CNY_YI",
+    "src": "westock-sh688195"
+   }
+  }
+ },
+ {
+  "company": "tengjing",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -3648,6 +4925,28 @@ const METRICS = [
     "value": 0.24,
     "unit": "CNY_YI",
     "src": "qveris-cn-tengjing"
+   }
+  }
+ },
+ {
+  "company": "aapl",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 94036,
+    "unit": "USD_M",
+    "src": "sec-xbrl-aapl"
+   }
+  }
+ },
+ {
+  "company": "aapl",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 95359,
+    "unit": "USD_M",
+    "src": "sec-xbrl-aapl"
    }
   }
  },
@@ -3717,6 +5016,28 @@ const METRICS = [
  },
  {
   "company": "iren",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 144.8,
+    "unit": "USD_M",
+    "src": "sec-xbrl-iren"
+   }
+  }
+ },
+ {
+  "company": "iren",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 116.1,
+    "unit": "USD_M",
+    "src": "sec-xbrl-iren"
+   }
+  }
+ },
+ {
+  "company": "iren",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -3776,6 +5097,28 @@ const METRICS = [
     "value": 95.546,
     "unit": "USD_M",
     "src": "iren-2025q2-10q"
+   }
+  }
+ },
+ {
+  "company": "gev",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 9111,
+    "unit": "USD_M",
+    "src": "sec-xbrl-gev"
+   }
+  }
+ },
+ {
+  "company": "gev",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 8032,
+    "unit": "USD_M",
+    "src": "sec-xbrl-gev"
    }
   }
  },
@@ -3845,6 +5188,28 @@ const METRICS = [
  },
  {
   "company": "vst",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 3753,
+    "unit": "USD_M",
+    "src": "sec-xbrl-vst"
+   }
+  }
+ },
+ {
+  "company": "vst",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 4250,
+    "unit": "USD_M",
+    "src": "sec-xbrl-vst"
+   }
+  }
+ },
+ {
+  "company": "vst",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -3892,18 +5257,34 @@ const METRICS = [
   }
  },
  {
-  "company": "vst",
+  "company": "be",
   "period": "2025Q2",
   "metrics": {
    "revenue": {
-    "value": 4250,
+    "value": 401.2,
     "unit": "USD_M",
-    "src": "vst-2025q2-10q"
+    "src": "westock-usBE"
    },
    "net_income": {
-    "value": 327,
+    "value": -42.6,
     "unit": "USD_M",
-    "src": "vst-2025q2-10q"
+    "src": "westock-usBE"
+   }
+  }
+ },
+ {
+  "company": "be",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 326,
+    "unit": "USD_M",
+    "src": "westock-usBE"
+   },
+   "net_income": {
+    "value": -23.8,
+    "unit": "USD_M",
+    "src": "westock-usBE"
    }
   }
  },
@@ -3973,6 +5354,28 @@ const METRICS = [
  },
  {
   "company": "flnc",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 602.5,
+    "unit": "USD_M",
+    "src": "sec-xbrl-flnc"
+   }
+  }
+ },
+ {
+  "company": "flnc",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 431.6,
+    "unit": "USD_M",
+    "src": "sec-xbrl-flnc"
+   }
+  }
+ },
+ {
+  "company": "flnc",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -4020,18 +5423,24 @@ const METRICS = [
   }
  },
  {
-  "company": "flnc",
+  "company": "tsla",
   "period": "2025Q2",
   "metrics": {
    "revenue": {
-    "value": 602.533,
+    "value": 22496,
     "unit": "USD_M",
-    "src": "flnc-2025q2-10q"
-   },
-   "net_income": {
-    "value": 6.252,
+    "src": "sec-xbrl-tsla"
+   }
+  }
+ },
+ {
+  "company": "tsla",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 19335,
     "unit": "USD_M",
-    "src": "flnc-2025q2-10q"
+    "src": "sec-xbrl-tsla"
    }
   }
  },
@@ -4101,6 +5510,28 @@ const METRICS = [
  },
  {
   "company": "now",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 3215,
+    "unit": "USD_M",
+    "src": "sec-xbrl-now"
+   }
+  }
+ },
+ {
+  "company": "now",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 3088,
+    "unit": "USD_M",
+    "src": "sec-xbrl-now"
+   }
+  }
+ },
+ {
+  "company": "now",
   "period": "2026Q2",
   "metrics": {
    "revenue": {
@@ -4160,6 +5591,28 @@ const METRICS = [
     "value": 502,
     "unit": "USD_M",
     "src": "now-2025q3-10q"
+   }
+  }
+ },
+ {
+  "company": "pltr",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1003.7,
+    "unit": "USD_M",
+    "src": "sec-xbrl-pltr"
+   }
+  }
+ },
+ {
+  "company": "pltr",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 883.9,
+    "unit": "USD_M",
+    "src": "sec-xbrl-pltr"
    }
   }
  },
@@ -4229,6 +5682,42 @@ const METRICS = [
  },
  {
   "company": "csco",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 14149,
+    "unit": "USD_M",
+    "src": "sec-xbrl-csco"
+   }
+  }
+ },
+ {
+  "company": "csco",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 17300,
+    "unit": "USD_M",
+    "src": "csco-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.641,
+    "src": "csco-2026q2-er"
+   },
+   "net_income": {
+    "value": 3900,
+    "unit": "USD_M",
+    "src": "csco-2026q2-er"
+   },
+   "guidance_next_q": {
+    "value": 18100,
+    "unit": "USD_M",
+    "src": "csco-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "csco",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -4288,6 +5777,28 @@ const METRICS = [
     "value": 2550,
     "unit": "USD_M",
     "src": "csco-2025q2-10q"
+   }
+  }
+ },
+ {
+  "company": "nok",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 4452.3,
+    "unit": "EUR_M",
+    "src": "westock-usNOK"
+   }
+  }
+ },
+ {
+  "company": "nok",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 3988.2,
+    "unit": "EUR_M",
+    "src": "westock-usNOK"
    }
   }
  },
@@ -4357,6 +5868,37 @@ const METRICS = [
  },
  {
   "company": "lite",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 425.2,
+    "unit": "USD_M",
+    "src": "sec-xbrl-lite"
+   }
+  }
+ },
+ {
+  "company": "lite",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1006.3,
+    "unit": "USD_M",
+    "src": "lite-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.474,
+    "src": "lite-2026q2-er"
+   },
+   "net_income": {
+    "value": -7161.7,
+    "unit": "USD_M",
+    "src": "lite-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "lite",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -4416,6 +5958,28 @@ const METRICS = [
     "value": 213.3,
     "unit": "USD_M",
     "src": "lite-2025q2-10q"
+   }
+  }
+ },
+ {
+  "company": "fn",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 871.8,
+    "unit": "USD_M",
+    "src": "sec-xbrl-fn"
+   }
+  }
+ },
+ {
+  "company": "fn",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 833.6,
+    "unit": "USD_M",
+    "src": "sec-xbrl-fn"
    }
   }
  },
@@ -4485,6 +6049,33 @@ const METRICS = [
  },
  {
   "company": "aaoi",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 100.3,
+    "unit": "USD_M",
+    "src": "westock-usAAOI"
+   },
+   "net_income": {
+    "value": -119.7,
+    "unit": "USD_M",
+    "src": "westock-usAAOI"
+   }
+  }
+ },
+ {
+  "company": "aaoi",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 99.9,
+    "unit": "USD_M",
+    "src": "sec-xbrl-aaoi"
+   }
+  }
+ },
+ {
+  "company": "aaoi",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -4544,6 +6135,38 @@ const METRICS = [
     "value": -9.098,
     "unit": "USD_M",
     "src": "aaoi-2025q2-10q"
+   }
+  }
+ },
+ {
+  "company": "poet",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 0.17,
+    "unit": "USD_M",
+    "src": "westock-usPOET"
+   },
+   "net_income": {
+    "value": 6.3,
+    "unit": "USD_M",
+    "src": "westock-usPOET"
+   }
+  }
+ },
+ {
+  "company": "poet",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 0.03,
+    "unit": "USD_M",
+    "src": "westock-usPOET"
+   },
+   "net_income": {
+    "value": -30.3,
+    "unit": "USD_M",
+    "src": "westock-usPOET"
    }
   }
  },
@@ -4613,6 +6236,28 @@ const METRICS = [
  },
  {
   "company": "linde",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 8495,
+    "unit": "USD_M",
+    "src": "sec-xbrl-linde"
+   }
+  }
+ },
+ {
+  "company": "linde",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 8112,
+    "unit": "USD_M",
+    "src": "sec-xbrl-linde"
+   }
+  }
+ },
+ {
+  "company": "linde",
   "period": "2026Q2",
   "metrics": {
    "revenue": {
@@ -4672,6 +6317,38 @@ const METRICS = [
     "value": 1929,
     "unit": "USD_M",
     "src": "qveris-av-linde"
+   }
+  }
+ },
+ {
+  "company": "glw",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 3862,
+    "unit": "USD_M",
+    "src": "westock-usGLW"
+   },
+   "net_income": {
+    "value": 469,
+    "unit": "USD_M",
+    "src": "westock-usGLW"
+   }
+  }
+ },
+ {
+  "company": "glw",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 3452,
+    "unit": "USD_M",
+    "src": "westock-usGLW"
+   },
+   "net_income": {
+    "value": 157,
+    "unit": "USD_M",
+    "src": "westock-usGLW"
    }
   }
  },
@@ -4741,6 +6418,28 @@ const METRICS = [
  },
  {
   "company": "axti",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 18,
+    "unit": "USD_M",
+    "src": "sec-xbrl-axti"
+   }
+  }
+ },
+ {
+  "company": "axti",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 19.4,
+    "unit": "USD_M",
+    "src": "sec-xbrl-axti"
+   }
+  }
+ },
+ {
+  "company": "axti",
   "period": "2026Q2",
   "metrics": {
    "revenue": {
@@ -4800,6 +6499,33 @@ const METRICS = [
     "value": -1.906,
     "unit": "USD_M",
     "src": "qveris-av-axti"
+   }
+  }
+ },
+ {
+  "company": "arm",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 939,
+    "unit": "USD_M",
+    "src": "westock-usARM"
+   },
+   "net_income": {
+    "value": 223,
+    "unit": "USD_M",
+    "src": "westock-usARM"
+   }
+  }
+ },
+ {
+  "company": "arm",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1053,
+    "unit": "USD_M",
+    "src": "sec-xbrl-arm"
    }
   }
  },
@@ -4869,6 +6595,33 @@ const METRICS = [
  },
  {
   "company": "klac",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 3075.8,
+    "unit": "USD_M",
+    "src": "westock-usKLAC"
+   },
+   "net_income": {
+    "value": 824.5,
+    "unit": "USD_M",
+    "src": "westock-usKLAC"
+   }
+  }
+ },
+ {
+  "company": "klac",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 3063,
+    "unit": "USD_M",
+    "src": "sec-xbrl-klac"
+   }
+  }
+ },
+ {
+  "company": "klac",
   "period": "2026Q2",
   "metrics": {
    "revenue": {
@@ -4928,6 +6681,28 @@ const METRICS = [
     "value": 1121.04,
     "unit": "USD_M",
     "src": "qveris-av-klac"
+   }
+  }
+ },
+ {
+  "company": "form",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 195.8,
+    "unit": "USD_M",
+    "src": "sec-xbrl-form"
+   }
+  }
+ },
+ {
+  "company": "form",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 171.4,
+    "unit": "USD_M",
+    "src": "sec-xbrl-form"
    }
   }
  },
@@ -4997,6 +6772,33 @@ const METRICS = [
  },
  {
   "company": "aehr",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 13.45,
+    "unit": "USD_M",
+    "src": "westock-usAEHR"
+   },
+   "net_income": {
+    "value": -1.03,
+    "unit": "USD_M",
+    "src": "westock-usAEHR"
+   }
+  }
+ },
+ {
+  "company": "aehr",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 18.3,
+    "unit": "USD_M",
+    "src": "sec-xbrl-aehr"
+   }
+  }
+ },
+ {
+  "company": "aehr",
   "period": "2026Q2",
   "metrics": {
    "revenue": {
@@ -5056,6 +6858,38 @@ const METRICS = [
     "value": -2.084,
     "unit": "USD_M",
     "src": "qveris-av-aehr"
+   }
+  }
+ },
+ {
+  "company": "shestu",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 628549,
+    "unit": "JPY_M",
+    "src": "shestu-fy26q1-er"
+   },
+   "net_income": {
+    "value": 126428,
+    "unit": "JPY_M",
+    "src": "shestu-fy26q1-er"
+   }
+  }
+ },
+ {
+  "company": "shestu",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 631551,
+    "unit": "JPY_M",
+    "src": "shestu-fy26q1-er"
+   },
+   "net_income": {
+    "value": 101482,
+    "unit": "JPY_M",
+    "src": "shestu-fy26q1-er"
    }
   }
  },
@@ -5125,6 +6959,33 @@ const METRICS = [
  },
  {
   "company": "adt",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 232349,
+    "unit": "JPY_M",
+    "src": "advt-fy24q4-er"
+   }
+  }
+ },
+ {
+  "company": "adt",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 263776,
+    "unit": "JPY_M",
+    "src": "adt-fy25q1-er"
+   },
+   "net_income": {
+    "value": 90180,
+    "unit": "JPY_M",
+    "src": "adt-fy25q1-er"
+   }
+  }
+ },
+ {
+  "company": "adt",
   "period": "2026Q2",
   "metrics": {
    "revenue": {
@@ -5184,6 +7045,38 @@ const METRICS = [
     "value": 79633,
     "unit": "JPY_M",
     "src": "qveris-fmp-adt"
+   }
+  }
+ },
+ {
+  "company": "sytech",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 56.11,
+    "unit": "CNY_YI",
+    "src": "westock-sh600183"
+   },
+   "net_income": {
+    "value": 5.64,
+    "unit": "CNY_YI",
+    "src": "westock-sh600183"
+   }
+  }
+ },
+ {
+  "company": "sytech",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 56.44,
+    "unit": "CNY_YI",
+    "src": "westock-sh600183"
+   },
+   "net_income": {
+    "value": 3.66,
+    "unit": "CNY_YI",
+    "src": "westock-sh600183"
    }
   }
  },
@@ -5253,6 +7146,38 @@ const METRICS = [
  },
  {
   "company": "ynge",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2.4,
+    "unit": "CNY_YI",
+    "src": "westock-sz002428"
+   },
+   "net_income": {
+    "value": 0.1,
+    "unit": "CNY_YI",
+    "src": "westock-sz002428"
+   }
+  }
+ },
+ {
+  "company": "ynge",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 2.65,
+    "unit": "CNY_YI",
+    "src": "westock-sz002428"
+   },
+   "net_income": {
+    "value": 0.24,
+    "unit": "CNY_YI",
+    "src": "westock-sz002428"
+   }
+  }
+ },
+ {
+  "company": "ynge",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -5312,6 +7237,38 @@ const METRICS = [
     "value": 0.12,
     "unit": "CNY_YI",
     "src": "qveris-cn-ynge"
+   }
+  }
+ },
+ {
+  "company": "veri",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 3.9,
+    "unit": "CNY_YI",
+    "src": "westock-sh688521"
+   },
+   "net_income": {
+    "value": -2.2,
+    "unit": "CNY_YI",
+    "src": "westock-sh688521"
+   }
+  }
+ },
+ {
+  "company": "veri",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 6.72,
+    "unit": "CNY_YI",
+    "src": "westock-sh688521"
+   },
+   "net_income": {
+    "value": -2.05,
+    "unit": "CNY_YI",
+    "src": "westock-sh688521"
    }
   }
  },
@@ -5381,6 +7338,38 @@ const METRICS = [
  },
  {
   "company": "amec",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 21.73,
+    "unit": "CNY_YI",
+    "src": "westock-sh688012"
+   },
+   "net_income": {
+    "value": 3.13,
+    "unit": "CNY_YI",
+    "src": "westock-sh688012"
+   }
+  }
+ },
+ {
+  "company": "amec",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 35.58,
+    "unit": "CNY_YI",
+    "src": "westock-sh688012"
+   },
+   "net_income": {
+    "value": 7.03,
+    "unit": "CNY_YI",
+    "src": "westock-sh688012"
+   }
+  }
+ },
+ {
+  "company": "amec",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -5440,6 +7429,38 @@ const METRICS = [
     "value": 3.93,
     "unit": "CNY_YI",
     "src": "qveris-cn-amec"
+   }
+  }
+ },
+ {
+  "company": "tuojing",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 7.09,
+    "unit": "CNY_YI",
+    "src": "westock-sh688072"
+   },
+   "net_income": {
+    "value": -1.47,
+    "unit": "CNY_YI",
+    "src": "westock-sh688072"
+   }
+  }
+ },
+ {
+  "company": "tuojing",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 18.26,
+    "unit": "CNY_YI",
+    "src": "westock-sh688072"
+   },
+   "net_income": {
+    "value": 4.17,
+    "unit": "CNY_YI",
+    "src": "westock-sh688072"
    }
   }
  },
@@ -5509,6 +7530,38 @@ const METRICS = [
  },
  {
   "company": "fujing",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 7.62,
+    "unit": "CNY_YI",
+    "src": "westock-sh688409"
+   },
+   "net_income": {
+    "value": -0.22,
+    "unit": "CNY_YI",
+    "src": "westock-sh688409"
+   }
+  }
+ },
+ {
+  "company": "fujing",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 7.25,
+    "unit": "CNY_YI",
+    "src": "westock-sh688409"
+   },
+   "net_income": {
+    "value": 0.13,
+    "unit": "CNY_YI",
+    "src": "westock-sh688409"
+   }
+  }
+ },
+ {
+  "company": "fujing",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -5573,6 +7626,38 @@ const METRICS = [
  },
  {
   "company": "gfs",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1688,
+    "unit": "USD_M",
+    "src": "westock-usGFS"
+   },
+   "net_income": {
+    "value": 228,
+    "unit": "USD_M",
+    "src": "westock-usGFS"
+   }
+  }
+ },
+ {
+  "company": "gfs",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1585,
+    "unit": "USD_M",
+    "src": "westock-usGFS"
+   },
+   "net_income": {
+    "value": 210,
+    "unit": "USD_M",
+    "src": "westock-usGFS"
+   }
+  }
+ },
+ {
+  "company": "gfs",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -5620,18 +7705,34 @@ const METRICS = [
   }
  },
  {
-  "company": "gfs",
+  "company": "tower",
   "period": "2025Q2",
   "metrics": {
    "revenue": {
-    "value": 1688,
+    "value": 372.1,
     "unit": "USD_M",
-    "src": "qveris-av-gfs"
+    "src": "westock-usTSEM"
    },
    "net_income": {
-    "value": 228,
+    "value": 46.6,
     "unit": "USD_M",
-    "src": "qveris-av-gfs"
+    "src": "westock-usTSEM"
+   }
+  }
+ },
+ {
+  "company": "tower",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 358.2,
+    "unit": "USD_M",
+    "src": "westock-usTSEM"
+   },
+   "net_income": {
+    "value": 40.1,
+    "unit": "USD_M",
+    "src": "westock-usTSEM"
    }
   }
  },
@@ -5684,18 +7785,24 @@ const METRICS = [
   }
  },
  {
-  "company": "tower",
+  "company": "eton",
   "period": "2025Q2",
   "metrics": {
    "revenue": {
-    "value": 372.1,
+    "value": 7028,
     "unit": "USD_M",
-    "src": "qveris-av-tower"
-   },
-   "net_income": {
-    "value": 46.6,
+    "src": "sec-xbrl-eton"
+   }
+  }
+ },
+ {
+  "company": "eton",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 6377,
     "unit": "USD_M",
-    "src": "qveris-av-tower"
+    "src": "sec-xbrl-eton"
    }
   }
  },
@@ -5765,6 +7872,28 @@ const METRICS = [
  },
  {
   "company": "unimicron",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 30090,
+    "unit": "TWD_M",
+    "src": "mops-synth-unimicron-2024"
+   }
+  }
+ },
+ {
+  "company": "unimicron",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 29381,
+    "unit": "TWD_M",
+    "src": "mops-synth-unimicron-2024"
+   }
+  }
+ },
+ {
+  "company": "unimicron",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -5824,6 +7953,28 @@ const METRICS = [
     "value": 29.61,
     "unit": "TWD_M",
     "src": "unimicron-2025Q2-qr"
+   }
+  }
+ },
+ {
+  "company": "delta",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 124035,
+    "unit": "TWD_M",
+    "src": "mops-synth-delta-2025"
+   }
+  }
+ },
+ {
+  "company": "delta",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 118919,
+    "unit": "TWD_M",
+    "src": "mops-synth-delta-2025"
    }
   }
  },
@@ -5893,6 +8044,17 @@ const METRICS = [
  },
  {
   "company": "ibiden",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 99099,
+    "unit": "JPY_M",
+    "src": "ibiden-fy24q4-qr"
+   }
+  }
+ },
+ {
+  "company": "ibiden",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -5957,6 +8119,38 @@ const METRICS = [
  },
  {
   "company": "dsbj",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 86.02,
+    "unit": "CNY_YI",
+    "src": "westock-sz002384"
+   },
+   "net_income": {
+    "value": 4.56,
+    "unit": "CNY_YI",
+    "src": "westock-sz002384"
+   }
+  }
+ },
+ {
+  "company": "dsbj",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 103.04,
+    "unit": "CNY_YI",
+    "src": "westock-sz002384"
+   },
+   "net_income": {
+    "value": 0.18,
+    "unit": "CNY_YI",
+    "src": "westock-sz002384"
+   }
+  }
+ },
+ {
+  "company": "dsbj",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -5965,7 +8159,7 @@ const METRICS = [
     "src": "dsbj-2026Q1-qr"
    },
    "net_income": {
-    "value": 11.24,
+    "value": 11.0989,
     "unit": "CNY_YI",
     "src": "dsbj-2026Q1-qr"
    }
@@ -6016,6 +8210,38 @@ const METRICS = [
     "value": 3.02,
     "unit": "CNY_YI",
     "src": "dsbj-2025Q2-qr"
+   }
+  }
+ },
+ {
+  "company": "scc",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 47.83,
+    "unit": "CNY_YI",
+    "src": "westock-sz002916"
+   },
+   "net_income": {
+    "value": 4.91,
+    "unit": "CNY_YI",
+    "src": "westock-sz002916"
+   }
+  }
+ },
+ {
+  "company": "scc",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 48.58,
+    "unit": "CNY_YI",
+    "src": "westock-sz002916"
+   },
+   "net_income": {
+    "value": 3.9,
+    "unit": "CNY_YI",
+    "src": "westock-sz002916"
    }
   }
  },
@@ -6085,6 +8311,38 @@ const METRICS = [
  },
  {
   "company": "jw",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 33.43,
+    "unit": "CNY_YI",
+    "src": "westock-sh603228"
+   },
+   "net_income": {
+    "value": 3.25,
+    "unit": "CNY_YI",
+    "src": "westock-sh603228"
+   }
+  }
+ },
+ {
+  "company": "jw",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 35.81,
+    "unit": "CNY_YI",
+    "src": "westock-sh603228"
+   },
+   "net_income": {
+    "value": 2.65,
+    "unit": "CNY_YI",
+    "src": "westock-sh603228"
+   }
+  }
+ },
+ {
+  "company": "jw",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -6093,7 +8351,7 @@ const METRICS = [
     "src": "jw-2026Q1-qr"
    },
    "net_income": {
-    "value": 2.43,
+    "value": 2.3269,
     "unit": "CNY_YI",
     "src": "jw-2026Q1-qr"
    }
@@ -6144,6 +8402,28 @@ const METRICS = [
     "value": 3.23,
     "unit": "CNY_YI",
     "src": "jw-2025Q2-qr"
+   }
+  }
+ },
+ {
+  "company": "qcom",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 10365,
+    "unit": "USD_M",
+    "src": "sec-xbrl-qcom"
+   }
+  }
+ },
+ {
+  "company": "qcom",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 10979,
+    "unit": "USD_M",
+    "src": "sec-xbrl-qcom"
    }
   }
  },
@@ -6213,6 +8493,28 @@ const METRICS = [
  },
  {
   "company": "intc",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 12859,
+    "unit": "USD_M",
+    "src": "sec-xbrl-intc"
+   }
+  }
+ },
+ {
+  "company": "intc",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 12667,
+    "unit": "USD_M",
+    "src": "sec-xbrl-intc"
+   }
+  }
+ },
+ {
+  "company": "intc",
   "period": "2026Q2",
   "metrics": {
    "revenue": {
@@ -6277,6 +8579,28 @@ const METRICS = [
  },
  {
   "company": "foxconn",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1797347,
+    "unit": "TWD_M",
+    "src": "mops-synth-foxconn-2025"
+   }
+  }
+ },
+ {
+  "company": "foxconn",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1642173,
+    "unit": "TWD_M",
+    "src": "mops-synth-foxconn-2025"
+   }
+  }
+ },
+ {
+  "company": "foxconn",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -6324,18 +8648,34 @@ const METRICS = [
   }
  },
  {
-  "company": "foxconn",
-  "period": "2025Q2",
+  "company": "huaqin",
+  "period": "2025Q1",
   "metrics": {
    "revenue": {
-    "value": 1793468.046,
-    "unit": "TWD_M",
-    "src": "foxconn-2025q2-qr"
+    "value": 349.98,
+    "unit": "CNY_YI",
+    "src": "westock-sh603296"
    },
    "net_income": {
-    "value": 44360.558,
-    "unit": "TWD_M",
-    "src": "foxconn-2025q2-qr"
+    "value": 8.42,
+    "unit": "CNY_YI",
+    "src": "westock-sh603296"
+   }
+  }
+ },
+ {
+  "company": "huaqin",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 338.68,
+    "unit": "CNY_YI",
+    "src": "westock-sh603296"
+   },
+   "net_income": {
+    "value": 8.76,
+    "unit": "CNY_YI",
+    "src": "westock-sh603296"
    }
   }
  },
@@ -6405,6 +8745,28 @@ const METRICS = [
  },
  {
   "company": "kioxia",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 347100,
+    "unit": "JPY_M",
+    "src": "kioxia-fy24q4-er"
+   }
+  }
+ },
+ {
+  "company": "kioxia",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 342800,
+    "unit": "JPY_M",
+    "src": "kioxia-fy25q1-er"
+   }
+  }
+ },
+ {
+  "company": "kioxia",
   "period": "2026Q2",
   "metrics": {
    "revenue": {
@@ -6469,6 +8831,28 @@ const METRICS = [
  },
  {
   "company": "wdc",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2605,
+    "unit": "USD_M",
+    "src": "sec-xbrl-wdc"
+   }
+  }
+ },
+ {
+  "company": "wdc",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2294,
+    "unit": "USD_M",
+    "src": "sec-xbrl-wdc"
+   }
+  }
+ },
+ {
+  "company": "wdc",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -6516,18 +8900,29 @@ const METRICS = [
   }
  },
  {
-  "company": "wdc",
+  "company": "stx",
   "period": "2025Q2",
   "metrics": {
    "revenue": {
-    "value": 2605,
+    "value": 2325,
     "unit": "USD_M",
-    "src": "wdc-2025q2-er"
+    "src": "westock-usSTX"
    },
    "net_income": {
-    "value": 257,
+    "value": 336,
     "unit": "USD_M",
-    "src": "wdc-2025q2-er"
+    "src": "westock-usSTX"
+   }
+  }
+ },
+ {
+  "company": "stx",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 2160,
+    "unit": "USD_M",
+    "src": "sec-xbrl-stx"
    }
   }
  },
@@ -6597,6 +8992,33 @@ const METRICS = [
  },
  {
   "company": "sndk",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1876,
+    "unit": "USD_M",
+    "src": "westock-usSNDK"
+   },
+   "net_income": {
+    "value": 104,
+    "unit": "USD_M",
+    "src": "westock-usSNDK"
+   }
+  }
+ },
+ {
+  "company": "sndk",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 1695,
+    "unit": "USD_M",
+    "src": "sec-xbrl-sndk"
+   }
+  }
+ },
+ {
+  "company": "sndk",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -6644,18 +9066,18 @@ const METRICS = [
   }
  },
  {
-  "company": "sndk",
-  "period": "2025Q2",
+  "company": "giga",
+  "period": "2026Q2",
   "metrics": {
    "revenue": {
-    "value": 1901,
-    "unit": "USD_M",
-    "src": "sndk-2025q2-er"
+    "value": 73.78,
+    "unit": "CNY_YI",
+    "src": "giga-2026h1-sr"
    },
    "net_income": {
-    "value": -23,
-    "unit": "USD_M",
-    "src": "sndk-2025q2-er"
+    "value": 53.96,
+    "unit": "CNY_YI",
+    "src": "giga-2026h1-sr"
    }
   }
  },
@@ -6720,6 +9142,54 @@ const METRICS = [
     "value": 3.41,
     "unit": "CNY_YI",
     "src": "giga-2025q2-er"
+   }
+  }
+ },
+ {
+  "company": "giga",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 19.09,
+    "unit": "CNY_YI",
+    "src": "giga-2026h1-sr"
+   },
+   "net_income": {
+    "value": 2.35,
+    "unit": "CNY_YI",
+    "src": "giga-2026h1-sr"
+   }
+  }
+ },
+ {
+  "company": "ase",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 155410,
+    "unit": "TWD_M",
+    "src": "westock-usASX"
+   },
+   "net_income": {
+    "value": 7753,
+    "unit": "TWD_M",
+    "src": "westock-usASX"
+   }
+  }
+ },
+ {
+  "company": "ase",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 143411,
+    "unit": "TWD_M",
+    "src": "westock-usASX"
+   },
+   "net_income": {
+    "value": 7313,
+    "unit": "TWD_M",
+    "src": "westock-usASX"
    }
   }
  },
@@ -6789,6 +9259,27 @@ const METRICS = [
  },
  {
   "company": "huahong",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 574.6,
+    "unit": "USD_M",
+    "src": "westock-hk01347"
+   }
+  }
+ },
+ {
+  "company": "huahong",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 539.4,
+    "unit": "USD_M",
+    "src": "westock-hk01347"
+   }
+  }
+ }, {
+  "company": "huahong",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -6836,18 +9327,34 @@ const METRICS = [
   }
  },
  {
-  "company": "huahong",
-  "period": "2025Q2",
+  "company": "jcet",
+  "period": "2025Q1",
   "metrics": {
    "revenue": {
-    "value": 578.25,
-    "unit": "USD_M",
-    "src": "huahong-2025q2"
+    "value": 93.35,
+    "unit": "CNY_YI",
+    "src": "westock-sh600584"
    },
    "net_income": {
-    "value": 6.62,
-    "unit": "USD_M",
-    "src": "huahong-2025q2"
+    "value": 2.03,
+    "unit": "CNY_YI",
+    "src": "westock-sh600584"
+   }
+  }
+ },
+ {
+  "company": "jcet",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 109.84,
+    "unit": "CNY_YI",
+    "src": "westock-sh600584"
+   },
+   "net_income": {
+    "value": 5.33,
+    "unit": "CNY_YI",
+    "src": "westock-sh600584"
    }
   }
  },
@@ -6912,6 +9419,38 @@ const METRICS = [
     "value": 2.67,
     "unit": "CNY_YI",
     "src": "jcet-2025q2"
+   }
+  }
+ },
+ {
+  "company": "tfme",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 60.92,
+    "unit": "CNY_YI",
+    "src": "westock-sz002156"
+   },
+   "net_income": {
+    "value": 1.01,
+    "unit": "CNY_YI",
+    "src": "westock-sz002156"
+   }
+  }
+ },
+ {
+  "company": "tfme",
+  "period": "2024Q4",
+  "metrics": {
+   "revenue": {
+    "value": 68,
+    "unit": "CNY_YI",
+    "src": "westock-sz002156"
+   },
+   "net_income": {
+    "value": 1.25,
+    "unit": "CNY_YI",
+    "src": "westock-sz002156"
    }
   }
  },
@@ -7029,6 +9568,28 @@ const METRICS = [
  },
  {
   "company": "cerebras",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": {
+    "value": 103.3,
+    "unit": "USD_M",
+    "src": "sec-xbrl-cerebras"
+   }
+  }
+ },
+ {
+  "company": "cerebras",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": {
+    "value": 99.5,
+    "unit": "USD_M",
+    "src": "sec-xbrl-cerebras"
+   }
+  }
+ },
+ {
+  "company": "cerebras",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -7076,18 +9637,18 @@ const METRICS = [
   }
  },
  {
-  "company": "cerebras",
-  "period": "2025Q2",
+  "company": "lxyq",
+  "period": "2025Q1",
   "metrics": {
    "revenue": {
-    "value": 103.322,
-    "unit": "USD_M",
-    "src": "cerebras-2025q2-10q"
+    "value": 2.01,
+    "unit": "CNY_YI",
+    "src": "westock-sh688808"
    },
    "net_income": {
-    "value": 309.512,
-    "unit": "USD_M",
-    "src": "cerebras-2025q2-10q"
+    "value": 0.19,
+    "unit": "CNY_YI",
+    "src": "westock-sh688808"
    }
   }
  },
@@ -7120,6 +9681,874 @@ const METRICS = [
     "value": 0.77,
     "unit": "CNY_YI",
     "src": "lxyq-2025q4-derived"
+   }
+  }
+ },
+ {
+  "company": "amat",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 9115,
+    "unit": "USD_M",
+    "src": "amat-2026q3-er"
+   },
+   "gross_margin": {
+    "value": 0.503,
+    "src": "amat-2026q3-er"
+   },
+   "net_income": {
+    "value": 2538,
+    "unit": "USD_M",
+    "src": "amat-2026q3-er"
+   },
+   "capex": {
+    "value": 707,
+    "unit": "USD_M",
+    "src": "amat-2026q3-er"
+   },
+   "guidance_next_q": {
+    "value": 10250,
+    "unit": "USD_M",
+    "src": "amat-2026q3-er"
+   }
+  }
+ },
+ {
+  "company": "wdc",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 3747,
+    "unit": "USD_M",
+    "src": "wdc-fy26q4-er"
+   },
+   "gross_margin": {
+    "value": 0.541,
+    "src": "wdc-fy26q4-er"
+   },
+   "net_income": {
+    "value": 3195,
+    "unit": "USD_M",
+    "src": "wdc-fy26q4-er"
+   },
+   "capex": {
+    "value": 108,
+    "unit": "USD_M",
+    "src": "wdc-fy26q4-er"
+   },
+   "guidance_next_q": {
+    "value": 4100,
+    "unit": "USD_M",
+    "src": "wdc-fy26q4-er"
+   }
+  }
+ },
+ {
+  "company": "sndk",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 8965,
+    "unit": "USD_M",
+    "src": "sndk-fy26q4-er"
+   },
+   "gross_margin": {
+    "value": 0.846,
+    "src": "sndk-fy26q4-er"
+   },
+   "net_income": {
+    "value": 6903,
+    "unit": "USD_M",
+    "src": "sndk-fy26q4-er"
+   },
+   "capex": {
+    "value": 43,
+    "unit": "USD_M",
+    "src": "sndk-fy26q4-er"
+   },
+   "guidance_next_q": {
+    "value": 10550,
+    "unit": "USD_M",
+    "src": "sndk-fy26q4-er"
+   }
+  }
+ },
+ {
+  "company": "dwmicro",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2.9563,
+    "unit": "CNY_YI",
+    "src": "dwmicro-2026h1-sr"
+   },
+   "gross_margin": {
+    "value": 0.3277,
+    "src": "dwmicro-2026h1-sr"
+   },
+   "net_income": {
+    "value": 0.5889,
+    "unit": "CNY_YI",
+    "src": "dwmicro-2026h1-sr"
+   },
+   "capex": {
+    "value": 0.6757,
+    "unit": "CNY_YI",
+    "src": "dwmicro-2026h1-sr"
+   }
+  }
+ },
+ {
+  "company": "cambricon",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 31.11,
+    "unit": "CNY_YI",
+    "src": "cambricon-2026h1-sr"
+   },
+   "gross_margin": {
+    "value": 0.561,
+    "src": "cambricon-2026h1-sr"
+   },
+   "net_income": {
+    "value": 12.98,
+    "unit": "CNY_YI",
+    "src": "cambricon-2026h1-sr"
+   },
+   "capex": {
+    "value": 2.41,
+    "unit": "CNY_YI",
+    "src": "cambricon-2026h1-sr"
+   }
+  }
+ },
+ {
+  "company": "cerebras",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 180.11,
+    "unit": "USD_M",
+    "src": "cerebras-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.1419,
+    "src": "cerebras-2026q2-er"
+   },
+   "net_income": {
+    "value": -450.528,
+    "unit": "USD_M",
+    "src": "cerebras-2026q2-er"
+   },
+   "capex": {
+    "value": 416.9,
+    "unit": "USD_M",
+    "src": "cerebras-2026q2-10q"
+   },
+   "backlog": {
+    "value": 25400,
+    "unit": "USD_M",
+    "src": "cerebras-2026q2-er"
+   },
+   "guidance_next_q": {
+    "value": 215,
+    "unit": "USD_M",
+    "src": "cerebras-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "gfs",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1786,
+    "unit": "USD_M",
+    "src": "gfs-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.283,
+    "src": "gfs-2026q2-er"
+   },
+   "net_income": {
+    "value": 167,
+    "unit": "USD_M",
+    "src": "gfs-2026q2-er"
+   },
+   "capex": {
+    "value": 411,
+    "unit": "USD_M",
+    "src": "gfs-2026q2-er"
+   },
+   "guidance_next_q": {
+    "value": 1885,
+    "unit": "USD_M",
+    "src": "gfs-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "tower",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 460.1,
+    "unit": "USD_M",
+    "src": "tower-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.299,
+    "src": "tower-2026q2-er"
+   },
+   "net_income": {
+    "value": 90.8,
+    "unit": "USD_M",
+    "src": "tower-2026q2-er"
+   },
+   "capex": {
+    "value": 187,
+    "unit": "USD_M",
+    "src": "tower-2026q2-er"
+   },
+   "guidance_next_q": {
+    "value": 520,
+    "unit": "USD_M",
+    "src": "tower-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "smic",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 3005.6,
+    "unit": "USD_M",
+    "src": "smic-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.253,
+    "src": "smic-2026q2-er"
+   },
+   "net_income": {
+    "value": 479.2,
+    "unit": "USD_M",
+    "src": "smic-2026q2-er"
+   },
+   "capex": {
+    "value": 1835.7,
+    "unit": "USD_M",
+    "src": "smic-2026q2-er"
+   },
+   "guidance_next_q": {
+    "value": 3095.8,
+    "unit": "USD_M",
+    "src": "smic-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "huahong",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 717.5,
+    "unit": "USD_M",
+    "src": "huahong-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.165,
+    "src": "huahong-2026q2-er"
+   },
+   "net_income": {
+    "value": 38.6,
+    "unit": "USD_M",
+    "src": "huahong-2026q2-er"
+   },
+   "capex": {
+    "value": 356.6,
+    "unit": "USD_M",
+    "src": "huahong-2026q2-er"
+   },
+   "guidance_next_q": {
+    "value": 775,
+    "unit": "USD_M",
+    "src": "huahong-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "crwv",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2575,
+    "unit": "USD_M",
+    "src": "crwv-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.659,
+    "src": "crwv-2026q2-er"
+   },
+   "net_income": {
+    "value": -626,
+    "unit": "USD_M",
+    "src": "crwv-2026q2-er"
+   },
+   "capex": {
+    "value": 6422,
+    "unit": "USD_M",
+    "src": "crwv-2026q2-er"
+   },
+   "backlog": {
+    "value": 103700,
+    "unit": "USD_M",
+    "src": "crwv-2026q2-10q"
+   },
+   "guidance_next_q": {
+    "value": 3525,
+    "unit": "USD_M",
+    "src": "crwv-2026q2-outlook"
+   }
+  }
+ },
+ {
+  "company": "nbis",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 582.3,
+    "unit": "USD_M",
+    "src": "nbis-2026q2-er"
+   },
+   "ai_revenue": {
+    "value": 575,
+    "unit": "USD_M",
+    "src": "nbis-2026q2-shl"
+   },
+   "gross_margin": {
+    "value": 0.771,
+    "src": "nbis-2026q2-er"
+   },
+   "net_income": {
+    "value": -190.4,
+    "unit": "USD_M",
+    "src": "nbis-2026q2-er"
+   },
+   "capex": {
+    "value": 5657.4,
+    "unit": "USD_M",
+    "src": "nbis-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "tencent",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2047.85,
+    "unit": "CNY_YI",
+    "src": "tencent-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.58,
+    "src": "tencent-2026q2-er"
+   },
+   "net_income": {
+    "value": 560.22,
+    "unit": "CNY_YI",
+    "src": "tencent-2026q2-er"
+   },
+   "capex": {
+    "value": 527.84,
+    "unit": "CNY_YI",
+    "src": "tencent-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "vst",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 4017,
+    "unit": "USD_M",
+    "src": "vst-2026q2-er"
+   },
+   "net_income": {
+    "value": 305,
+    "unit": "USD_M",
+    "src": "vst-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "flnc",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 649.8,
+    "unit": "USD_M",
+    "src": "flnc-fy26q3-er"
+   },
+   "gross_margin": {
+    "value": 0.051,
+    "src": "flnc-fy26q3-er"
+   },
+   "net_income": {
+    "value": -44.3,
+    "unit": "USD_M",
+    "src": "flnc-fy26q3-er"
+   },
+   "backlog": {
+    "value": 6400,
+    "unit": "USD_M",
+    "src": "flnc-fy26q3-er"
+   }
+  }
+ },
+ {
+  "company": "foxconn",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2525894.433,
+    "unit": "TWD_M",
+    "src": "foxconn-2026h1-sr"
+   },
+   "gross_margin": {
+    "value": 0.0612,
+    "src": "foxconn-2026h1-sr"
+   },
+   "net_income": {
+    "value": 59973.771,
+    "unit": "TWD_M",
+    "src": "foxconn-2026h1-sr"
+   },
+   "capex": {
+    "value": 45111.974,
+    "unit": "TWD_M",
+    "src": "foxconn-2026h1-cf"
+   }
+  }
+ },
+ {
+  "company": "quanta",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1036592.712,
+    "unit": "TWD_M",
+    "src": "quanta-2026h1-sr"
+   },
+   "gross_margin": {
+    "value": 0.0502,
+    "src": "quanta-2026h1-sr"
+   },
+   "net_income": {
+    "value": 28651.473,
+    "unit": "TWD_M",
+    "src": "quanta-2026h1-sr"
+   },
+   "capex": {
+    "value": 15583.832,
+    "unit": "TWD_M",
+    "src": "quanta-2026h1-cf"
+   }
+  }
+ },
+ {
+  "company": "wiwynn",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 278152.592,
+    "unit": "TWD_M",
+    "src": "wiwynn-2026h1-sr"
+   },
+   "gross_margin": {
+    "value": 0.0926,
+    "src": "wiwynn-2026h1-sr"
+   },
+   "net_income": {
+    "value": 14969.098,
+    "unit": "TWD_M",
+    "src": "wiwynn-2026h1-sr"
+   },
+   "capex": {
+    "value": 4084.67,
+    "unit": "TWD_M",
+    "src": "wiwynn-2026h1-cf"
+   }
+  }
+ },
+ {
+  "company": "fii",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 3067.83,
+    "unit": "CNY_YI",
+    "src": "fii-2026h1-sr"
+   },
+   "gross_margin": {
+    "value": 0.0699,
+    "src": "fii-2026h1-sr"
+   },
+   "net_income": {
+    "value": 131.46,
+    "unit": "CNY_YI",
+    "src": "fii-2026h1-sr"
+   },
+   "capex": {
+    "value": 52.23,
+    "unit": "CNY_YI",
+    "src": "fii-2026h1-sr"
+   }
+  }
+ },
+ {
+  "company": "sytech",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 108.8416,
+    "unit": "CNY_YI",
+    "src": "sytech-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.3263,
+    "src": "sytech-2026h1-er"
+   },
+   "net_income": {
+    "value": 21.2884,
+    "unit": "CNY_YI",
+    "src": "sytech-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "veri",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 10.278,
+    "unit": "CNY_YI",
+    "src": "veri-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.3057,
+    "src": "veri-2026h1-er"
+   },
+   "net_income": {
+    "value": -2.7128,
+    "unit": "CNY_YI",
+    "src": "veri-2026h1-er"
+   },
+   "capex": {
+    "value": 0.6898,
+    "unit": "CNY_YI",
+    "src": "veri-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "amec",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 37.763,
+    "unit": "CNY_YI",
+    "src": "amec-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.3963,
+    "src": "amec-2026h1-er"
+   },
+   "net_income": {
+    "value": 18.9471,
+    "unit": "CNY_YI",
+    "src": "amec-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "sjsmi",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 17.0846,
+    "unit": "CNY_YI",
+    "src": "sjsmi-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.3068,
+    "src": "sjsmi-2026h1-er"
+   },
+   "net_income": {
+    "value": 2.5803,
+    "unit": "CNY_YI",
+    "src": "sjsmi-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "tfc",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 14.9767,
+    "unit": "CNY_YI",
+    "src": "tfc-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.6466,
+    "src": "tfc-2026h1-er"
+   },
+   "net_income": {
+    "value": 7.1207,
+    "unit": "CNY_YI",
+    "src": "tfc-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "unimicron",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 42890,
+    "unit": "TWD_M",
+    "src": "unimicron-2026Q2-qr"
+   },
+   "gross_margin": {
+    "value": 0.248,
+    "src": "unimicron-2026Q2-qr"
+   },
+   "net_income": {
+    "value": 13115,
+    "unit": "TWD_M",
+    "src": "unimicron-2026Q2-qr"
+   }
+  }
+ },
+ {
+  "company": "cohr",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 2050,
+    "unit": "USD_M",
+    "src": "cohr-fy26q4-er"
+   },
+   "gross_margin": {
+    "value": 0.385,
+    "src": "cohr-fy26q4-er"
+   },
+   "net_income": {
+    "value": 240.5,
+    "unit": "USD_M",
+    "src": "cohr-fy26q4-er"
+   }
+  }
+ },
+ {
+  "company": "fn",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 1315.8,
+    "unit": "USD_M",
+    "src": "fn-fy26q4-er"
+   },
+   "gross_margin": {
+    "value": 0.1258,
+    "src": "fn-fy26q4-er"
+   },
+   "net_income": {
+    "value": 139.3,
+    "unit": "USD_M",
+    "src": "fn-fy26q4-er"
+   },
+   "capex": {
+    "value": 92,
+    "unit": "USD_M",
+    "src": "fn-fy26q4-er"
+   }
+  }
+ },
+ {
+  "company": "aaoi",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 191.9,
+    "unit": "USD_M",
+    "src": "aaoi-2026q2-er"
+   },
+   "gross_margin": {
+    "value": 0.277,
+    "src": "aaoi-2026q2-er"
+   },
+   "net_income": {
+    "value": -22.8,
+    "unit": "USD_M",
+    "src": "aaoi-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "poet",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 0.57,
+    "unit": "USD_M",
+    "src": "poet-2026q2-er"
+   },
+   "net_income": {
+    "value": -11.3,
+    "unit": "USD_M",
+    "src": "poet-2026q2-er"
+   }
+  }
+ },
+ {
+  "company": "spacex",
+  "period": "2025Q1",
+  "metrics": {
+   "revenue": { "value": 4067, "unit": "USD_M", "src": "spacex-s1" },
+   "net_income": { "value": -528, "unit": "USD_M", "src": "spacex-s1" }
+  }
+ },
+ {
+  "company": "spacex",
+  "period": "2025Q2",
+  "metrics": {
+   "revenue": { "value": 4071, "unit": "USD_M", "src": "spacex-q2-26-10q" },
+   "net_income": { "value": -1008, "unit": "USD_M", "src": "spacex-q2-26-10q" }
+  }
+ },
+ {
+  "company": "spacex",
+  "period": "2026Q1",
+  "metrics": {
+   "revenue": { "value": 4694, "unit": "USD_M", "src": "spacex-s1" },
+   "net_income": { "value": -4276, "unit": "USD_M", "src": "spacex-s1" },
+   "gross_margin": { "value": 0.491, "src": "spacex-s1" },
+   "capex": { "value": 10107, "unit": "USD_M", "src": "spacex-s1" }
+  }
+ },
+ {
+  "company": "spacex",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": { "value": 7814, "unit": "USD_M", "src": "spacex-q2-26-10q" },
+   "net_income": { "value": -541, "unit": "USD_M", "src": "spacex-q2-26-10q" },
+   "gross_margin": { "value": 0.5383, "src": "spacex-q2-26-10q" }
+  }
+ },
+ {
+  "company": "tuojing",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 18.0043,
+    "unit": "CNY_YI",
+    "src": "tuojing-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.4058,
+    "src": "tuojing-2026h1-er"
+   },
+   "net_income": {
+    "value": 7.7215,
+    "unit": "CNY_YI",
+    "src": "tuojing-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "jcet",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 103.5618,
+    "unit": "CNY_YI",
+    "src": "jcet-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.1568,
+    "src": "jcet-2026h1-er"
+   },
+   "net_income": {
+    "value": 5.5437,
+    "unit": "CNY_YI",
+    "src": "jcet-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "dsbj",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 146.6004,
+    "unit": "CNY_YI",
+    "src": "dsbj-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.2089,
+    "src": "dsbj-2026h1-er"
+   },
+   "net_income": {
+    "value": 18.4701,
+    "unit": "CNY_YI",
+    "src": "dsbj-2026h1-er"
+   },
+   "capex": {
+    "value": 30.9339,
+    "unit": "CNY_YI",
+    "src": "dsbj-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "jw",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 47.1951,
+    "unit": "CNY_YI",
+    "src": "jw-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.2143,
+    "src": "jw-2026h1-er"
+   },
+   "net_income": {
+    "value": 3.6893,
+    "unit": "CNY_YI",
+    "src": "jw-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "ibiden",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 123219,
+    "unit": "JPY_M",
+    "src": "ibiden-fy26q1-tanshin"
+   },
+   "net_income": {
+    "value": 17918,
+    "unit": "JPY_M",
+    "src": "ibiden-fy26q1-tanshin"
    }
   }
  }

@@ -12,7 +12,7 @@ const errors = [], warns = [];
 const err  = m => errors.push(m);
 const warn = m => warns.push(m);
 
-const OFFICIAL_HOST = /(sec\.gov|\.gov|investor|ir\.|\.ir\.|cninfo\.com\.cn|twse\.com\.tw|sse\.com\.cn|hkex|samsung\.com|skhynix\.com|tsmc\.com|micron\.com|broadcom\.com|nvidia\.com|amd\.com|marvell\.com|asml\.com|appliedmaterials\.com|lamresearch\.com|synopsys\.com|vertiv\.com|arista\.com|coherent\.com|delltechnologies\.com|coreweave\.com|nebius\.com|alibabagroup\.com|tencent\.com|microsoft\.com|abc\.xyz|aboutamazon\.com|atmeta\.com|oracle\.com|openai\.com|x\.ai|spacex\.com|crusoe\.ai|vantage-dc\.com|iren\.com|applieddigital\.com|globenewswire\.com|about\.fb\.com|businesswire\.com|prnewswire\.com|gcs-web\.com|smics\.com|sdkworld\.com|advantest\.com|se\.com|ibiden\.com|hua-hong\.com)/i;
+const OFFICIAL_HOST = /(sec\.gov|\.gov|investor|ir\.|\.ir\.|cninfo\.com\.cn|twse\.com\.tw|sse\.com\.cn|hkex|samsung\.com|skhynix\.com|tsmc\.com|micron\.com|broadcom\.com|nvidia\.com|amd\.com|marvell\.com|asml\.com|appliedmaterials\.com|lamresearch\.com|synopsys\.com|vertiv\.com|arista\.com|coherent\.com|delltechnologies\.com|coreweave\.com|nebius\.com|alibabagroup\.com|tencent\.com|microsoft\.com|abc\.xyz|aboutamazon\.com|atmeta\.com|oracle\.com|openai\.com|x\.ai|spacex\.com|crusoe\.ai|vantage-dc\.com|iren\.com|applieddigital\.com|globenewswire\.com|about\.fb\.com|businesswire\.com|prnewswire\.com|q4cdn\.com|gcs-web\.com|smics\.com|smic\.cdn\.shwebspace\.com|sdkworld\.com|advantest\.com|se\.com|ibiden\.com|hua-hong\.com)/i;
 
 const VALUE_METRICS = new Set(['revenue','dc_revenue','ai_revenue','ds_revenue','datacom_revenue',
   'net_income','capex','backlog','bookings','monthly_revenue','guidance_next_q']);
@@ -72,7 +72,7 @@ for(const [cid, entries] of Object.entries(BYCO)){
     if(y!==null && !isFinite(y)) err(`${cid} ${q[i].period}: YoY 非有限值`);
     if(qo!==null && !isFinite(qo)) err(`${cid} ${q[i].period}: QoQ 非有限值`);
   }
-  if(q.length>4) warn(`${cid}: 季度数 ${q.length} > 4(schema 建议保留最新 4 季)`);
+  if(q.length>6) warn(`${cid}: 季度数 ${q.length} > 6(schema 滚动窗口=最新4季+上年同期2季)`);
 }
 
 /* ── 5. CAPACITY ── */
@@ -82,7 +82,20 @@ for(const p of CAPACITY.projects){
   if(!['operating','construction','announced'].includes(p.status)) err(`capacity ${p.project}: status 非法`);
 }
 
-/* ── 6. FX ── */
+/* ── 6. 新鲜度(已上市公司落后已完结自然季 ≥2 季 → 警告;月度行不参与) ── */
+const qIdx = p => { const m=/^(\d{4})Q([1-4])$/.exec(p); return m ? (+m[1])*4+(+m[2]) : null; };
+const idxQ = i => `${Math.floor((i-1)/4)}Q${(i-1)%4+1}`;
+const now = new Date();
+const lastDoneQ = now.getUTCFullYear()*4 + Math.floor(now.getUTCMonth()/3);  // 最近已完结自然季
+for(const c of COMPANIES){
+  if(c.listed!==true) continue;
+  const qs = (BYCO[c.id]||[]).map(e=>e.period).filter(p=>qIdx(p)!==null);
+  if(!qs.length){ warn(`${c.id}: 已上市但无季度数据`); continue; }
+  const latest = Math.max(...qs.map(qIdx));
+  if(lastDoneQ-latest>=2) warn(`${c.id}: 新鲜度落后 ${lastDoneQ-latest} 季(最新 ${idxQ(latest)},最近已完结 ${idxQ(lastDoneQ)})`);
+}
+
+/* ── 7. FX ── */
 for(const k of ['EUR','CNY','TWD','KRW','JPY']) if(!FX_RATES.perUSD[k]) err(`fx: 缺 ${k}`);
 if(!FX_RATES.date) err('fx: 缺日期');
 

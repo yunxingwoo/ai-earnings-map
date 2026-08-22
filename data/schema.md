@@ -18,7 +18,9 @@
 
 - 季度:`YYYYQn`(如 `2026Q2`),**一律自然季**。财年错位公司在 `companies.js` 记 `fiscal_offset`(财季末比自然季末晚的月数,如 NVDA=1),录入时按"财季覆盖月份最多的自然季"对齐。
 - 月度:`YYYYMm`(如 `2026M6`),仅用于台积电/台系 ODM 的 `monthly_revenue`。
-- 每家公司保留**最新 4 个已披露季度**;不足 4 季(新上市)有几季存几季。
+- 每家公司保留**最新 4 个已披露季度 + 上年同期 2 季(共 6 季滚动窗口)**——信号灯公式 `signalOf`(js/calc.js)需最新季 YoY(=上年同期)与"较上季加速"(=上上年同期),只存 4 季信号永远为 ⚪;不足 6 季(新上市)有几季存几季。
+- 时滞曲线公司(tsmc/quanta/wiwynn/nvda/samsung/hynix)保留 **10-12 季**窗口(供首页错季叠加曲线;validate 阈值已放宽至 12)。
+- 前瞻/派生数据独立文件(不入 METRICS):`data/guidance.js`(云厂 FY capex 指引·电话会口径)、`data/valuation.js`(估值周快照·腾讯自选股终端·亏损为负)、`data/signals-history.js`(每日信号快照·automation 追加·只增不改)。
 
 ## COMPANIES 字段
 

@@ -6,19 +6,19 @@ const CAPACITY = {
    "project": "CoreWeave — active power（组合口径）",
    "operator": "CoreWeave",
    "location": "United States (portfolio)",
-   "mw": 1000,
+   "mw": 1500,
    "mw_kind": "total_power",
    "status": "operating",
-   "src": "coreweave-q1-26-8k"
+   "src": "crwv-2026q2-er"
   },
   {
    "project": "CoreWeave — total contracted power（组合口径）",
    "operator": "CoreWeave",
    "location": "United States (portfolio)",
-   "mw": 3500,
+   "mw": 3700,
    "mw_kind": "total_power",
    "status": "construction",
-   "src": "coreweave-q1-26-8k"
+   "src": "crwv-2026q2-er"
   },
   {
    "project": "Polaris Forge 1",

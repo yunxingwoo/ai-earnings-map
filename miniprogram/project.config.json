@@ -1,0 +1,22 @@
+{
+  "description": "AI 算力财报全景 · 小程序壳(web-view 嵌入已部署站点)",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "bigPackageSizeSupport": true,
+    "ignoreDevUnusedFiles": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.5.5",
+  "appid": "wx9cd5dc45080d91bc",
+  "projectname": "ai-earnings-map-miniprogram",
+  "condition": {}
+}

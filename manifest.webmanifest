@@ -1,0 +1,16 @@
+{
+  "name": "AI 算力财报全景",
+  "short_name": "AI算力地图",
+  "description": "AI 算力产业链财报地图:109 家公司 · 15 环节信号 · 全部官方溯源",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#141413",
+  "theme_color": "#141413",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,6 +1,965 @@
 /* 溯源索引 — 每份官方披露文件一条;METRICS 中的 src 必须在此存在 */
 const SOURCES = [
  {
+  "id": "spacex-s1",
+  "type": "S-1",
+  "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "SpaceX S-1招股书(SEC官方, 2026-05-20递交, 2026-06-12纳斯达克IPO@\$135/募资\$857亿/估值约\$1.9万亿): 2025Q1营收\$4,067M/净亏\$528M; 2026Q1营收\$4,694M(+15.4%)/净亏\$4,276M(含xAI并表)/毛利率49.1%/capex\$10,107M(AI占76%); FY2023-2025营收10,387/14,015/18,674; 三分部:连接(Starlink)2025营收\$11,387M+运营利润\$4,423M、航天\$4,086M、AI\$3,201M运营亏\$6,355M"
+ },
+ {
+  "id": "spacex-q2-26-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001181412&type=10-Q",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "SpaceX FY26Q2季报(2026-08-04发布): 2026Q2营收\$7,814M(+91.9% YoY)/净亏\$541M/毛利率53.8%; 2025Q2同比基数\$4,071M/净亏\$1,008M; 2025Q3/Q4官方未单独披露(FY25\$18,674M−H1\$8,138M=合计\$10,536M),按未披露不估算铁律留空"
+ },
+ {
+  "id": "baba-fy27q1-er",
+  "type": "earnings_release",
+  "url": "https://www.alibabagroup.com/document-2026456290057781248",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "阿里巴巴2026年6月季度业绩公告(官方, 2026-08-20 19:36发布): 收入RMB268,953M(2689.53亿,+9%); 净利104.44亿(-75%,含商誉减值); 经调整EBITA 273.29亿(-30%); 分部重组:云智能+平头哥合并为AI云与算力服务,收入484.37亿(+45%),AI相关产品收入123.76亿(连续12季度三位数); ARR突破495亿,CEO预计下季AI ARR近\$100亿; capex 676.78亿(+75%,云基础设施); 自由现金流净流出446.70亿; 即时零售+45%,CMR -7%; 88VIP约6400万"
+ },
+ {
+  "id": "mops-synth-tsmc-2024",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_113_1_0.html",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "公开资讯观测站t21月营收汇总表(民国113年1-12月)三个月机械合成: 2024Q1=592,644/Q2=673,510/Q3=759,692/Q4=868,461(TWD_M,千元÷1000); 同法合成2025Q1=839,254 vs 官方季报839,250偏差0.00%校验通过"
+ },
+ {
+  "id": "mops-synth-quanta-2024",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_113_1_0.html",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "公开资讯观测站t21月营收汇总(民国113年)三个月机械合成广达: 2024Q1=258,939/Q2=309,954/Q3=424,549/Q4=415,662(TWD_M); 供时滞曲线10季窗口"
+ },
+ {
+  "id": "mops-synth-wiwynn-2024",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_113_1_0.html",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "公开资讯观测站t21月营收汇总(民国113年)三个月机械合成纬颖: 2024Q1=69,628/Q2=77,481/Q3=97,818/Q4=115,614(TWD_M); 供时滞曲线10季窗口"
+ },
+ {
+  "id": "westock-nvda-fy25",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usNVDA",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "腾讯自选股美股终端(usNVDA income): FinancialYear2025三季=NVDA FY25(自然2024): FY25Q1(止2024-04-28)\$26,044M→2024Q1/FY25Q2(止2024-07-28)\$30,040M→2024Q2/FY25Q3(止2024-10-27)\$35,082M→2024Q3; 注意westock财年错位公司标签比自然年晚一年; 值与NVDA官方新闻稿一致(FY25Q4 \$39.3B已于本轮前入库)"
+ },
+ {
+  "id": "samsung-2024q-er",
+  "type": "earnings_release",
+  "url": "https://news.samsung.com/tw/",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "三星电子官方新闻室+韩联社最终核实: 2024Q1营收71.92兆/Q2 74.07兆/Q3 79.10兆/Q4 75.7883兆韩元(全年300.8709兆,同比+16.2%); KRW_B口径"
+ },
+ {
+  "id": "hynix-2024q-er",
+  "type": "earnings_release",
+  "url": "https://news.skhynix.com/sk-hynix-announces-4q24-financial-results/",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "SK海力士官方新闻室: 2024Q1营收12.4296兆/Q2 16.4233兆/Q3 17.573兆(21世纪经济报道交叉)/Q4 19.7670兆韩元; 全年66.1930兆(+~102%); KRW_B口径"
+ },
+ {
+  "id": "advt-fy24q4-er",
+  "type": "earnings_release",
+  "url": "https://www.advantest.com/document/en/investors/ir-library/result/E_BIZ_250729_ref2.pdf",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "爱德万测试官方IR资料(新报告分部重列FY2024): FY24Q4(2025年1-3月)营收¥232,349M(+71.1% YoY); FY24全年¥779,707M; 官方PDF表格: Q1 138,725/Q2 190,481/Q3 218,152/Q4 232,349"
+ },
+ {
+  "id": "ibiden-fy24q4-qr",
+  "type": "quarterly_report",
+  "url": "https://finance.biggo.com.tw/news/jpx_tdnet_140120260220565976",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "揖斐电TDnet决算快报(东证镜像)+fintel(IBIDF)交叉: FY2024(2025年3月期)全年营收¥369,436M − 第3季累计(2024年4-12月)¥270,337M = FY24Q4(2025年1-3月)¥99,099M; 与库内2025Q2(FY25Q1 ¥97,464M)及官方2026年3月期第3季累计298,621M(=97,464+98,021+103,136校验一致)连续"
+ },
+ {
+  "id": "kioxia-fy24q4-er",
+  "type": "earnings_release",
+  "url": "https://www.163.com/dy/article/JVK5KE670511DQFI.html",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "铠侠FY24Q4(2025年1-3月)决算(网易转官方): 营收¥3,471亿=¥347,100M(环比-23%,同比+7.8%); FY24全年¥17,065亿(+58.5%)"
+ },
+ {
+  "id": "kioxia-fy25q1-er",
+  "type": "earnings_release",
+  "url": "https://m.memorys.com/news/183127",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "铠侠FY25Q1(2025年4-6月)决算(CFM闪存市场/Reuters表交叉): 营收¥342.8B=¥342,800M(环比-1%,同比-20%,超指引上限); Non-GAAP营业利润¥452亿"
+ },
+ {
+  "id": "baba-fy25q4-er",
+  "type": "earnings_release",
+  "url": "https://www.alibabagroup.com/document-1859811057615241216",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "阿里巴巴集团官方公告(2025-05-15): 2025年3月季度(FY25Q4)营收RMB2,364.54亿(+7%); 阿里云+18%,AI产品收入连续七季度三位数增长; 归母净利123.82亿"
+ },
+ {
+  "id": "shestu-fy26q1-er",
+  "type": "earnings_release",
+  "url": "https://www.shinetsu.co.jp/jp/",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "信越化学官方决算短信+みんかぶ/investing多源交叉: 2025Q1(自然季)=FY25Q4, 营收=FY25全年2,561,249−前三季累计1,929,698=631,551百万日元, 纯利=534,021−432,539=101,482百万; 2025Q2=FY26Q1决算短信(2025-07-24披露, 2025年4-6月): 营收628,549百万(+5.1%)、纯利126,428百万(含包括利益△6,468百万一次性)"
+ },
+ {
+  "id": "adt-fy25q1-er",
+  "type": "earnings_release",
+  "url": "https://www.advantest.com/en/news/2025/c9kqiu0000000wt9-att/E_FR_FY2025_1Q.pdf",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "爱德万测试官方FY2025Q1决算短信(2025-07-29披露, 2025年4-6月对齐自然季2025Q2): 净销售额263,776百万日元(+90.1%YoY创单季新高)、营业利润123,952百万(+295.7%)、纯利90,180百万(+277.7%); SoC测试机191.3亿+存储测试机33.5亿; 2025Q1(FY24Q4)官方单季值未取得留待补"
+ },
+ {
+  "id": "mops-synth-foxconn-2025",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_114_1_0.html",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "公开资讯观测站t21月营收汇总表(114年1-6月(2025Q1/Q2))三个月机械合成: 2025Q1=1642173M TWD; 2025Q2=1797347M TWD(TWD_M,千元/1000); 台积电同法合成2025Q1=839,254 vs 官方839,250偏差0.00%校验通过"
+ },
+ {
+  "id": "mops-synth-quanta-2025",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_114_1_0.html",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "公开资讯观测站t21月营收汇总表(114年1-6月(2025Q1/Q2))三个月机械合成: 2025Q1=485672M TWD; 2025Q2=504122M TWD(TWD_M,千元/1000); 台积电同法合成2025Q1=839,254 vs 官方839,250偏差0.00%校验通过"
+ },
+ {
+  "id": "mops-synth-wiwynn-2025",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_114_1_0.html",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "公开资讯观测站t21月营收汇总表(114年1-6月(2025Q1/Q2))三个月机械合成: 2025Q1=170655M TWD; 2025Q2=220744M TWD(TWD_M,千元/1000); 台积电同法合成2025Q1=839,254 vs 官方839,250偏差0.00%校验通过"
+ },
+ {
+  "id": "mops-synth-unimicron-2024",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_114_1_0.html",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "公开资讯观测站t21月营收汇总表(113年10-12月(2024Q4)+114年1-3月(2025Q1))三个月机械合成: 2024Q4=29381M TWD; 2025Q1=30090M TWD(TWD_M,千元/1000); 台积电同法合成2025Q1=839,254 vs 官方839,250偏差0.00%校验通过"
+ },
+ {
+  "id": "mops-synth-delta-2025",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_114_1_0.html",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "公开资讯观测站t21月营收汇总表(114年1-6月(2025Q1/Q2))三个月机械合成: 2025Q1=118919M TWD; 2025Q2=124035M TWD(TWD_M,千元/1000); 台积电同法合成2025Q1=839,254 vs 官方839,250偏差0.00%校验通过"
+ },
+ {
+  "id": "westock-usGLW",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usGLW/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q1营收3452M$/净利157; 2025Q2营收3862M$/净利469"
+ },
+ {
+  "id": "westock-usARM",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usARM/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q1营收939M$/净利223"
+ },
+ {
+  "id": "westock-usASML",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usASML/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q1营收7032.4M€; 2025Q2营收7524.9M€; ASML 20-F申报者; westock USD折算值×EUR 0.863128回折, 与库内2025Q3(7516 EUR_M)连续性验证通过; 财年自然历"
+ },
+ {
+  "id": "westock-usLRCX",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usLRCX/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q2营收4376M$/净利1191"
+ },
+ {
+  "id": "westock-usKLAC",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usKLAC/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q2营收3075.8M$/净利824.5"
+ },
+ {
+  "id": "westock-usAEHR",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usAEHR/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q2营收13.45M$/净利-1.03"
+ },
+ {
+  "id": "westock-usGFS",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usGFS/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q1营收1585M$/净利210; 2025Q2营收1688M$/净利228"
+ },
+ {
+  "id": "westock-usTSEM",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usTSEM/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q1营收358.2M$/净利40.1; 2025Q2营收372.1M$/净利46.6"
+ },
+ {
+  "id": "westock-usASX",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usASX/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q1营收143411M NT$/净利7313; 2025Q2营收155410M NT$/净利7753; 日月光; westock USD折算×TWD 31.8395回折, 与库内2025Q3(168569)连续"
+ },
+ {
+  "id": "westock-usSTX",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usSTX/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q2营收2325M$/净利336"
+ },
+ {
+  "id": "westock-usSNDK",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usSNDK/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q2营收1876M$/净利104"
+ },
+ {
+  "id": "westock-usMRVL",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usMRVL/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2024Q4营收1426.5M$/净利-392.7; Marvell 财年1月底止; westock按自然季口径2024-12-31期单季值"
+ },
+ {
+  "id": "westock-usNOK",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usNOK/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q1营收3988.2M€; 2025Q2营收4452.3M€; 诺基亚; westock USD折算×0.863128回折EUR, 与库内2025Q3(4815)连续; 净利口径异常跳过"
+ },
+ {
+  "id": "westock-usAAOI",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usAAOI/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2024Q4营收100.3M$/净利-119.7"
+ },
+ {
+  "id": "westock-usORCL",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usORCL/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q2营收14059M$/净利3151"
+ },
+ {
+  "id": "westock-usNBIS",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usNBIS/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q1营收55.3M$/净利-113.6; 2025Q2营收105.1M$/净利502.5; Nebius 2025Q2净利含约6.26亿美元一次性收益(NonOperating 625.6)"
+ },
+ {
+  "id": "westock-usBE",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usBE/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2025Q1营收326M$/净利-23.8; 2025Q2营收401.2M$/净利-42.6"
+ },
+ {
+  "id": "westock-usPOET",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/usPOET/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2024Q4营收0.03M$/净利-30.3; 2025Q1营收0.17M$/净利6.3; POET 微型公司, 季营收不足百万美元属正常披露"
+ },
+ {
+  "id": "westock-sh688048",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh688048/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2024Q4营收0.7亿/净利-0.36; 2025Q1营收0.94亿/净利-0.07"
+ },
+ {
+  "id": "westock-sh688498",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh688498/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2024Q4营收0.74亿/净利-0.06; 2025Q1营收0.84亿/净利0.14"
+ },
+ {
+  "id": "westock-sh688195",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh688195/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季Sales_Q/BasicNetIncome_Q, 源自公司法定披露): 2024Q4营收1.13亿/净利0.14; 2025Q1营收1.13亿/净利0.13"
+ },
+ {
+  "id": "westock-hk01347",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/hk01347/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股港股终端(华虹半导体, 港元口径按联系汇率7.8折算USD): 2025Q1营收4,207,659,018.63港元→$539.4M; 2025Q2单季=H1 8,689,713,823.83−Q1 4,207,659,018.63=4,482,054,805.20港元→$574.6M; 与库内2025Q3($641M)规模趋势连续; 净利口径(ProfitToShareholders)未核跳过"
+ }, {
+  "id": "westock-sh600183",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh600183/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收56.44亿/归母3.66亿; 2025Q1营收56.11亿/归母5.64亿"
+ },
+ {
+  "id": "westock-sz002428",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sz002428/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收2.65亿/归母0.24亿; 2025Q1营收2.4亿/归母0.1亿"
+ },
+ {
+  "id": "westock-sh688521",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh688521/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收6.72亿/归母-2.05亿; 2025Q1营收3.9亿/归母-2.2亿"
+ },
+ {
+  "id": "westock-sz002371",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sz002371/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收95.43亿/归母11.54亿; 2025Q1营收82.06亿/归母15.81亿"
+ },
+ {
+  "id": "westock-sh688012",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh688012/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收35.58亿/归母7.03亿; 2025Q1营收21.73亿/归母3.13亿"
+ },
+ {
+  "id": "westock-sh688072",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh688072/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收18.26亿/归母4.17亿; 2025Q1营收7.09亿/归母-1.47亿"
+ },
+ {
+  "id": "westock-sh688409",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh688409/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收7.25亿/归母0.13亿; 2025Q1营收7.62亿/归母-0.22亿"
+ },
+ {
+  "id": "westock-sh600584",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh600584/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收109.84亿/归母5.33亿; 2025Q1营收93.35亿/归母2.03亿"
+ },
+ {
+  "id": "westock-sz002156",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sz002156/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收68亿/归母1.25亿; 2025Q1营收60.92亿/归母1.01亿"
+ },
+ {
+  "id": "westock-sh688008",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh688008/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收10.68亿/归母4.34亿; 2025Q1营收12.22亿/归母5.25亿"
+ },
+ {
+  "id": "westock-sh603296",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh603296/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收338.68亿/归母8.76亿; 2025Q1营收349.98亿/归母8.42亿"
+ },
+ {
+  "id": "westock-sz300308",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sz300308/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收65.5亿/归母14.19亿; 2025Q1营收66.74亿/归母15.83亿"
+ },
+ {
+  "id": "westock-sz300502",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sz300502/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收35.16亿/归母11.92亿; 2025Q1营收40.52亿/归母15.73亿"
+ },
+ {
+  "id": "westock-sz300394",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sz300394/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收8.57亿/归母3.67亿; 2025Q1营收9.45亿/归母3.38亿"
+ },
+ {
+  "id": "westock-sz300476",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sz300476/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收30.34亿/归母3.9亿; 2025Q1营收43.12亿/归母9.21亿"
+ },
+ {
+  "id": "westock-sz002384",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sz002384/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收103.04亿/归母0.18亿; 2025Q1营收86.02亿/归母4.56亿"
+ },
+ {
+  "id": "westock-sz002463",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sz002463/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收43.31亿/归母7.39亿; 2025Q1营收40.38亿/归母7.62亿"
+ },
+ {
+  "id": "westock-sz002916",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sz002916/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收48.58亿/归母3.9亿; 2025Q1营收47.83亿/归母4.91亿"
+ },
+ {
+  "id": "westock-sh603228",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh603228/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收35.81亿/归母2.65亿; 2025Q1营收33.43亿/归母3.25亿"
+ },
+ {
+  "id": "westock-sz002837",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sz002837/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2024Q4营收17.17亿/归母1亿; 2025Q1营收9.33亿/归母0.48亿"
+ },
+ {
+  "id": "westock-sh688808",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh688808/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2025Q1营收2.01亿/归母0.19亿"
+ },
+ {
+  "id": "westock-sh688820",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh688820/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2025Q1营收15.01亿/归母1.26亿"
+ },
+ {
+  "id": "westock-sh688256",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh688256/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2025Q1营收11.11亿/归母3.55亿; 2025Q2营收17.69亿/归母6.83亿"
+ },
+ {
+  "id": "westock-sh601138",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh601138/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2025Q1营收1604.15亿/归母52.31亿; 2025Q2营收2003.45亿/归母68.83亿"
+ },
+ {
+  "id": "westock-sz301183",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sz301183/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2025Q1营收1.56亿/归母0.2亿; 2025Q2营收2.2亿/归母0.31亿"
+ },
+ {
+  "id": "westock-sh688313",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/sh688313/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股行情终端利润表(单季口径OperatingRevenue_Q/NPParentCompanyOwners_Q, 源自公司法定披露;已与巨潮官方披露交叉验证——兆易创新2025Q1/Q2与官方中报推算值完全一致): 2025Q1营收4.36亿/归母0.93亿; 2025Q2营收5.56亿/归母1.23亿"
+ },
+ {
+  "id": "westock-hk00981",
+  "type": "quarterly_report",
+  "url": "https://gu.qq.com/hk00981/gp",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯自选股港股终端(中芯国际, 港元口径按联系汇率7.8折算USD): 2025Q1营收17,479,772,236.57港元→$2,241M; 2025Q2单季=H1 34,980,682,015.57−Q1 17,479,772,236.57=17,500,909,779港元→$2,243.7M; 与公司官方美元披露口径一致(Q1官方$2,247M量级); 净利口径差异未核跳过"
+ },
+ {
+  "id": "tsmc-2025q1-er",
+  "type": "earnings_release",
+  "url": "https://investor.tsmc.com/english/quarterly-results/2025",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "TSMC 2025Q1法说会(2025-04-17): 合并营收839,250百万新台币(+41.8%YoY)、净利361,560百万新台币(+60.3%YoY)、营业利益407,080百万(+63%); 多源交叉(台积电官方/百科/腾讯财经)"
+ },
+ {
+  "id": "tsmc-2025q2-er",
+  "type": "earnings_release",
+  "url": "https://investor.tsmc.com/english/quarterly-results/2025",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "TSMC 2025Q2法说会(2025-07-17): 合并营收933,790百万新台币(+38.6%YoY/+11.3%QoQ)、净利398,270百万新台币(+60.7%YoY)、毛利率58.6%; 多源交叉"
+ },
+ {
+  "id": "samsung-2025q1-er",
+  "type": "earnings_release",
+  "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_1Q_conference_eng.pdf",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "Samsung官方IR Presentation 1Q25: 总营收79.14兆韩元(=79,140十亿KRW,+10%YoY)、营业利益6.7兆; DS部门营收25.1兆(存储19.1兆)"
+ },
+ {
+  "id": "samsung-2025q2-er",
+  "type": "earnings_release",
+  "url": "https://news.samsung.com/tw/三星電子公布2025年第二季營運績效",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "Samsung官方新闻室(2025-07-31): 2025Q2合并营收74.57兆韩元(=74,570十亿KRW,+0.67%YoY)、营业利益4.68兆、归母净利4.93兆(=49,300十亿KRW); DS部门营收27.9兆"
+ },
+ {
+  "id": "hynix-2025q1-er",
+  "type": "earnings_release",
+  "url": "https://news.skhynix.com/cn/sk-hynix-announces-2q25-financial-results",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SK海力士官方新闻稿(2025-07-24, 附1Q25对比): 2025Q1营收17,639.1十亿KRW、营业利润7,440.5十亿、净利8,108.2十亿"
+ },
+ {
+  "id": "hynix-2025q2-er",
+  "type": "earnings_release",
+  "url": "https://news.skhynix.com/cn/sk-hynix-announces-2q25-financial-results",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SK海力士官方新闻稿(2025-07-24): 2025Q2营收22,232十亿KRW(+35%YoY/+26%QoQ, 创单季新高)、营业利润9,212.9十亿(利益率41%)、净利6,996.2十亿"
+ },
+ {
+  "id": "tencent-2025q1-er",
+  "type": "earnings_release",
+  "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0826/2025082600676.pdf",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "腾讯控股2025中期报告(港交所官方PDF, 2025-08-13披露, 附Q1对比): 2025Q1营收180,022百万人民币(+12.9%YoY)、归母净利47,821百万(+14.2%YoY)"
+ },
+ {
+  "id": "sec-xbrl-snps",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000883241/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2024Q4(止2025-01-31, 10-Q accn:0000883241-26-000014)营收$1455.3M; 2025Q1(止2025-04-30, 10-Q accn:0000883241-26-000018)营收$1604.3M"
+ },
+ {
+  "id": "sec-xbrl-arm",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001973239/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q2(止2025-06-30, 6-K accn:0001973239-26-000114)营收$1053.0M"
+ },
+ {
+  "id": "sec-xbrl-amat",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000006951/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-04-27, 10-Q accn:0001628280-26-037227)营收$7100.0M; 2025Q2(止2025-07-27, 10-Q accn:0000006951-25-000037)营收$7302.0M"
+ },
+ {
+  "id": "sec-xbrl-aehr",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001040470/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-02-28, 10-Q accn:0001654954-26-003348)营收$18.3M"
+ },
+ {
+  "id": "sec-xbrl-mu",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000723125/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-02-27, 10-Q accn:0000723125-26-000006)营收$8053.0M; 2025Q2(止2025-05-29, 10-Q accn:0000723125-26-000015)营收$9301.0M"
+ },
+ {
+  "id": "sec-xbrl-wdc",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000106040/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q2(止2025-06-27, 10-K accn:0000106040-25-000038)营收$2605.0M; 2025Q1(止2025-03-28, 10-Q accn:0001628280-26-029054)营收$2294.0M"
+ },
+ {
+  "id": "sec-xbrl-nvda",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001045810/us-gaap/Revenues.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:Revenues): 2025Q1(止2025-04-27, 10-Q accn:0001045810-26-000052)营收$44062.0M"
+ },
+ {
+  "id": "sec-xbrl-avgo",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001730168/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2024Q4(止2025-02-02, 10-Q accn:0001730168-26-000016)营收$14916.0M; 2025Q1(止2025-05-04, 10-Q accn:0001730168-26-000054)营收$15004.0M"
+ },
+ {
+  "id": "sec-xbrl-mrvl",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001835632/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-05-03, 10-Q accn:0001835632-26-000019)营收$1895.3M"
+ },
+ {
+  "id": "sec-xbrl-dell",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001571996/us-gaap/Revenues.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:Revenues): 2024Q4(止2025-01-31, 10-K accn:0001571996-25-000034)营收$23931.0M; 2025Q1(止2025-05-02, 10-Q accn:0001571996-26-000030)营收$23378.0M"
+ },
+ {
+  "id": "sec-xbrl-csco",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000858877/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-04-26, 10-Q accn:0000858877-26-000078)营收$14149.0M"
+ },
+ {
+  "id": "sec-xbrl-orcl",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001341439/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-02-28, 10-Q accn:0001193125-26-101045)营收$14130.0M"
+ },
+ {
+  "id": "sec-xbrl-linde",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001707925/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001628280-26-029165)营收$8112.0M; 2025Q2(止2025-06-30, 10-Q accn:0001628280-26-051289)营收$8495.0M"
+ },
+ {
+  "id": "sec-xbrl-axti",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001051627/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001437749-26-017054)营收$19.4M; 2025Q2(止2025-06-30, 10-Q accn:0001437749-26-027677)营收$18.0M"
+ },
+ {
+  "id": "sec-xbrl-lrcx",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000707549/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-30, 10-Q accn:0000707549-26-000022)营收$4720.2M"
+ },
+ {
+  "id": "sec-xbrl-klac",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000319201/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0000319201-26-000016)营收$3063.0M"
+ },
+ {
+  "id": "sec-xbrl-form",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001039399/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-29, 10-Q accn:0001039399-26-000023)营收$171.4M; 2025Q2(止2025-06-28, 10-Q accn:0001039399-26-000033)营收$195.8M"
+ },
+ {
+  "id": "sec-xbrl-stx",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001137789/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-28, 10-Q accn:0001137789-26-000088)营收$2160.0M"
+ },
+ {
+  "id": "sec-xbrl-sndk",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0002023554/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-28, 10-Q accn:0001628280-26-029401)营收$1695.0M"
+ },
+ {
+  "id": "sec-xbrl-amd",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000002488/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-29, 10-Q accn:0000002488-26-000076)营收$7438.0M; 2025Q2(止2025-06-28, 10-Q accn:0000002488-26-000123)营收$7685.0M"
+ },
+ {
+  "id": "sec-xbrl-qcom",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000804328/us-gaap/Revenues.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:Revenues): 2025Q1(止2025-03-30, 10-Q accn:0000804328-26-000061)营收$10979.0M; 2025Q2(止2025-06-29, 10-Q accn:0000804328-26-000086)营收$10365.0M"
+ },
+ {
+  "id": "sec-xbrl-intc",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000050863/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-29, 10-Q accn:0000050863-26-000079)营收$12667.0M; 2025Q2(止2025-06-28, 10-Q accn:0000050863-26-000157)营收$12859.0M"
+ },
+ {
+  "id": "sec-xbrl-cerebras",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0002021728/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001628280-26-044981)营收$99.5M; 2025Q2(止2025-06-30, 10-Q accn:0001628280-26-056357)营收$103.3M"
+ },
+ {
+  "id": "sec-xbrl-anet",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001596532/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001596532-26-000078)营收$2004.8M; 2025Q2(止2025-06-30, 10-Q accn:0001596532-26-000175)营收$2204.8M"
+ },
+ {
+  "id": "sec-xbrl-cohr",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000820318/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2024Q4(止2024-12-31, 10-Q accn:0000820318-26-000006)营收$1434.7M; 2025Q1(止2025-03-31, 10-Q accn:0000820318-26-000013)营收$1497.9M"
+ },
+ {
+  "id": "sec-xbrl-lite",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001633978/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-29, 10-Q accn:0001628280-25-022788)营收$425.2M"
+ },
+ {
+  "id": "sec-xbrl-fn",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001408710/us-gaap/Revenues.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:Revenues): 2024Q4(止2024-12-27, 10-Q accn:0001408710-26-000008)营收$833.6M; 2025Q1(止2025-03-28, 10-Q accn:0001408710-26-000016)营收$871.8M"
+ },
+ {
+  "id": "sec-xbrl-aaoi",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001437749-26-015620)营收$99.9M"
+ },
+ {
+  "id": "sec-xbrl-vrt",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001674101/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001628280-26-026556)营收$2036.0M; 2025Q2(止2025-06-30, 10-Q accn:0001628280-26-050609)营收$2638.1M"
+ },
+ {
+  "id": "sec-xbrl-eton",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001551182/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001551182-26-000013)营收$6377.0M; 2025Q2(止2025-06-30, 10-Q accn:0001551182-26-000030)营收$7028.0M"
+ },
+ {
+  "id": "sec-xbrl-msft",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000789019/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001193125-26-191507)营收$70066.0M"
+ },
+ {
+  "id": "sec-xbrl-goog",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001652044/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001652044-25-000043)营收$90234.0M; 2025Q2(止2025-06-30, 10-Q accn:0001652044-26-000071)营收$96428.0M"
+ },
+ {
+  "id": "sec-xbrl-amzn",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001018724/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001018724-26-000014)营收$155667.0M; 2025Q2(止2025-06-30, 10-Q accn:0001018724-26-000026)营收$167702.0M"
+ },
+ {
+  "id": "sec-xbrl-meta",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001326801/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001628280-26-028526)营收$42314.0M; 2025Q2(止2025-06-30, 10-Q accn:0001628280-26-050705)营收$47516.0M"
+ },
+ {
+  "id": "sec-xbrl-aapl",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-29, 10-Q accn:0000320193-26-000013)营收$95359.0M; 2025Q2(止2025-06-28, 10-Q accn:0000320193-26-000020)营收$94036.0M"
+ },
+ {
+  "id": "sec-xbrl-crwv",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001769628/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001769628-26-000222)营收$982.0M; 2025Q2(止2025-06-30, 10-Q accn:0001769628-26-000366)营收$1212.0M"
+ },
+ {
+  "id": "sec-xbrl-iren",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001878848/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2024Q4(止2024-12-31, 10-Q accn:0001878848-26-000015)营收$116.1M; 2025Q1(止2025-03-31, 10-Q accn:0001878848-26-000026)营收$144.8M"
+ },
+ {
+  "id": "sec-xbrl-gev",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001996810/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001996810-26-000064)营收$8032.0M; 2025Q2(止2025-06-30, 10-Q accn:0001996810-26-000148)营收$9111.0M"
+ },
+ {
+  "id": "sec-xbrl-vst",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001692819/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001692819-26-000014)营收$4250.0M; 2025Q2(止2025-06-30, 10-Q accn:0001692819-26-000019)营收$3753.0M"
+ },
+ {
+  "id": "sec-xbrl-flnc",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001868941/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001104659-26-056304)营收$431.6M; 2025Q2(止2025-06-30, 10-Q accn:0001868941-26-000029)营收$602.5M"
+ },
+ {
+  "id": "sec-xbrl-tsla",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001318605/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001628280-26-026673)营收$19335.0M; 2025Q2(止2025-06-30, 10-Q accn:0001628280-26-049270)营收$22496.0M"
+ },
+ {
+  "id": "sec-xbrl-now",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001373715-26-000056)营收$3088.0M; 2025Q2(止2025-06-30, 10-Q accn:0001373715-26-000076)营收$3215.0M"
+ },
+ {
+  "id": "sec-xbrl-pltr",
+  "type": "10-Q",
+  "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001321655/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "SEC XBRL官方结构化API(us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax): 2025Q1(止2025-03-31, 10-Q accn:0001321655-26-000028)营收$883.9M; 2025Q2(止2025-06-30, 10-Q accn:0001321655-26-000041)营收$1003.7M"
+ },
+ {
   "id": "dell-fy27q1-er",
   "type": "earnings_release",
   "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000021/exhibit991earnings8kq1fy27.htm",
@@ -151,6 +1110,14 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "公开资讯观测站 115年5月营收汇总表(千元): 广达311,481,017; 纬颖84,050,473"
+ },
+ {
+  "id": "mops-t21-115m7",
+  "type": "monthly_revenue",
+  "url": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_7_0.html",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "公开资讯观测站115年7月营收汇总表(千元), 经winvest/財報狗/DIGITIMES多源交叉验证: 广达366,274(月减4.91%/年增101.32%, 单月历史次高; 1-7月累计22,120.88亿+92.66%); 纬颖117,685,530(月增5.67%/年增39.23%; 1-7月累计6,723.46亿+41.27%)"
  },
  {
   "id": "mops-t21-115m6",
@@ -729,6 +1696,46 @@ const SOURCES = [
   "locator": "TSMC 投資人關係 2026年月營收頁: 2026年5月合併營收416,975百萬台幣(+30.1%YoY)"
  },
  {
+  "id": "tsmc-monthly-2026m7",
+  "type": "monthly_revenue",
+  "url": "https://pr.tsmc.com/english/news/3329",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "TSMC官方新闻稿(2026-08-10)及SEC 6-K: 2026年7月合并营收467,580百万新台币(+44.7%YoY/+5.6%MoM,连续3个月历史新高;1-7月累计2,872,064百万新台币+37.0%YoY)"
+ },
+ {
+  "id": "msft-fy25q4-er",
+  "type": "earnings_release",
+  "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-online",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "微软FY25Q4(2025-07-30披露, 财季止2025-06-30对齐自然季2025Q2): 总资本开支(含融资租赁)$24.2B(+27%YoY/+13%QoQ), 营收$76.4B(+18%); FY26Q1指引capex超$30B; 经国信证券/通信行业综述/研报多源交叉(均引官方财报)"
+ },
+ {
+  "id": "goog-2025q2-capex",
+  "type": "earnings_release",
+  "url": "https://abc.xyz/2025-q2-earnings-release/",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "Alphabet 2025Q2(2025-07-23披露): 资本开支$22.45B(+70%YoY), 全年capex指引由$75B上调至$85B; 营收$96.4B(+14%); 多源研报交叉核实"
+ },
+ {
+  "id": "amzn-2025q2-capex",
+  "type": "earnings_release",
+  "url": "https://ir.aboutamazon.com/quarterly-results/default.aspx",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "Amazon 2025Q2(2025-07-31披露): 资本开支(PP&E购置)$31.37B(+91.5%YoY), 2025全年计划超$100B; 营收$167.7B(+13%); 多源研报交叉核实"
+ },
+ {
+  "id": "meta-2025q2-capex",
+  "type": "earnings_release",
+  "url": "https://investor.atmeta.com/investor-news/default.aspx",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "Meta 2025Q2(2025-07-30披露): 资本开支(含融资租赁本金)$17.01B(+100.8%YoY), 全年指引上调至$66-72B; 营收$47.5B(+22%); 多源研报交叉核实"
+ },
+ {
   "id": "tsmc-monthly-2026m6",
   "type": "monthly_revenue",
   "url": "https://investor.tsmc.com/english/monthly-revenue/2026",
@@ -1175,6 +2182,14 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "8-K EX-99.1 (2026-02-25), Q4 FY26 quarter ended 2026-01-25: revenue $68,127M, Data Center revenue $62.3 billion (75% YoY), GAAP gross margin 75.0%, GAAP net income $42,960M"
+ },
+ {
+  "id": "nvda-fy25q4-er",
+  "type": "earnings_release",
+  "url": "https://nvidianews.nvidia.com/news/q4-2025-financial-results-press-release",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "NVIDIA官方新闻稿(2025-02-26披露, FY25Q4财季止2025-01-26, 覆盖2024年11月-2025年1月对齐自然季2024Q4): 营收$39.3B(+78%YoY/+12%QoQ), 精确值39,331M; Q4 FY25 DC营收$35.6B"
  },
  {
   "id": "nvda-fy26q3-er",
@@ -1881,6 +2896,14 @@ const SOURCES = [
   "locator": "PALANTIR TECHNOLOGIES 2025Q3 (10-Q, 三个月ended 2025-09-30): 营收$1,181M, 净利$476M; 经Alpha Vantage INCOME_STATEMENT提取 (raw totalRevenue=1181092000, netIncome=475599000)"
  },
  {
+  "id": "csco-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://s21.q4cdn.com/812015656/files/doc_earnings/2026/q4/earnings-result/Q4FY26-Press-Release.pdf",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "Cisco官方新闻稿(2026-08-12披露, FY26Q4财季止2026-07-25, 覆盖5-7月对齐自然季2026Q2): 营收$17.3B(+18%YoY), GAAP净利$3.9B(+51%), GAAP毛利率64.1%, GAAP EPS $0.97(+52%); Q4产品订单+35%/网络产品订单+40%(连续8季双位数); AI基础设施Q4订单$4B/FY26累计$9.3B, FY27 AI营收预期$7.5B; Q1 FY27指引营收$18.0-18.2B(中值18100存guidance_next_q, 对应自然季2026Q3)"
+ },
+ {
   "id": "csco-2026q1-10q",
   "type": "10-Q",
   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=CISCO%20SYSTEMS&type=10-Q",
@@ -1943,6 +2966,14 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "SEC 10-Q 检索页, 财季止2025-09-30(自然季2025Q3): 营收 4828M, 净利润 78M, 取自 Alpha Vantage INCOME_STATEMENT (reportedCurrency=EUR)"
+ },
+ {
+  "id": "lite-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026055726/lite_ex991xq4fy26.htm",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "Lumentum 8-K EX-99.1 (2026-08-11披露, FY26Q4财季止2026-06-27, 对齐自然季2026Q2): 净营收1,006.3M(+109.3%YoY/+24.5%QoQ), GAAP毛利率47.4%(Non-GAAP 50.4%), GAAP净亏损-7,161.7M(含可转债equitization一次性非现金债务清偿损失7.8B, 非主营; Non-GAAP净利326.3M); FY27Q1指引营收1,225-1,275M"
  },
  {
   "id": "lite-2026q1-10q",
@@ -2342,7 +3373,7 @@ const SOURCES = [
   "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002384",
   "fetched_at": "2026-08-05",
   "archive": null,
-  "locator": "cn_financial_pro income_statement(合并,type=1) 2026一季报(period 0331)；直接取一季报：营业总收入 ¥131.38亿 / 净利润 ¥11.24亿，CNY_YI"
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2026一季报(period 0331)；直接取一季报：营业总收入 ¥131.38亿 / 净利润 ¥11.24亿(总净利含少数股东口径)，CNY_YI。【2026-08-22纠正】官方一季报归母净利润=1,109,892,942.38元=11.0989亿, 库内net_income已按归母口径修正(库内惯例归母口径), 保留旧值痕迹供复盘"
  },
  {
   "id": "dsbj-2025Q4-qr",
@@ -2406,7 +3437,7 @@ const SOURCES = [
   "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603228",
   "fetched_at": "2026-08-05",
   "archive": null,
-  "locator": "cn_financial_pro income_statement(合并,type=1) 2026一季报(period 0331)；直接取一季报：营业总收入 ¥38.92亿 / 净利润 ¥2.43亿，CNY_YI"
+  "locator": "cn_financial_pro income_statement(合并,type=1) 2026一季报(period 0331)；直接取一季报：营业总收入 ¥38.92亿 / 净利润 ¥2.43亿(总净利含少数股东口径)，CNY_YI。【2026-08-22纠正】官方一季报归母净利润=232,685,696.17元=2.3269亿, 库内net_income已按归母口径修正(库内惯例归母口径), 保留旧值痕迹供复盘"
  },
  {
   "id": "jw-2025Q4-qr",
@@ -2689,6 +3720,14 @@ const SOURCES = [
   "locator": "Alpha Vantage+FMP交叉验证(SEC 10-Q) 闪迪FY2025Q4 三个月ended 2025-06-27: 营收$1,901M, 净利-$23M; 单位USD_M"
  },
  {
+  "id": "giga-2026h1-sr",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-19/1225480384.PDF",
+  "fetched_at": "2026-08-19",
+  "archive": null,
+  "locator": "兆易创新2026年半年度报告(2026-08-18晚披露,巨潮): H1营收11,565,760,432.15元、归母净利6,856,786,413.68元、扣非净利4,883,033,478.93元、经营现金流净额6,048,341,057.06元。Q2单季=H1−Q1: 营收=115.6576−41.8808=73.7768亿≈73.78亿; 归母净利=68.5679−14.6125=53.9554亿≈53.96亿。利基DRAM/SLC NAND量价齐升;证券投资公允价值收益增厚归母净利(扣非48.83亿);无下季指引。2025Q1由上年同期推算: 营收=41.5031(2025H1)−22.41(2025Q2)=19.09亿; 归母净利=5.7548−3.41=2.35亿"
+ },
+ {
   "id": "giga-2026q1-er",
   "type": "quarterly_report",
   "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603986",
@@ -2875,10 +3914,10 @@ const SOURCES = [
  {
   "id": "cerebras-2026q1-10q",
   "type": "10-Q",
-  "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=CEREBRAS&type=10-Q",
-  "fetched_at": "2026-08-05",
+  "url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026044981/cbrs-20260331.htm",
+  "fetched_at": "2026-08-18",
   "archive": null,
-  "locator": "Cerebras 2026Q1 (10-Q, 三个月ended 2026-03-31): 营收$193.406M, 净利-$14.006M; 经 qveris Alpha Vantage INCOME_STATEMENT 提取自 SEC 披露 (raw totalRevenue=193406000, netIncome=-14006000)"
+  "locator": "Q1 10-Q(截至2026-03-31):Q1购建固定资产$131,970K,作为Q2 capex推导基数"
  },
  {
   "id": "cerebras-2025q4-10q",
@@ -2919,6 +3958,382 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "苏州联讯仪器 2025Q4 单季 = 2025年报全年 − 三季报9M累计 (均经 qveris cn_financial_pro 提取): 营收 1,194,068,403.51 − 805,621,511.07 = 388,446,892.44元(3.884亿), 归母净利 173,651,557.89 − 96,643,013.92 = 77,008,543.97元(0.770亿)"
+ },
+ {
+  "id": "amat-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026056699/exhibit991q32026earningsre.htm",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "SEC EDGAR 8-K(2026-08-13)Exhibit 99.1:FY2026Q3(季末2026-07-26,对齐自然季2026Q2)。Revenue $9,115M、GAAP gross margin 50.3%、GAAP net income $2,538M 见经营表;capex $707M 见现金流量表;guidance_next_q 为 FY2026Q4 指引中值 $10,250M±$500M(non-GAAP EPS $4.02±$0.20)见 Business Outlook。backlog 未披露,缺省。"
+ },
+ {
+  "id": "wdc-fy26q4-er",
+  "type": "8-K",
+  "url": "https://www.sec.gov/Archives/edgar/data/106040/000162828026053305/a4ex991-pressreleaseq426.htm",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "SEC 8-K(2026-08-05)Ex-99.1:FY2026Q4财季末2026-07-03,对齐自然季2026Q2。Revenue/GAAP毛利率54.1%见Q4FY26 Highlights表;净利润=Diluted Net Income Attributable to Common Shareholders $3,195M;capex=Purchases of PP&E net Q4FY26 $108M;guidance_next_q为FY27Q1指引中值$4,100M±$100M(non-GAAP毛利率55-56%,EPS~$4.00)见Business Outlook。backlog未披露,缺省。"
+ },
+ {
+  "id": "sndk-fy26q4-er",
+  "type": "8-K",
+  "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026053346/sndkq4-26ex991xpressrelease.htm",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "SEC 8-K(2026-08-05)Ex-99.1:FY2026Q4财季末2026-07-03,对齐自然季2026Q2。Revenue $8,965M、GAAP毛利率84.6%(Gross profit 7,582/8,965)见合并经营报表;净利润=GAAP Net income $6,903M;capex=Purchases of PP&E 三个月$43M;guidance_next_q为FY27Q1指引区间$10,300-$10,800中值(GAAP毛利率83.0-84.9%,non-GAAP EPS $44-46)见Business Outlook。backlog未披露,缺省。"
+ },
+ {
+  "id": "dwmicro-2026h1-sr",
+  "type": "semiannual_report",
+  "url": "http://static.cninfo.com.cn/finalpage/2026-08-18/1225477254.PDF",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "《东田微:2026年半年度报告》(2026-08-18披露)。H1数:营收501,801,936.18元、归母净利86,959,147.21元、营业成本351,864,754.14元、购建固定资产等支付现金92,953,475.99元。Q2单季=H1−Q1(Q1取dwmicro-2026q1-qr):Q2营收295,633,569.85元=2.9563亿;Q2毛利率=(295,633,569.85−198,749,178.74)/295,633,569.85=0.3277;Q2归母净利58,893,770.08元=0.5889亿;Q2 capex 67,571,730.53元=0.6757亿"
+ },
+ {
+  "id": "dwmicro-2026q1-qr",
+  "type": "quarterly_report",
+  "url": "http://static.cninfo.com.cn/finalpage/2026-04-27/1225179313.pdf",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "《东田微:2026年一季度报告》:营收206,168,366.33元、营业成本153,115,575.40元、归母净利28,065,377.13元、购建固定资产等支付现金25,381,745.46元,用于Q2=H1−Q1推导"
+ },
+ {
+  "id": "cambricon-2026h1-sr",
+  "type": "semiannual_report",
+  "url": "http://static.cninfo.com.cn/finalpage/2026-08-08/1225464969.PDF",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "寒武纪2026年半年度报告(2026-08-08披露,巨潮):H1营收5,995,573,619.61元、营业成本2,682,984,830.53元、归母净利润2,310,912,080.33元、购建固定资产等支付现金439,828,512.96元。Q2单季=H1−Q1:营收=59.9557−28.8470=31.1088亿;毛利率=1−(26.8298−13.1743)/31.1088=0.5610;归母净利=23.1091−10.1321=12.9770亿;capex=4.3983−1.9894=2.4089亿。云端产品线H1收入59.94亿(单季拆分未披露,不计入);无下季指引"
+ },
+ {
+  "id": "cambricon-2026q1-qr",
+  "type": "quarterly_report",
+  "url": "http://static.cninfo.com.cn/finalpage/2026-04-30/1225264337.PDF",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "寒武纪2026年第一季度报告(2026-04-30披露,巨潮):Q1营收2,884,696,746.86元、营业成本1,317,430,150.72元、归母净利润1,013,213,581.94元、购建固定资产支付现金198,942,045.76元,作为Q2推导基数"
+ },
+ {
+  "id": "cerebras-2026q2-er",
+  "type": "8-K",
+  "url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026056186/cbrsannouncesfinancialresu.htm",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "2026-08-12 8-K EX-99.1(Q2截至2026-06-30,GAAP):总营收$180,110K(硬件$54,119K+云服务$125,991K);毛利率=$25,559K/$180,110K=14.19%;净亏损$450,528K;RPO $25.4B(2026-06-30);guidance_next_q为Q3'26 core(non-GAAP)营收指引$214-216M中值$215M(core毛利率38-40%);全年core营收指引上调至$880-890M"
+ },
+ {
+  "id": "cerebras-2026q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026056357/cbrs-20260630.htm",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "10-Q(截至2026-06-30,2026-08-12披露):H1购建固定资产$548,873K;Q2单季capex=H1 $548.873M−Q1 $131.970M=$416.903M"
+ },
+ {
+  "id": "gfs-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1709048/000170904826000218/globalfoundries2q2026earni.htm",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "SEC 6-K(filed 2026-08-05)Ex-99.1 'GlobalFoundries Reports Second Quarter 2026 Financial Results':revenue/GM/net income 见 headline 与 Summary Quarterly Results;capex=Purchases of PP&E and intangible assets $411M(Q2现金流量表,net of government grants $408M);guidance_next_q为Q3 2026指引中值$1,885M±$25M(IFRS毛利率29.5%±100bps,EPS $0.37±$0.05)见Summary of Q3 Guidance;backlog未披露"
+ },
+ {
+  "id": "tower-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/928876/000117891326003776/exhibit_99-1.htm",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "SEC 6-K(filed 2026-08-04)Ex-99.1:revenue $460,079K、gross profit $137,772K(毛利率=137772/460079=0.299)、net profit attributable $90,769K 见合并经营表;capex=investments in property and equipment net $187M;guidance_next_q为Q3 2026营收指引$520M±5%;backlog未披露"
+ },
+ {
+  "id": "smic-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://smic.cdn.shwebspace.com/uploads/6a7d7c4f/ER_EN.pdf",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "公司官网IR(www.smics.com/en/site/company_financialSummary)2026Q2 earnings release PDF(2026-08-13):revenue $3,005.6M、gross margin 25.3% 见 highlights;net_income=Profit attributable to Owners $479,197K;capex $1,835.7M 见 Capex Summary;guidance_next_q为Q3 2026指引+2%~+4% QoQ取中值+3%×$3,005.6M=$3,095.8M(毛利率指引26%~28%);backlog未披露"
+ },
+ {
+  "id": "huahong-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0813/2026081300401.pdf",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "HKEX披露易2026-08-13 'Hua Hong Grace Reports 2026 Second Quarter Results':revenue US$717.5M、gross margin 16.5%、net profit attributable US$38.6M;capex US$356,566K(12寸$325,883K+8寸$30,683K)见Capital Expenditures表;guidance_next_q为Q3 2026指引US$770-780M中值(毛利率16%~18%);backlog未披露"
+ },
+ {
+  "id": "crwv-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "财报新闻稿(2026-08-11):Q2 2026 revenue $2,575M、net loss $(626)M、Q2 purchases of PP&E incl. capitalized software $(6,422)M;gross_margin=(2,575−879)/2,575=0.659(cost of revenue $879M,与10-Q利润表一致)"
+ },
+ {
+  "id": "crwv-2026q2-10q",
+  "type": "10-Q",
+  "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "10-Q RPO附注:截至2026-06-30 unsatisfied RPO $103.7B(=103,700 USD_M);利润表确认 revenue 2,575/cost of revenue 879/net loss (626)"
+ },
+ {
+  "id": "crwv-2026q2-outlook",
+  "type": "earnings_release",
+  "url": "https://s205.q4cdn.com/133937190/files/doc_financials/2026/q2/CoreWeave-Q2-26-Earnings-Outlook-Presentation.pdf",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "Q2'26 Outlook Presentation 指引页:Q3'26 revenue $3.45-3.60B,中值$3,525M(FY26 revenue $12.4-13.2B、capex $35-39B 未入库)"
+ },
+ {
+  "id": "nbis-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://assets.nebius.com/assets/dfe7a7f3-771e-4653-94e8-8f86bf126b1d/PR.pdf",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "Q2 2026业绩新闻稿(2026-08-12):revenues $582.3M;cost of revenues $133.6M(gross_margin=(582.3−133.6)/582.3=0.771);net loss from continuing operations $(190.4)M;Q2 purchases of PP&E and intangibles $(5,657.4)M;无正式RPO/backlog披露、无书面Q3指引(guidance_next_q缺省)"
+ },
+ {
+  "id": "nbis-2026q2-shl",
+  "type": "quarterly_report",
+  "url": "https://assets.nebius.com/assets/4462517b-ce83-41f2-96ed-f2ac1bc06a05/SHLQ226%20(1).pdf",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "CEO致股东信:Nebius AI cloud revenue +514% YoY 至 $575M(ai_revenue);ARR $3.0B;提及$40B customer commitments但非正式backlog口径,不采"
+ },
+ {
+  "id": "tencent-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "2026年第二季度业绩公告(2026-08-12)简明综合收益表2Q2026:revenues RMB204,785M=2,047.85亿元;gross margin公告口径58%;profit attributable to equity holders RMB56,022M=560.22亿元(IFRS);capital expenditures RMB52,784M=527.84亿元。腾讯不按云/AI分部披露收入,ai_revenue缺省;无下季指引"
+ },
+ {
+  "id": "vst-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000017/vistra-20260630xearningsre.htm",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "8-K Ex-99.1(2026-08-07):Q2 2026 operating revenues $4,017M;GAAP net income $305M。现金流量表仅六个月口径(Q2单季capex未披露,缺省);公用事业不报毛利率/在手订单,缺省;仅重申FY2026指引,无Q3指引"
+ },
+ {
+  "id": "flnc-fy26q3-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1868941/000186894126000028/flncq3fy26earningspressrel.htm",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "FY2026 Q3业绩(财季=2026年4-6月,对齐2026Q2;2026-08-05):total revenue $649.8M;GAAP gross profit margin 5.1%;net loss $(44.3)M;backlog as of 2026-06-30约$6.4B(历史最高)。现金流量表仅九个月口径(Q3单季capex缺省);无下季指引"
+ },
+ {
+  "id": "foxconn-2026h1-sr",
+  "type": "semiannual_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t163sb04",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "公开资讯观测站>汇总报表>综合损益表(ajax_t163sb04,TYPEK=sii,year=115,season=02),鸿海行(新台币仟元):H1营收4,645,427,824/毛利285,513,881/归母净利109,893,220。Q2单季=H1−Q1:营收=4,645,427,824−2,119,533,391=2,525,894,433仟元(Q1同表season=01,与库内参考值一致);毛利率=(285,513,881−130,980,560)/2,525,894,433=0.0612;归母净利=109,893,220−49,919,449=59,973,771仟元"
+ },
+ {
+  "id": "foxconn-2026h1-cf",
+  "type": "semiannual_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb05",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "公开资讯观测站>个别公司财务报表>合并现金流量表(ajax_t164sb05,co_id=2317):capex=取得不动产厂房及设备,Q2=H1 80,886,319−Q1 35,774,345=45,111,974仟元"
+ },
+ {
+  "id": "quanta-2026h1-sr",
+  "type": "semiannual_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t163sb04",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "同foxconn查询路径,广达(2382)行:H1营收1,845,813,767/毛利90,775,884/归母净利49,843,907仟元。Q2推导:营收=1,845,813,767−809,221,055=1,036,592,712仟元;毛利率=(90,775,884−38,697,031)/1,036,592,712=0.0502;归母净利=49,843,907−21,192,434=28,651,473仟元"
+ },
+ {
+  "id": "quanta-2026h1-cf",
+  "type": "semiannual_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb05",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "合并现金流量表(co_id=2382):capex Q2=H1 21,595,496−Q1 6,011,664=15,583,832仟元"
+ },
+ {
+  "id": "wiwynn-2026h1-sr",
+  "type": "semiannual_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t163sb04",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "同foxconn查询路径,纬颖(6669)行:H1营收554,660,326/毛利46,644,117/归母净利29,083,507仟元。Q2推导:营收=554,660,326−276,507,734=278,152,592仟元;毛利率=(46,644,117−20,881,168)/278,152,592=0.0926;净利=29,083,507−14,114,409=14,969,098仟元"
+ },
+ {
+  "id": "wiwynn-2026h1-cf",
+  "type": "semiannual_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb05",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "合并现金流量表(co_id=6669):capex Q2=H1 7,956,426−Q1 3,871,756=4,084,670仟元"
+ },
+ {
+  "id": "fii-2026h1-sr",
+  "type": "semiannual_report",
+  "url": "http://static.cninfo.com.cn/finalpage/2026-08-12/1225468066.PDF",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "巨潮资讯,工业富联2026年半年度报告(2026-08-12披露)。合并利润表(仟元):H1营业收入557,860,645/营业成本517,969,798/归母净利润23,740,458;现金流量表:购建固定资产等支付现金9,091,884。Q2=H1−Q1(Q1取fii-2026q1-qr):营收=557,860,645−251,078,078=306,782,567仟元=3067.83亿;毛利率=[(557,860,645−517,969,798)−(251,078,078−232,622,564)]/306,782,567=0.0699;归母净利=23,740,458−10,594,857=13,145,601仟元=131.46亿;capex=9,091,884−3,868,534=5,223,350仟元=52.23亿"
+ },
+ {
+  "id": "fii-2026q1-qr",
+  "type": "quarterly_report",
+  "url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225231598.PDF",
+  "fetched_at": "2026-08-18",
+  "archive": null,
+  "locator": "巨潮资讯,工业富联2026年第一季度报告(2026-04-29):营业收入251,078,078仟元/营业成本232,622,564仟元/归母净利润10,594,857仟元/购建固定资产等支付现金3,868,534仟元,仅用于Q2推导"
+ },
+ {
+  "id": "sytech-2026h1-er",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-15/1225475783.PDF",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "生益科技2026年半年度报告(巨潮官方PDF,2026-08-15): 2026H1营收190.256亿/营业成本131.862亿/归母32.870亿; 2026Q1(1225230175.PDF,2026-04-29)营收81.415亿/成本58.536亿/归母11.581亿; Q2单季=H1−Q1: 营收108.84亿/毛利35.52亿/毛利率32.63%/归母21.29亿(亿元,CNY_YI)"
+ },
+ {
+  "id": "sytech-2026q1",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225230175.PDF",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "生益科技2026年第一季度报告(巨潮官方PDF,2026-04-29): 营收81.415亿/营业成本58.536亿/归母11.581亿; 用于Q2单季=H1−Q1派生"
+ },
+ {
+  "id": "veri-2026h1-er",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225478749.PDF",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "芯原股份2026年半年度报告(巨潮官方PDF,2026-08-18): 2026H1营收18.635亿/营业成本12.795亿/归母-6.121亿; 2026Q1(1225263170.PDF,2026-04-30)营收8.357亿/成本5.658亿/归母-3.408亿; Q2单季=H1−Q1: 营收10.28亿/毛利3.14亿/毛利率30.57%/归母-2.71亿; Q2 capex=购建固定资产H1(8068万)−Q1(1170万)=6898万元(亿元,CNY_YI)"
+ },
+ {
+  "id": "veri-2026q1",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225263170.PDF",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "芯原股份2026年第一季度报告(巨潮官方PDF,2026-04-30): 营收8.357亿/营业成本5.658亿/归母-3.408亿; 用于Q2单季=H1−Q1派生"
+ },
+ {
+  "id": "amec-2026h1-er",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-20/1225482884.PDF",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "中微公司2026年半年度报告(巨潮官方PDF,2026-08-20): 2026H1营收66.913亿/营业成本40.321亿/归母28.252亿; 2026Q1(1225215453.PDF,2026-04-28)营收29.150亿/成本17.521亿/归母9.305亿; Q2单季=H1−Q1: 营收37.76亿/毛利14.96亿/毛利率39.63%/归母18.95亿(亿元,CNY_YI)"
+ },
+ {
+  "id": "amec-2026q1",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225215453.PDF",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "中微公司2026年第一季度报告(巨潮官方PDF,2026-04-28): 营收29.150亿/营业成本17.521亿/归母9.305亿; 用于Q2单季=H1−Q1派生"
+ },
+ {
+  "id": "sjsmi-2026h1-er",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-20/1225483707.PDF",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "盛合晶微2026年半年度报告(巨潮官方PDF,2026-08-20): 2026H1营收34.068亿/营业成本23.800亿/归母4.494亿; 2026Q1(1225262167.PDF,2026-04-30)营收16.984亿/成本11.958亿/归母1.913亿; Q2单季=H1−Q1: 营收17.08亿/毛利5.24亿/毛利率30.68%/归母2.58亿(亿元,CNY_YI)"
+ },
+ {
+  "id": "tfc-2026h1-er",
+  "type": "quarterly_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-19/1225480328.PDF",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "天孚通信2026年半年度报告(巨潮官方PDF,2026-08-19): 2026H1营收28.279亿/营业成本11.066亿/归母12.043亿; 2026Q1营收13.303亿/成本5.773亿/归母4.922亿(取自Q1报告文本); Q2单季=H1−Q1: 营收14.98亿/毛利9.68亿/毛利率64.66%/归母7.12亿(亿元,CNY_YI)"
+ },
+ {
+  "id": "unimicron-2026Q2-qr",
+  "type": "quarterly_report",
+  "url": "https://mopsov.twse.com.tw/mops/web/t164sb04",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "公开资讯观测站>合併損益表(季別)(3037.TW 欣兴电子, t164sb04, TYPEK=sii, year=115=2026, season=02=2026Q2单季): 营业收入42,890/营业毛利10,638/归属母公司净利13,115(新台幣百萬元=TWD_M); 毛利率=10,638/42,890=24.80%。交叉核对欣兴电子官方2026Q2法人说明会合併綜合損益表(单位:百萬元): Q2-26营收42,890/毛利10,638/母公司業主淨利13,115, Q1-26营收37,446/淨利5,043 — 与已存Q1(37446.46/5042.98)一致。注: 此为单季数非H1累计, 直接采用而非H1−Q1。"
+ },
+ {
+  "id": "cohr-fy26q4-er",
+  "type": "earnings_release",
+  "url": "https://www.coherent.com/news/press-releases/fourth-quarter-and-fiscal-year-2026-results",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "Coherent Corp. FY2026 Q4(止2026-06-30, 财季错位offset=1对齐自然2026Q2)官方新闻稿(2026-08-12): Revenue $2.05B / GAAP Gross Margin 38.5% / GAAP Net Income $240.5M(每股$1.19)。Datacenter&Communications segment $1.6B(+58.6% YoY)"
+ },
+ {
+  "id": "fn-fy26q4-er",
+  "type": "earnings_release",
+  "url": "https://investor.fabrinet.com/news-releases/news-release-details/fabrinet-announces-fourth-quarter-and-fiscal-year-2026-financial",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "Fabrinet FY2026 Q4(止2026-06-26, offset=1对齐自然2026Q2)官方新闻稿(2026-08-17): GAAP Revenue $1,315.8M / GAAP Net Income $139.3M(每股$3.83) / 电话会披露Q4 capex $92M; GAAP毛利率=165.556M毛利/1,315.788M营收=12.58%。数据中心营收$669M(+68% YoY)占51%"
+ },
+ {
+  "id": "aaoi-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826006055/aaoi_ex9901.htm",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "Applied Optoelectronics 2026 Q2(止2026-06-30) 8-K Ex99.1(SEC, 2026-08-06): GAAP Revenue $191.9M / GAAP Gross Margin 27.7% / GAAP Net Loss $22.8M(每股$0.28)。数据中心营收$107.7M(+140% YoY)占56%"
+ },
+ {
+  "id": "poet-2026q2-er",
+  "type": "earnings_release",
+  "url": "https://www.poet-technologies.com/news/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth",
+  "fetched_at": "2026-08-20",
+  "archive": null,
+  "locator": "POET Technologies 2026 Q2(止2026-06-30) 官方新闻稿(2026-08-13, SEDAR+ filing): Revenue $569,925(+112% YoY) / Net Loss $11.3M(每股$0.07)。期末现金及短投$796.3M"
+ },
+ {
+  "id": "tuojing-2026h1-er",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225486631.PDF",
+  "fetched_at": "2026-08-22",
+  "archive": null,
+  "locator": "拓荆科技2026年半年度报告(巨潮官方PDF,2026-08-21): 2026H1营收29.1286亿/营业成本17.1846亿/归母13.4275亿; 2026Q1(1225222240.PDF,2026-04-28)营收11.1243亿/成本6.4867亿/归母5.7060亿; Q2单季=H1−Q1: 营收18.0043亿/毛利7.3064亿/毛利率40.58%/归母7.7215亿(亿元,CNY_YI)"
+ },
+ {
+  "id": "jcet-2026h1-er",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225487900.PDF",
+  "fetched_at": "2026-08-22",
+  "archive": null,
+  "locator": "长电科技2026年半年度报告(巨潮官方PDF,2026-08-21): 2026H1营收195.2722亿/营业成本165.6903亿/归母8.4464亿; 2026Q1(1225224901.PDF,2026-04-29)营收91.7104亿/成本78.3680亿/归母2.9027亿; Q2单季=H1−Q1: 营收103.5618亿/毛利16.2395亿/毛利率15.68%/归母5.5437亿(亿元,CNY_YI)"
+ },
+ {
+  "id": "dsbj-2026h1-er",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225491182.PDF",
+  "fetched_at": "2026-08-22",
+  "archive": null,
+  "locator": "东山精密2026年半年度报告(巨潮官方PDF,2026-08-22): 2026H1营收277.9768亿/营业成本221.9608亿/归母29.5690亿; 2026Q1(1225203581.PDF,2026-04-28)营收131.3764亿/成本105.9845亿/归母11.0989亿; Q2单季=H1−Q1: 营收146.6004亿/毛利30.6241亿/毛利率20.89%/归母18.4701亿; Q2 capex=购建固定资产H1 52.5336亿−Q1 21.5997亿=30.9339亿(亿元,CNY_YI)"
+ },
+ {
+  "id": "jw-2026h1-er",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225493416.PDF",
+  "fetched_at": "2026-08-22",
+  "archive": null,
+  "locator": "景旺电子2026年半年度报告(巨潮官方PDF,2026-08-22): 2026H1营收86.1148亿/营业成本68.6998亿/归母6.0162亿; 2026Q1(1225145542.PDF,2026-04-23)营收38.9197亿/成本31.6179亿/归母2.3269亿; Q2单季=H1−Q1: 营收47.1951亿/毛利10.1132亿/毛利率21.43%/归母3.6893亿 — 与中报正文披露「Q2营收47.20亿/归母3.69亿(同比+13.61%/环比+58.55%)」一致(亿元,CNY_YI)"
+ },
+ {
+  "id": "ibiden-fy26q1-tanshin",
+  "type": "quarterly_report",
+  "url": "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260804/20260731504718.pdf",
+  "fetched_at": "2026-08-22",
+  "archive": null,
+  "locator": "イビデン(4062.T)2027年3月期第1四半期決算短信〔日本基準〕(連結)(2026-08-04, TDnet开示, Yahoo开示镜像PDF): FY26Q1(2026-04-01~06-30, 财季错位对齐自然2026Q2)売上高123,219百万円(+26.4% YoY)/親会社株主に帰属する四半期純利益17,918百万円(+40.8% YoY)。上年同期(FY25Q1=自然2025Q2)97,464/12,728与库内2025Q2完全一致。通期指引上方修正: 売上高5,500億円/営業利益1,270億円(JPY_M)"
  }
 ];
 

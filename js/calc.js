@@ -26,12 +26,31 @@ const quarterly = entries => (entries||[]).filter(e=>isQuarter(e.period));
 const monthly   = entries => (entries||[]).filter(e=>!isQuarter(e.period));
 
 const revOf = e => (e && e.metrics.revenue && e.metrics.revenue.value!=null) ? e.metrics.revenue.value : null;
-function yoyAt(q, i){ const a=revOf(q[i]), b=revOf(q[i-4]); if(a==null||b==null||b===0) return null; return (a/b-1)*100; }
-function qoqAt(q, i){ const a=revOf(q[i]), b=revOf(q[i-1]); if(a==null||b==null||b===0) return null; return (a/b-1)*100; }
+/* 期间位移: '2026Q2' 前移 n 季 → '2025Q2'; 非季度格式返回 null */
+function shiftPeriod(p, n){
+  const m = /^(\d{4})Q([1-4])$/.exec(p); if(!m) return null;
+  let y = +m[1], q = +m[2] - n;
+  while(q<1){ q+=4; y--; } while(q>4){ q-=4; y++; }
+  return y+'Q'+q;
+}
+/* YoY/QoQ 按"期间字符串"定位对比期(而非数组下标)——允许序列存在未披露的断档季 */
+function yoyAt(q, i){
+  const e = q[i]; if(!e) return null;
+  const ya = q.find(x=>x.period===shiftPeriod(e.period,4));
+  const a = revOf(e), b = revOf(ya);
+  if(a==null||b==null||b===0) return null; return (a/b-1)*100;
+}
+function qoqAt(q, i){
+  const e = q[i]; if(!e) return null;
+  const pq = q.find(x=>x.period===shiftPeriod(e.period,1));
+  const a = revOf(e), b = revOf(pq);
+  if(a==null||b==null||b===0) return null; return (a/b-1)*100;
+}
 
-/* 信号灯:🟢 YoY>20% 且加速 · 🟡 正增长减速或 0–20% · 🔴 负增长 · ⚪ 数据不足 */
+/* 信号灯:🟢 YoY>20% 且加速 · 🟡 正增长减速或 0–20% · 🔴 负增长 · ⚪ 数据不足
+   (对比期按期间匹配,YoY 数据不足时诚实变灰) */
 function signalOf(q){
-  if(!q || q.length<5) return 'gray';
+  if(!q || q.length<3) return 'gray';
   const i=q.length-1, y0=yoyAt(q,i), y1=yoyAt(q,i-1);
   if(y0==null||y1==null) return 'gray';
   if(y0<0) return 'red';

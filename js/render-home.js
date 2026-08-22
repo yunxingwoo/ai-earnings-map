@@ -64,14 +64,74 @@ document.getElementById('cArchived').textContent = SOURCES.length || '—';
 document.getElementById('cArchivedNote').textContent =
   SOURCES.length? '全部保留官方原文链接，逐条可溯' : '采集进行中，留空不估算';
 
-/* ── 披露动态跑马灯(由 SOURCES 生成) ── */
+/* ── 云厂 capex 传导 + Kill Switch ── */
+const CLOUD5 = [['msft','微软'],['goog','谷歌'],['amzn','亚马逊'],['meta','Meta'],['orcl','甲骨文']];
+const TOP4 = ['msft','goog','amzn','meta'];
+const KS_THRESHOLD = 14;
+function capexAt(cid, period){
+  const q = quarterly(BYCO_H[cid]||[]);
+  const e = q.find(x=>x.period===period && x.metrics.capex && x.metrics.capex.value!=null);
+  return e ? usdM(e.metrics.capex.value, e.metrics.capex.unit, FX_RATES) : null;
+}
+function latestCapexOf(cid){
+  const q = quarterly(BYCO_H[cid]||[]);
+  for(let i=q.length-1;i>=0;i--){ if(q[i].metrics.capex && q[i].metrics.capex.value!=null) return {m:q[i].metrics.capex, period:q[i].period}; }
+  return null;
+}
+const prevYearP = p => (+p.slice(0,4)-1)+p.slice(4);
+(function(){
+  const ksEl = document.getElementById('killswitch'); if(!ksEl) return;
+  // 最新共同 capex 季
+  const latest = TOP4.map(latestCapexOf).filter(Boolean).map(x=>x.period).sort();
+  const curP = latest[latest.length-1]; const yagoP = prevYearP(curP);
+  const curSum = TOP4.reduce((s,c)=>s+(capexAt(c,curP)||0),0);
+  const yagoSum = TOP4.reduce((s,c)=>s+(capexAt(c,yagoP)||0),0);
+  const ksYoY = yagoSum>0 ? (curSum/yagoSum-1)*100 : null;
+  const status = ksYoY==null ? {t:'数据不足',cls:'ks-gray'} :
+    ksYoY < KS_THRESHOLD ? {t:'⚠️ 已跌破阈值',cls:'ks-red'} :
+    ksYoY < KS_THRESHOLD*2 ? {t:'🟡 逼近阈值',cls:'ks-amber'} : {t:'🟢 远离阈值',cls:'ks-green'};
+  const barW = ksYoY==null ? 0 : Math.min(100, ksYoY/(KS_THRESHOLD*4)*100);
+  ksEl.innerHTML = `
+    <div class="ks-status ${status.cls}">${status.t}</div>
+    <div class="ks-big num">${ksYoY==null?'—':(ksYoY>=0?'+':'')+ksYoY.toFixed(1)+'%'}</div>
+    <div class="ks-sub">Top-4 合计 CAPEX 同比 · ${curP}（上年同期基数 ${yagoP}）</div>
+    <div class="ks-num-row"><span class="num">${curSum?fmtBig(curSum):'—'}</span> ← 合计（vs 上年 ${yagoSum?fmtBig(yagoSum):'—'}）</div>
+    <div class="ks-bar"><i class="${status.cls.replace('ks-','')}" style="width:${barW}%"></i><b style="left:${Math.min(100,KS_THRESHOLD/(KS_THRESHOLD*4)*100)}%"></b></div>
+    <div class="ks-scale"><span>0%</span><span>阈值 +14%</span><span>+56%</span></div>`;
+})();
+(function(){
+  const listEl = document.getElementById('capexList'); if(!listEl) return;
+  const rows = CLOUD5.map(([cid,name])=>{
+    const got = latestCapexOf(cid); if(!got) return '';
+    const y = capexAt(cid, prevYearP(got.period));
+    const cur = usdM(got.m.value, got.m.unit, FX_RATES);
+    const yoy = y!=null&&y>0 ? (cur/y-1)*100 : null;
+    return `<div class="cpx-row">
+      <span class="cpx-name">${name}</span>
+      <span class="cpx-val num">${fmtBig(cur)}</span>
+      <span class="cpx-yoy num ${yoy==null?'':yoy<0?'down':'up'}">${yoy==null?'—':(yoy>=0?'+':'')+yoy.toFixed(0)+'% YoY'}</span>
+      <span class="cpx-p">${got.period}</span></div>`;
+  }).join('');
+  listEl.innerHTML = rows;
+})();
+
+/* ── 披露动态跑马灯(由 SOURCES 生成; 头部插入下一财报) ── */
 const latestPeriodByCo = {};
 for(const e of METRICS){ const c=e.company;
   if(!latestPeriodByCo[c] || periodKey(e.period)>periodKey(latestPeriodByCo[c])) latestPeriodByCo[c]=e.period; }
 const TICKS = Object.entries(latestPeriodByCo)
   .sort((a,b)=>periodKey(b[1])-periodKey(a[1])).slice(0,14)
   .map(([cid,p])=>`${(COMPANIES.find(c=>c.id===cid)||{}).name||cid} ${p} 已披露`);
+const NEXTS = (typeof nextEarnings==='function' ? nextEarnings() : []).slice(0,5)
+  .map(e=>`下一财报：${e.name} ${e.event} · ${e.date.slice(5).replace('-','/')}${e.est?'(预计)':''}`);
 const tk = document.getElementById('ticker');
-tk.innerHTML = TICKS.length
-  ? TICKS.concat(TICKS).map(t=>`<span><i class="t-dot">●</i><b>${t}</b></span>`).join('')
+tk.innerHTML = (NEXTS.concat(TICKS)).length
+  ? NEXTS.concat(TICKS, NEXTS.concat(TICKS)).map(t=>`<span><i class="t-dot">●</i><b>${t}</b></span>`).join('')
   : '<span><b>首批财报数据采集进行中…</b></span>';
+
+/* -- 导航栏:最近采集日期(取 SOURCES 最大 fetched_at) -- */
+(function(){
+  const el = document.getElementById('tzNote'); if(!el) return;
+  const latest = SOURCES.reduce((m,s)=> (s.fetched_at>m ? s.fetched_at : m), '1970-01-01');
+  el.textContent = '北京时区 · 最近采集 ' + latest.replace(/-/g,'.') + ' · 全部数字回链官方原文';
+})();

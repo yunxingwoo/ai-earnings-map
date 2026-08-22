@@ -2,9 +2,12 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>全景地图 · AI 算力财报全景</title>
 <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#141413">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
 </head>
 <body>
 
@@ -18,7 +21,8 @@
       <a href="#gaps">数据缺口</a>
     </div>
     <div class="nav-right">
-      <span class="tz">北京时区 · 2026.08.05 复核版</span>
+      <span class="author">by luckywoo</span>
+      <span class="tz" id="tzNote">北京时区 · 数据实时计算</span>
       <a class="btn-small" href="#verify">交叉验证</a>
     </div>
   </div>
@@ -29,7 +33,7 @@
     <span>2026Q2 财报季</span>
     <span id="stat"></span>
     <span class="progress"><i></i></span>
-    <span>下一财报：英伟达 FY27Q2 · 08-26</span>
+    <span id="nextEarn">下一财报：待更新</span>
   </div>
 </div>
 
@@ -50,6 +54,11 @@
   </section>
 
   <section class="map" id="map"></section>
+
+
+  <section class="lp-panel">
+    <div class="lp-inner" id="backlog"></div>
+  </section>
 
   <section class="alt" id="verify">
     <div class="alt-in">
@@ -80,8 +89,13 @@
 <script src="data/companies.js"></script>
 <script src="data/metrics.js"></script>
 <script src="data/sources.js"></script>
+<script src="data/calendar.js"></script>
+<script src="data/valuation.js"></script>
+<script src="data/signals-history.js"></script>
 <script src="js/calc.js"></script>
 <script src="js/render-map.js"></script>
+<script src="js/panels-map.js"></script>
 <script src="fx.js"></script>
+<script src="js/pwa.js"></script>
 </body>
 </html>

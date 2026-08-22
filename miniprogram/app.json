@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "AI 算力财报全景",
+    "navigationBarBackgroundColor": "#141413",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#141413",
+    "backgroundTextStyle": "light"
+  },
+  "webviewDisableSwipeBack": true,
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

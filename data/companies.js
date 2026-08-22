@@ -130,6 +130,7 @@ const COMPANIES = [
  Co('baba','阿里巴巴','BABA/9988','美/港',12,'leader',true,'CNY_YI','lg',1,{ir_url:'https://www.alibabagroup.com/en-US/ir'}),
  Co('tencent','腾讯控股','0700.HK','港股',12,'leader',true,'CNY_YI','lg',1,{ir_url:'https://www.tencent.com/en-us/investors.html'}),
  Co('bytedance','字节跳动','—','非上市',12,'leader',false,'CNY_YI','md',0,{cloud:true}),
+ Co('spacex','SpaceX','SPCX','US',12,'core',true,'USD_M','md',0,{note:'IPO 2026-06-12 纳斯达克 · Starlink/星舰/xAI 三分部 · 市值约\$1.9T'}),
  /* 13 能源/电力 */
  Co('gev','GE Vernova','GEV','美股',13,'core',true,'USD_M','md',0),
  Co('vst','Vistra','VST','美股',13,'core',true,'USD_M','sm',0),

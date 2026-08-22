@@ -1,2 +1,10 @@
 node_modules/
 .DS_Store
+# 私密/环境与部署产物
+.env
+.edgeone/
+.workbuddy/
+# 数据备份与部署站点副本
+*.bak-*
+*.bak-w*
+site/

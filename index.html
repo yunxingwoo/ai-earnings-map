@@ -2,9 +2,12 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>AI 算力财报全景 · 产业总览</title>
 <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#141413">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
 </head>
 <body>
 
@@ -18,7 +21,8 @@
       <a href="map.html#gaps">数据缺口</a>
     </div>
     <div class="nav-right">
-      <span class="tz">北京时区 · 2026.08.05 复核版</span>
+      <span class="author">by luckywoo</span>
+      <span class="tz" id="tzNote">北京时区 · 数据实时计算</span>
       <a class="btn-small" href="map.html">进入全景地图</a>
     </div>
   </div>
@@ -79,6 +83,27 @@
     </div>
   </section>
 
+  <section class="capex-panel">
+    <div class="cp-head">
+      <div class="kick">Capex Transmission · 时间差框架第一棒</div>
+      <h2>云厂资本开支 · Kill Switch 监测</h2>
+    </div>
+    <div class="cp-grid">
+      <div class="killswitch" id="killswitch"></div>
+      <div class="cp-list" id="capexList"></div>
+    </div>
+    <p class="cp-foot">Kill Switch：Top-4 云厂（微软/谷歌/亚马逊/Meta）合计 CAPEX 同比增速跌破 <b>+14%</b> 为算力周期核心风险信号 · 时间差框架：CAPEX 先行 → 产能后建 → 收入确认 → 利润兑现 · 各家 capex 口径差异见地图页抽屉溯源</p>
+  </section>
+
+
+  <section class="lp-panel">
+    <div class="lp-inner" id="lagpanel"></div>
+  </section>
+
+  <section class="lp-panel">
+    <div class="lp-inner" id="scatter"></div>
+  </section>
+
   <section class="cards5">
     <div class="c5 reveal">
       <div class="k">产业节点</div>
@@ -119,8 +144,13 @@
 <script src="data/sources.js"></script>
 <script src="data/capacity.js"></script>
 <script src="data/fx.js"></script>
+<script src="data/calendar.js"></script>
+<script src="data/valuation.js"></script>
+<script src="data/guidance.js"></script>
 <script src="js/calc.js"></script>
 <script src="js/render-home.js"></script>
+<script src="js/panels-home.js"></script>
 <script src="fx.js"></script>
+<script src="js/pwa.js"></script>
 </body>
 </html>

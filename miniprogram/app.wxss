@@ -1,0 +1,4 @@
+/* 全局样式（仅作用于小程序原生壳，web-view 内部样式由站点控制） */
+page {
+  background-color: #141413;
+}
