@@ -1,6 +1,6 @@
 /* sw.js — PWA service worker
    策略: 静态资源(html/css/js/图标) cache-first; data/*.js network-first(数据必须新鲜); 失败回退缓存 */
-const VERSION = 'ai-map-v1';
+const VERSION = 'ai-map-v2';
 const STATIC = ['./','./index.html','./map.html','./styles.css','./fx.js',
   './js/calc.js','./js/render-home.js','./js/render-map.js','./js/panels-home.js','./js/panels-map.js','./js/pwa.js',
   './icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png','./manifest.webmanifest'];
