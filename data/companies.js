@@ -67,7 +67,7 @@ const COMPANIES = [
  Co('stx','希捷','STX','美股',6,'core',true,'USD_M','md',1),
  Co('sndk','闪迪','SNDK','美股',6,'second',true,'USD_M','sm',1),
  Co('giga','兆易创新','603986.SH','A股',6,'second',true,'CNY_YI','sm',0,{note:'NOR Flash'}),
- Co('cxmt','长鑫存储','科创板','A股',6,'leader',true,'CNY_YI','md',0,{note:'DRAM'}),
+ Co('cxmt','长鑫存储','688825.SH','A股',6,'leader',true,'CNY_YI','md',0,{note:'DRAM;2026-07-27科创板上市,募资579亿'}),
  Co('ymtc','长江存储','—','非上市',6,'leader',false,'CNY_YI','md',0,{cloud:true,note:'NAND'}),
  /* 07 AI 芯片/互连芯片 */
  Co('nvda','英伟达','NVDA','美股',7,'leader',true,'USD_M','lg',1,{ir_url:'https://investor.nvidia.com/'}),

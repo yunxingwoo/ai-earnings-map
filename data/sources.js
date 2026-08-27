@@ -1,6 +1,38 @@
 /* 溯源索引 — 每份官方披露文件一条;METRICS 中的 src 必须在此存在 */
 const SOURCES = [
  {
+  "id": "eoptolink-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://www.stcn.com/article/detail/4108576.html",
+  "fetched_at": "2026-08-24",
+  "archive": null,
+  "locator": "新易盛2026年半年度报告(官方,2026-08-24披露): H1营收209.10亿(+100.34%)/归母75.29亿(+90.98%)/毛利率48.46%; Q2单季营收125.72亿(+96.9%)/归母47.49亿(+100.4%)/毛利率47.96%; 光互连产品产能2836万只(+86.57%), 800G稳定出货、1.6T放量提速"
+ },
+ {
+  "id": "envicool-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://www.cfi.net.cn/p20260824004178.html",
+  "fetched_at": "2026-08-24",
+  "archive": null,
+  "locator": "英维克2026年半年度报告摘要(官方,2026-08-24披露): H1营收30.17亿(+17.24%)/归母1.85亿(-14.32%)/扣非1.75亿(-13.22%); Q2单季为H1-Q1派生: 营收18.42亿/归母1.76亿; 摘要未披露毛利率故不录"
+ },
+ {
+  "id": "innolight-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://m.cnfin.com/yw-lb/zixun/20260821/4458802_1.html",
+  "fetched_at": "2026-08-22",
+  "archive": null,
+  "locator": "中际旭创2026年半年度报告(官方,2026-08-21披露): H1营收417.78亿(+182.5%)/归母136.51亿(+241.7%); Q2单季营收222.81亿(+174.6%)/归母79.17亿(+228.2%)/毛利率46.42%; 800G、1.6T高端光模块规模放量"
+ },
+ {
+  "id": "naura-2026h1-kb",
+  "type": "earnings_release",
+  "url": "https://epaper.stcn.com/att/202508/29/ZQ29B532-CR_eBook.pdf",
+  "fetched_at": "2026-08-24",
+  "archive": null,
+  "locator": "[已作废·勿再引用] 原入库的'北方华创2026H1快报:161.42亿/+29.51%/归母32.08亿'经核实系2025年半年报官方数字被二手媒体(雪球/eefocus)误传为2026年——证券时报披露PDF(2025-08-29刊)显示161.42亿恰为2025H1营收,且库内2025四季合计393.53亿与2025年报吻合。据此派生的2026Q2(58.19亿)已于2026-08-24移除。北方华创真实2026H1待官方快报/半年报核验后再入库,勿采用二手媒体'161.42亿'口径"
+ },
+ {
   "id": "spacex-s1",
   "type": "S-1",
   "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm",
@@ -4334,6 +4366,78 @@ const SOURCES = [
   "fetched_at": "2026-08-22",
   "archive": null,
   "locator": "イビデン(4062.T)2027年3月期第1四半期決算短信〔日本基準〕(連結)(2026-08-04, TDnet开示, Yahoo开示镜像PDF): FY26Q1(2026-04-01~06-30, 财季错位对齐自然2026Q2)売上高123,219百万円(+26.4% YoY)/親会社株主に帰属する四半期純利益17,918百万円(+40.8% YoY)。上年同期(FY25Q1=自然2025Q2)97,464/12,728与库内2025Q2完全一致。通期指引上方修正: 売上高5,500億円/営業利益1,270億円(JPY_M)"
+ },
+ {
+  "id": "nvda-fy27q2-er",
+  "type": "earnings_release",
+  "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+  "fetched_at": "2026-08-27",
+  "archive": null,
+  "locator": "NVIDIA 8-K EX-99.1 (2026-08-26), Q2 FY27 ended 2026-07-26: revenue $96,221M (+106% YoY), Data Center revenue $89,000M (+117% YoY), GAAP gross margin 75.0%, GAAP net income $59,688M"
+ },
+ {
+  "id": "snps-fy27q3-er",
+  "type": "earnings_release",
+  "url": "https://news.synopsys.com/2026-08-26-Synopsys-Reports-Results-for-Third-Quarter-Fiscal-2027",
+  "fetched_at": "2026-08-27",
+  "archive": null,
+  "locator": "Synopsys 8-K EX-99.1 (2026-08-26), Q3 FY27 ended 2026-07-31: revenue $2,476M (+42.4% YoY), GAAP net income $545.8M / EPS $2.84"
+ },
+ {
+  "id": "shenghong-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://finance.eastmoney.com/a/202608273856727665.html",
+  "fetched_at": "2026-08-27",
+  "archive": null,
+  "locator": "胜宏科技2026年半年度报告(2026-08-27披露): H1营收116.29亿(+28.77%)/归母28.57亿(+33.3%); Q2单季营收61.10亿、归母15.68亿(由H1减Q1推算)"
+ },
+ {
+  "id": "wus-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://www.cnstock.com/commonDetail/771650",
+  "fetched_at": "2026-08-27",
+  "archive": null,
+  "locator": "沪电股份2026年半年度报告(2026-08-25披露): H1营收136.89亿(+61.17%)/归母29.23亿(+73.72%); Q2单季营收74.75亿、归母16.81亿(利润表单季)"
+ },
+ {
+  "id": "ynge-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://www.stcn.com/article/detail/4139455.html",
+  "fetched_at": "2026-08-27",
+  "archive": null,
+  "locator": "云南锗业2026年半年度报告(2026-08-27披露): H1营收7.32亿(+38.21%)/归母7426.99万元(+235.31%); Q2单季营收4.43亿、归母0.65亿(利润表单单季)"
+ },
+ {
+  "id": "huaqin-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://www.cs.com.cn/ssgs/01/2026/08/25/detail_2026082510034045.html",
+  "fetched_at": "2026-08-27",
+  "archive": null,
+  "locator": "华勤技术2026年半年度报告(2026-08-25披露): H1营收937.19亿(+11.65%)/归母30.0亿(+58.8%); Q2单季营收529.73亿、归母19.39亿(利润表单季)"
+ },
+ {
+  "id": "scc-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225512708.PDF",
+  "fetched_at": "2026-08-27",
+  "archive": null,
+  "locator": "深南电路2026年半年度报告(2026-08-26披露): H1营收152.96亿(+46.33%)/归母22.51亿(+65.55%); Q2单季营收87.01亿、归母14.01亿(利润表单季)"
+ },
+ {
+  "id": "naura-2026h1-er",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225501903.PDF",
+  "fetched_at": "2026-08-27",
+  "archive": null,
+  "locator": "北方华创2026年半年度报告(巨潮官方PDF,2026-08-26): 2026H1营收201.6142亿(+24.90%)/营业成本120.8308亿/归母33.7002亿(+5.05%); 2026Q1(1225259650.PDF,2026-04-30)营收103.2286亿/成本61.1394亿/归母16.3474亿; Q2单季=H1−Q1: 营收98.3856亿/毛利38.6942亿/毛利率39.33%/归母17.3528亿(亿元,CNY_YI)。注: 8/24曾移除误传快报(161.42亿系2025H1数字被二手媒体误标2026), 本次为官方半年报核验入库"
+ },
+ {
+  "id": "lxyq-2026h1-er",
+  "type": "semiannual_report",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225511954.PDF",
+  "fetched_at": "2026-08-27",
+  "archive": null,
+  "locator": "联讯仪器2026年半年度报告(巨潮官方PDF,2026-08-27): 2026H1营收15.3115亿(+208.71%)/营业成本4.4718亿/归母5.6713亿(+903.00%); 2026Q1(1225243326.PDF,2026-04-29)营收4.8772亿/成本1.6213亿/归母1.1890亿; Q2单季=H1−Q1: 营收10.4343亿/毛利7.5838亿/毛利率72.68%/归母4.4823亿(亿元,CNY_YI)"
  }
 ];
 

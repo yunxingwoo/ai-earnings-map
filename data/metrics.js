@@ -10551,6 +10551,160 @@ const METRICS = [
     "src": "ibiden-fy26q1-tanshin"
    }
   }
+ },
+ {
+  "company": "innolight",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 222.81,
+    "unit": "CNY_YI",
+    "src": "innolight-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.4642,
+    "src": "innolight-2026h1-er"
+   },
+   "net_income": {
+    "value": 79.17,
+    "unit": "CNY_YI",
+    "src": "innolight-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "eoptolink",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 125.72,
+    "unit": "CNY_YI",
+    "src": "eoptolink-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.4796,
+    "src": "eoptolink-2026h1-er"
+   },
+   "net_income": {
+    "value": 47.49,
+    "unit": "CNY_YI",
+    "src": "eoptolink-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "envicool",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 18.42,
+    "unit": "CNY_YI",
+    "src": "envicool-2026h1-er"
+   },
+   "net_income": {
+    "value": 1.76,
+    "unit": "CNY_YI",
+    "src": "envicool-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "nvda",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": { "value": 96221, "unit": "USD_M", "src": "nvda-fy27q2-er" },
+   "dc_revenue": { "value": 89000, "unit": "USD_M", "src": "nvda-fy27q2-er" },
+   "gross_margin": { "value": 0.75, "src": "nvda-fy27q2-er" },
+   "net_income": { "value": 59688, "unit": "USD_M", "src": "nvda-fy27q2-er" }
+  }
+ },
+ {
+  "company": "snps",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": { "value": 2476, "unit": "USD_M", "src": "snps-fy27q3-er" },
+   "net_income": { "value": 545.8, "unit": "USD_M", "src": "snps-fy27q3-er" }
+  }
+ },
+ {
+  "company": "shenghong",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": { "value": 61.10, "unit": "CNY_YI", "src": "shenghong-2026h1-er" },
+   "net_income": { "value": 15.68, "unit": "CNY_YI", "src": "shenghong-2026h1-er" }
+  }
+ },
+ {
+  "company": "wus",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": { "value": 74.75, "unit": "CNY_YI", "src": "wus-2026h1-er" },
+   "net_income": { "value": 16.81, "unit": "CNY_YI", "src": "wus-2026h1-er" }
+  }
+ },
+ {
+  "company": "ynge",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": { "value": 4.43, "unit": "CNY_YI", "src": "ynge-2026h1-er" },
+   "net_income": { "value": 0.65, "unit": "CNY_YI", "src": "ynge-2026h1-er" }
+  }
+ },
+ {
+  "company": "huaqin",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": { "value": 529.73, "unit": "CNY_YI", "src": "huaqin-2026h1-er" },
+   "net_income": { "value": 19.39, "unit": "CNY_YI", "src": "huaqin-2026h1-er" }
+  }
+ },
+ {
+  "company": "scc",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": { "value": 87.01, "unit": "CNY_YI", "src": "scc-2026h1-er" },
+   "net_income": { "value": 14.01, "unit": "CNY_YI", "src": "scc-2026h1-er" }
+  }
+ },
+ {
+  "company": "naura",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 98.3856,
+    "unit": "CNY_YI",
+    "src": "naura-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.3933,
+    "src": "naura-2026h1-er"
+   },
+   "net_income": {
+    "value": 17.3528,
+    "unit": "CNY_YI",
+    "src": "naura-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "lxyq",
+  "period": "2026Q2",
+  "metrics": {
+   "revenue": {
+    "value": 10.4343,
+    "unit": "CNY_YI",
+    "src": "lxyq-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.7268,
+    "src": "lxyq-2026h1-er"
+   },
+   "net_income": {
+    "value": 4.4823,
+    "unit": "CNY_YI",
+    "src": "lxyq-2026h1-er"
+   }
+  }
  }
 ];
 
