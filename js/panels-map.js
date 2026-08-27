@@ -50,7 +50,7 @@ const LINNER = 'lp-inner';
       if(s.filter(x=>x==='green').length>=s.length/2) return 'green';
       if(s.filter(x=>x==='red').length>s.length/2) return 'red';
       return 'yellow'; })();
-    rows += `<div class="hm-row"><div class="hm-lane"><span class="dot ${lsig}"></span>${String(L.lane).padStart(2,'0')} ${L.cn}</div><div class="hm-cells">${cells}</div></div>`;
+    rows += `<div class="hm-row"><div class="hm-lane"><span class="dot ${lsig}"></span><span class="hm-t">${String(L.lane).padStart(2,'0')} ${L.cn}</span></div><div class="hm-cells">${cells}</div></div>`;
   }
   host.innerHTML = `
     <div class="kick">PULSE MATRIX · 全链景气矩阵</div>
