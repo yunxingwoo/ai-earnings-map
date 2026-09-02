@@ -4438,7 +4438,88 @@ const SOURCES = [
   "fetched_at": "2026-08-27",
   "archive": null,
   "locator": "联讯仪器2026年半年度报告(巨潮官方PDF,2026-08-27): 2026H1营收15.3115亿(+208.71%)/营业成本4.4718亿/归母5.6713亿(+903.00%); 2026Q1(1225243326.PDF,2026-04-29)营收4.8772亿/成本1.6213亿/归母1.1890亿; Q2单季=H1−Q1: 营收10.4343亿/毛利7.5838亿/毛利率72.68%/归母4.4823亿(亿元,CNY_YI)"
+ },
+ {
+  "id": "montage-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225530486.PDF",
+  "fetched_at": "2026-08-31",
+  "archive": null,
+  "locator": "澜起科技2026年半年度报告(巨潮官方,2026-08-29披露): H1营收33.35亿(+26.66%)/归母19.97亿(+72.33%); Q2单季=H1−Q1派生: 营收18.74亿/归母11.50亿; 互连类芯片收入31.11亿(+26.4%),其中Q2互连类16.94亿(+28.2%)"
+ },
+ {
+  "id": "fujing-2026h1-er",
+  "type": "earnings_release",
+  "url": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=688409",
+  "fetched_at": "2026-08-31",
+  "archive": null,
+  "locator": "富创精密2026年半年度报告(巨潮官方,2026-08-30披露): H1营收23.18亿(+34.45%)/归母1.34亿(+992.90%); Q2单季=H1−Q1派生: 营收12.75亿/归母0.76亿; 半导体设备零部件需求兑现"
+ },
+ {
+  "id": "cxmt-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225529534.PDF",
+  "fetched_at": "2026-08-31",
+  "archive": null,
+  "locator": "长鑫科技2026年半年度报告(巨潮官方,2026-08-28披露,上市首份): H1营收1503.10亿(+873.64%)/归母776.05亿(扭亏)/毛利率84.84%; Q2单季=H1−Q1派生: 营收995.10亿/归母528.43亿; DRAM涨价红利"
+ },
+ {
+  "id": "ebphoton-2026h1-er",
+  "type": "earnings_release",
+  "url": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=688048",
+  "fetched_at": "2026-08-31",
+  "archive": null,
+  "locator": "长光华芯2026年半年度报告(巨潮官方,2026-08-30披露): H1营收3.91亿(+82.67%)/归母0.30亿(+238.04%); Q2单季=H1−Q1派生: 营收2.61亿/归母0.26亿; 光通信芯片收入1.66亿跃居第一大来源"
+ },
+ {
+  "id": "yjsemi-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-08-29/688498_20260829_O56H.pdf",
+  "fetched_at": "2026-08-31",
+  "archive": null,
+  "locator": "源杰科技2026年半年度报告(上交所官方,2026-08-29披露): H1营收9.25亿(+351.40%)/归母6.07亿(+1212.20%); Q2单季=H1−Q1派生: 营收5.70亿/归母4.28亿; 数据中心业务收入7.74亿(+640%)"
+ },
+ {
+  "id": "tengjing-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-08-29/688195_20260829_PRFH.pdf",
+  "fetched_at": "2026-08-31",
+  "archive": null,
+  "locator": "腾景科技2026年半年度报告(上交所官方,2026-08-29披露): H1营收4.29亿(+63.34%)/归母0.50亿(+36.88%); Q2单季=H1−Q1派生: 营收2.58亿/归母0.36亿; 光通信无源元组件及OCS晶体订单加速交付"
+ },
+ {
+  "id": "mrvl-fy27q2-er",
+  "type": "earnings_release",
+  "url": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000022/q227_8kx812026ex-991.htm",
+  "fetched_at": "2026-08-31",
+  "archive": null,
+  "locator": "Marvell 8-K(SEC/IR官方,2026-08-27): FY2027 Q2(截至2026-08-01,对应自然季2026Q2)净营收$27.39亿(+37%)/GAAP净利$3.08亿/GAAP毛利率53.1%; 数据中心营收$21.7亿(+46%)"
+ },
+ {
+  "id": "iren-fy26q4-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm",
+  "fetched_at": "2026-08-31",
+  "archive": null,
+  "locator": "IREN FY2026业绩(SEC 8-K/IR官方,2026-08-27): 季度截至2026-06-30(对应自然季2026Q2)营收$1.372亿/净亏损$6.84亿(含$4.504亿矿机减值); AI Cloud营收$0.705亿"
+ },
+ {
+  "id": "tfme-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225527099.PDF",
+  "fetched_at": "2026-08-31",
+  "archive": null,
+  "locator": "通富微电2026年半年度报告全文(巨潮资讯网官方PDF,公告编号2026-054,2026-08-28晚披露): H1营业收入16,041,019,909.75元(160.41亿,+23.03%)/归母净利润1,717,458,597.00元(17.17亿,+316.77%)/扣非归母7.47亿; Q2单季=H1−库内Q1(74.82亿/3.29亿)派生: 营收85.59亿/归母13.88亿,与官方披露单季85.59亿/13.88亿吻合; AMD(占其封测80%+)数据中心业务翻倍驱动"
+ },
+ {
+  "id": "dell-fy27q2-er",
+  "type": "earnings_release",
+  "url": "https://investors.delltechnologies.com/news-releases/news-release-details/dell-technologies-delivers-second-quarter-fiscal-2027-financial",
+  "fetched_at": "2026-09-02",
+  "archive": null,
+  "locator": "戴尔科技 FY2027 Q2 业绩(公司 IR 官方新闻稿,2026-09-01 美东盘后发布;季度截至 2026-07-31,对应自然季 2026Q2): 总净营收 $469.71亿(46,971M,+58% YoY,创纪录)/GAAP 毛利率 20.9%(上年同期 18.3%)/营业利润 $53.85亿(+204%)/净利润 $41.33亿(+255%)/GAAP 摊薄 EPS $6.34(+273%)、non-GAAP EPS $7.04(+203%); ISG 营收 $317.82亿(+89%),其中 AI 优化服务器 $164.01亿(+100%,创纪录)、传统服务器与网络 $105.31亿(+122%)、存储 $48.50亿(+26%),ISG 营业利润 $47.81亿(+225%,营业利润率 15.0%,较 Q1 的 10.5% 环比改善约 4.5pct → 存储涨价已有效转嫁); CSG 营收 $150.34亿(+20%)/营业利润 $11.42亿(+42%); 当季 AI 服务器新签订单 $609亿、季末 AI 积压订单 $950亿(均创纪录,近 12 个月累计订单 $1,317亿); 经营现金流 $22.25亿(同比 −13%),调整后自由现金流 $81.49亿(+224%); FY27 全年营收指引由 $1,670亿上调 $250亿至 $1,920亿(+69%),AI 服务器全年指引 $600亿→$740亿; Q3 指引营收 $490亿 ± $5亿"
  }
+
 ];
 
 if (typeof module!=='undefined') module.exports = {SOURCES};
