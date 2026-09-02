@@ -4,6 +4,11 @@ node_modules/
 .env
 .edgeone/
 .workbuddy/
+.claude/
+AGENTS.md
+CLAUDE.md
+industry-research/
+tools/extract-session.py
 # 数据备份与部署站点副本
 *.bak-*
 *.bak-w*
