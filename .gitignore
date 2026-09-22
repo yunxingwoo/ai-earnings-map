@@ -13,3 +13,10 @@ tools/extract-session.py
 *.bak-*
 *.bak-w*
 site/
+
+# 本地部署工作树与会话数据(禁止入库)
+.deploy-gh-pages/
+.workbuddy-ai/
+.env
+site/.env
+site/.edgeone/
