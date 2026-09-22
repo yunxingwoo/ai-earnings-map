@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:900px; height:1200px; overflow:hidden; }
+  body {
+    background:#EDE1C6;
+    color:#17304F;
+    font-family:"Songti SC","STSong","Noto Serif SC","SimSun",serif;
+    position:relative;
+  }
+  .ink { color:#17304F; }
+  .meta { color:#8A7A5E; }
+  .hairline { border:none; border-top:1px solid rgba(23,48,79,.28); }
+
+  /* 顶部品牌行 */
+  .brand { display:flex; align-items:center; gap:16px; padding:44px 60px 0; }
+  .logo { width:40px; height:40px; background:#17304F; color:#F5EEDF;
+          display:flex; align-items:center; justify-content:center;
+          font-size:19px; font-weight:700; letter-spacing:1px; border-radius:3px; }
+  .brand .cn { font-size:21px; font-weight:700; letter-spacing:2px; }
+  .brand .en { font-size:10.5px; letter-spacing:.24em; color:#8A7A5E; margin-left:2px; }
+  .brand .who { margin-left:auto; font-size:12px; color:#8A7A5E; letter-spacing:.08em; }
+
+  /* 刻度横线 */
+  .rule { margin:26px 60px 0; position:relative; height:9px;
+          border-top:1px solid rgba(23,48,79,.34); }
+  .rule i { position:absolute; top:0; width:1px; height:5px; background:rgba(23,48,79,.34); }
+  .rule i:nth-child(1){left:0} .rule i:nth-child(2){right:0}
+
+  /* 主区两栏排布:左文右码?不——居中单列, solemn */
+  .hero { text-align:center; padding-top:46px; }
+  .hero .tag { font-size:12.5px; letter-spacing:.34em; color:#8A7A5E; }
+  .hero h1 { margin-top:16px; font-size:46px; font-weight:900; letter-spacing:6px; }
+  .hero h1 .thin { font-weight:300; }
+  .hero .sub { margin-top:18px; font-size:16px; letter-spacing:3px; color:#33475F; }
+  .hero .sub b { font-weight:900; }
+
+  /* 指标刻度行 */
+  .gauge { display:flex; justify-content:center; gap:0; margin-top:34px; }
+  .gauge .cell { padding:0 34px; border-left:1px solid rgba(23,48,79,.22); }
+  .gauge .cell:first-child { border-left:none; }
+  .gauge .n { font-size:30px; font-weight:900; letter-spacing:1px; }
+  .gauge .l { margin-top:6px; font-size:11.5px; letter-spacing:.3em; color:#8A7A5E; }
+
+  /* 二维码面板 */
+  .qrwrap { position:relative; width:492px; margin:40px auto 0; background:#FBF6EC;
+            padding:36px; box-shadow:0 1px 0 rgba(23,48,79,.10); }
+  .qrwrap img { display:block; width:420px; height:420px; }
+  .corner { position:absolute; width:26px; height:26px; border:2.5px solid #17304F; }
+  .c1{top:-7px;left:-7px;border-right:none;border-bottom:none}
+  .c2{top:-7px;right:-7px;border-left:none;border-bottom:none}
+  .c3{bottom:-7px;left:-7px;border-right:none;border-top:none}
+  .c4{bottom:-7px;right:-7px;border-left:none;border-top:none}
+  .qrwrap .badge { position:absolute; top:14px; right:14px; font-size:10px;
+                   letter-spacing:.18em; color:#8A7A5E; }
+  .scan { margin-top:18px; text-align:center; font-size:14px; letter-spacing:.5em;
+          text-indent:.5em; color:#33475F; }
+
+  /* URL 行 */
+  .url { margin:20px auto 0; text-align:center; }
+  .url span { display:inline-block; font-family:"SF Mono",Menlo,Consolas,monospace;
+              font-size:15.5px; letter-spacing:.04em; color:#17304F;
+              border:1px solid rgba(23,48,79,.32); border-radius:99px; padding:8px 26px;
+              background:rgba(251,246,236,.65); }
+
+  /* 底部 */
+  .foot { position:absolute; left:60px; right:60px; bottom:40px; }
+  .foot .line { border-top:1px solid rgba(23,48,79,.28); position:relative; height:8px; }
+  .foot .line i { position:absolute; top:0; width:1px; height:5px; background:rgba(23,48,79,.34); }
+  .foot .line i:first-child{left:0} .foot .line i:last-child{right:0}
+  .foot .row { display:flex; justify-content:space-between; padding-top:12px;
+               font-size:11.5px; letter-spacing:.12em; color:#8A7A5E; }
+</style>
+</head>
+<body>
+  <div class="brand">
+    <div class="logo">AI</div>
+    <div>
+      <div class="cn">AI 算力财报全景</div>
+      <div class="en">EARNINGS INTELLIGENCE MAP</div>
+    </div>
+    <div class="who">by luckywoo</div>
+  </div>
+  <div class="rule"><i></i><i></i></div>
+
+  <div class="hero">
+    <div class="tag">扫码查看 · SCAN TO VIEW</div>
+    <h1>从官方财报<span class="thin">，</span>计算产业景气</h1>
+    <div class="sub">指标全部来自<b>官方披露原文</b> · 未披露不估算 · 同比环比实时计算</div>
+    <div class="gauge">
+      <div class="cell"><div class="n">109</div><div class="l">公司</div></div>
+      <div class="cell"><div class="n">15</div><div class="l">产业链环节</div></div>
+      <div class="cell"><div class="n">642</div><div class="l">指标条目</div></div>
+      <div class="cell"><div class="n">571</div><div class="l">官方溯源</div></div>
+    </div>
+    <div class="qrwrap">
+      <span class="corner c1"></span><span class="corner c2"></span>
+      <span class="corner c3"></span><span class="corner c4"></span>
+      <span class="badge">V.2026.09</span>
+      <img src="qr.png" alt="QR">
+    </div>
+    <div class="scan">扫 码 查 看 全 屏 交 互 地 图</div>
+    <div class="url"><span>yunxingwoo.github.io/ai-earnings-map</span></div>
+  </div>
+
+  <div class="foot">
+    <div class="line"><i></i><i></i></div>
+    <div class="row">
+      <span>数据版本 2026-09-22</span>
+      <span>北京时区 UTC+8</span>
+      <span>SEC · 巨潮资讯 · MOPS · 公司 IR</span>
+    </div>
+  </div>
+</body>
+</html>
