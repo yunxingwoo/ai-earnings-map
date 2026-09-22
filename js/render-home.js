@@ -13,7 +13,10 @@ function latestOf(c, key){
   for(let i=q.length-1;i>=0;i--){ const m=q[i].metrics[key]; if(m&&m.value!=null) return m; }
   return null;
 }
-const sumLatest = key => withData.reduce((s,c)=>{ const m=latestOf(c,key); return m? s+usdM(m.value,m.unit||c.currency,FX_RATES):s; },0);
+const sumLatest = key => withDataQ.reduce((s,c)=>{ const m=latestOf(c,key); return m? s+usdM(m.value,m.unit||c.currency,FX_RATES):s; },0);
+/* 求和口径:仅"季度"公司进入"最新已披露季"汇总,半年度公司(智谱/MiniMax,H1 累计)若混入会虚高一倍 */
+const hasQData = c => quarterly(BYCO_H[c.id]||[]).some(e=>isQuarter(e.period));
+const withDataQ = withData.filter(hasQData);
 
 /* ── 覆盖状态面板 ── */
 document.getElementById('hpTotal').textContent = COMPANIES.length;
@@ -40,16 +43,21 @@ document.getElementById('chain').innerHTML = STEPS.map(s=>
    <span class="no">${s[0]}</span><span class="sn">${s[1]}</span><span class="sd">${s[2]}</span></a>`).join('');
 
 /* ── 大数字带 ── */
-document.getElementById('stRev').textContent   = fmtBig(withData.length? sumLatest('revenue') : null);
+document.getElementById('stRev').textContent   = fmtBig(withDataQ.length? sumLatest('revenue') : null);
 document.getElementById('stCapex').textContent = fmtBig(sumLatest('capex') || null);
-const niSet = withData.filter(c=>latestOf(c,'net_income'));
+const niSet = withDataQ.filter(c=>latestOf(c,'net_income'));
 document.getElementById('stNI').textContent    = niSet.length? fmtBig(sumLatest('net_income')) : '—';
 document.getElementById('stNILabel').textContent = `覆盖公司净利润合计（${niSet.length} 家已披露）`;
-const cap = CAPACITY.projects.filter(p=>p.status!=='announced');
-const totalMW = cap.reduce((s,p)=>s+(p.mw||0),0);
-document.getElementById('stGW').textContent = totalMW? (totalMW/1000).toFixed(1)+' GW' : '—';
-document.querySelectorAll('.bstat .bs-note')[1].textContent =
-  totalMW? `${cap.length} 个项目 · 按运营商官方披露容量合计` : '暂无官方容量数据，留空不估算';
+/* KPI 02:北美 AIDC 容量 — 统一用 AIDC 页工作簿 A 口径(在建+投运),不再用旧样本表 capacity.js
+   (旧表 17.3GW/10 项目混加 total_power/it_load/unknown 三种口径,且 CoreWeave 组合口径与新表 G 桶重复) */
+const AU = (typeof AIDC_US!=='undefined') ? (AIDC_US.AIDC_US||AIDC_US.default||AIDC_US) : null;
+const aRows = AU ? (AU.projects||[]).filter(p=>p.scope==='A' && (p.cat==='operating'||p.cat==='construction')) : [];
+const annGW = AU ? (AU.projects||[]).filter(p=>p.scope==='A'&&p.cat==='announced').reduce((s,p)=>s+(p.gw||0),0) : 0;
+const aGW = aRows.reduce((s,p)=>s+(p.gw||0),0);
+/* 注意:aidc-us.js 的 gw 字段单位就是 GW(与 render-aidc.js 一致),不要再 ÷1000 */
+document.getElementById('stGW').textContent = aGW? aGW.toFixed(1)+' GW' : '—';
+document.querySelectorAll('.bstat .bs-note')[1].innerHTML =
+  aGW? `${aRows.length} 个项目 · A 口径官方披露容量合计，另有已宣布 ${annGW.toFixed(1)} GW · <a href="aidc-us.html">北美 AIDC →</a>` : '暂无官方容量数据，留空不估算';
 
 /* ── 五卡概览 ── */
 const laneSigCount = LANE_DEFS.filter(L=>

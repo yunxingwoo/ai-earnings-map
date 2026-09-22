@@ -45,7 +45,7 @@ for(const s of SOURCES){
 for(const e of METRICS){
   const co = COMPANIES.find(c=>c.id===e.company);
   if(!co){ err(`metrics: 未注册公司 ${e.company}`); continue; }
-  if(!calc.isQuarter(e.period) && !/^\d{4}M\d{1,2}$/.test(e.period)) err(`${e.company} ${e.period}: period 格式非法`);
+  if(!calc.isQuarter(e.period) && !calc.isSemi(e.period) && !/^\d{4}M\d{1,2}$/.test(e.period)) err(`${e.company} ${e.period}: period 格式非法`);
   for(const [k,v] of Object.entries(e.metrics)){
     if(!KNOWN_METRICS.has(k)) warn(`${e.company} ${e.period}: 未知指标 ${k}(请加入 schema)`);
     if(v==null) continue;                                   // null = 该口径存在但当季未给数
@@ -64,6 +64,8 @@ for(const e of METRICS){
 }
 
 /* ── 4. 复算抽查(YoY/QoQ 可复现,无 NaN) ── */
+/* 时滞曲线公司(首页错季叠加曲线)按 schema.md 保留 12 季窗口,其余公司 6 季 */
+const LAG_WINDOW = new Set(['tsmc','quanta','wiwynn','nvda','samsung','hynix']);
 const BYCO = calc.byCompany(METRICS);
 for(const [cid, entries] of Object.entries(BYCO)){
   const q = calc.quarterly(entries);
@@ -72,7 +74,8 @@ for(const [cid, entries] of Object.entries(BYCO)){
     if(y!==null && !isFinite(y)) err(`${cid} ${q[i].period}: YoY 非有限值`);
     if(qo!==null && !isFinite(qo)) err(`${cid} ${q[i].period}: QoQ 非有限值`);
   }
-  if(q.length>6) warn(`${cid}: 季度数 ${q.length} > 6(schema 滚动窗口=最新4季+上年同期2季)`);
+  const maxQ = LAG_WINDOW.has(cid) ? 12 : 6;
+  if(q.length>maxQ) warn(`${cid}: 季度数 ${q.length} > ${maxQ}(schema 滚动窗口=最新4季+上年同期2季${maxQ===12?',时滞曲线公司放宽至12':''})`);
 }
 
 /* ── 5. CAPACITY ── */
@@ -90,7 +93,9 @@ const lastDoneQ = now.getUTCFullYear()*4 + Math.floor(now.getUTCMonth()/3);  // 
 for(const c of COMPANIES){
   if(c.listed!==true) continue;
   const qs = (BYCO[c.id]||[]).map(e=>e.period).filter(p=>qIdx(p)!==null);
-  if(!qs.length){ warn(`${c.id}: 已上市但无季度数据`); continue; }
+  const hs = (BYCO[c.id]||[]).map(e=>e.period).filter(p=>calc.isSemi(p));
+  if(!qs.length && !hs.length){ warn(`${c.id}: 已上市但无季度数据`); continue; }
+  if(!qs.length) continue; /* 半年度披露公司(如港股 02513/0100):有 H 期次即视为已披露,不参与季度新鲜度 */
   const latest = Math.max(...qs.map(qIdx));
   if(lastDoneQ-latest>=2) warn(`${c.id}: 新鲜度落后 ${lastDoneQ-latest} 季(最新 ${idxQ(latest)},最近已完结 ${idxQ(lastDoneQ)})`);
 }

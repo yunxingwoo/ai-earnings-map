@@ -2,22 +2,91 @@
    未披露 = 字段缺省;YoY/QoQ 不落库,由 js/calc.js 实时计算 */
 const METRICS = [
  {
-  "company": "dell",
-  "period": "2025Q1",
+  "company": "zhipu",
+  "period": "2026H1",
   "metrics": {
    "revenue": {
-    "value": 23378,
+    "value": 9.539,
+    "unit": "CNY_YI",
+    "src": "zhipu-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.264,
+    "src": "zhipu-2026h1-er"
+   },
+   "net_income": {
+    "value": -20.72,
+    "unit": "CNY_YI",
+    "src": "zhipu-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "zhipu",
+  "period": "2025H1",
+  "metrics": {
+   "revenue": {
+    "value": 1.909,
+    "unit": "CNY_YI",
+    "src": "zhipu-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.5,
+    "src": "zhipu-2026h1-er"
+   },
+   "net_income": {
+    "value": -23.58,
+    "unit": "CNY_YI",
+    "src": "zhipu-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "minimax",
+  "period": "2026H1",
+  "metrics": {
+   "revenue": {
+    "value": 116.573,
     "unit": "USD_M",
-    "src": "sec-xbrl-dell"
+    "src": "minimax-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.179,
+    "src": "minimax-2026h1-er"
+   },
+   "net_income": {
+    "value": -358.0,
+    "unit": "USD_M",
+    "src": "minimax-2026h1-er"
+   }
+  }
+ },
+ {
+  "company": "minimax",
+  "period": "2025H1",
+  "metrics": {
+   "revenue": {
+    "value": 30.429,
+    "unit": "USD_M",
+    "src": "minimax-2026h1-er"
+   },
+   "gross_margin": {
+    "value": 0.121,
+    "src": "minimax-2026h1-er"
+   },
+   "net_income": {
+    "value": -402.2,
+    "unit": "USD_M",
+    "src": "minimax-2026h1-er"
    }
   }
  },
  {
   "company": "dell",
-  "period": "2024Q4",
+  "period": "2025Q1",
   "metrics": {
    "revenue": {
-    "value": 23931,
+    "value": 23378,
     "unit": "USD_M",
     "src": "sec-xbrl-dell"
    }
@@ -276,6 +345,17 @@ const METRICS = [
  },
  {
   "company": "quanta",
+  "period": "2026M8",
+  "metrics": {
+   "monthly_revenue": {
+    "value": 423970.932,
+    "unit": "TWD_M",
+    "src": "mops-t21-115m8"
+   }
+  }
+ },
+ {
+  "company": "quanta",
   "period": "2026M1",
   "metrics": {
    "monthly_revenue": {
@@ -474,6 +554,17 @@ const METRICS = [
     "value": 15410.91,
     "unit": "TWD_M",
     "src": "mops-6669-114q3"
+   }
+  }
+ },
+ {
+  "company": "wiwynn",
+  "period": "2026M8",
+  "metrics": {
+   "monthly_revenue": {
+    "value": 144311.808,
+    "unit": "TWD_M",
+    "src": "mops-t21-115m8"
    }
   }
  },
@@ -960,17 +1051,6 @@ const METRICS = [
  },
  {
   "company": "snps",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 1455.3,
-    "unit": "USD_M",
-    "src": "sec-xbrl-snps"
-   }
-  }
- },
- {
-  "company": "snps",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -1044,22 +1124,6 @@ const METRICS = [
    },
    "net_income": {
     "value": 15.81,
-    "unit": "CNY_YI",
-    "src": "westock-sz002371"
-   }
-  }
- },
- {
-  "company": "naura",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 95.43,
-    "unit": "CNY_YI",
-    "src": "westock-sz002371"
-   },
-   "net_income": {
-    "value": 11.54,
     "unit": "CNY_YI",
     "src": "westock-sz002371"
    }
@@ -1259,22 +1323,6 @@ const METRICS = [
  },
  {
   "company": "envicool",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 17.17,
-    "unit": "CNY_YI",
-    "src": "westock-sz002837"
-   },
-   "net_income": {
-    "value": 1,
-    "unit": "CNY_YI",
-    "src": "westock-sz002837"
-   }
-  }
- },
- {
-  "company": "envicool",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -1371,22 +1419,6 @@ const METRICS = [
  },
  {
   "company": "shenghong",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 30.34,
-    "unit": "CNY_YI",
-    "src": "westock-sz300476"
-   },
-   "net_income": {
-    "value": 3.9,
-    "unit": "CNY_YI",
-    "src": "westock-sz300476"
-   }
-  }
- },
- {
-  "company": "shenghong",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -1476,22 +1508,6 @@ const METRICS = [
    },
    "net_income": {
     "value": 7.62,
-    "unit": "CNY_YI",
-    "src": "westock-sz002463"
-   }
-  }
- },
- {
-  "company": "wus",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 43.31,
-    "unit": "CNY_YI",
-    "src": "westock-sz002463"
-   },
-   "net_income": {
-    "value": 7.39,
     "unit": "CNY_YI",
     "src": "westock-sz002463"
    }
@@ -1730,6 +1746,17 @@ const METRICS = [
     "value": 452300,
     "unit": "TWD_M",
     "src": "tsmc-2025q3-er"
+   }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2026M8",
+  "metrics": {
+   "monthly_revenue": {
+    "value": 514806,
+    "unit": "TWD_M",
+    "src": "tsmc-monthly-2026m8"
    }
   }
  },
@@ -2746,12 +2773,22 @@ const METRICS = [
  },
  {
   "company": "orcl",
-  "period": "2025Q1",
+  "period": "2026Q3",
   "metrics": {
    "revenue": {
-    "value": 14130,
+    "value": 19345,
     "unit": "USD_M",
-    "src": "sec-xbrl-orcl"
+    "src": "orcl-fy27q1-er"
+   },
+   "net_income": {
+    "value": 4760,
+    "unit": "USD_M",
+    "src": "orcl-fy27q1-er"
+   },
+   "backlog": {
+    "value": 664000,
+    "unit": "USD_M",
+    "src": "orcl-fy27q1-er"
    }
   }
  },
@@ -3525,12 +3562,26 @@ const METRICS = [
  },
  {
   "company": "avgo",
-  "period": "2024Q4",
+  "period": "2026Q2",
   "metrics": {
    "revenue": {
-    "value": 14916,
+    "value": 29591,
     "unit": "USD_M",
-    "src": "sec-xbrl-avgo"
+    "src": "avgo-fy26q3-er"
+   },
+   "ai_revenue": {
+    "value": 16700,
+    "unit": "USD_M",
+    "src": "avgo-fy26q3-er"
+   },
+   "gross_margin": {
+    "value": 0.6913,
+    "src": "avgo-fy26q3-er"
+   },
+   "net_income": {
+    "value": 13088,
+    "unit": "USD_M",
+    "src": "avgo-fy26q3-er"
    }
   }
  },
@@ -3631,22 +3682,6 @@ const METRICS = [
     "value": 4140,
     "unit": "USD_M",
     "src": "avgo-fy25q3-er"
-   }
-  }
- },
- {
-  "company": "mrvl",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 1426.5,
-    "unit": "USD_M",
-    "src": "westock-usMRVL"
-   },
-   "net_income": {
-    "value": -392.7,
-    "unit": "USD_M",
-    "src": "westock-usMRVL"
    }
   }
  },
@@ -3871,22 +3906,6 @@ const METRICS = [
  },
  {
   "company": "montage",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 10.68,
-    "unit": "CNY_YI",
-    "src": "westock-sh688008"
-   },
-   "net_income": {
-    "value": 4.34,
-    "unit": "CNY_YI",
-    "src": "westock-sh688008"
-   }
-  }
- },
- {
-  "company": "montage",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -4080,17 +4099,6 @@ const METRICS = [
  },
  {
   "company": "cohr",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 1434.7,
-    "unit": "USD_M",
-    "src": "sec-xbrl-cohr"
-   }
-  }
- },
- {
-  "company": "cohr",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -4180,22 +4188,6 @@ const METRICS = [
    },
    "net_income": {
     "value": 15.83,
-    "unit": "CNY_YI",
-    "src": "westock-sz300308"
-   }
-  }
- },
- {
-  "company": "innolight",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 65.5,
-    "unit": "CNY_YI",
-    "src": "westock-sz300308"
-   },
-   "net_income": {
-    "value": 14.19,
     "unit": "CNY_YI",
     "src": "westock-sz300308"
    }
@@ -4299,22 +4291,6 @@ const METRICS = [
  },
  {
   "company": "eoptolink",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 35.16,
-    "unit": "CNY_YI",
-    "src": "westock-sz300502"
-   },
-   "net_income": {
-    "value": 11.92,
-    "unit": "CNY_YI",
-    "src": "westock-sz300502"
-   }
-  }
- },
- {
-  "company": "eoptolink",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -4404,22 +4380,6 @@ const METRICS = [
    },
    "net_income": {
     "value": 3.38,
-    "unit": "CNY_YI",
-    "src": "westock-sz300394"
-   }
-  }
- },
- {
-  "company": "tfc",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 8.57,
-    "unit": "CNY_YI",
-    "src": "westock-sz300394"
-   },
-   "net_income": {
-    "value": 3.67,
     "unit": "CNY_YI",
     "src": "westock-sz300394"
    }
@@ -4683,22 +4643,6 @@ const METRICS = [
  },
  {
   "company": "ebphoton",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 0.7,
-    "unit": "CNY_YI",
-    "src": "westock-sh688048"
-   },
-   "net_income": {
-    "value": -0.36,
-    "unit": "CNY_YI",
-    "src": "westock-sh688048"
-   }
-  }
- },
- {
-  "company": "ebphoton",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -4779,22 +4723,6 @@ const METRICS = [
  },
  {
   "company": "yjsemi",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 0.74,
-    "unit": "CNY_YI",
-    "src": "westock-sh688498"
-   },
-   "net_income": {
-    "value": -0.06,
-    "unit": "CNY_YI",
-    "src": "westock-sh688498"
-   }
-  }
- },
- {
-  "company": "yjsemi",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -4868,22 +4796,6 @@ const METRICS = [
    },
    "net_income": {
     "value": 0.13,
-    "unit": "CNY_YI",
-    "src": "westock-sh688195"
-   }
-  }
- },
- {
-  "company": "tengjing",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 1.13,
-    "unit": "CNY_YI",
-    "src": "westock-sh688195"
-   },
-   "net_income": {
-    "value": 0.14,
     "unit": "CNY_YI",
     "src": "westock-sh688195"
    }
@@ -5045,17 +4957,6 @@ const METRICS = [
   "metrics": {
    "revenue": {
     "value": 144.8,
-    "unit": "USD_M",
-    "src": "sec-xbrl-iren"
-   }
-  }
- },
- {
-  "company": "iren",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 116.1,
     "unit": "USD_M",
     "src": "sec-xbrl-iren"
    }
@@ -5999,17 +5900,6 @@ const METRICS = [
  },
  {
   "company": "fn",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 833.6,
-    "unit": "USD_M",
-    "src": "sec-xbrl-fn"
-   }
-  }
- },
- {
-  "company": "fn",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -6069,22 +5959,6 @@ const METRICS = [
     "value": 87.207,
     "unit": "USD_M",
     "src": "fn-2025q2-10q"
-   }
-  }
- },
- {
-  "company": "aaoi",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 100.3,
-    "unit": "USD_M",
-    "src": "westock-usAAOI"
-   },
-   "net_income": {
-    "value": -119.7,
-    "unit": "USD_M",
-    "src": "westock-usAAOI"
    }
   }
  },
@@ -6174,22 +6048,6 @@ const METRICS = [
    },
    "net_income": {
     "value": 6.3,
-    "unit": "USD_M",
-    "src": "westock-usPOET"
-   }
-  }
- },
- {
-  "company": "poet",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 0.03,
-    "unit": "USD_M",
-    "src": "westock-usPOET"
-   },
-   "net_income": {
-    "value": -30.3,
     "unit": "USD_M",
     "src": "westock-usPOET"
    }
@@ -7091,22 +6949,6 @@ const METRICS = [
  },
  {
   "company": "sytech",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 56.44,
-    "unit": "CNY_YI",
-    "src": "westock-sh600183"
-   },
-   "net_income": {
-    "value": 3.66,
-    "unit": "CNY_YI",
-    "src": "westock-sh600183"
-   }
-  }
- },
- {
-  "company": "sytech",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -7180,22 +7022,6 @@ const METRICS = [
    },
    "net_income": {
     "value": 0.1,
-    "unit": "CNY_YI",
-    "src": "westock-sz002428"
-   }
-  }
- },
- {
-  "company": "ynge",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 2.65,
-    "unit": "CNY_YI",
-    "src": "westock-sz002428"
-   },
-   "net_income": {
-    "value": 0.24,
     "unit": "CNY_YI",
     "src": "westock-sz002428"
    }
@@ -7283,22 +7109,6 @@ const METRICS = [
  },
  {
   "company": "veri",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 6.72,
-    "unit": "CNY_YI",
-    "src": "westock-sh688521"
-   },
-   "net_income": {
-    "value": -2.05,
-    "unit": "CNY_YI",
-    "src": "westock-sh688521"
-   }
-  }
- },
- {
-  "company": "veri",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -7372,22 +7182,6 @@ const METRICS = [
    },
    "net_income": {
     "value": 3.13,
-    "unit": "CNY_YI",
-    "src": "westock-sh688012"
-   }
-  }
- },
- {
-  "company": "amec",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 35.58,
-    "unit": "CNY_YI",
-    "src": "westock-sh688012"
-   },
-   "net_income": {
-    "value": 7.03,
     "unit": "CNY_YI",
     "src": "westock-sh688012"
    }
@@ -7475,22 +7269,6 @@ const METRICS = [
  },
  {
   "company": "tuojing",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 18.26,
-    "unit": "CNY_YI",
-    "src": "westock-sh688072"
-   },
-   "net_income": {
-    "value": 4.17,
-    "unit": "CNY_YI",
-    "src": "westock-sh688072"
-   }
-  }
- },
- {
-  "company": "tuojing",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -7564,22 +7342,6 @@ const METRICS = [
    },
    "net_income": {
     "value": -0.22,
-    "unit": "CNY_YI",
-    "src": "westock-sh688409"
-   }
-  }
- },
- {
-  "company": "fujing",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 7.25,
-    "unit": "CNY_YI",
-    "src": "westock-sh688409"
-   },
-   "net_income": {
-    "value": 0.13,
     "unit": "CNY_YI",
     "src": "westock-sh688409"
    }
@@ -7908,17 +7670,6 @@ const METRICS = [
  },
  {
   "company": "unimicron",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 29381,
-    "unit": "TWD_M",
-    "src": "mops-synth-unimicron-2024"
-   }
-  }
- },
- {
-  "company": "unimicron",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -8160,22 +7911,6 @@ const METRICS = [
  },
  {
   "company": "dsbj",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 103.04,
-    "unit": "CNY_YI",
-    "src": "westock-sz002384"
-   },
-   "net_income": {
-    "value": 0.18,
-    "unit": "CNY_YI",
-    "src": "westock-sz002384"
-   }
-  }
- },
- {
-  "company": "dsbj",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -8256,22 +7991,6 @@ const METRICS = [
  },
  {
   "company": "scc",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 48.58,
-    "unit": "CNY_YI",
-    "src": "westock-sz002916"
-   },
-   "net_income": {
-    "value": 3.9,
-    "unit": "CNY_YI",
-    "src": "westock-sz002916"
-   }
-  }
- },
- {
-  "company": "scc",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -8345,22 +8064,6 @@ const METRICS = [
    },
    "net_income": {
     "value": 3.25,
-    "unit": "CNY_YI",
-    "src": "westock-sh603228"
-   }
-  }
- },
- {
-  "company": "jw",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 35.81,
-    "unit": "CNY_YI",
-    "src": "westock-sh603228"
-   },
-   "net_income": {
-    "value": 2.65,
     "unit": "CNY_YI",
     "src": "westock-sh603228"
    }
@@ -8683,22 +8386,6 @@ const METRICS = [
    },
    "net_income": {
     "value": 8.42,
-    "unit": "CNY_YI",
-    "src": "westock-sh603296"
-   }
-  }
- },
- {
-  "company": "huaqin",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 338.68,
-    "unit": "CNY_YI",
-    "src": "westock-sh603296"
-   },
-   "net_income": {
-    "value": 8.76,
     "unit": "CNY_YI",
     "src": "westock-sh603296"
    }
@@ -9369,22 +9056,6 @@ const METRICS = [
  },
  {
   "company": "jcet",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 109.84,
-    "unit": "CNY_YI",
-    "src": "westock-sh600584"
-   },
-   "net_income": {
-    "value": 5.33,
-    "unit": "CNY_YI",
-    "src": "westock-sh600584"
-   }
-  }
- },
- {
-  "company": "jcet",
   "period": "2026Q1",
   "metrics": {
    "revenue": {
@@ -9458,22 +9129,6 @@ const METRICS = [
    },
    "net_income": {
     "value": 1.01,
-    "unit": "CNY_YI",
-    "src": "westock-sz002156"
-   }
-  }
- },
- {
-  "company": "tfme",
-  "period": "2024Q4",
-  "metrics": {
-   "revenue": {
-    "value": 68,
-    "unit": "CNY_YI",
-    "src": "westock-sz002156"
-   },
-   "net_income": {
-    "value": 1.25,
     "unit": "CNY_YI",
     "src": "westock-sz002156"
    }

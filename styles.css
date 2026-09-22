@@ -216,7 +216,12 @@ footer .rule{margin-top:6px}
   .lane-label{border-right:none;border-bottom:1px dashed var(--line);padding-bottom:12px}
   .cards{padding-left:0}
   .alt-in{grid-template-columns:1fr;gap:44px}
-  .nav-pills{display:none}
+  /* 导航:窄屏不再整组隐藏(整组隐藏会让「北美 AIDC」等入口彻底不可达),
+     改为独占一行 + 横向滚动,入口始终可点 */
+  .nav-pills{order:3;flex:0 0 100%;justify-content:flex-start;overflow-x:auto;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .nav-pills::-webkit-scrollbar{display:none}
+  .nav-pills a{white-space:nowrap;font-size:12.5px;padding:5px 12px}
   /* 交叉验证行:平板/手机统一堆叠(mark 单独一列,名称+内容占满) */
   .vrow{grid-template-columns:22px 1fr;gap:4px 10px;padding:12px 0}
   .vrow .vn{grid-column:2;font-size:14px}
@@ -539,3 +544,187 @@ body::-webkit-scrollbar-track{background:transparent}
 main:not(.home) > .lp-panel{max-width:1360px;margin:26px auto 0;padding:0 28px;box-sizing:border-box}
 main:not(.home) > .lp-panel:first-of-type{margin-top:34px}
 @media (max-width:640px){ main:not(.home) > .lp-panel{padding:0 16px} }
+
+/* ═══ 北美 AIDC 州级地图（aidc-us.html）2026-09-12 ═══ */
+#usmap{display:block;width:100%;height:auto;margin-top:6px}
+#usmap .st{stroke:rgba(250,249,245,.115);stroke-width:.9;stroke-linejoin:round;cursor:pointer;
+  transition:fill .32s ease,stroke .16s ease}
+#usmap .st.nod{cursor:default}
+#usmap .st:hover{stroke:#faf9f5;stroke-width:1.7}
+#usmap .st.sel{stroke:#faf9f5;stroke-width:1.9}
+#usmap .ld{stroke:rgba(250,249,245,.16);stroke-width:.8;pointer-events:none;stroke-dasharray:2 3}
+#usmap .lb{font-family:var(--sans);font-weight:600;letter-spacing:.03em;
+  text-anchor:middle;dominant-baseline:central;pointer-events:none;
+  fill:var(--meta);opacity:.55;transition:fill .32s ease,opacity .3s}
+#usmap .lb.d{fill:var(--text);opacity:.9}
+#usmap .lb.on{fill:var(--text)!important;opacity:1}
+#usmap .lb.hot{fill:#141413!important;opacity:.95}
+.mapbox{position:relative}
+.mtip{position:absolute;left:0;top:0;pointer-events:none;z-index:5;min-width:172px;
+  background:#1a1917;border:1px solid var(--line-strong);border-radius:11px;padding:11px 13px;
+  font-size:12.5px;color:var(--sub);box-shadow:0 10px 30px rgba(0,0,0,.55);
+  opacity:0;transition:opacity .13s ease}
+.mtip.on{opacity:1}
+.mtip .tt{color:var(--text);font-weight:600;font-size:14px;margin-bottom:7px;letter-spacing:.02em}
+.mtip .tr{display:flex;justify-content:space-between;gap:18px;line-height:1.65}
+.mtip .tr b{color:var(--text);font-weight:500;font-variant-numeric:tabular-nums}
+
+/* 状态构成条 */
+.stbar{display:flex;height:9px;border-radius:99px;overflow:hidden;background:var(--line-strong);gap:1.5px;margin-top:9px}
+.stbar i{display:block;height:100%;min-width:2px}
+.stkey{display:flex;flex-wrap:wrap;gap:5px 14px;margin-top:9px;font-size:11.5px;color:var(--meta)}
+.stkey span{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.stkey i{width:8px;height:8px;border-radius:2px;display:inline-block;flex:none}
+.mtip .stkey{gap:4px 12px;font-size:11px}
+.mtip .stbar{margin-top:8px;height:8px}
+
+/* 州排行 */
+.rank{margin-top:14px;border-top:1px solid var(--line-strong)}
+.srow{display:grid;grid-template-columns:38px minmax(0,1fr) 84px;gap:14px;align-items:center;
+  padding:9px 4px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .15s}
+.srow:hover{background:rgba(255,255,255,.035)}
+.srow.nod{cursor:default;opacity:.72}
+.srow .sc{font-weight:600;font-size:12.5px;color:var(--text);letter-spacing:.06em}
+.srow .sn{display:flex;align-items:center;gap:12px;min-width:0;font-size:13px;color:var(--sub)}
+.srow .sn b{color:var(--text);font-weight:500;white-space:nowrap}
+.srow .sbar{flex:1;height:6px;min-width:34px;border-radius:99px;background:var(--line-strong);overflow:hidden}
+.srow .sbar i{display:block;height:100%;border-radius:99px;
+  background:linear-gradient(90deg,rgba(217,119,87,.62),var(--accent));transition:width .7s cubic-bezier(.16,1,.3,1)}
+.srow .sv{text-align:right;font-size:14px;font-weight:500;color:var(--text);font-variant-numeric:tabular-nums}
+.srow .sv em{font-style:normal;font-size:10.5px;color:var(--meta);margin-left:3px}
+
+/* 口径对照 */
+.scope-rows{margin-top:16px;border-top:1px solid var(--line-strong)}
+.scope-row{display:grid;grid-template-columns:50px minmax(0,1fr) 150px 104px;gap:16px;align-items:center;
+  padding:12px 0;border-bottom:1px solid var(--line)}
+.scope-row .stag{font-size:12px;font-weight:600;color:var(--sub);letter-spacing:.06em;
+  border:1px solid var(--line-strong);border-radius:6px;padding:2px 0;text-align:center}
+.scope-row.hot .stag{background:var(--accent);border-color:var(--accent);color:#141413}
+.scope-row .slabel{font-size:13.5px;color:var(--text);font-weight:500;min-width:0;line-height:1.35}
+.scope-row .slabel b{font-size:10px;font-weight:600;color:var(--accent);margin-left:7px;
+  border:1px solid rgba(217,119,87,.45);border-radius:5px;padding:0 5px;vertical-align:1.5px;white-space:nowrap}
+.scope-row .slabel em{display:block;font-style:normal;font-size:11.5px;color:var(--meta);font-weight:400;margin-top:3px;line-height:1.5}
+.scope-row .sbar{height:8px;border-radius:99px;background:var(--line-strong);overflow:hidden}
+.scope-row .sbar i{display:block;height:100%;border-radius:99px;background:var(--line-strong);
+  transition:width .8s cubic-bezier(.16,1,.3,1)}
+.scope-row.hot .sbar i{background:linear-gradient(90deg,rgba(217,119,87,.62),var(--accent))}
+.scope-row:not(.hot) .sbar i{background:#45443f}
+.scope-row .sval{text-align:right;font-size:15px;font-weight:500;color:var(--text);font-variant-numeric:tabular-nums;line-height:1.2}
+.scope-row .sval em{font-style:normal;font-size:10.5px;color:var(--meta);margin-left:3px}
+.scope-row .sval u{display:block;text-decoration:none;font-size:11px;color:var(--meta);font-weight:400;margin-top:3px}
+
+/* 抽屉内项目清单 */
+.pit{margin-top:2px}
+.pi{padding:11px 0;border-bottom:1px solid var(--line)}
+.pi:last-child{border-bottom:none}
+.pi-h{display:flex;gap:10px;align-items:baseline;justify-content:space-between}
+.pi-n{color:var(--text);font-size:13.5px;font-weight:500;line-height:1.35;min-width:0}
+.pi-m{font-size:11.5px;color:var(--meta);margin-top:3px;line-height:1.5}
+.pi-s{font-size:11.5px;color:var(--sub);margin-top:3px;line-height:1.55}
+.chip{font-size:10px;font-weight:600;border-radius:5px;padding:1px 6px;white-space:nowrap;flex:none}
+.chip-operating{background:rgba(127,165,107,.16);color:var(--green)}
+.chip-construction{background:rgba(217,119,87,.16);color:var(--accent)}
+.chip-announced{background:rgba(217,160,87,.16);color:var(--amber)}
+.chip-terminated{background:rgba(192,87,87,.16);color:var(--red)}
+
+@media (max-width:960px){
+  .scope-row{grid-template-columns:50px minmax(0,1fr) 96px;gap:12px}
+  .scope-row .sbar{display:none}
+  .srow{grid-template-columns:34px minmax(0,1fr) 78px;gap:10px}
+}
+@media (max-width:640px){
+  .mapbox{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  #usmap{min-width:700px}
+  .scope-row{grid-template-columns:42px minmax(0,1fr) 84px;gap:10px;padding:10px 0}
+  .scope-row .slabel{font-size:12.5px}
+  .scope-row .slabel em{font-size:11px}
+  .scope-row .sval{font-size:13.5px}
+  .srow .sn{font-size:12px;gap:8px}
+}
+
+/* aidc-us.html：#notes 关键结论列宽加宽（仅本页，不影响 map.html） */
+.alt#notes .vrow{grid-template-columns:26px 162px minmax(0,1fr)}
+@media (max-width:960px){ .alt#notes .vrow{grid-template-columns:22px minmax(0,1fr)} }
+
+/* aidc-us.html：指标切换条内嵌于卡片，去掉吸顶底色与分隔线 */
+#metricBar{position:static;background:none;border-bottom:none;padding:16px 0 2px;margin-bottom:0}
+
+/* ═══ 北美 AIDC · 业主维度（aidc-us.html）2026-09-12 ═══ */
+
+/* 地图上按业主高亮 */
+#usmap .st.own{stroke:rgba(250,249,245,.55);stroke-width:1.15}
+#usmap .st.dim{fill:#1c1c1a;stroke:rgba(250,249,245,.06)}
+#usmap .lb.dim{opacity:.30;fill:var(--meta)}
+
+/* 地图下方业主切换条 */
+.ownerbar{position:static;background:none;border-bottom:none;padding:0;margin:0}
+.ownerbar button{font-size:12px;padding:5px 12px}
+.ownerbar button.on{background:var(--accent);border-color:var(--accent);color:#141413;font-weight:500}
+.own-note{margin-top:10px;min-height:20px;font-size:12px;color:var(--meta);line-height:1.7}
+.own-note b{color:var(--text);font-weight:500;font-variant-numeric:tabular-nums}
+.own-note .sw{display:inline-block;width:10px;height:10px;border-radius:3px;background:#d97757;
+  margin-right:6px;vertical-align:-1px}
+
+/* 业主榜 */
+.olist{margin-top:16px;border-top:1px solid var(--line-strong)}
+.orow{display:grid;grid-template-columns:30px 186px minmax(0,1fr) 96px;column-gap:16px;row-gap:3px;
+  align-items:center;padding:11px 4px;border-bottom:1px solid var(--line);cursor:pointer;
+  transition:background .15s ease}
+.orow:hover{background:rgba(255,255,255,.035)}
+.orow.on{background:rgba(217,119,87,.075)}
+.orow.on .ork,.orow.on .onm b{color:var(--accent)}
+.ork{font-size:12px;font-weight:600;color:var(--meta);letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.onm{display:flex;align-items:center;gap:8px;min-width:0}
+.onm b{color:var(--text);font-weight:500;font-size:13.5px;line-height:1.3}
+.onm .onc{font-size:11px;color:var(--meta);white-space:nowrap;font-variant-numeric:tabular-nums;flex:none}
+.obar{height:7px;border-radius:99px;background:var(--line-strong);overflow:hidden}
+.obar i{display:block;height:100%;border-radius:99px;transition:width .8s cubic-bezier(.16,1,.3,1)}
+.obar i.c-operating{background:linear-gradient(90deg,rgba(127,165,107,.5),var(--green))}
+.obar i.c-construction{background:linear-gradient(90deg,rgba(217,119,87,.5),var(--accent))}
+.obar i.c-announced{background:linear-gradient(90deg,rgba(217,160,87,.45),var(--amber))}
+.obar i.c-mixed,.obar i.c-terminated{background:linear-gradient(90deg,rgba(135,134,127,.45),var(--gray))}
+.ovl{text-align:right;font-size:14px;font-weight:500;color:var(--text);line-height:1.22;font-variant-numeric:tabular-nums}
+.ovl em{font-style:normal;font-size:10.5px;color:var(--meta);margin-left:3px}
+.ovl u{display:block;text-decoration:none;font-size:11px;font-weight:400;color:var(--meta);margin-top:2px}
+.ost{grid-column:2/-1;display:flex;flex-wrap:wrap;gap:4px 6px}
+.ost i{font-style:normal;font-size:10.5px;color:var(--meta);background:rgba(255,255,255,.045);
+  border-radius:5px;padding:1px 6px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.ost i b{color:var(--sub);font-weight:500;margin-left:4px}
+.ost i.more{background:none;padding:1px 0}
+.olist-more{padding:14px 0 2px;text-align:center}
+.olist-more button{background:var(--card);border:1px solid var(--card-bd);color:var(--sub);font-size:12.5px;
+  padding:6px 16px;border-radius:99px;cursor:pointer;font-family:inherit;transition:color .15s,border-color .15s}
+.olist-more button:hover{color:var(--text);border-color:#4d4c48}
+
+/* 业主角色标签 */
+.otag{font-style:normal;font-size:9.5px;font-weight:600;letter-spacing:.03em;white-space:nowrap;flex:none;
+  border:1px solid var(--line-strong);border-radius:5px;padding:1px 5px;color:var(--meta)}
+.otag.self{color:var(--green);border-color:rgba(127,165,107,.38);background:rgba(127,165,107,.1)}
+.otag.lease{color:var(--accent);border-color:rgba(217,119,87,.38);background:rgba(217,119,87,.1)}
+.otag.tbd{color:var(--amber);border-color:rgba(217,160,87,.38);background:rgba(217,160,87,.1)}
+
+/* 抽屉内业主条 */
+.ow-rows{margin-top:6px;border-top:1px solid var(--line)}
+.ow-row{display:grid;grid-template-columns:minmax(0,1fr) 1fr 44px;column-gap:11px;align-items:center;
+  padding:9px 0;border-bottom:1px solid var(--line)}
+.ow-row:last-child{border-bottom:none}
+.ow-name{display:flex;align-items:center;gap:7px;min-width:0}
+.ow-name b{font-size:12.5px;font-weight:500;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ow-bar{height:6px;border-radius:99px;background:var(--line-strong);overflow:hidden}
+.ow-bar i{display:block;height:100%;border-radius:99px;
+  background:linear-gradient(90deg,rgba(217,119,87,.65),var(--accent))}
+.ow-val{text-align:right;font-size:13.5px;font-weight:600;color:var(--text);font-variant-numeric:tabular-nums}
+
+@media (max-width:960px){
+  .orow{grid-template-columns:26px 152px minmax(0,1fr) 84px;column-gap:12px}
+}
+@media (max-width:640px){
+  .orow{grid-template-columns:22px minmax(0,1fr) 74px;column-gap:10px;padding:10px 2px}
+  .orow .obar{display:none}
+  .ost{grid-column:1/-1;margin-top:3px}
+  .onm b{font-size:12.5px}
+  .ovl{font-size:13px}
+  .otag{font-size:9px;padding:0 4px}
+  .ow-row{grid-template-columns:minmax(0,1fr) 40px;column-gap:9px}
+  .ow-row .ow-bar{display:none}
+}

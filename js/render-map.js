@@ -53,12 +53,14 @@ LANE_DEFS.forEach((L,i)=>{
         spark = `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"><polyline points="${pts}" fill="none" stroke="${up?'var(--green)':'var(--red)'}" stroke-width="1.6" stroke-linejoin="round"/></svg>`;
       }
       b.className='card '+c.size+' sig-'+s; b.dataset.id=c.id; b.dataset.sig=s;
+      /* 趋势箭头:只有上一期 YoY 也存在时才判定加速/减速,否则不显示(避免两期新公司误标"减速") */
+      const accTxt = y==null ? '数据不足' : (y<0 ? '' : (y1==null ? '' : (accel?'↑加速':'→减速')));
       b.innerHTML = `<span class="dot ${s}"></span>
         <div class="nm">${c.name}</div>
         <div class="tk">${c.ticker} · ${c.market} · ${TIER[c.tier]}${c.note?' · '+c.note:''}</div>
         ${spark}
         <div class="rev num">${fmt(revOf(latest),c.currency)}</div>
-        <div class="yoy num ${y==null?'':y<0?'down':accel?'up':'flat'}">YoY ${pct(y)} <span class="acc">${y==null?'数据不足':y<0?'':accel?'↑加速':'→减速'} · ${shortPeriod(latest.period)}</span></div>`;
+        <div class="yoy num ${y==null?'':y<0?'down':accel?'up':'flat'}">YoY ${pct(y)} <span class="acc">${[accTxt, shortPeriod(latest.period)].filter(Boolean).join(' · ')}</span></div>`;
       b.onclick=()=>openDrawer(c,b);
     }
     box.appendChild(b);

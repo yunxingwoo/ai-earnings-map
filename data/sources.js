@@ -1144,6 +1144,14 @@ const SOURCES = [
   "locator": "公开资讯观测站 115年5月营收汇总表(千元): 广达311,481,017; 纬颖84,050,473"
  },
  {
+  "id": "mops-t21-115m8",
+  "type": "monthly_revenue",
+  "url": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_8_0.html",
+  "fetched_at": "2026-09-12",
+  "archive": null,
+  "locator": "公开资讯观测站115年8月营收汇总表(千元): 广达423,970,932(月增15.75%/年增177.45%,创单月历史新高;1-8月累计2,636,058,779+102.62%); 纬颖144,311,808(月增22.62%/年增50.35%;1-8月累计816,657,663+42.79%)"
+ },
+ {
   "id": "mops-t21-115m7",
   "type": "monthly_revenue",
   "url": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_7_0.html",
@@ -1728,6 +1736,14 @@ const SOURCES = [
   "locator": "TSMC 投資人關係 2026年月營收頁: 2026年5月合併營收416,975百萬台幣(+30.1%YoY)"
  },
  {
+  "id": "tsmc-monthly-2026m8",
+  "type": "monthly_revenue",
+  "url": "https://pr.tsmc.com/schinese/news/3340",
+  "fetched_at": "2026-09-12",
+  "archive": null,
+  "locator": "TSMC官方新闻稿(2026-09-10): 2026年8月合并营收514,806百万新台币(+53.3%YoY/+10.1%MoM; 1-8月累计3,386,870百万新台币+39.3%YoY)"
+ },
+ {
   "id": "tsmc-monthly-2026m7",
   "type": "monthly_revenue",
   "url": "https://pr.tsmc.com/english/news/3329",
@@ -2040,6 +2056,14 @@ const SOURCES = [
   "locator": "Meta Q3 2025新闻稿(2025-10-29): 营收$51.24B, GAAP净利$2.71B(含$15.93B一次性税费), 资本开支$19.37B"
  },
  {
+  "id": "orcl-fy27q1-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+  "fetched_at": "2026-09-12",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-09-10), Q1 FY27 quarter ended 2026-08-31: 总营收$19,345M(+30%YoY), GAAP净利润$4,760M, RPO $664B(+$209B YoY, 单季新增AI云合同>$30B); 财季止2026-08-31对齐自然季2026Q3(fiscal_offset=1)"
+ },
+ {
   "id": "orcl-fy26q4-er",
   "type": "earnings_release",
   "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx",
@@ -2278,6 +2302,14 @@ const SOURCES = [
   "fetched_at": "2026-08-05",
   "archive": null,
   "locator": "8-K EX-99.1 (2026-06-03), Q2 FY26 quarter ended 2026-05-03: net revenue $22,187M, AI semiconductor revenue $10.8 billion (+143% YoY), GAAP net income $9,310M; GAAP gross margin 15,415/22,187=69.5% (P&L毛利润/营收)"
+ },
+ {
+  "id": "avgo-fy26q3-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
+  "fetched_at": "2026-09-06",
+  "archive": null,
+  "locator": "8-K EX-99.1 (2026-09-02), Q3 FY26 quarter ended 2026-08-02: net revenue $29,591M, AI semiconductor revenue $16.7 billion (+221% YoY, +54% QoQ), GAAP net income $13,088M; GAAP gross margin 20,456/29,591=69.1% (P&L毛利润/营收)"
  },
  {
   "id": "avgo-fy26q1-er",
@@ -4518,6 +4550,22 @@ const SOURCES = [
   "fetched_at": "2026-09-02",
   "archive": null,
   "locator": "戴尔科技 FY2027 Q2 业绩(公司 IR 官方新闻稿,2026-09-01 美东盘后发布;季度截至 2026-07-31,对应自然季 2026Q2): 总净营收 $469.71亿(46,971M,+58% YoY,创纪录)/GAAP 毛利率 20.9%(上年同期 18.3%)/营业利润 $53.85亿(+204%)/净利润 $41.33亿(+255%)/GAAP 摊薄 EPS $6.34(+273%)、non-GAAP EPS $7.04(+203%); ISG 营收 $317.82亿(+89%),其中 AI 优化服务器 $164.01亿(+100%,创纪录)、传统服务器与网络 $105.31亿(+122%)、存储 $48.50亿(+26%),ISG 营业利润 $47.81亿(+225%,营业利润率 15.0%,较 Q1 的 10.5% 环比改善约 4.5pct → 存储涨价已有效转嫁); CSG 营收 $150.34亿(+20%)/营业利润 $11.42亿(+42%); 当季 AI 服务器新签订单 $609亿、季末 AI 积压订单 $950亿(均创纪录,近 12 个月累计订单 $1,317亿); 经营现金流 $22.25亿(同比 −13%),调整后自由现金流 $81.49亿(+224%); FY27 全年营收指引由 $1,670亿上调 $250亿至 $1,920亿(+69%),AI 服务器全年指引 $600亿→$740亿; Q3 指引营收 $490亿 ± $5亿"
+ },
+ {
+  "id": "zhipu-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0831/2026083101540_c.pdf",
+  "fetched_at": "2026-09-21",
+  "archive": null,
+  "locator": "智谱(Z.AI/北京智谱华章科技,2513.HK)截至2026-06-30止六个月中期业绩公告(HKEX官方,2026-08-31披露,毕马威审阅): H1收入9.54亿元(953,892千元,+399.7%,已超2025全年)/毛利2.52亿元(毛利率26.4%,上年同期50.0%)/开放平台及API收入8.25亿元占86.5%(+2735.7%)/期内亏损20.72亿元(上年同期亏损23.58亿)/研发开支21.31亿元(+33.6%); 2025H1对比数(收入1.91亿/毛利率50.0%/期内亏损23.58亿)取自同一公告对比列; 半年度口径,公告无单季拆分"
+ },
+ {
+  "id": "minimax-2026h1-er",
+  "type": "earnings_release",
+  "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600681_c.pdf",
+  "fetched_at": "2026-09-21",
+  "archive": null,
+  "locator": "MiniMax Group(0100.HK)截至2026-06-30止六个月中期业绩公告(HKEX官方,2026-08-26披露,审计委员会审阅,美元列报): H1收入1.166亿美元(116,573千美元,+283.1%,超2025全年0.79亿美元)/毛利0.208亿美元(毛利率17.9%,上年同期12.1%)/开放平台及其他AI企业服务0.739亿美元占63.4%(+703.1%)/期内亏损3.58亿美元(上年同期4.02亿)/经调整净亏损2.93亿美元; 2025H1对比数(收入0.304亿美元/毛利率12.1%/期内亏损4.02亿)取自同一公告对比列; 半年度口径,公告无单季拆分(Q2环比+82%系业绩会口述,不入库)"
  }
 
 ];

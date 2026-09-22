@@ -141,8 +141,8 @@ const COMPANIES = [
  Co('openai','OpenAI','—','非上市',14,'leader',false,'USD_M','md',0,{cloud:true}),
  Co('anthr','Anthropic','—','非上市',14,'leader',false,'USD_M','sm',0,{cloud:true}),
  Co('deepseek','DeepSeek','—','非上市',14,'core',false,'CNY_YI','sm',0,{cloud:true}),
- Co('zhipu','智谱','2513.HK','港股',14,'core',true,'CNY_YI','sm',0,{note:'2026年港股上市,季度数据待人工核实'}),
- Co('minimax','MiniMax','0100.HK','港股',14,'second',true,'CNY_YI','sm',0,{note:'2026年港股上市,季度数据待人工核实'}),
+ Co('zhipu','智谱','2513.HK','港股',14,'core',true,'CNY_YI','sm',0,{note:'2026年港股上市,半年度披露口径(2026H1 已入库)'}),
+ Co('minimax','MiniMax','0100.HK','港股',14,'second',true,'USD_M','sm',0,{note:'2026年港股上市,美元列报,半年度披露口径(2026H1 已入库)'}),
  Co('kimi','月之暗面(Kimi)','—','非上市',14,'core',false,'CNY_YI','sm',0,{cloud:true}),
  /* 15 AI 应用/软件 */
  Co('now','ServiceNow','NOW','美股',15,'core',true,'USD_M','md',1),

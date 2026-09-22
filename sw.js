@@ -1,10 +1,10 @@
 /* sw.js — PWA service worker
    策略: 静态资源(html/css/js/图标) cache-first; data/*.js network-first(数据必须新鲜); 失败回退缓存 */
-const VERSION = 'ai-map-v2';
-const STATIC = ['./','./index.html','./map.html','./styles.css','./fx.js',
-  './js/calc.js','./js/render-home.js','./js/render-map.js','./js/panels-home.js','./js/panels-map.js','./js/pwa.js',
+const VERSION = 'ai-map-v6';
+const STATIC = ['./','./index.html','./map.html','./aidc-us.html','./styles.css','./fx.js',
+  './js/calc.js','./js/render-home.js','./js/render-map.js','./js/panels-home.js','./js/panels-map.js','./js/render-aidc.js','./js/pwa.js',
   './icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png','./manifest.webmanifest'];
-const DATA = ['./data/companies.js','./data/metrics.js','./data/sources.js','./data/capacity.js','./data/fx.js','./data/calendar.js','./data/valuation.js','./data/guidance.js','./data/signals-history.js'];
+const DATA = ['./data/companies.js','./data/metrics.js','./data/sources.js','./data/capacity.js','./data/fx.js','./data/calendar.js','./data/valuation.js','./data/guidance.js','./data/signals-history.js','./data/aidc-us.js','./data/us-map.js'];
 
 self.addEventListener('install', e=>{
   e.waitUntil(caches.open(VERSION).then(c=>c.addAll(STATIC)).then(()=>self.skipWaiting()));
