@@ -1,6 +1,6 @@
 /* sw.js — PWA service worker
    策略: 静态资源(html/css/js/图标) cache-first; data/*.js network-first(数据必须新鲜); 失败回退缓存 */
-const VERSION = 'ai-map-v7';
+const VERSION = 'ai-map-v8';
 const STATIC = ['./','./index.html','./map.html','./aidc-us.html','./styles.css','./fx.js',
   './js/calc.js','./js/render-home.js','./js/render-map.js','./js/panels-home.js','./js/panels-map.js','./js/render-aidc.js','./js/pwa.js',
   './icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png','./manifest.webmanifest'];
@@ -16,8 +16,9 @@ self.addEventListener('fetch', e=>{
   const url = new URL(e.request.url);
   if(url.origin !== location.origin || e.request.method !== 'GET') return;
   const isData = DATA.some(d=>url.pathname.endsWith(d.replace('./','/'))) || url.pathname.includes('/data/');
-  if(isData){
-    // 数据文件: 网络优先,失败用缓存(离线兜底)
+  const isDoc = url.pathname.endsWith('.html') || url.pathname.endsWith('/') || url.pathname === '';
+  if(isData || isDoc){
+    // 数据文件与页面文档: 网络优先,失败用缓存(离线兜底)——保证用户总能看到最新版
     e.respondWith(fetch(e.request).then(r=>{
       const cp = r.clone(); caches.open(VERSION).then(c=>c.put(e.request, cp)); return r;
     }).catch(()=>caches.match(e.request)));

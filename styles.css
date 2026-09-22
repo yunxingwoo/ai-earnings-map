@@ -764,3 +764,13 @@ main:not(.home) > .lp-panel:first-of-type{margin-top:34px}
 .tgo{margin-top:10px;font-size:11px;letter-spacing:.16em;color:var(--meta);text-align:center}
 .tcard.on .tgo{color:var(--accent)}
 @media (max-width:860px){.tgrid{grid-template-columns:1fr}}
+
+/* ═══ 锚定租户速览(首屏横条 · aidc-us.html hero) ═══ */
+.ten-quick{display:flex;align-items:center;gap:16px;margin-top:24px;padding:13px 20px;
+  border:1px solid var(--line-strong);border-radius:10px;background:var(--card);
+  color:var(--sub);font-size:13.5px;text-decoration:none;transition:border-color .15s}
+.ten-quick:hover{border-color:var(--accent)}
+.ten-quick .tq-k{color:var(--accent);font-weight:700;letter-spacing:.08em}
+.ten-quick .tq-v b{color:var(--text);font-weight:700;margin-left:4px}
+.ten-quick .tq-go{margin-left:auto;color:var(--accent);font-size:12.5px;letter-spacing:.06em}
+@media (max-width:720px){.ten-quick{flex-wrap:wrap;gap:8px 16px}.ten-quick .tq-go{margin-left:0;width:100%}}

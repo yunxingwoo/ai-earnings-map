@@ -52,6 +52,12 @@
       <div class="grp tierbadge">州界来源：US Census Bureau 1:10,000,000（us-atlas states-albers-10m）</div>
       <div class="grp tierbadge">AK / HI 为等积投影插图，位置不按经纬度</div>
     </div>
+    <a class="ten-quick" href="#tenants">
+      <span class="tq-k">✳ 锚定租户</span>
+      <span class="tq-v">OpenAI <b class="num">23.77GW</b></span>
+      <span class="tq-v">Anthropic <b class="num">11.40GW</b></span>
+      <span class="tq-go">查看租户视图 →</span>
+    </a>
   </section>
 
   <section class="lp-panel">
@@ -76,6 +82,18 @@
     </div>
   </section>
 
+  <section class="lp-panel" id="tenants">
+    <div class="lp-inner">
+      <div class="kick">Anchor Tenants</div>
+      <h2>锚定租户 · OpenAI 与 Anthropic 锁走了 35.17GW</h2>
+      <p class="lp-sub">同一份 A 口径 53 条项目换「租户」视角看「谁在用」。租户 ≠ 业主：资产登记在开发商名下，模型厂以长租锁定容量——<b>OpenAI 12 项 23.77GW</b>、<b>Anthropic 13 项 11.40GW</b>，合计占 A 口径 52.0%。点击下方卡片，地图会高亮其锁定容量所在的州（与业主高亮互斥，再点一次取消）。</p>
+      <div class="tgrid" id="tenantCards"></div>
+      <div class="lp-foot">
+        <b>口径注意：</b>「自用 + 出租」混合行按全容量计入该租户（如 SpaceXAI Colossus 2 为自用 Grok + 对外出租 Anthropic / Cursor / Google）；Riot Rockdale 0.19GW 客户未公开具名（Bloomberg 指向 Anthropic，双方未确认），按媒体报道计入并如实标注。<b>租户容量与业主容量不可相加</b>——同一园区两边各计一次。
+      </div>
+    </div>
+  </section>
+
   <section class="lp-panel">
     <div class="lp-inner">
       <div class="kick">Owner Landscape</div>
@@ -93,18 +111,6 @@
       <div class="lp-foot">
         <b>怎么读这张榜：</b>容量最大的不是云厂，而是把电力和园区卖给别人用的开发商——榜首 SB Energy 9.20GW 全部出租给 OpenAI。前五家里三家自用（Meta 8.60 / Google 5.34 / Microsoft 4.00，合计 17.94GW），两家出租（SB Energy 9.20 / AWS 7.82，合计 17.02GW）。<br>
         ⚠️ <b>最该警惕的一档：</b>「租户未定」的业主合计 <b>10.77GW = A 口径的 15.9%</b>，其中 Tract 1.80GW、Prometheus 1.25GW、Brookfield 1.20GW、EdgeCore 1.10GW、AVAIO 1.00GW 的 Customer 列明确写着待定 / 无锚定租户 / 未披露——<b>容量存在不等于算力需求存在</b>。反过来，Meta 的 8.60GW 摊在 6 个项目上且逐条注明「Meta 自用」，是这张表里最实的一类。
-      </div>
-    </div>
-  </section>
-
-  <section class="lp-panel">
-    <div class="lp-inner">
-      <div class="kick">Anchor Tenants</div>
-      <h2>锚定租户 · OpenAI 与 Anthropic 锁走了 35.17GW</h2>
-      <p class="lp-sub">同一份 A 口径 53 条项目换「租户」视角看「谁在用」。租户 ≠ 业主：资产登记在开发商名下，模型厂以长租锁定容量——<b>OpenAI 12 项 23.77GW</b>、<b>Anthropic 13 项 11.40GW</b>，合计占 A 口径 52.0%。点击下方卡片，地图会高亮其锁定容量所在的州（与业主高亮互斥，再点一次取消）。</p>
-      <div class="tgrid" id="tenantCards"></div>
-      <div class="lp-foot">
-        <b>口径注意：</b>「自用 + 出租」混合行按全容量计入该租户（如 SpaceXAI Colossus 2 为自用 Grok + 对外出租 Anthropic / Cursor / Google）；Riot Rockdale 0.19GW 客户未公开具名（Bloomberg 指向 Anthropic，双方未确认），按媒体报道计入并如实标注。<b>租户容量与业主容量不可相加</b>——同一园区两边各计一次。
       </div>
     </div>
   </section>
