@@ -730,8 +730,8 @@ main:not(.home) > .lp-panel:first-of-type{margin-top:34px}
 }
 
 /* ═══ 锚定租户视图（aidc-us.html · OpenAI / Anthropic） ═══ */
-.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
-.tcard{border:1px solid var(--card-bd);background:var(--card);border-radius:10px;
+.tgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;margin-top:26px}
+.tcard{min-width:0;overflow:hidden;border:1px solid var(--card-bd);background:var(--card);border-radius:10px;
   padding:18px 18px 14px;cursor:pointer;transition:border-color .15s,transform .15s}
 .tcard:hover{border-color:var(--line-strong)}
 .tcard.on{border-color:var(--accent);background:#221f1c}
@@ -749,7 +749,8 @@ main:not(.home) > .lp-panel:first-of-type{margin-top:34px}
 .tlord .tlk{flex:none;color:var(--meta);letter-spacing:.14em}
 .tlord .tlv{display:flex;flex-wrap:wrap;gap:5px}
 .tlord .tlv i{font-style:normal;border:1px solid var(--line-strong);border-radius:6px;
-  padding:2px 8px;font-size:11px;color:var(--text)}
+  padding:2px 8px;font-size:11px;color:var(--text);max-width:236px;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
 .tlord .tlv i b{color:var(--accent);font-weight:600;margin-left:4px}
 .tlord .tlv i.more{color:var(--meta)}
 .trows{margin-top:12px;border-top:1px dashed var(--line)}
@@ -757,7 +758,7 @@ main:not(.home) > .lp-panel:first-of-type{margin-top:34px}
   font-size:12px}
 .trow:last-child{border-bottom:none}
 .trow .ts{flex:none;width:34px;color:var(--meta);font-size:10.5px;letter-spacing:.04em}
-.trow .tn{flex:1;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.trow .tn{flex:1;min-width:0;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .trow .tn b, .trow .tn{color:var(--sub)}
 .trow .tv{flex:none;font-weight:700;color:var(--text);font-size:12px}
 .trow .chip{flex:none;font-size:10px}

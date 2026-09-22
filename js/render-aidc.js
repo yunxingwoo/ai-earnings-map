@@ -476,11 +476,11 @@
   function tcardHTML(t) {
     const chips = CATS.filter(c => t.catGW[c]).map(c =>
       '<span class="tc-cat"><i style="background:' + CAT_HEX[c] + '"></i>' + CAT_CN[c] + ' ' + t.catGW[c].toFixed(2) + 'GW · ' + t.by[c] + '项</span>').join('');
-    const lords = t.lords.slice(0, 4).map(l => '<i>' + esc(l.name) + '<b>' + l.gw.toFixed(2) + '</b></i>').join('') +
+    const lords = t.lords.slice(0, 4).map(l => '<i title="' + esc(l.name) + '">' + esc(l.name) + '<b>' + l.gw.toFixed(2) + '</b></i>').join('') +
       (t.lords.length > 4 ? '<i class="more">+ ' + (t.lords.length - 4) + ' 家</i>' : '');
     const rows = t.rows.slice().sort((a, b) => (b.gw || 0) - (a.gw || 0)).map(p =>
       '<div class="trow"><span class="ts">' + (p.states || []).join('/') + '</span>' +
-      '<span class="tn">' + esc(p.ownerShort) + ' · ' + esc(p.project) + '</span>' +
+      '<span class="tn" title="' + esc(p.ownerShort) + ' · ' + esc(p.project) + '">' + esc(p.ownerShort) + ' · ' + esc(p.project) + '</span>' +
       '<span class="tv">' + (p.gw != null ? p.gw.toFixed(2) + 'GW' : '—') + '</span>' +
       '<i class="chip chip-' + p.cat + '">' + CAT_CN[p.cat] + '</i></div>').join('');
     return '<div class="tcard' + (ten === t.id ? ' on' : '') + '" data-t="' + t.id + '">' +
