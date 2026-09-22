@@ -20,7 +20,7 @@ n_co, n_lanes, n_met, n_src = counts
 data_date = datetime.date.today().strftime('%Y-%m-%d')
 print(f'数字: 公司{n_co} 环节{n_lanes} 指标{n_met} 溯源{n_src} | 数据版本 {data_date}')
 
-# 2) 生成二维码(墨蓝 #17304F 圆角模块,奶白底,自带 2 模块静区)
+# 2) 生成二维码(站点深色 #141413 模块,象牙白底,自带 2 模块静区)
 os.makedirs(WORK, exist_ok=True)
 qr_code = f'''
 import qrcode
@@ -31,7 +31,7 @@ qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M, box_size=2
 qr.add_data({URL!r})
 qr.make(fit=True)
 img = qr.make_image(image_factory=StyledPilImage, module_drawer=RoundedModuleDrawer(),
-                    color_mask=SolidFillColorMask(back_color=(251,246,236), front_color=(23,48,79)))
+                    color_mask=SolidFillColorMask(back_color=(250,249,245), front_color=(20,20,19)))
 img.save({WORK!r}+'/qr.png')
 '''
 subprocess.run([PY, '-c', qr_code], check=True)
