@@ -728,3 +728,39 @@ main:not(.home) > .lp-panel:first-of-type{margin-top:34px}
   .ow-row{grid-template-columns:minmax(0,1fr) 40px;column-gap:9px}
   .ow-row .ow-bar{display:none}
 }
+
+/* ═══ 锚定租户视图（aidc-us.html · OpenAI / Anthropic） ═══ */
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
+.tcard{border:1px solid var(--card-bd);background:var(--card);border-radius:10px;
+  padding:18px 18px 14px;cursor:pointer;transition:border-color .15s,transform .15s}
+.tcard:hover{border-color:var(--line-strong)}
+.tcard.on{border-color:var(--accent);background:#221f1c}
+.tcard-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.tcard-h .tnm{font-size:19px;font-weight:800;letter-spacing:.5px}
+.tcard-h .tgw{font-size:24px;font-weight:800;color:var(--accent)}
+.tcard-h .tgw em{font-style:normal;font-size:12px;color:var(--sub);margin-left:3px}
+.tcard-sub{margin-top:6px;font-size:12px;color:var(--sub)}
+.tcard-sub b{color:var(--text)}
+.tchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tc-cat{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--sub);
+  border:1px solid var(--line-strong);border-radius:99px;padding:3px 9px}
+.tc-cat i{width:7px;height:7px;border-radius:2px;display:inline-block}
+.tlord{margin-top:12px;font-size:12px;color:var(--sub);display:flex;gap:8px;align-items:baseline}
+.tlord .tlk{flex:none;color:var(--meta);letter-spacing:.14em}
+.tlord .tlv{display:flex;flex-wrap:wrap;gap:5px}
+.tlord .tlv i{font-style:normal;border:1px solid var(--line-strong);border-radius:6px;
+  padding:2px 8px;font-size:11px;color:var(--text)}
+.tlord .tlv i b{color:var(--accent);font-weight:600;margin-left:4px}
+.tlord .tlv i.more{color:var(--meta)}
+.trows{margin-top:12px;border-top:1px dashed var(--line)}
+.trow{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px dashed var(--line);
+  font-size:12px}
+.trow:last-child{border-bottom:none}
+.trow .ts{flex:none;width:34px;color:var(--meta);font-size:10.5px;letter-spacing:.04em}
+.trow .tn{flex:1;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.trow .tn b, .trow .tn{color:var(--sub)}
+.trow .tv{flex:none;font-weight:700;color:var(--text);font-size:12px}
+.trow .chip{flex:none;font-size:10px}
+.tgo{margin-top:10px;font-size:11px;letter-spacing:.16em;color:var(--meta);text-align:center}
+.tcard.on .tgo{color:var(--accent)}
+@media (max-width:860px){.tgrid{grid-template-columns:1fr}}

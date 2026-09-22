@@ -79,6 +79,36 @@
   const OWNERS = OWN.list;
   const O = n => OWN.byName[n];
 
+  /* ── 锚定租户聚合（A 口径；按 Customer 列匹配，主打 OpenAI / Anthropic） ──
+     口径说明：客户列含该租户的行全部计入；「自用+出租」混合行按全容量计入（卡片内注明） */
+  const TENANTS = (function () {
+    const defs = [
+      { id: 'openai', name: 'OpenAI', re: /openai/i },
+      { id: 'anthropic', name: 'Anthropic', re: /anthropic/i }
+    ];
+    return defs.map(d => {
+      const rows = AIDC_US.projects.filter(p => p.scope === 'A' && d.re.test(p.customer || ''));
+      const t = { id: d.id, name: d.name, gw: 0, n: rows.length, by: {}, catGW: {}, st: {}, rows: rows.slice() };
+      const lm = Object.create(null);
+      rows.forEach(p => {
+        t.gw += p.gw || 0;
+        t.by[p.cat] = (t.by[p.cat] || 0) + 1;
+        t.catGW[p.cat] = (t.catGW[p.cat] || 0) + (p.gw || 0);
+        (p.states || []).forEach(s => { t.st[s] = (t.st[s] || 0) + (p.gw || 0); });
+        const k = p.ownerShort || p.owner || '—';
+        const e = lm[k] || (lm[k] = { name: k, gw: 0 });
+        e.gw += p.gw || 0;
+      });
+      t.stList = Object.entries(t.st).sort((a, b) => b[1] - a[1]);
+      const ce = Object.entries(t.catGW).sort((a, b) => b[1] - a[1]);
+      t.dc = (ce.length > 1 && ce[1][1] / t.gw >= 0.34) ? 'mixed' : ce[0][0];
+      t.lords = Object.values(lm).sort((a, b) => b.gw - a.gw);
+      t.share = t.gw / OWN.total;
+      return t;
+    });
+  })();
+  const tOf = id => TENANTS.filter(t => t.id === id)[0] || null;
+
   /* ── 色阶：以卡片底色为基准向主色插值 ── */
   const BG = [30, 30, 28], AC = [217, 119, 87];
   const mix = a => '#' + [0, 1, 2].map(i => Math.round(BG[i] + (AC[i] - BG[i]) * a).toString(16).padStart(2, '0')).join('');
@@ -95,6 +125,7 @@
   let cur = 'gw';
   let sel = null;
   let own = null;   // 高亮中的业主名（null = 未选）
+  let ten = null;   // 高亮中的锚定租户 id（与业主高亮互斥）
 
   const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const S = code => AIDC_US.states[code] || { n: 0, gw: 0, gwOp: 0, gwAll: 0, gwOpAll: 0, nAll: 0, by: {}, owners: [] };
@@ -141,13 +172,13 @@
   /* ── 上色 ── */
   function paint() {
     const m = METRICS.filter(x => x.id === cur)[0];
-    const os = own ? (O(own) ? O(own).st : null) : null;
+    const hl = own ? (O(own) ? O(own).st : null) : (ten ? (tOf(ten) ? tOf(ten).st : null) : null);
     document.querySelectorAll('#usmap .st').forEach(p => {
       const code = p.dataset.code, s = S(code);
       let cls = 'st' + (s.n ? '' : ' nod') + (sel === code ? ' sel' : '');
-      if (os) {
-        p.setAttribute('fill', os[code] ? '#d97757' : '#242422');
-        cls += os[code] ? ' own' : ' dim';
+      if (hl) {
+        p.setAttribute('fill', hl[code] ? '#d97757' : '#242422');
+        cls += hl[code] ? ' own' : ' dim';
       } else {
         p.setAttribute('fill', fillOf(m, s, code) || '#242422');
       }
@@ -158,7 +189,7 @@
       let cls = 'lb';
       if (s.n) cls += ' d';
       if (sel === code) cls += ' on';
-      if (os) { if (os[code]) cls += ' hot'; else cls += ' d dim'; if (sel === code) cls = cls.replace(' dim', ''); }
+      if (hl) { if (hl[code]) cls += ' hot'; else cls += ' d dim'; if (sel === code) cls = cls.replace(' dim', ''); }
       else if (m.cat) { if (s.n) cls += ' hot'; }
       else if (m2 === 3) cls += ' hot';
       t.setAttribute('class', cls);
@@ -170,6 +201,15 @@
     const el = document.getElementById('mapLegend');
     if (!el) return;
     const noDat = '<span class="lp-lg dim"><i style="background:#242422;height:9px;border-radius:3px;border:1px solid rgba(250,249,245,.18)"></i>无项目</span>';
+    if (ten) {
+      const t = tOf(ten);
+      const k = t ? t.stList.filter(x => x[1] > 0).length : 0;
+      el.innerHTML = '<span class="lp-lg"><i style="background:#d97757;height:9px;border-radius:3px"></i>' +
+        esc(t.name) + ' 锁定容量所在州（' + k + ' 个）</span>' +
+        '<span class="lp-lg dim"><i style="background:#242422;height:9px;border-radius:3px;border:1px solid rgba(250,249,245,.18)"></i>其余州</span>' +
+        '<span class="lp-lg dim">再点一次取消高亮</span>';
+      return;
+    }
     if (own) {
       const o = O(own);
       const k = o ? o.stList.filter(x => x[1] > 0).length : 0;
@@ -202,7 +242,7 @@
       const n = document.getElementById('metricNote');
       const m = METRICS.filter(x => x.id === cur)[0];
       if (n) n.textContent = m.note ? m.note : '';
-      if (own) { own = null; refreshOwner(); }   // 指标与业主高亮互斥，避免两套读法打架
+      if (own || ten) { own = null; ten = null; refreshOwner(); refreshTenants(); }   // 指标与高亮互斥，避免两套读法打架
       paint();
     });
   }
@@ -228,6 +268,7 @@
   function setOwner(name) {
     const n = name || null;
     own = (n && own === n) ? null : n;   // 同一点第二次 = 取消
+    if (own && ten) { ten = null; refreshTenants(); }   // 业主/租户高亮互斥
     refreshOwner(); paint();
   }
   if (ownBar) {
@@ -428,6 +469,43 @@
         note: OWN.roleGW.tbd.toFixed(2) + 'GW 无锚定租户 · ' + tbdList + ' 等 ' + tbdTop.length + ' 家' }
     ].map(c => '<div class="bstat"><div class="bs-no">' + c.no + '</div><div class="bs-num">' + c.num +
       '</div><div class="bs-label">' + c.label + '</div><div class="bs-note">' + c.note + '</div></div>').join('');
+  }
+
+  /* ── 锚定租户视图（主打 OpenAI / Anthropic：租户≠业主，资产在开发商名下） ── */
+  const tCards = document.getElementById('tenantCards');
+  function tcardHTML(t) {
+    const chips = CATS.filter(c => t.catGW[c]).map(c =>
+      '<span class="tc-cat"><i style="background:' + CAT_HEX[c] + '"></i>' + CAT_CN[c] + ' ' + t.catGW[c].toFixed(2) + 'GW · ' + t.by[c] + '项</span>').join('');
+    const lords = t.lords.slice(0, 4).map(l => '<i>' + esc(l.name) + '<b>' + l.gw.toFixed(2) + '</b></i>').join('') +
+      (t.lords.length > 4 ? '<i class="more">+ ' + (t.lords.length - 4) + ' 家</i>' : '');
+    const rows = t.rows.slice().sort((a, b) => (b.gw || 0) - (a.gw || 0)).map(p =>
+      '<div class="trow"><span class="ts">' + (p.states || []).join('/') + '</span>' +
+      '<span class="tn">' + esc(p.ownerShort) + ' · ' + esc(p.project) + '</span>' +
+      '<span class="tv">' + (p.gw != null ? p.gw.toFixed(2) + 'GW' : '—') + '</span>' +
+      '<i class="chip chip-' + p.cat + '">' + CAT_CN[p.cat] + '</i></div>').join('');
+    return '<div class="tcard' + (ten === t.id ? ' on' : '') + '" data-t="' + t.id + '">' +
+      '<div class="tcard-h"><span class="tnm">' + esc(t.name) + '</span>' +
+      '<span class="tgw num">' + t.gw.toFixed(2) + '<em>GW</em></span></div>' +
+      '<div class="tcard-sub">A 口径 ' + t.n + ' 个项目 · 占 A 口径 <b>' + (t.share * 100).toFixed(1) + '%</b> · 主状态 ' + CAT_CN[t.dc] + '</div>' +
+      '<div class="tchips">' + chips + '</div>' +
+      '<div class="tlord"><span class="tlk">供地业主</span><span class="tlv">' + lords + '</span></div>' +
+      '<div class="trows">' + rows + '</div>' +
+      '<div class="tgo">' + (ten === t.id ? '高亮中 · 再点一次取消' : '点击卡片 → 地图高亮其锁定州') + '</div>' +
+      '</div>';
+  }
+  function refreshTenants() {
+    if (tCards) tCards.innerHTML = TENANTS.map(tcardHTML).join('');
+  }
+  if (tCards) {
+    refreshTenants();
+    tCards.addEventListener('click', e => {
+      const c = e.target.closest('.tcard'); if (!c) return;
+      ten = (ten === c.dataset.t) ? null : c.dataset.t;
+      if (ten && own) { own = null; refreshOwner(); }
+      refreshTenants(); paint();
+      const mb = document.getElementById('mapbox');
+      if (mb && ten) mb.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    });
   }
 
   paint();
