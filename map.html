@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>全景地图 · AI 算力财报全景</title>
+<link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#141413">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="nav-brand" href="index.html"><span class="logo">AI</span> AI 算力财报全景 <span class="en">EARNINGS INTELLIGENCE</span></a>
+    <div class="nav-pills">
+      <a href="index.html">产业总览</a>
+      <a href="map.html" class="on">全景地图</a>
+      <a href="aidc-us.html">北美 AIDC</a>
+      <a href="#verify">交叉验证</a>
+      <a href="#gaps">数据缺口</a>
+    </div>
+    <div class="nav-right">
+      <span class="author">by luckywoo</span>
+      <span class="tz" id="tzNote">北京时区 · 数据实时计算</span>
+      <a class="btn-small" href="#verify">交叉验证</a>
+    </div>
+  </div>
+</nav>
+
+<div class="infobar">
+  <div class="infobar-in">
+    <span>2026Q2 财报季</span>
+    <span id="stat"></span>
+    <span class="progress"><i></i></span>
+    <span id="nextEarn">下一财报：待更新</span>
+  </div>
+</div>
+
+<main>
+  <section class="hero">
+    <h1>全景地图 · 15 个产业节点的景气传导</h1>
+    <p class="sub oneline">节点卡片大小 ∝ 营收体量，颜色 = 信号灯；点击卡片查看指标、同比环比与溯源位置。非上市与待核公司以虚线卡呈现，指标区整体留空。</p>
+    <div class="legend">
+      <div class="grp">
+        <span class="dot green"></span>上行加速
+        <span class="dot yellow" style="margin-left:8px"></span>正增长减速 / 温和
+        <span class="dot red" style="margin-left:8px"></span>负增长
+        <span class="dot gray" style="margin-left:8px"></span>数据不足
+      </div>
+      <div class="grp tierbadge">★ 龙头 &nbsp;● 核心 &nbsp;○ 二线 &nbsp;·&nbsp; ☁ 非上市（无定期财报）</div>
+      <div class="grp tierbadge">卡片尺寸 ∝ 营收体量</div>
+    </div>
+  </section>
+
+  <section class="map" id="map"></section>
+
+
+  <section class="lp-panel">
+    <div class="lp-inner" id="backlog"></div>
+  </section>
+
+  <section class="alt" id="verify">
+    <div class="alt-in">
+      <div>
+        <div class="kick">Cross-Validation</div>
+        <h2>交叉验证 · 只标记，不调和</h2>
+        <div class="vchain" id="vchain"></div>
+        <p class="foot">⚠️ 表示同季方向背离或幅度显著失配；面板只并列双方原始数字与来源，不作主观解读。缺数据的对照格显示“—”，不参与判定。</p>
+      </div>
+      <div id="gaps">
+        <div class="kick">Data Gaps</div>
+        <h2>数据缺口墙</h2>
+        <div class="gaplist" id="gaplist"></div>
+        <p class="foot">空白即是可信度：非上市公司无定期财报义务，其指标区默认整体留空；“待核/待采集”节点将随核查与采集管线（v2）逐季点亮。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>信号灯规则：🟢 营收 YoY &gt; 20% 且较上季加速 · 🟡 正增长减速或 0–20% · 🔴 负增长 · ⚪ 数据不足</div>
+  <div class="rule">YoY / QoQ 由页面按公开公式从原始披露值实时计算，不存储衍生结果 · 视觉系统参照 Claude DESIGN.md 深色侧</div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-hidden="true"></aside>
+
+<script src="data/companies.js"></script>
+<script src="data/metrics.js"></script>
+<script src="data/sources.js"></script>
+<script src="data/calendar.js"></script>
+<script src="data/valuation.js"></script>
+<script src="data/signals-history.js"></script>
+<script src="js/calc.js"></script>
+<script src="js/render-map.js"></script>
+<script src="js/panels-map.js"></script>
+<script src="fx.js"></script>
+<script src="js/pwa.js"></script>
+</body>
+</html>

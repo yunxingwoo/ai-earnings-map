@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>北美 AIDC 地图 · AI 算力财报全景</title>
+<link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#141413">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="nav-brand" href="index.html"><span class="logo">AI</span> AI 算力财报全景 <span class="en">EARNINGS INTELLIGENCE</span></a>
+    <div class="nav-pills">
+      <a href="index.html">产业总览</a>
+      <a href="map.html">全景地图</a>
+      <a href="aidc-us.html" class="on">北美 AIDC</a>
+      <a href="map.html#verify">交叉验证</a>
+    </div>
+    <div class="nav-right">
+      <span class="author">by luckywoo</span>
+      <span class="tz" id="tzNote">州级容量 · 矢量地图</span>
+      <a class="btn-small" href="map.html">全景地图</a>
+    </div>
+  </div>
+</nav>
+
+<div class="infobar">
+  <div class="infobar-in">
+    <span>AIDC 三元结构主表 · 2026Q3 v2.5</span>
+    <span>核实截至 2026-09-07</span>
+    <span class="progress"><i style="width:88%"></i></span>
+    <span>全表 76 条 · <span id="stProj">—</span> · A 口径 <span id="stGW">—</span> · <span id="stOwn">—</span> · 覆盖 <span id="stStates">—</span></span>
+  </div>
+</div>
+
+<main>
+
+  <section class="hero">
+    <h1>北美 AIDC 建设地图<br>逐州的容量、业主与在建状态</h1>
+    <p class="sub">矢量州界按 Albers USA 等积投影绘制，州与州分开着色并标注缩写。地图底色只表达 <b>A 口径</b>——美国数据中心容量；发电侧核电 PPA、存量市场、全球组合等口径单列于下方「口径对照」，<b>不与 A 相加</b>。点击任一州查看该州项目清单与状态构成，也可按<b>业主</b>高亮，看清同一主体把容量布在了哪几个州。</p>
+    <div class="legend">
+      <div class="grp">
+        <span class="dot" style="background:#d97757"></span>规划容量（A 口径）
+        <span class="dot" style="background:#7fa56b;margin-left:8px"></span>已投运为主
+        <span class="dot" style="background:#d9a057;margin-left:8px"></span>已宣布 / 规划为主
+        <span class="dot" style="background:#87867f;margin-left:8px"></span>混合或无项目
+      </div>
+      <div class="grp tierbadge">州界来源：US Census Bureau 1:10,000,000（us-atlas states-albers-10m）</div>
+      <div class="grp tierbadge">AK / HI 为等积投影插图，位置不按经纬度</div>
+    </div>
+    <a class="ten-quick" href="#tenants">
+      <span class="tq-k">✳ 锚定租户</span>
+      <span class="tq-v">OpenAI <b class="num">23.77GW</b></span>
+      <span class="tq-v">Anthropic <b class="num">11.40GW</b></span>
+      <span class="tq-go">查看租户视图 →</span>
+    </a>
+  </section>
+
+  <section class="lp-panel">
+    <div class="lp-inner">
+      <div class="kick">North America AIDC · State Level</div>
+      <h2>州级建设图谱 · 76 条项目的州分布</h2>
+      <p class="lp-sub">底色深浅 = 所选指标；东北小州（VT / NH / MA / RI / CT / NJ / DE / MD / DC）标签外移到大西洋留白并以细引线连接。悬停看该州明细，点击展开完整项目清单。<b>按业主高亮</b>只改变地图着色，不改变任何容量口径。</p>
+
+      <div class="filterbar" id="metricBar"></div>
+      <div class="mapbox" id="mapbox">
+        <svg id="usmap" role="img" aria-label="美国各州 AIDC 建设情况矢量地图"></svg>
+        <div class="mtip" id="mtip"></div>
+      </div>
+      <div class="lp-legend" id="mapLegend"></div>
+      <div class="filterbar ownerbar" id="ownerBar"></div>
+      <div class="own-note" id="ownerNote"></div>
+      <div class="lp-foot">
+        <b>读法：</b>底色只含 A 口径（可解析出美国数据中心容量的 53 条 / 67.55GW）；其余 1 条（AWS 政府专用园区 1.3GW）未披露具体州，单列不计入州级合计，故 19 个州合计为 66.25GW。
+        <span id="metricNote"></span>
+        <b>数据源：</b>用户提供工作簿 AIDC_Owner-Campus-Customer_2026Q3_v2.5.xlsx，核实截至 2026-09-07；口径分桶依其 Sheet 4 定义，本页未作任何估算或插值。
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-panel" id="tenants">
+    <div class="lp-inner">
+      <div class="kick">Anchor Tenants</div>
+      <h2>锚定租户 · OpenAI 与 Anthropic 锁走了 35.17GW</h2>
+      <p class="lp-sub">同一份 A 口径 53 条项目换「租户」视角看「谁在用」。租户 ≠ 业主：资产登记在开发商名下，模型厂以长租锁定容量——<b>OpenAI 12 项 23.77GW</b>、<b>Anthropic 13 项 11.40GW</b>，合计占 A 口径 52.0%。点击下方卡片，地图会高亮其锁定容量所在的州（与业主高亮互斥，再点一次取消）。</p>
+      <div class="tgrid" id="tenantCards"></div>
+      <div class="lp-foot">
+        <b>口径注意：</b>「自用 + 出租」混合行按全容量计入该租户（如 SpaceXAI Colossus 2 为自用 Grok + 对外出租 Anthropic / Cursor / Google）；Riot Rockdale 0.19GW 客户未公开具名（Bloomberg 指向 Anthropic，双方未确认），按媒体报道计入并如实标注。<b>租户容量与业主容量不可相加</b>——同一园区两边各计一次。
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-panel">
+    <div class="lp-inner">
+      <div class="kick">Owner Landscape</div>
+      <h2>业主图谱 · 36 家业主，前五家占了 51.8%</h2>
+      <p class="lp-sub">同一份 A 口径 53 条项目，换一个视角看「谁在建」。条形长度 = 该业主的 A 口径容量（按榜首等比），条形颜色 = 其容量的<b>主建设状态</b>；名称旁的标签是<b>业主角色</b>，按工作簿 Customer 列判定——<b>自用</b>（Customer 即业主自身或其自有平台）、<b>出租</b>（Customer 为第三方主体）、<b>未定</b>（Customer 列标注待定 / 未披露 / 招商）。点击任一行，地图上该业主所在州会整体高亮。</p>
+      <div class="lp-legend">
+        <span class="lp-lg"><i style="background:#7fa56b;height:9px;border-radius:3px"></i>已投运为主</span>
+        <span class="lp-lg"><i style="background:#d97757;height:9px;border-radius:3px"></i>在建为主</span>
+        <span class="lp-lg"><i style="background:#d9a057;height:9px;border-radius:3px"></i>已宣布为主</span>
+        <span class="lp-lg"><i style="background:#87867f;height:9px;border-radius:3px"></i>状态混合</span>
+        <span class="lp-lg dim">右侧上排 GW · 下排占 A 口径比例 · 州徽章为该业主在该州的容量</span>
+      </div>
+      <div class="bigstats" id="ownerStats"></div>
+      <div class="olist" id="owners"></div>
+      <div class="lp-foot">
+        <b>怎么读这张榜：</b>容量最大的不是云厂，而是把电力和园区卖给别人用的开发商——榜首 SB Energy 9.20GW 全部出租给 OpenAI。前五家里三家自用（Meta 8.60 / Google 5.34 / Microsoft 4.00，合计 17.94GW），两家出租（SB Energy 9.20 / AWS 7.82，合计 17.02GW）。<br>
+        ⚠️ <b>最该警惕的一档：</b>「租户未定」的业主合计 <b>10.77GW = A 口径的 15.9%</b>，其中 Tract 1.80GW、Prometheus 1.25GW、Brookfield 1.20GW、EdgeCore 1.10GW、AVAIO 1.00GW 的 Customer 列明确写着待定 / 无锚定租户 / 未披露——<b>容量存在不等于算力需求存在</b>。反过来，Meta 的 8.60GW 摊在 6 个项目上且逐条注明「Meta 自用」，是这张表里最实的一类。
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-panel">
+    <div class="lp-inner">
+      <div class="kick">State Ranking</div>
+      <h2>州排行 · A 口径规划容量</h2>
+      <p class="lp-sub">条形长度按各州 A 口径规划容量等比绘制。得州以 14.20GW 居首，但其 16 个项目中 11 个在建、2 个已投运、3 个已宣布——容量与可交付之间隔着并网、设备与融资三重约束。</p>
+      <div class="rank" id="rank"></div>
+      <div class="lp-foot">「多站点未披露」= AWS 政府专用 AI 算力园区 1.3GW，工作簿未落到具体州。</div>
+    </div>
+  </section>
+
+  <section class="lp-panel">
+    <div class="lp-inner">
+      <div class="kick">Scope Reconciliation</div>
+      <h2>口径对照 · 同一张表的八种读法</h2>
+      <p class="lp-sub">这是本页最重要的一段。同一份 76 条主表，按不同口径可以读出 6.27GW 到 67.55GW 的完全不同的「北美 AIDC 规模」。条形按 GW 等比绘制，<b>只有 A 与 A-1 是算力容量口径</b>。</p>
+      <div class="scope-rows" id="scopes"></div>
+      <div class="lp-foot">⚠️ A + B = 89.55GW 但 B 是远景发电装机、不可相加；A + F ≈ 73.8GW 为粗略上界（F 内已含 A 里 QTS 等的一部分）；C / G 分别含电力资产与境外容量，与本口径均不可加。</div>
+    </div>
+  </section>
+
+  <section class="alt" id="notes">
+    <div class="alt-in">
+      <div>
+        <div class="kick">Key Findings</div>
+        <h2>本表里最该先看的五条</h2>
+        <div class="vchain">
+          <div class="vrow">
+            <span class="mark">①</span>
+            <span class="vn">容量口径污染</span>
+            <span class="vbody"><span class="pair">v1.7–v2.0 沿用的 <b>34.11GW</b> 是用「单元格是否数字」筛出来的，漏掉 26 条文本型容量；v2.1 起作废，正确值 <b>A 口径 67.55GW</b>。</span>
+              <span class="note">教训与本站「不估算、不插值」的数据纪律同源：口径必须人工打标，不能靠类型判断。</span></span>
+          </div>
+          <div class="vrow">
+            <span class="mark">②</span>
+            <span class="vn">得州 ERCOT 冻结</span>
+            <span class="vbody"><span class="pair">2026-08-03 Abbott 致信 PUCT / ERCOT，完成核查前数据中心不得推进并网；本表 19 条得州条目中 <b>14 条受影响 ≈ 12.5GW = A 口径的 18.5%</b>。</span>
+              <span class="note">ERCOT 队列 474GW、1,800+ 项目、约 90% 为数据中心。豁免仅 3 条（离网 / 自备电源 / 既有协议）。</span></span>
+          </div>
+          <div class="vrow">
+            <span class="mark">③</span>
+            <span class="vn">Abilene 单点密度</span>
+            <span class="vbody"><span class="pair">Stargate 1.2GW + Crusoe/Microsoft 0.9GW = <b>2.1GW 集中在一座 12.5 万人的城市</b>，超过特拉华州全州日均用电。</span>
+              <span class="note">同一场地内锚定租户可在数周内由 Oracle/OpenAI 换成 Microsoft，而总容量不变。</span></span>
+          </div>
+          <div class="vrow">
+            <span class="mark">④</span>
+            <span class="vn">规划 ≠ 可交付</span>
+            <span class="vbody"><span class="pair">Prince William Digital Gateway：2,100 英亩 / 37 栋 / 估 $1,000亿，<b>2026-07-02 终结</b>，容量归零。推翻原因是程序瑕疵，不是需求不足。</span>
+              <span class="note">全表 76 条中 40 条在建、20 条已宣布/规划、15 条已投运、1 条已终止——在建占过半。</span></span>
+          </div>
+          <div class="vrow">
+            <span class="mark">⑤</span>
+            <span class="vn">业主 ≠ 租户</span>
+            <span class="vbody"><span class="pair">A 口径 36 家业主里 20 家是出租方，其容量 <b>30.68GW = 45.4%</b>；另有 <b>10.77GW（15.9%）的 Customer 列直接写着待定 / 无锚定租户 / 未披露</b>。</span>
+              <span class="note">榜首 SB Energy 9.20GW 全部租给 OpenAI，Meta 8.60GW 则 6 条全部注明自用——同一张表的 67.55GW 里，「有租户的容量」与「先建再找租户的容量」是两种完全不同的资产。</span></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="kick">Provenance</div>
+        <h2>数据来源与边界</h2>
+        <div class="gaplist">
+          <div class="gaprow"><span class="gn">数据源</span><span class="gr">AIDC_Owner-Campus-Customer_2026Q3_v2.5.xlsx<br>Sheet 1 主表 76 条 + Sheet 4 口径定义</span></div>
+          <div class="gaprow"><span class="gn">核实截至</span><span class="gr">2026-09-07（工作簿标注）</span></div>
+          <div class="gaprow"><span class="gn">矢量州界</span><span class="gr">US Census Bureau 1:10,000,000<br>us-atlas@3 states-albers-10m</span></div>
+          <div class="gaprow"><span class="gn">业主口径</span><span class="gr">按 Sheet 1「Owner / Customer」两列判定<br>自用 / 出租 / 未定 · A 口径 36 家 67.55GW</span></div>
+          <div class="gaprow"><span class="gn">本页处理</span><span class="gr">仅结构化与重新聚合，未新增估算值</span></div>
+          <div class="gaprow"><span class="gn">已知低估</span><span class="gr">STACK/LA、Microsoft Cheyenne 等 5 条容量官方未披露<br>真实值可能再高约 1~2GW</span></div>
+          <div class="gaprow"><span class="gn">换算约定</span><span class="gr">1 GW = 1,000 MW；容量单位一律 GW</span></div>
+        </div>
+        <p class="foot">本页与「全景地图」中按官方口径披露的 11 个北美 AIDC 项目（data/capacity.js）是两套独立口径：前者严格限于运营商官方披露，本页为第三方研究汇编。两者不互相覆盖，也不相加。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>口径分桶：A 美国数据中心容量（核心）· A-1 剔除核电 PPA 上限 · B 远景/发电装机 · C 发电侧核电 PPA · F 美国存量市场 · G 全球组合 · E 无数值/汇总重复/融资层 · H 已终止</div>
+  <div class="rule">地图底色只表达 A 口径，勿与 B / C / F / G 相加 · 业主角色按工作簿 Customer 列判定（自用 / 出租 / 未定）· 矢量州界按 Albers USA 等积投影绘制 · 视觉系统参照 Claude DESIGN.md 深色侧</div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-hidden="true"></aside>
+
+<script src="data/aidc-us.js"></script>
+<script src="data/us-map.js"></script>
+<script src="js/render-aidc.js"></script>
+<script src="js/pwa.js"></script>
+</body>
+</html>
