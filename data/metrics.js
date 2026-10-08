@@ -2,6 +2,37 @@
    未披露 = 字段缺省;YoY/QoQ 不落库,由 js/calc.js 实时计算 */
 const METRICS = [
  {
+  "company": "mu",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": {
+    "value": 54230,
+    "unit": "USD_M",
+    "src": "mu-fy26q4-er"
+   },
+   "gross_margin": {
+    "value": 0.87,
+    "src": "mu-fy26q4-er"
+   },
+   "net_income": {
+    "value": 37700,
+    "unit": "USD_M",
+    "src": "mu-fy26q4-er"
+   }
+  }
+ },
+ {
+  "company": "samsung",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": {
+    "value": 195000,
+    "unit": "KRW_B",
+    "src": "samsung-2026q3-guidance"
+   }
+  }
+ },
+ {
   "company": "zhipu",
   "period": "2026H1",
   "metrics": {
