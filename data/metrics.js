@@ -2,6 +2,36 @@
    未披露 = 字段缺省;YoY/QoQ 不落库,由 js/calc.js 实时计算 */
 const METRICS = [
  {
+  "company": "tsmc",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 1494240, "unit": "TWD_M", "src": "tsmc-2026q3-er" },
+   "gross_margin": { "value": 0.664, "src": "tsmc-2026q3-er" },
+   "net_income": { "value": 763060, "unit": "TWD_M", "src": "tsmc-2026q3-er" }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2026M9",
+  "metrics": {
+   "monthly_revenue": { "value": 511860, "unit": "TWD_M", "src": "tsmc-monthly-2026m9" }
+  }
+ },
+ {
+  "company": "quanta",
+  "period": "2026M9",
+  "metrics": {
+   "monthly_revenue": { "value": 325300, "unit": "TWD_M", "src": "mops-t21-115m9" }
+  }
+ },
+ {
+  "company": "wiwynn",
+  "period": "2026M9",
+  "metrics": {
+   "monthly_revenue": { "value": 172620.352, "unit": "TWD_M", "src": "mops-t21-115m9" }
+  }
+ },
+ {
   "company": "mu",
   "period": "2026Q3",
   "metrics": {
