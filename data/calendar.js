@@ -14,8 +14,9 @@ const EARNINGS_CALENDAR = [
   { company:'goog',      name:'谷歌',     date:'2026-10-28', event:'2026Q3', est:true },
   { company:'meta',      name:'Meta',     date:'2026-10-29', event:'2026Q3', est:true },
   { company:'tsmc',      name:'台积电',   date:'2026-10-16', event:'2026Q3', est:true },
-  { company:'hynix',     name:'SK海力士', date:'2026-10-22', event:'2026Q3', est:true },
+  { company:'hynix',     name:'SK海力士', date:'2026-10-28', event:'2026Q3', est:true },
   { company:'samsung',   name:'三星电子', date:'2026-10-29', event:'2026Q3', est:true },
+  { company:'intc',      name:'英特尔',   date:'2026-10-23', event:'2026Q3', est:true },
   { company:'tencent',   name:'腾讯',     date:'2026-11-11', event:'2026Q3', est:true },
 ];
 const nextEarnings = (today) => {
