@@ -2,6 +2,40 @@
    未披露 = 字段缺省;YoY/QoQ 不落库,由 js/calc.js 实时计算 */
 const METRICS = [
  {
+  "company": "tsla",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 28046, "unit": "USD_M", "src": "tsla-2026q3-8k" },
+   "net_income": { "value": 787, "unit": "USD_M", "src": "tsla-2026q3-8k" }
+  }
+ },
+ {
+  "company": "meta",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 64601, "unit": "USD_M", "src": "meta-2026q3-er" },
+   "capex": { "value": 34906, "unit": "USD_M", "src": "meta-2026q3-er" },
+   "net_income": { "value": 9860, "unit": "USD_M", "src": "meta-2026q3-er" }
+  }
+ },
+ {
+  "company": "spacex",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 14575, "unit": "USD_M", "src": "spacex-2026q3-8k" },
+   "net_income": { "value": 4404, "unit": "USD_M", "src": "spacex-2026q3-8k" },
+   "capex": { "value": 19593, "unit": "USD_M", "src": "spacex-2026q3-8k" }
+  }
+ },
+ {
+  "company": "spacex",
+  "period": "2025Q3",
+  "metrics": {
+   "revenue": { "value": 5576, "unit": "USD_M", "src": "spacex-2026q3-8k" },
+   "net_income": { "value": -1054, "unit": "USD_M", "src": "spacex-2026q3-8k" }
+  }
+ },
+ {
   "company": "tsmc",
   "period": "2026Q3",
   "metrics": {
