@@ -2,6 +2,247 @@
    未披露 = 字段缺省;YoY/QoQ 不落库,由 js/calc.js 实时计算 */
 const METRICS = [
  {
+  "company": "sytech",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 141.819, "unit": "CNY_YI", "src": "sytech-2026q3-er" },
+   "gross_margin": { "value": 0.4163, "src": "sytech-2026q3-er" },
+   "net_income": { "value": 34.404, "unit": "CNY_YI", "src": "sytech-2026q3-er" }
+  }
+ },
+ {
+  "company": "ynge",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 6.319, "unit": "CNY_YI", "src": "ynge-2026q3-er" },
+   "gross_margin": { "value": 0.3245, "src": "ynge-2026q3-er" },
+   "net_income": { "value": 1.017, "unit": "CNY_YI", "src": "ynge-2026q3-er" }
+  }
+ },
+ {
+  "company": "veri",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 13.173, "unit": "CNY_YI", "src": "veri-2026q3-er" },
+   "gross_margin": { "value": 0.2853, "src": "veri-2026q3-er" },
+   "net_income": { "value": -2.571, "unit": "CNY_YI", "src": "veri-2026q3-er" }
+  }
+ },
+ {
+  "company": "naura",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 113.057, "unit": "CNY_YI", "src": "naura-2026q3-er" },
+   "gross_margin": { "value": 0.3833, "src": "naura-2026q3-er" },
+   "net_income": { "value": 20.219, "unit": "CNY_YI", "src": "naura-2026q3-er" }
+  }
+ },
+ {
+  "company": "amec",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 36.349, "unit": "CNY_YI", "src": "amec-2026q3-er" },
+   "net_income": { "value": 13.093, "unit": "CNY_YI", "src": "amec-2026q3-er" }
+  }
+ },
+ {
+  "company": "tuojing",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 23.08, "unit": "CNY_YI", "src": "tuojing-2026q3-er" },
+   "net_income": { "value": 10.88, "unit": "CNY_YI", "src": "tuojing-2026q3-er" }
+  }
+ },
+ {
+  "company": "fujing",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 14.825, "unit": "CNY_YI", "src": "fujing-2026q3-er" },
+   "net_income": { "value": 0.99, "unit": "CNY_YI", "src": "fujing-2026q3-er" }
+  }
+ },
+ {
+  "company": "lxyq",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 25.123, "unit": "CNY_YI", "src": "lxyq-2026q3-er" },
+   "gross_margin": { "value": 0.7763, "src": "lxyq-2026q3-er" },
+   "net_income": { "value": 14.388, "unit": "CNY_YI", "src": "lxyq-2026q3-er" }
+  }
+ },
+ {
+  "company": "jcet",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 114.251, "unit": "CNY_YI", "src": "jcet-2026q3-er" },
+   "gross_margin": { "value": 0.1748, "src": "jcet-2026q3-er" },
+   "net_income": { "value": 7.727, "unit": "CNY_YI", "src": "jcet-2026q3-er" }
+  }
+ },
+ {
+  "company": "tfme",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 88.442, "unit": "CNY_YI", "src": "tfme-2026q3-er" },
+   "gross_margin": { "value": 0.1668, "src": "tfme-2026q3-er" },
+   "net_income": { "value": 13.431, "unit": "CNY_YI", "src": "tfme-2026q3-er" }
+  }
+ },
+ {
+  "company": "sjsmi",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 171.332, "unit": "CNY_YI", "src": "sjsmi-2026q3-er" },
+   "gross_margin": { "value": 0.2598, "src": "sjsmi-2026q3-er" },
+   "net_income": { "value": 18.646, "unit": "CNY_YI", "src": "sjsmi-2026q3-er" }
+  }
+ },
+ {
+  "company": "giga",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 87.314, "unit": "CNY_YI", "src": "giga-2026q3-er" },
+   "net_income": { "value": 42.087, "unit": "CNY_YI", "src": "giga-2026q3-er" }
+  }
+ },
+ {
+  "company": "cxmt",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 1187.14, "unit": "CNY_YI", "src": "cxmt-2026q3-er" },
+   "net_income": { "value": 544.35, "unit": "CNY_YI", "src": "cxmt-2026q3-er" }
+  }
+ },
+ {
+  "company": "cambricon",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 35.304, "unit": "CNY_YI", "src": "cambricon-2026q3-er" },
+   "net_income": { "value": 14.035, "unit": "CNY_YI", "src": "cambricon-2026q3-er" }
+  }
+ },
+ {
+  "company": "montage",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 20.794, "unit": "CNY_YI", "src": "montage-2026q3-er" },
+   "net_income": { "value": 12.401, "unit": "CNY_YI", "src": "montage-2026q3-er" }
+  }
+ },
+ {
+  "company": "fii",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 3835.539, "unit": "CNY_YI", "src": "fii-2026q3-er" },
+   "gross_margin": { "value": 0.0699, "src": "fii-2026q3-er" },
+   "net_income": { "value": 166.342, "unit": "CNY_YI", "src": "fii-2026q3-er" }
+  }
+ },
+ {
+  "company": "huaqin",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 722.945, "unit": "CNY_YI", "src": "huaqin-2026q3-er" },
+   "gross_margin": { "value": 0.0689, "src": "huaqin-2026q3-er" },
+   "net_income": { "value": 13.237, "unit": "CNY_YI", "src": "huaqin-2026q3-er" }
+  }
+ },
+ {
+  "company": "dwmicro",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 3.245, "unit": "CNY_YI", "src": "dwmicro-2026q3-er" },
+   "gross_margin": { "value": 0.3613, "src": "dwmicro-2026q3-er" },
+   "net_income": { "value": 0.733, "unit": "CNY_YI", "src": "dwmicro-2026q3-er" }
+  }
+ },
+ {
+  "company": "sifo",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 12.263, "unit": "CNY_YI", "src": "sifo-2026q3-er" },
+   "net_income": { "value": 2.707, "unit": "CNY_YI", "src": "sifo-2026q3-er" }
+  }
+ },
+ {
+  "company": "ebphoton",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 2.417, "unit": "CNY_YI", "src": "ebphoton-2026q3-er" },
+   "net_income": { "value": 0.221, "unit": "CNY_YI", "src": "ebphoton-2026q3-er" }
+  }
+ },
+ {
+  "company": "yjsemi",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 6.84, "unit": "CNY_YI", "src": "yjsemi-2026q3-er" },
+   "gross_margin": { "value": 0.8342, "src": "yjsemi-2026q3-er" },
+   "net_income": { "value": 4.17, "unit": "CNY_YI", "src": "yjsemi-2026q3-er" }
+  }
+ },
+ {
+  "company": "tengjing",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 3.147, "unit": "CNY_YI", "src": "tengjing-2026q3-er" },
+   "net_income": { "value": 0.461, "unit": "CNY_YI", "src": "tengjing-2026q3-er" }
+  }
+ },
+ {
+  "company": "shenghong",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 68.312, "unit": "CNY_YI", "src": "shenghong-2026q3-er" },
+   "gross_margin": { "value": 0.3417, "src": "shenghong-2026q3-er" },
+   "net_income": { "value": 5.27, "unit": "CNY_YI", "src": "shenghong-2026q3-er" }
+  }
+ },
+ {
+  "company": "dsbj",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 175.817, "unit": "CNY_YI", "src": "dsbj-2026q3-er" },
+   "gross_margin": { "value": 0.2307, "src": "dsbj-2026q3-er" },
+   "net_income": { "value": 23.318, "unit": "CNY_YI", "src": "dsbj-2026q3-er" }
+  }
+ },
+ {
+  "company": "wus",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 95.36, "unit": "CNY_YI", "src": "wus-2026q3-er" },
+   "gross_margin": { "value": 0.4402, "src": "wus-2026q3-er" },
+   "net_income": { "value": 26.986, "unit": "CNY_YI", "src": "wus-2026q3-er" }
+  }
+ },
+ {
+  "company": "scc",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 104.775, "unit": "CNY_YI", "src": "scc-2026q3-er" },
+   "gross_margin": { "value": 0.3485, "src": "scc-2026q3-er" },
+   "net_income": { "value": 18.777, "unit": "CNY_YI", "src": "scc-2026q3-er" }
+  }
+ },
+ {
+  "company": "jw",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 66.21, "unit": "CNY_YI", "src": "jw-2026q3-er" },
+   "net_income": { "value": 10.14, "unit": "CNY_YI", "src": "jw-2026q3-er" }
+  }
+ },
+ {
+  "company": "envicool",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 19.33, "unit": "CNY_YI", "src": "envicool-2026q3-er" },
+   "gross_margin": { "value": 0.2783, "src": "envicool-2026q3-er" },
+   "net_income": { "value": 1.839, "unit": "CNY_YI", "src": "envicool-2026q3-er" }
+  }
+ },
+ {
   "company": "innolight",
   "period": "2026Q3",
   "metrics": {

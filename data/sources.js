@@ -4734,6 +4734,230 @@ const SOURCES = [
   "fetched_at": "2026-11-21",
   "archive": null,
   "locator": "天孚通信(300394.SZ)2026 年三季报(巨潮资讯网官方披露,2026-10-28): Q3 单季营收 19.23亿元(+31.5% YoY)/归母净利 8.79亿元(+55.3%)/扣非 8.79亿(+55.78%); 前三季度营收 47.51亿(+21.25%)、归母 20.83亿(+42.18%); 高速光器件需求随全球数据中心建设稳定增长; Q3 归母增速较前两季提升; 10/29 股价跌 19.77%(跌幅为三家最大)"
+ },
+ {
+  "id": "sytech-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=600183",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "生益科技(600183.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 单季营收 141.82亿(+61.1% YoY, 9M 累计 332.08亿 +61.1%)/归母 34.40亿(9M 67.27亿 +175.4%); CCL 涨价+AI 高速板材驱动"
+ },
+ {
+  "id": "ynge-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002428",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "云南锗业(002428.SZ)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 6.32亿/归母 1.02亿(同比 +2642%)/毛利率 32.45%; 锗价与化合物半导体双驱动"
+ },
+ {
+  "id": "veri-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688521",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "芯原股份(688521.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 13.17亿(+2.85%)/归母 -2.57亿(同比 -857.6%)/毛利率 28.53%; 9M 归母 -8.69亿(上年同期 -3.47亿), 研发费用 +39.85% 拖累"
+ },
+ {
+  "id": "naura-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002371",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "北方华创(002371.SZ)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 113.06亿(+1.31%)/归母 20.22亿(+5.18%)/毛利率 38.33%(9M 由 41.41% 降至 39.44%, 新产品验证+商务优惠); 9M 营收 314.67亿(+15.26%)/归母 53.92亿(+5.1%); 订单规模扩大但交付受物料制约"
+ },
+ {
+  "id": "amec-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688012",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "中微公司(688012.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3=9M−Q1−Q2 推导: 9M 营收 103.26亿(+28.08%)/归母 41.34亿(+241.31%); Q3 单季归母同比 +159.02%(较上半年回落); 刻蚀设备为主"
+ },
+ {
+  "id": "tuojing-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688072",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "拓荆科技(688072.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 23.08亿(+1.84%)/归母 10.88亿(+135.39%); 9M 52.20亿(+23.70%)/24.31亿(+336.79%); 毛利率同比 +8.37pct + 公允价值变动收益 +16.16亿(主要为投资收益, 非经营性)"
+ },
+ {
+  "id": "fujing-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688409",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "富创精密(688409.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 14.82亿/归母 0.99亿; 9M 营收 38.00亿/归母 2.33亿; 半导体设备零部件"
+ },
+ {
+  "id": "lxyq-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688808",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "联讯仪器(688808.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 25.12亿(+711.4% YoY/+140.8% QoQ)/归母 14.39亿(+3488%)/毛利率 77.63%; 9M 40.43亿(+401.9%)/20.06亿(+1975.6%); 光模块与光芯片厂扩产拉动测试仪器需求(本季最强增长)"
+ },
+ {
+  "id": "jcet-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=600584",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "长电科技(600584.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 114.25亿/归母 7.73亿(+59.99%)/毛利率 17.48%; 9M 309.52亿/16.17亿"
+ },
+ {
+  "id": "tfme-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002156",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "通富微电(002156.SZ)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 88.44亿(+24.95% YoY/+3.33% QoQ)/归母 13.43亿(+199.54%, 环比 -3.26%)/毛利率 16.68%; 9M 248.85亿(+23.71%)/30.61亿(+255.68%)"
+ },
+ {
+  "id": "sjsmi-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688820",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "盛合晶微(688820.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 17.13亿(同比 -8.33%)/归母 1.86亿(同比 -45.96%, 环比 -27.74%)/毛利率 25.98%(同比 -9.13pct); 9M 51.20亿(+1.45%)/6.36亿(-18.48%)——先进封装中唯一负增长, 需警惕"
+ },
+ {
+  "id": "giga-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603986",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "兆易创新(603986.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3=9M−Q1−Q2 推导: 9M 营收 202.97亿(+197.1%)/归母 110.66亿(+921.5%); 存储涨价周期最大受益者之一"
+ },
+ {
+  "id": "cxmt-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688825",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "长鑫科技(688825.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3=9M−Q1−Q2 推导: 9M 营收 2,690.24亿(+738.5%)/归母 1,320.4亿(净利率 49%); DRAM 龙头, A 股半导体营收与利润双冠"
+ },
+ {
+  "id": "cambricon-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688256",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "寒武纪(688256.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3=9M−Q1−Q2 推导: 9M 营收 95.26亿(+106.8%)/归母 37.15亿(+131.5%)"
+ },
+ {
+  "id": "montage-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688008",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "澜起科技(688008.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3=9M−Q1−Q2 推导: 9M 营收 54.14亿(+33.4%)/归母 32.37亿(+98.3%); DDR5 接口芯片+MRCD/MDB"
+ },
+ {
+  "id": "fii-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=601138",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "工业富联(601138.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 3,835.54亿(+57.73%)/归母 166.34亿(+60.35%)/毛利率 6.99%; 9M 9,414.14亿(+55.88%)/403.75亿(+79.55%); 云计算 +75% YoY, AI-ASIC 服务器出货 +1.5倍、AI-GPU 机柜 +70%, 800G+ 交换机 +80%"
+ },
+ {
+  "id": "huaqin-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603296",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "华勤技术(603296.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 722.95亿/归母 13.24亿(+9.43%)/毛利率 6.89%; 9M 1,660.14亿/43.23亿; 计算及数据业务为增长主力"
+ },
+ {
+  "id": "dwmicro-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=301183",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "东田微(301183.SZ)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 3.25亿/归母 0.73亿(+149.65%)/毛利率 36.13%; 通信类光学元件放量"
+ },
+ {
+  "id": "sifo-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688313",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "仕佳光子(688313.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3=9M−Q1−Q2 推导: 9M 营收 27.22亿/归母 5.86亿(+226.19%); 光芯片+AWG+光纤连接器"
+ },
+ {
+  "id": "ebphoton-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688048",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "长光华芯(688048.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3=9M−Q1−Q2 推导: 9M 营收 6.33亿/归母 0.52亿(+81.63%); 光通信芯片系列占中报收入 42.5%"
+ },
+ {
+  "id": "yjsemi-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688498",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "源杰科技(688498.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 6.84亿(+283.55%)/归母 4.17亿(+598.96%, 环比 -2.54%)/毛利率 83.42%; 9M 16.09亿(+319.8%)/10.24亿(+866.9%); 数据中心光芯片驱动, 净利率 61%"
+ },
+ {
+  "id": "tengjing-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=688195",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "腾景科技(688195.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3=9M−Q1−Q2 推导: 9M 营收 7.44亿/归母 0.96亿(+69.11%); 精密光学元组件+OCS 晶体"
+ },
+ {
+  "id": "shenghong-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300476",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "胜宏科技(300476.SZ)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 68.31亿(+34.30%, 单季新高)/归母 5.27亿(同比 -52.17%, 环比 -66.39%)/毛利率 34.17%; 利润塌方主因 Q3 公允价值变动 -6.90亿(持股浮亏), 扣非 12.76亿仍强; 存货 92.49亿(+246.79%); 10/30 A 股跌 13.31%"
+ },
+ {
+  "id": "dsbj-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002384",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "东山精密(002384.SZ)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 175.82亿/归母 23.32亿(+401.18%)/毛利率 23.07%; 9M 营收 453.79亿/归母 52.89亿; 光模块业务中报占比 19.25%"
+ },
+ {
+  "id": "wus-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002463",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "沪电股份(002463.SZ)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 95.36亿(+90.02%, 环比 +27.6%)/归母 26.99亿(+160.77%, 单季新高)/毛利率 44.02%; 9M 232.25亿(+71.88%)/56.22亿(+106.87%); 泰国基地扭亏为盈"
+ },
+ {
+  "id": "scc-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002916",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "深南电路(002916.SZ)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 104.78亿/归母 18.78亿(+94.42%)/毛利率 34.85%; 9M 257.74亿(+53.84%)/41.29亿(+77.54%); 封装基板+高多层板"
+ },
+ {
+  "id": "jw-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603228",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "景旺电子(603228.SH)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 66.21亿(+66.06%)/归母 10.14亿(+239.67%); 9M 152.33亿(+37.45%)/16.16亿(+70.42%); AI 数据基础设施高性能 PCB 占比提升"
+ },
+ {
+  "id": "envicool-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002837",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "英维克(002837.SZ)2026 年三季报(巨潮资讯网官方披露, 2026-10 下旬): Q3 营收 19.33亿/归母 1.84亿(+0.25%, 基本停滞)/毛利率 27.83%; 9M 49.50亿/3.69亿; 液冷温控需求旺盛但利润未同步兑现"
  }
 
 ];
