@@ -2,6 +2,31 @@
    未披露 = 字段缺省;YoY/QoQ 不落库,由 js/calc.js 实时计算 */
 const METRICS = [
  {
+  "company": "innolight",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 277.692, "unit": "CNY_YI", "src": "innolight-2026q3-er" },
+   "gross_margin": { "value": 0.4661, "src": "innolight-2026q3-er" },
+   "net_income": { "value": 85.868, "unit": "CNY_YI", "src": "innolight-2026q3-er" }
+  }
+ },
+ {
+  "company": "eoptolink",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 109.4, "unit": "CNY_YI", "src": "eoptolink-2026q3-er" },
+   "net_income": { "value": 38.43, "unit": "CNY_YI", "src": "eoptolink-2026q3-er" }
+  }
+ },
+ {
+  "company": "tfc",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 19.23, "unit": "CNY_YI", "src": "tfc-2026q3-er" },
+   "net_income": { "value": 8.79, "unit": "CNY_YI", "src": "tfc-2026q3-er" }
+  }
+ },
+ {
   "company": "nvda",
   "period": "2026Q3",
   "metrics": {

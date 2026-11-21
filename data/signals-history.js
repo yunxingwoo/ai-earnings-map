@@ -1097,7 +1097,7 @@ const SIGNAL_HISTORY = [
    "poet": "yellow",
    "innolight": "yellow",
    "eoptolink": "yellow",
-   "tfc": "red",
+   "tfc": "green",
    "dwmicro": "green",
    "sifo": "green",
    "ebphoton": "green",
