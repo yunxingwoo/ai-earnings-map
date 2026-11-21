@@ -8,7 +8,7 @@ const EARNINGS_CALENDAR = [
   { company:'dell',     name:'戴尔',      date:'2026-09-01', event:'FY27Q2', est:true },
   { company:'avgo',     name:'博通',      date:'2026-09-02', event:'FY27Q3', est:true },
   { company:'naura',    name:'北方华创',  date:'2026-08-29', event:'2026 中报', est:true },
-  { company:'lite',     name:'Lumentum',  date:'2026-11-05', event:'FY27Q1', est:true },
+  { company:'lite',     name:'Lumentum',  date:'2026-11-02', event:'FY27Q1', est:true },
   { company:'amzn',      name:'亚马逊',   date:'2026-10-30', event:'2026Q3', est:true },
   { company:'msft',      name:'微软',     date:'2026-10-29', event:'FY27Q1', est:true },
   { company:'goog',      name:'谷歌',     date:'2026-10-28', event:'2026Q3', est:true },
@@ -16,9 +16,10 @@ const EARNINGS_CALENDAR = [
   { company:'tsmc',      name:'台积电',   date:'2026-10-16', event:'2026Q3', est:true },
   { company:'hynix',     name:'SK海力士', date:'2026-10-28', event:'2026Q3', est:true },
   { company:'samsung',   name:'三星电子', date:'2026-10-29', event:'2026Q3', est:true },
-  { company:'intc',      name:'英特尔',   date:'2026-10-23', event:'2026Q3', est:true },
+  { company:'intc',      name:'英特尔',   date:'2026-10-29', event:'2026Q3', est:true },
   { company:'tsla',      name:'特斯拉',   date:'2026-10-21', event:'2026Q3', est:true },
-  { company:'tencent',   name:'腾讯',     date:'2026-11-11', event:'2026Q3', est:true },
+  { company:'nvda',      name:'英伟达',   date:'2026-11-17', event:'FY27Q3', est:true },
+  { company:'tencent',   name:'腾讯',     date:'2026-11-18', event:'2026Q3', est:true },
 ];
 const nextEarnings = (today) => {
   const t = today || new Date().toISOString().slice(0,10);

@@ -2,6 +2,99 @@
    未披露 = 字段缺省;YoY/QoQ 不落库,由 js/calc.js 实时计算 */
 const METRICS = [
  {
+  "company": "nvda",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 115844, "unit": "USD_M", "src": "nvda-2026q3-er" },
+   "dc_revenue": { "value": 107600, "unit": "USD_M", "src": "nvda-2026q3-er" },
+   "gross_margin": { "value": 0.748, "src": "nvda-2026q3-er" },
+   "net_income": { "value": 65287, "unit": "USD_M", "src": "nvda-2026q3-er" }
+  }
+ },
+ {
+  "company": "goog",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 127577, "unit": "USD_M", "src": "goog-2026q3-er" },
+   "capex": { "value": 51360, "unit": "USD_M", "src": "goog-2026q3-er" },
+   "net_income": { "value": 26170, "unit": "USD_M", "src": "goog-2026q3-er" }
+  }
+ },
+ {
+  "company": "msft",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 92279, "unit": "USD_M", "src": "msft-2027q1-er" },
+   "capex": { "value": 45200, "unit": "USD_M", "src": "msft-2027q1-er" },
+   "net_income": { "value": 36629, "unit": "USD_M", "src": "msft-2027q1-er" }
+  }
+ },
+ {
+  "company": "amzn",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 201940, "unit": "USD_M", "src": "amzn-2026q3-er" },
+   "capex": { "value": 77260, "unit": "USD_M", "src": "amzn-2026q3-er" },
+   "net_income": { "value": 20685, "unit": "USD_M", "src": "amzn-2026q3-er" }
+  }
+ },
+ {
+  "company": "hynix",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 104615.5, "unit": "KRW_B", "src": "hynix-2026q3-er" },
+   "net_income": { "value": 39775.6, "unit": "KRW_B", "src": "hynix-2026q3-er" }
+  }
+ },
+ {
+  "company": "intc",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 16513, "unit": "USD_M", "src": "intc-2026q3-er" },
+   "net_income": { "value": 3300, "unit": "USD_M", "src": "intc-2026q3-er" }
+  }
+ },
+ {
+  "company": "tencent",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 2073.36, "unit": "CNY_YI", "src": "tencent-2026q3-er" },
+   "gross_margin": { "value": 0.559, "src": "tencent-2026q3-er" },
+   "net_income": { "value": 636.12, "unit": "CNY_YI", "src": "tencent-2026q3-er" },
+   "capex": { "value": 651, "unit": "CNY_YI", "src": "tencent-2026q3-er" }
+  }
+ },
+ {
+  "company": "lite",
+  "period": "2026Q3",
+  "metrics": {
+   "revenue": { "value": 1262.6, "unit": "USD_M", "src": "lite-2027q1-er" },
+   "gross_margin": { "value": 0.51, "src": "lite-2027q1-er" },
+   "net_income": { "value": 360.3, "unit": "USD_M", "src": "lite-2027q1-er" }
+  }
+ },
+ {
+  "company": "tsmc",
+  "period": "2026M10",
+  "metrics": {
+   "monthly_revenue": { "value": 586890, "unit": "TWD_M", "src": "tsmc-monthly-2026m10" }
+  }
+ },
+ {
+  "company": "quanta",
+  "period": "2026M10",
+  "metrics": {
+   "monthly_revenue": { "value": 353250, "unit": "TWD_M", "src": "mops-t21-115m10" }
+  }
+ },
+ {
+  "company": "wiwynn",
+  "period": "2026M10",
+  "metrics": {
+   "monthly_revenue": { "value": 165131, "unit": "TWD_M", "src": "mops-t21-115m10" }
+  }
+ },
+ {
   "company": "tsla",
   "period": "2026Q3",
   "metrics": {
@@ -90,7 +183,7 @@ const METRICS = [
   "period": "2026Q3",
   "metrics": {
    "revenue": {
-    "value": 195000,
+    "value": 195300,
     "unit": "KRW_B",
     "src": "samsung-2026q3-guidance"
    }

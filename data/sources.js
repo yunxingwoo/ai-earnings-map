@@ -4630,6 +4630,86 @@ const SOURCES = [
   "fetched_at": "2026-10-22",
   "archive": null,
   "locator": "特斯拉 2026Q3 财报(SEC 8-K Item 2.02,2026-10-21 盘后发布,accession 0001628280-26-066738): 营收 $280.46亿(28,046M,同比 -0.2%,略低于预期 281.3亿)/GAAP 净利润 $7.87亿(787M,-43% YoY)/摊薄 EPS $0.22、调整后 EPS $0.48(超预期)/毛利率 19.6%(同比 +1.6pct,汽车毛利率剔除积分 18.1%)/营业利润 $7.18亿(-56%,营业利润率 2.6%)/资本开支 $47.32亿(+110%)/自由现金流 +$15.31亿(由负转负为正,同比 -62%); 交付 486,532 辆(-2.1%)、产量 464,391 辆(+4%);FSD 活跃订阅 174 万(+67%,北美新车搭载率 >75%)/Robotaxi 无监督累计里程近 200 万英里(环比约 8 倍,Cybercab 9/3 起在奥斯汀运营)/Optimus 弗里蒙特工厂启动量产(外部交付待 2027 年底)/储能部署 13.7GWh(+10%,低于预期 15.9GWh);计划 2026 年底前将 AI 训练算力提至 400MW;SpaceX 合并传闻同场发酵"
+ },
+ {
+  "id": "nvda-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://investor.nvidia.com/financial-info/quarterly-results/default.aspx",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "英伟达 FY2027 Q3 业绩(公司 IR 官方季度业绩页,2026-11-17 美东盘后;财季截至 2026-10-25 → 自然季 2026Q3;黄仁勋 11-12 辞任 CEO 后首份财报,临时 CEO 为 CFO Colette Kress): 营收 $1,158.44亿(115,844M,+103.1% YoY/+20.3% QoQ,首破千亿,连续 17 季超预期)/GAAP 毛利率 74.8%(non-GAAP 74.9%)/GAAP 净利 $652.87亿(+105%)、non-GAAP $648.70亿(+109%)、调整后 EPS $2.68; 数据中心 $1,076亿(+110%,占 93%;超大规模云 601亿/AI 云·工业·企业 475亿),边缘计算 82亿(+42%); Vera Rubin NVL72 已量产出货(史上最快爬坡),Vera CPU 上线 OCI; Q4 指引 $1,261-1,339亿(中值 $1,300亿),FY2028 营收增长目标上调至 75%; 董事会新增 $1,500亿回购授权;云业务积压订单 $2.5万亿(上季 $2万亿)"
+ },
+ {
+  "id": "goog-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "Alphabet 2026Q3 财报(SEC 8-K EX-99.1 官方新闻稿,2026-10-28 盘后): 营收 $1,275.77亿(127,577M,+25% YoY,连续 13 季双位数)/营业利润 $405.76亿(营业利润率 31.8%)/净利润 $261.70亿(同比 -25%,含股权投资净亏损 86.6亿;去年同期 $349.79亿)/稀释 EPS $2.12; Google Cloud 营收 $307.09亿(+103%,TPU 系统销售贡献;云营业利润 111亿,营业利润率 36.2%,积压订单 5,610亿)/Google Services $963.02亿(+11%;搜索 633.5亿 +12%,YouTube 广告 112.07亿 +9%,广告合计 820.1亿); 资本支出 $513.6亿(+114%)/自由现金流 -$90.7亿(含 52亿欧盟罚款); 全年 capex 指引维持 $1,950-2,050亿,Gemini 4 已发布、Gemini 应用 10 亿用户"
+ },
+ {
+  "id": "msft-2027q1-er",
+  "type": "earnings_release",
+  "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "微软 FY2027 Q1 财报(公司 IR 官方,2026-10-28 盘后;自然季 2026Q3): 营收 $922.79亿(+19%)/营业利润 $459.15亿(+21%)/净利润 $366.29亿(GAAP +32%;含 OpenAI 投资 +2.07亿,non-GAAP 364.22亿 +18%)/稀释 EPS $4.92(调整后 4.89); Microsoft Cloud $639亿(+30%,毛利率降至 66%),Azure 首次单独披露美元收入 $331.65亿(+48%,FQ2 指引 49-50%); 资本支出含融资租赁 $452亿(+30%,低于 $500亿计划——第三方算力交付延迟;其中现金 PPE 393.67亿/+103%,融资租赁 74亿),75% 投向短期资产(CPU/GPU); FCF $186.3亿(-27%),商业 RPO $6,770亿(+73%); FY27 capex 指引约 $1,700亿; 新分部:Agents and Infra 767.95亿(+25%)/Devices and Consumer 154.84亿(-3%,Windows OEM -22%)"
+ },
+ {
+  "id": "amzn-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://ir.aboutamazon.com/quarterly-overview/default.aspx",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "亚马逊 2026Q3 财报(公司 IR 官方季度业绩页,2026-10-29 盘后): 净销售额 $2,019.40亿(201,940M,+12%,略低于预期)/营业利润 $280.76亿(+61.5%,营业利润率 13.9% 历史最高)/GAAP 净利 $206.85亿(-2%,去年同期含 Anthropic 投资 95亿税前收益抬高基数)/稀释 EPS $1.89(-3%); AWS $459.80亿(+39.3%,近五年最快,营业利润 178亿 +55%,年化收入 1,840亿,积压订单 5,780亿)/广告 196.4亿(+11%,2020 年单独披露以来最慢)/线上零售 685亿(+2%); 资本支出 $772.6亿(季度新高,+34% 超预期),TTM 自由现金流 -$424亿(连续两季为负); 维持 2026 全年约 $2,200亿现金 capex 指引,预告 2027 年继续显著增加; Trainium 2027 年底对外开放"
+ },
+ {
+  "id": "hynix-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://news.skhynix.com/en/3q-2026-business-results/",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "SK海力士 2026Q3 财报(公司新闻室官方,2026-10-28 发布): 营收 104.6155兆韩元(104,615.5 KRW_B,+328% YoY/+32% QoQ,史上首破 100 兆)/营业利润 83.3338兆(+632%,营业利润率 80%)/净利润 39.7756兆(+216% YoY,-58% QoQ,净利率 38%)/现金及等价物 114.5兆; HBM4 全面放量+服务器 DDR5 驱动 DRAM,321 层 TLC eSSD 扩大; 已与含全球 CSP 的 14 家客户签 LTA,锁定 2027-2028 年 50%+ 产能; 预计供不应求持续至 2030 年; 2026 财年股东回报约 100兆(现金分红 30兆+回购注销 60兆),Q3 每股股息 2万韩元; 龙仁 Fab 一期明年投产"
+ },
+ {
+  "id": "intc-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "英特尔 2026Q3 财报(公司 IR 官方,2026-10-29 发布): 营收 $165.13亿(16,513M,+21%)/GAAP 毛利率 43.0%(+4.8pct)/GAAP 净利 $33亿(3,300M,-18%;non-GAAP 28亿 +169%)/GAAP EPS $0.60(调整后 $0.52); DCAI 数据中心与 AI $73亿(+78%,15 年来最强,营业利润 30.39亿)/Intel Foundry $67亿(+58%,营业亏损收窄至 18.53亿)/CCPG 客户端 $81亿(-5%); Q4 指引 $150-160亿(低于预期,PC 疲弱+内存涨价+以色列工厂爆炸损失约 3亿); 2026 capex 上调至 $200亿; 完成 $230亿股权融资; 18A Clearwater Forest 已出货并确认收入"
+ },
+ {
+  "id": "tencent-2026q3-er",
+  "type": "earnings_release",
+  "url": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "腾讯控股 2026Q3 业绩(港交所公告官方 PDF,2026-11-18 发布): 收入 2,073.36亿元(207,336M,+8% YoY)/毛利 1,159.11亿(毛利率 55.9%)/IFRS 本公司权益持有人应占盈利 636.12亿(+0.8%;non-IFRS 665.19亿 -6%,其中新 AI 产品拖累:剔除后经营盈利 833亿 +8%)/资本开支 651亿(+225%)/自由现金流 -691亿; 增值服务 983.26亿(+3%;本土游戏 476亿 +11%/国际游戏 189亿 -9%)/营销服务 430亿(+19%); AI 带动云服务收入 +35%(GPU 租赁+MaaS); Hy4 达中国顶尖水平,Hy4 flash 降本; WorkBuddy 日活超 1,000万、日均 token 消耗 >100万亿,称国内使用量最高 AI 产品"
+ },
+ {
+  "id": "lite-2027q1-er",
+  "type": "earnings_release",
+  "url": "https://www.investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "Lumentum FY2027 Q1 财报(公司 IR 官方,2026-11-02 提前发布——同日宣布 Marvell 以全股票方式收购 Lumentum,隐含企业价值 $1,150亿/每股约 $1,132,溢价 23.9%,预计 2028 上半年完成): 营收 $12.626亿(1,262.6M,+136.5% YoY/+25.5% QoQ)/GAAP 毛利率 51.0%(non-GAAP 53.2%)/GAAP 营业利润率 28.5%(non-GAAP 42.3%)/GAAP 净利 $3.603亿(non-GAAP 4.611亿,调整后 EPS 4.57); 泵浦激光器与 OCS 光路交换为主要增长点,第二个 NPO/CPO 大单锁量 >$50亿,OCS 需求可见度显著提升; Q2 指引营收 $15.75-16.25亿(non-GAAP 营益率 45-46%),单季环比增量约 $3.5亿"
+ },
+ {
+  "id": "tsmc-monthly-2026m10",
+  "type": "monthly_revenue",
+  "url": "https://pr.tsmc.com/schinese/news/3349",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "台积电 2026 年 10 月营收(公司新闻中心官方,2026-11-10 发布): 合并营收 586,890 百万元(5,868.9亿,+14.7% MoM/+59.7% YoY,再创单月历史新高,超越 Q4 财测高标); 1-10 月累计 4,485,617 百万元(+43.3%)"
+ },
+ {
+  "id": "mops-t21-115m10",
+  "type": "monthly_revenue",
+  "url": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_10_0.html",
+  "fetched_at": "2026-11-21",
+  "archive": null,
+  "locator": "公开资讯观测站 115 年 10 月营收汇总表(千元): 广达 353,250,000(3,532.5亿,+8.6% MoM/+103.96% YoY,创历年同期新高,累计前 10 月 3兆3,146亿 +99.89%)/纬颖 165,131,000(1,651.31亿,-4.3% MoM/+80.94% YoY,累计 1兆1,544亿 +54.03%); 同日台积电 5,868.9亿(+59.7%)/鸿海 1.31兆(+12.86%,单月历史新高)/纬创 4,026亿(+117.56%)"
  }
 
 ];
