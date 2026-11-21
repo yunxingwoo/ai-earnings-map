@@ -92,9 +92,9 @@ const METRICS = [
   "company": "sjsmi",
   "period": "2026Q3",
   "metrics": {
-   "revenue": { "value": 171.332, "unit": "CNY_YI", "src": "sjsmi-2026q3-er" },
+   "revenue": { "value": 17.133, "unit": "CNY_YI", "src": "sjsmi-2026q3-er" },
    "gross_margin": { "value": 0.2598, "src": "sjsmi-2026q3-er" },
-   "net_income": { "value": 18.646, "unit": "CNY_YI", "src": "sjsmi-2026q3-er" }
+   "net_income": { "value": 1.865, "unit": "CNY_YI", "src": "sjsmi-2026q3-er" }
   }
  },
  {
